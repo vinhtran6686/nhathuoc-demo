@@ -1,0 +1,17 @@
+@import "../components/search-result/_search-filter.scss";
+@import "../components/search-result/_article";
+@import "../components/search-result/custom-searchmobile";
+
+.btn-link {
+  @include respond-to("sm") {
+    border: none !important;
+    background-color: unset !important;
+    color: $primary-500 !important;
+    &:hover {
+      color: $primary-500 !important;
+    }
+    i {
+      display: none !important;
+    }
+  }
+}

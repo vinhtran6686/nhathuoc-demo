@@ -1,0 +1,78 @@
+.pdc-feature {
+    &_top {
+        &--head {
+            padding: 12px 0;
+            text-align: center;
+        }
+        &--content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 12px;
+            .feature-item {
+                text-align: center;
+                i {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 42px;
+                    height: 42px;
+                    color: $primary-500;
+                    background: $primary-100;
+                    border-radius: 200px;
+                    font-size: 25px;
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    &:first-child {
+                        font-weight: 500;
+                    }
+                }
+            }
+            @include respond-to("sm") {
+                flex-flow: column;
+                .feature-item {
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    &:not(:last-child){
+                        margin-bottom: 8px;
+                    }
+                    i {
+                        width: 28px;
+                        height: 28px;
+                        font-size: 17px;
+                        margin-right: 8px;
+                        margin-bottom: 0;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    &_bottom {
+        a {
+            display: inline-flex;
+            align-items: center;
+            i {
+                width: 25px;
+                height: 25px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                border-radius: 100px;
+                color: $white-100;
+            }
+        }
+        @include respond-to("sm") {
+            display: none;
+        }
+    }
+}

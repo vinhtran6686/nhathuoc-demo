@@ -1,0 +1,107 @@
+.alert,
+.cart-mess,
+.item-mess {
+    .list-group {
+        li {
+            // display: block;
+            padding-left: 16px;
+            a {
+                position: relative;
+                display: inline-block;
+
+                color: $primary;
+                @extend %cursor-pointer;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+
+                    width: 100%;
+                    height: 1px;
+                    transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+                }
+            }
+            @include respond-to("md") {
+                padding-left: 12px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .product {
+        $this: &;
+        &#{$this}-hover {
+            @include hover() {
+                border: 1px solid $primary-400 !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    %min {
+        min-width: 320px;
+    }
+    main,
+    body {
+        @extend %min;
+        overflow: auto;
+    }
+}
+.swiper-button-next,
+.swiper-button-prev {
+    background: transparent;
+}
+
+@include respond-to("md") {
+    .fb_dialog,
+    .fb_dialog_content,
+    .fb_dialog_content iframe {
+        z-index: 1048 !important;
+    }
+    #fb-root .fb_customer_chat_icon,
+    .fb_dialog_content {
+        top: 80% !important;
+        left: 0 !important;
+    }
+    .fb_dialog_content {
+        iframe {
+            left: 0 !important;
+            bottom: 10% !important;
+        }
+    }
+}
+.touch-action {
+    touch-action: none;
+    -ms-touch-action: none;
+}
+.disable-scroll-safari {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden visible !important;
+    padding-right: 15px;
+
+    @include respond-to("md") {
+        padding-right: 0;
+    }
+}
+@include respond-to("md") {
+    .link {
+        &:before {
+            display: none;
+        }
+    }
+}
+.show-hide {
+    display: block;
+    @include respond-to("md") {
+        display: none;
+    }
+}

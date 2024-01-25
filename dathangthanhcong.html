@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- CSS file import -->
+  <link rel="stylesheet" href="css/system.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Js file import -->
+  <script src="js/libs/jquery-3.1.0.min.js"></script>
+  <script src="js/libs/swiper.min.js"></script>
+</head>
+
+<body>
+  <section class="lc-main p-y-48 p-y-md-0">
+    <div class="container cs-container">
+      <div class="lc-body radius-12 cart-final radius-none">
+        <div class="lc-head bg-white">
+          <!-- <div class="cart-title fs-p-20 fs-p-md-16 f-w-500 box-b-1 txt-gray-900 p-x-20 p-x-md-10 p-y-12 p-y-md-8">
+            ĐẶT HÀNG THÀNH CÔNG
+          </div> -->
+          <div class="cart-final txt-center p-x-24 p-y-24">
+            <div class="cart-icon m-b-8">
+              <i class="ic-check icon-circle-outline bg-success-200 txt-success"></i>
+            </div>
+            <div class="cart-mess">
+              <p class="fs-p-18 f-w-500 txt-gray-900">
+                Đặt hàng thành công
+              </p>
+              <p class="fs-p-16 fs-p-md-14 txt-gray-700">
+                Bộ phận chăm sóc khách hàng Nhà thuốc Long Châu sẽ liên hệ đến
+                quý khách trong vòng <strong>5 phút.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="lc-content">
+            <div class="table table-user m-b-md-8">
+              <div class="table-head box-b-2 p-y-8 p-x-20 p-x-md-10 p-y-md-10 bg-gray-100">
+                <div class="u-flex no-gutters align-items-center">
+                  <div class="col">
+                    <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16">
+                      Thông tin giao hàng
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-body bg-white p-x-20 p-x-md-10 p-x-md-10 p-t-8 p-b-16 p-x-md-10 p-y-md-0">
+                <table class="table">
+                  <tbody>
+                    <tr class="fs-p-16">
+                      <td class="txt-gray p-y-6 p-y-md-8">Số đơn hàng</td>
+                      <td class="txt-gray-700 p-y-6 p-y-md-8">
+                        <strong class="txt-primary-700 m-r-8">3079183</strong><span
+                          class="btn btn-sm btn-primary btn-rounded">Tra cứu đơn hàng</span>
+                      </td>
+                    </tr>
+                    <tr class="fs-p-16">
+                      <td class="txt-gray p-y-6 p-y-md-8">Họ và tên</td>
+                      <td class="txt-gray-700 p-y-6 p-y-md-8">Chị Vy</td>
+                    </tr>
+                    <tr class="fs-p-16">
+                      <td class="txt-gray p-y-6 p-y-md-8">Số điện thoại</td>
+                      <td class="txt-gray-700 p-y-6 p-y-md-8">0937108022</td>
+                    </tr>
+                    <tr class="fs-p-16">
+                      <td class="txt-gray p-y-6 p-y-md-8">Email</td>
+                      <td class="txt-gray-700 p-y-6 p-y-md-8">
+                        vynguyen1998@gmail.com
+                      </td>
+                    </tr>
+                    <tr class="fs-p-16">
+                      <td class="txt-gray p-y-6 p-y-md-8">
+                        Nhận tại nhà thuốc
+                      </td>
+                      <td class="txt-gray-700 p-y-6 p-y-md-8">
+                        422-424 Cách Mạng Tháng Tám, P.11, Q.3, TP. Hồ Chí
+                        Minh
+                      </td>
+                    </tr>
+                    <tr class="fs-p-16">
+                      <td class="txt-gray p-y-6 p-y-md-8">
+                        Thời gian dự kiến
+                      </td>
+                      <td class="txt-gray-700 p-y-6 p-y-md-8">
+                        Thứ 4, 24/02/2021
+                      </td>
+                    </tr>
+                    <tr class="fs-p-16">
+                      <td class="txt-gray p-y-6 p-y-md-8">
+                        Phương thức thanh toán
+                      </td>
+                      <td class="txt-gray-700 p-y-6 p-y-md-8">
+                        Trả tiền mặt khi nhận hàng
+                      </td>
+                    </tr>
+                    <tr class="fs-p-16">
+                      <td class="txt-gray p-y-6 p-y-md-8">Ghi chú yêu cầu</td>
+                      <td class="txt-gray-700 p-y-6 p-y-md-8">
+                        Đến nhận sau giờ hành chính
+                      </td>
+                    </tr>
+
+                    <!-- update tài khoản (12/11/2021) -->
+                    <tr class="account-bank fs-p-16">
+                      <td class="txt-gray p-y-6 p-y-md-8 ">Tài khoản tiếp nhận
+                        <br>hoàn tiền</td>
+                      <td class="account-bank-info txt-gray-700 p-y-6 p-y-md-8">
+                        <p class="m-b-4">
+                          <label class="cursor-default">Ngân hàng:</label> Ngân hàng thương mại cổ phần Ngoại thương Việt Nam (Vietcombank)
+                        </p>
+                        <p class="m-b-4">
+                          <span>Số thẻ:</span> <strong class="f-w-500">9704 1801 3107 8925</strong>
+                        </p>
+                        <p class="m-b-0">
+                          <span>Chủ thẻ:</span> <strong class="txt-uppercase f-w-500">NGUYEN NGOC QUYNH NHU</strong>
+                        </p>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+                <div class="account-bank-mobile none-block p-t-md-8 p-b-4 boder-t-2">
+                  <p class="fs-p-16 txt-gray">Hoàn tiền qua</p>
+                  <div class="account-bank-info m-t-4">
+                    <p class="txt-gray-700 m-b-8">
+                      <label class="cursor-default">Ngân hàng:</label> Ngân hàng thương mại cổ phần Ngoại thương Việt Nam (Vietcombank)
+                    </p>
+                    <p class="txt-gray-700 m-b-8">
+                      <span>Số thẻ:</span> <strong class="f-w-500">9704 1801 3107 8925</strong>
+                    </p>
+                    <p class="txt-gray-700 m-b-0">
+                      <span>Chủ thẻ:</span> <strong class="txt-uppercase f-w-500">NGUYEN NGOC QUYNH NHU</strong>
+                    </p>
+                  </div>
+                </div>
+                <!-- end update tài khoản (12/11/2021)  -->
+              </div>
+            </div>
+            <div class="table table-user m-b-md-8">
+              <div class="table-head box-b-2 p-y-8 p-x-20 p-x-md-10 p-y-md-10 bg-gray-100">
+                <div class="u-flex no-gutters align-items-center">
+                  <div class="col">
+                    <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16">
+                      Thông tin nhận hàng &amp; thanh toán
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-body bg-white p-x-20 p-x-md-10 p-x-md-10 p-t-8 p-b-16 p-x-md-10 p-y-md-0">
+                <table class="table">
+                  <tbody>
+
+
+
+
+                    <tr class="fs-p-16">
+                      <td class="txt-gray p-y-6 p-y-md-8">Nhận hàng tại</td>
+                      <td class="txt-gray-700 p-y-6 p-y-md-8">
+                        422-424 Cách Mạng Tháng Tám, P.11, Q.3, TP. Hồ Chí
+                        Minh
+                      </td>
+                    </tr>
+                    <tr class="fs-p-16">
+                      <td class="txt-gray p-y-6 p-y-md-8">
+                        Thời gian dự kiến
+                      </td>
+                      <td class="txt-gray-700 p-y-6 p-y-md-8">
+                        Thứ 4, 24/02/2021
+                      </td>
+                    </tr>
+                    <tr class="fs-p-16">
+                      <td class="txt-gray p-y-6 p-y-md-8">
+                        Phương thức thanh toán
+                      </td>
+                      <td class="txt-gray-700 p-y-6 p-y-md-8">
+                        Trả tiền mặt khi nhận hàng
+                      </td>
+                    </tr>
+                    <tr class="fs-p-16">
+                      <td class="txt-gray p-y-6 p-y-md-8">Ghi chú yêu cầu</td>
+                      <td class="txt-gray-700 p-y-6 p-y-md-8">
+                        Đến nhận sau giờ hành chính
+                      </td>
+                    </tr>
+
+                    <!-- update tài khoản (12/11/2021) -->
+
+
+                  </tbody>
+                </table>
+
+                <div class="account-bank-mobile none-block p-t-md-8 p-b-4 boder-t-2">
+                  <p class="fs-p-16 txt-gray">Hoàn tiền qua</p>
+                  <div class="account-bank-info m-t-4">
+                    <p class="txt-gray-700 m-b-8">
+                      <label class="cursor-default">Ngân hàng:</label> Ngân hàng thương mại cổ phần Ngoại thương Việt Nam (Vietcombank)
+                    </p>
+                    <p class="txt-gray-700 m-b-8">
+                      <span>Số thẻ:</span> <strong class="f-w-500">9704 1801 3107 8925</strong>
+                    </p>
+                    <p class="txt-gray-700 m-b-0">
+                      <span>Chủ thẻ:</span> <strong class="txt-uppercase f-w-500">NGUYEN NGOC QUYNH NHU</strong>
+                    </p>
+                  </div>
+                </div>
+                <!-- end update tài khoản (12/11/2021)  -->
+              </div>
+            </div>
+            <div class="table table-user">
+              <div class="table-head box-b-2 p-y-8 p-x-20 p-x-md-10 p-y-md-10 bg-gray-100">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16">
+                      Thông tin đơn hàng
+                    </div>
+                  </div>
+                  <div class="col-6 col-hidden">
+                    <div class="row row-cols-3">
+                      <div class="col">
+                        <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16 txt-left">
+                          Quy cách
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16 txt-center">
+                          Số lượng
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16 txt-right">
+                          Thành tiền
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-body p-x-md-10 bg-white p-x-20">
+                <div class="row p-t-16 p-b-8 box-b-1">
+                  <div class="col-6 col-sm-12">
+                    <div class="u-flex no-gutters">
+                      <div class="item-img m-r-8">
+                        <a href="">
+                          <img src="https://via.placeholder.com/300x300" alt="" />
+                        </a>
+                      </div>
+                      <div class="item-info col">
+                        <h3 class="item-tit truncate2">
+                          <a href="" class="txt-gray-800 fs-p-16">Viên Uống Bổ Sung Vitamin Và Khoáng Chất Calcium
+                            Plus Puri Walgreen</a>
+                        </h3>
+                        <div class="item-mess">
+                          <ul class="list-group list-disc-small">
+                            <li class="txt-gray-600">
+                              Tặng 1 suất mua sản phẩm thực phẩm chức năng
+                              giảm đến 40%
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="item-detai--mb m-t-8">
+                          <div class="u-flex justify-between">
+                            <div class="item-detail--mb__left">
+                              <p class="fs-p-14 txt-gray-700 f-w-400 m-b-4">
+                                Quy cách: Hộp 60 viên
+                              </p>
+                              <p class="fs-p-14 txt-gray-700 f-w-400">
+                                Số lượng: 1
+                              </p>
+                            </div>
+                            <div class="item-detail--mb__right">
+                              <p class="fs-p-14 f-w-500 txt-gray-700">
+                                234.000đ
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-hidden">
+                    <div class="row row-cols-3">
+                      <div class="col">
+                        <div class="fs-p-16 txt-gray-700 f-w-400">
+                          Hộp 60 viên
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="fs-p-16 txt-gray-700 f-w-400 txt-center">
+                          1
+                        </div>
+                      </div>
+                      <div class="col txt-right">
+                        <div class="fs-p-16 txt-gray-700 f-w-500">
+                          200.000đ
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-t-16 p-b-8 box-b-1">
+                  <div class="col-6 col-sm-12">
+                    <div class="u-flex no-gutters">
+                      <div class="item-img m-r-8">
+                        <a href="">
+                          <img src="https://via.placeholder.com/300x300" alt="" />
+                        </a>
+                      </div>
+                      <div class="item-info col">
+                        <h3 class="item-tit truncate2">
+                          <a href="" class="txt-gray-800 fs-p-16">Nước Xịt Khoáng Vichy Eau Thermale Mineralizing
+                            Thermal Water 150ml</a>
+                        </h3>
+                        <div class="item-mess">
+                          <ul class="list-group list-disc-small">
+                            <li class="txt-gray-600">
+                              Giảm giá 10% khi mua 1 sản phẩm
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="item-detai--mb m-t-8">
+                          <div class="u-flex justify-between">
+                            <div class="item-detail--mb__left">
+                              <p class="fs-p-14 txt-gray-700 f-w-400 m-b-4">
+                                Quy cách: Hộp 60 viên
+                              </p>
+                              <p class="fs-p-14 txt-gray-700 f-w-400">
+                                Số lượng: 1
+                              </p>
+                            </div>
+                            <div class="item-detail--mb__right">
+                              <p class="fs-p-14 f-w-500 txt-gray-700 m-b-4">
+                                234.000đ
+                              </p>
+                              <strike class="fs-p-14 f-w-500 txt-gray">260.000đ</strike>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-hidden">
+                    <div class="row row-cols-3">
+                      <div class="col">
+                        <div class="fs-p-16 txt-gray-700 f-w-400">
+                          Chai 150ml
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="fs-p-16 txt-gray-700 f-w-400 txt-center">
+                          1
+                        </div>
+                      </div>
+                      <div class="col txt-right">
+                        <div class="fs-p-16 txt-gray-700 f-w-500">
+                          234.000đ
+                        </div>
+                        <strike class="fs-p-16 f-w-400 txt-gray m-t-4">
+                          260.000đ
+                        </strike>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="check-final p-t-16 p-b-24 p-b-md-16 p-x-0 u-flex justify-end">
+                  <div class="cart-check">
+                    <ul>
+                      <li>
+                        <span>Tổng tiền</span>
+                        <span>434.000đ</span>
+                      </li>
+                      <li>
+                        <span>Khuyến mãi giảm</span>
+                        <span>-26.000đ</span>
+                      </li>
+                      <li>
+                        <span>Phí giao hàng</span>
+                        <span>15.000đ</span>
+                      </li>
+                      <li>
+                        <span>Cần thanh toán</span>
+                        <span>423.000đ</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-final--btn box-t-1 u-flex justify-center p-y-24 p-y-md-16">
+              <a class="btn btn-xl btn-lg-sm btn-rounded btn-primary">VỀ TRANG CHỦ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/functions.js"></script>
+</body>
+
+</html>

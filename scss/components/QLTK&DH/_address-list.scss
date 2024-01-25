@@ -1,0 +1,65 @@
+.address {
+  &__table {
+    border: 1px solid #d8e0e8;
+    border-radius: 12px;
+    @include respond-to("md") {
+      border: none;
+    }
+  }
+  &__item {
+    padding-bottom: 12px;
+    &:not(:first-child) {
+      padding-top: 12px;
+    }
+    @include respond-to("md") {
+      background-color: $white-100;
+      padding: 8px 16px;
+      // box-shadow: none !important
+
+      border-radius: 12px;
+      padding-bottom: 0;
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+    &--name,
+    &--detail,
+    &--status {
+      max-width: 564px;
+    }
+
+    &--button {
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: 12px;
+      @include respond-to("md") {
+        position: initial !important;
+        right: initial;
+        top: initial;
+        transform: unset;
+        box-shadow: inset 0px 1px 0px #e4eaf1;
+        margin-right: -16px;
+        margin-left: -16px;
+        .btn__wrapper {
+          padding: 10px 0;
+          flex-basis: 50%;
+          text-align: center;
+          &:first-child {
+            box-shadow: inset -1px 0px 0px #e4eaf1;
+          }
+        }
+        a {
+          border: none !important;
+          color: #52637a;
+          font-weight: 400;
+          padding: 0 !important;
+          height: auto;
+          span {
+            font-weight: inherit !important;
+          }
+        }
+      }
+    }
+  }
+}

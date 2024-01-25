@@ -1,0 +1,42 @@
+.table__gpdk {
+  & > thead > tr > th {
+    text-align: left;
+    border: 1px solid #e4eaf1;
+  }
+  td {
+    border: 1px solid #e4eaf1;
+    webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:first-child {
+      width: fit-content;
+    }
+    &:last-child {
+      padding-left: 16px;
+    }
+  }
+}
+
+.table-gpkd-mb {
+  td {
+    webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+.lc__gpdk {
+  .form-search-input {
+    overflow: hidden;
+    flex: 1;
+  }
+  .form-search-icon {
+    position: initial !important;
+  }
+}

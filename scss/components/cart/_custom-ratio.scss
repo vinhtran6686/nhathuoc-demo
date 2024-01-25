@@ -1,0 +1,31 @@
+.custom-ratio {
+    .modal-wrapper {
+        max-width: 576px;
+    }
+    .paragraph-desc{
+        max-width: 442px;
+        margin: auto;
+    }
+    .modal-shape{
+        width: 64px;
+        height: 64px;
+    }
+    @include respond-to("md") {
+        .modal-shape{
+            width: 48px;
+            height: 48px;
+            font-size: 24px;
+            i{
+                font-size: inherit !important;
+            }
+        }
+    }
+}
+#tuvanthanhcong{
+    .modal-body{
+        p{
+            max-width: 470px;
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import "../components/rules/tab-list";
+@import "../components/rules/custom-list";
+@import "../components/rules/chinhsachtragop";
+@import "../components/rules/chinhsachdoitra";
+@import "../components/rules/thong-tin-gpdk";
+.tab-rule {
+  position: sticky;
+  top: 12px;
+}
+
+.listlink-mb {
+  .list-group {
+    li {
+      &::before {
+        color: $primary-500;
+      }
+    }
+  }
+}
+
+.lc__font-custom {
+  @include respond-to("md") {
+    .ppc-typography-heading4 {
+      font-size: 20px !important;
+      line-height: 28px !important;
+    }
+    .ppc-typography-heading5,
+    .paragraph-normal,
+    .list li {
+      font-size: 16px !important;
+      line-height: 24px !important;
+    }
+  }
+  .callout {
+    &-content {
+      font-size: 16px !important;
+      line-height: 24px !important;
+    }
+  }
+}

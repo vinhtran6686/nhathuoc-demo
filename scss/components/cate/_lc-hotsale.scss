@@ -1,0 +1,42 @@
+.lc-hotsale {
+  &_inner {
+    background: linear-gradient(270deg, #072d94 0.46%, #597bd9 98.15%);
+    padding: 16px 16px 20px;
+    border-radius: 12px;
+    @include respond-to("md") {
+      border-radius: unset;
+      padding: 16px 10px 16px;
+    }
+  }
+  .swiper-container {
+    .lc-slide {
+      .product {
+        border-radius: 8px !important;
+      }
+    }
+  }
+  .slide-container {
+    .swiper-button-prev {
+      margin-left: -20px;
+    }
+    .swiper-button-next {
+      margin-right: -20px;
+    }
+  }
+}
+
+.cate-hotsale {
+  @include respond-to("md") {
+    margin: 0 -10px;
+    background: #edf2f8;
+    a {
+      font-weight: 500;
+    }
+  }
+  .lc-slide {
+    height: auto;
+    .product {
+      height: 100%;
+    }
+  }
+}

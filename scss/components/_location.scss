@@ -1,0 +1,127 @@
+.feature__location {
+  &-inner {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .check-form + .alert {
+    display: none;
+  }
+  .check-form.is-invalid {
+    + .alert {
+      display: inline-flex;
+    }
+  }
+  .address-item {
+    padding-right: 12px;
+    padding-left: 12px;
+    &:not(:first-child) {
+      box-shadow: inset 0px 1px 0px #e4eaf1;
+    }
+    &:hover {
+      background-color: $gray-100;
+    }
+    .alert {
+      span {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      [class*="alert-ic"] {
+        margin-top: -2px;
+      }
+    }
+    .radio {
+      cursor: pointer;
+      align-items: start;
+      margin-right: 116px;
+      label {
+        align-items: start;
+        flex: 1;
+      }
+      @include respond-to("md") {
+        margin-right: 0;
+      }
+    }
+    .radio input[type="radio"]:after,
+    .radio input[type="radio"]:before {
+      top: 2px;
+    }
+
+    .cs-map {
+      display: inline-flex !important;
+      min-width: 110px;
+      font-weight: 500;
+      position: absolute;
+      right: 12px;
+      top: 8px;
+      @include respond-to("md") {
+        display: none !important;
+      }
+    }
+    .lct-txt {
+      padding-right: 4px;
+      word-break: break-word;
+    }
+    &.checked {
+      .lct-txt {
+        font-weight: 500;
+      }
+    }
+  }
+  .cs-map {
+    min-width: 110px;
+  }
+  .rs-view {
+    box-shadow: inset 0px 1px 0px #e4eaf1;
+  }
+}
+
+.tab-location {
+  .feature__location {
+    .address-item .radio {
+      margin-right: 0;
+    }
+  }
+}
+@include respond-to("md") {
+  .address-item {
+    .radio {
+      padding-right: 0;
+    }
+  }
+}
+.rs-view {
+  a {
+    overflow-anchor: none;
+  }
+}
+.cart-bottom {
+  .feature__location-inner {
+    display: flex;
+    flex-direction: column;
+    .address-item,.rs-view{
+      order: 2;
+      &.active{
+        order: 1;
+        box-shadow: inset 0px -1px 0px #e4eaf1;
+      }
+      &:last-child.active {
+        box-shadow: inset 0px -1px 0px #e4eaf1;
+      }
+    }
+    .rs-view{
+      // box-shadow: none;
+    }
+  }
+}
+.location-block{
+  .feature__location-inner {
+    display: flex;
+    flex-direction: column;
+    .address-item,.rs-view{
+      order: 2;
+      &.active{
+        order: 1;
+      }
+    }
+  }
+}

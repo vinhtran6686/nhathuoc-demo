@@ -1,0 +1,42 @@
+@import "../components/cate/cate-product";
+@import "../components/cate/cate-filter";
+@import "../components/cate/lc-hotsale";
+@import "../components/cate/cate-highlight";
+@import "../components/cate/filter-side";
+@import "../components/cate/tmp-item";
+@import "../components/cate/cate-brand";
+
+.cate {
+  &-inner {
+    overflow: hidden;
+    @include respond-to("md") {
+      overflow: unset;
+    }
+  }
+  .breadcrumb {
+    @include respond-to("md") {
+      margin: 0 -10px !important;
+    }
+  }
+}
+.lc-cate {
+  .container {
+    padding-right: 12px !important;
+    padding-left: 12px !important;
+  }
+  @include respond-to("md") {
+    // margin-bottom: 16px;
+    .container {
+      padding-right: 10px !important;
+      padding-left: 10px !important;
+    }
+  }
+}
+
+.txt-capitalize {
+  text-transform: capitalize;
+}
+
+.txt-italic {
+  font-style: italic;
+}

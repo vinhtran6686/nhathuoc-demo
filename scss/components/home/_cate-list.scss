@@ -1,0 +1,58 @@
+.cate-list-tmp {
+    .reset-col {
+        @extend .m-b-16;
+    }
+    .reset-row .reset-col {
+        .product {
+            height: 100%;
+            @extend .m-b-0;
+            picture{
+                // @include aspect-ratio(100,100,0);
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                padding: 0;
+            }
+            &-image{
+                padding: 0 26px;
+            }
+            &-name {
+                @extend .f-w-500;
+            }
+            a {
+                @extend .m-b-0;
+            }
+        }
+    }
+    @include respond-to("md") {
+        .row {
+            flex-wrap: nowrap;
+            .col-2 {
+                flex-basis: calc(100% / 3.4);
+                max-width: calc(100% / 3.4);
+            }
+        }
+        .reset-col {
+            @extend .m-b-md-8;
+        }
+        .reset-row .reset-col {
+            .product {
+                &-image{
+                    padding: 0 12px;
+                }
+            }
+        }
+    }
+    @include respond-to('sm'){
+        .reset-row .reset-col {
+            .product {
+                picture{
+                    // @include aspect-ratio(64,64,0);
+                    width: 64px;
+                height: 64px;
+
+                }
+            }
+        }
+    }
+}

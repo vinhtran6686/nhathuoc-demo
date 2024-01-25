@@ -1,0 +1,119 @@
+.lc-detail {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.lc__section {
+  &-comment {
+    .lc-reply {
+      textarea {
+        padding-bottom: 10px !important;
+
+        &::placeholder {
+          font-size: inherit !important;
+          line-height: inherit !important;
+        }
+        @include respond-to("md") {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+      }
+      .alert {
+        height: auto;
+        span {
+          font-size: 16px !important;
+        }
+      }
+      @include respond-to("md") {
+        .alert {
+          span {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
+  &-review {
+    .reviews {
+      // margin-bottom: 0 !important;s
+    }
+  }
+}
+
+.comment {
+  .dropdown-menu {
+    right: 0;
+    min-width: max-content;
+  }
+}
+
+.lc-box {
+  @include respond-to("md") {
+    &.comment {
+      margin-bottom: 16px !important;
+    }
+  }
+}
+.lc__section-comment {
+  @include respond-to("md") {
+    margin-bottom: 16px;
+  }
+}
+
+.modal {
+  &-header {
+    h2,
+    div {
+      font-size: 24px;
+    }
+  }
+  .form-err {
+    margin-top: 8px !important;
+  }
+  .check-form.check-form-review.is-invalid {
+    + .form-err {
+      margin-top: -4px !important;
+    }
+  }
+  .alert {
+    height: auto;
+  }
+  textarea {
+    + .alert {
+      padding-top: 8px !important;
+    }
+  }
+  .lc__reviews-rating {
+    .alert {
+      margin-top: 8px !important;
+    }
+  }
+}
+
+.lc__cmt {
+  &-content--full {
+    table tr,
+    td {
+      border: none !important;
+    }
+    a {
+      color: $primary-500;
+    }
+    * {
+      font-family: Roboto, Arial, Helvetica, sans-serif !important;
+      font-size: 16px !important;
+      line-height: 24px;
+    }
+    @include respond-to('md'){
+      * {
+        font-size: 14px !important;
+        line-height: 20px !important;
+      }
+    }
+  }
+  &-status {
+    .ic-circle-md {
+      font-size: 4px !important;
+    }
+  }
+}

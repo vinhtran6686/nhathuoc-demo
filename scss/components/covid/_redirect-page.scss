@@ -1,0 +1,18 @@
+.redirect {
+  &__block {
+    padding: $section-spacing-y-desktop 24px;
+  }
+  &__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: #fff;
+    box-shadow: 0 0 0 1px #d8e0e8;
+    border-radius: 50%;
+    outline: none;
+  }
+}

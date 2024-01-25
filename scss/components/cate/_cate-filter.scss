@@ -1,0 +1,242 @@
+.lc__filter {
+  // box-shadow: 0 0 0 1px $gray-300;
+  top: 6px;
+  &-group {
+    .group-button {
+      a {
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+        &.active {
+          background: #1d48ba;
+          color: #fff !important;
+        }
+      }
+      @include respond-to("lg") {
+        a {
+          font-size: 12px;
+          line-height: 12px;
+        }
+      }
+      @include respond-to("md") {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        a:last-child {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    .price-range {
+      .line-range {
+        width: 8px;
+        height: 2px;
+        background-color: $gray-300;
+        margin: 0 8px;
+      }
+    }
+    .form-search {
+      position: relative;
+      .form-search-close {
+        position: absolute;
+        top: 6px;
+        right: 8px;
+      }
+    }
+  }
+}
+
+// .color__filter {
+//   &--item {
+//     border-radius: 50%;
+//     position: relative;
+//     cursor: pointer;
+//     display: inline-flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 24px;
+//     height: 24px;
+//     border: 1px solid #d8e0e8;
+//   }
+// }
+
+.van-de-mau-sac_filter {
+  .checkbox:not(:first-child) {
+    span.label-text {
+      position: relative;
+      display: inline-block;
+      padding-left: 28px;
+      &::before {
+        content: "";
+        position: absolute;
+        height: 24px;
+        width: 24px;
+        left: 0;
+        border-radius: 50%;
+        border: 1px solid #d8e0e8;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &.filter-hong {
+      span.label-text {
+        &::before {
+          background-color: #ff75c8;
+        }
+      }
+    }
+    &.filter-nau {
+      span.label-text {
+        &::before {
+          background-color: #8c4300;
+        }
+      }
+    }
+    &.filter-do {
+      span.label-text {
+        &::before {
+          background-color: #ef4444;
+        }
+      }
+    }
+    &.filter-xanh {
+      span.label-text {
+        &::before {
+          background-color: #4299e1;
+        }
+      }
+    }
+    &.filter-tim {
+      span.label-text {
+        &::before {
+          background-color: #7b61ff;
+        }
+      }
+    }
+    &.filter-vang {
+      span.label-text {
+        &::before {
+          background-color: #fbbf24;
+        }
+      }
+    }
+    &.filter-cam {
+      span.label-text {
+        &::before {
+          background-color: #f37021;
+        }
+      }
+    }
+
+    &.filter-xanh-la {
+      span.label-text {
+        &::before {
+          background-color: #4cb816;
+        }
+      }
+    }
+    &.filter-da {
+      span.label-text {
+        &::before {
+          background-color: #ffd3b4;
+        }
+      }
+    }
+    &.filter-xam {
+      span.label-text {
+        &::before {
+          background-color: #b6c0ce;
+        }
+      }
+    }
+    &.filter-trang {
+      span.label-text {
+        &::before {
+          background-color: #fff;
+        }
+      }
+    }
+    &.filter-den {
+      span.label-text {
+        &::before {
+          background-color: #000;
+        }
+      }
+    }
+    &.filter-trang-nga-vang-niken {
+      span.label-text {
+        &::before {
+          background-color: #fffff0;
+        }
+      }
+    }
+  }
+}
+.switch-toggle,
+.filter-side .switch-toggle {
+  input[type="checkbox"] {
+    width: 28px;
+    height: 16px;
+    &:after {
+      width: inherit;
+      height: inherit;
+      border-radius: 100px;
+      background: #b6c0ce;
+    }
+    &:before {
+      content: "";
+      border-radius: 100px;
+      background: #fff;
+      box-shadow: none;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+
+      top: 2px;
+      left: 2px;
+      transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+    }
+
+    &:checked {
+      &:before {
+        left: calc(100% - 14px);
+      }
+    }
+  }
+}
+.filter-side .switch-toggle {
+  @include respond-to("md") {
+    input[type="checkbox"] {
+      &:after {
+        background-color: #b6c0ce !important;
+        box-shadow: none;
+      }
+      &:checked {
+        &:after {
+          background-color: #1d48ba !important;
+        }
+      }
+    }
+  }
+}
+
+.lc__filter {
+  .group-checkbox {
+    display: flex;
+    flex-direction: column;
+  }
+  .checkbox {
+    &:not(.filterAll) {
+      order: 2;
+    }
+    &.checked {
+      order: 1;
+    }
+  }
+}
+.group-checkbox {
+  .checkbox input[type="checkbox"]:checked ~ .label-text {
+    font-weight: 500;
+  }
+}

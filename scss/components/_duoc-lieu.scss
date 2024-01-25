@@ -1,0 +1,22 @@
+.medicine__section {
+  margin-bottom: 24px;
+  &:not(:first-child):not(:nth-last-child(2)):not(:last-child) {
+    box-shadow: inset 0px -1px 0px #e4eaf1;
+  }
+  @include respond-to("md") {
+    margin-bottom: 16px;
+  }
+}
+
+.lc-quytrinhxuly {
+  .quytrinhxuly-img {
+    margin-right: 44px;
+    width: 328px;
+  }
+  @include respond-to("md") {
+    display: block !important;
+    .quytrinhxuly-img {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.product-count {
+  .button-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+
+    background-color: $white;
+    border: 1px solid $gray-300;
+    box-sizing: border-box;
+
+    outline: none;
+    &-large{
+      width: 36px;
+      height: 36px;
+      @include respond-to('sm'){
+        width: 28px;
+        height: 28px;
+        & + input{
+          padding: 4px 8px;
+          height: 28px;
+        }
+      }
+    }
+    &:first-child {
+      border-radius: 100px 0 0 100px;
+    }
+    &:last-child {
+      border-radius: 0 100px 100px 0;
+    }
+    i {
+      font-size: 12px;
+      color: $gray-600;
+    }
+    &.disabled {
+      border: 1px solid $gray-300;
+      background-color: $gray-100;
+      pointer-events: none;
+      > i {
+        color: $gray-400;
+      }
+    }
+  }
+  .number-product {
+    max-width: 40px;
+    padding: 6px;
+
+    border-radius: 0;
+    border-right: 0;
+    border-left: 0;
+    background-color: $white;
+    outline: none;
+
+    font-weight: 500;
+    color: $gray-700;
+  }
+}

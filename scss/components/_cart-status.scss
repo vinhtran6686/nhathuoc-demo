@@ -1,0 +1,32 @@
+.cart-status {
+  max-width: 576px;
+  width: 100%;
+  margin: 0 auto;
+  @include respond-to('sm') {
+    border-radius: 0;
+  }
+}
+
+.cart-waiting {
+  padding-top: 32px;
+  padding-bottom: 44px;
+  .cart__fail-body {
+    padding: 24px 12px;
+    color: $gray-700;
+  }
+  .waiting-desc {
+    padding: 0 100px;
+  }
+  @include respond-to('sm') {
+    padding: 0;
+    .cart__fail-body {
+      max-width: 100%;
+      padding: 44px 10px;
+      border-radius: 0 !important;
+      box-shadow: none;
+    }
+    .waiting-desc {
+      padding: 0;
+    }
+  }
+}

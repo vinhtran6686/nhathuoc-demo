@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" class="covid-html">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- CSS file import -->
+  <link rel="stylesheet" href="css/system.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header.css" />
+
+  <!-- Js file import -->
+  <script src="js/libs/jquery-3.1.0.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="main-header">
+        <div class="lc-header m-x-md-10 p-y-md-12">
+            <div class="container">
+                <div class="lc-header-inner">
+                    <div class="lch-logo">
+                        <a href="https://nhathuoclongchau.com" onclick="ga('send', 'event', 'Header ', 'Click Header', 'Header - Logo');">
+                            <picture>
+                                <img src="images/longchau-logo.svg" alt="logo" />
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <section class="lc__main lc-listen-customer relative p-y-40 p-y-md-24">
+    <div class="lc__section section-bg position-absolute top-0 right-0 left-0">
+      <picture>
+        <source media="(max-width: 992px)" srcset="images/bg-donthuoc-mb.png">
+        <img src="images/bg-donthuoc.png" alt="">
+      </picture>
+    </div>
+
+    <div class="lc__section lc__heading relative">
+      <div class="container">
+        <div class="lc__head txt-center m-b-32 txt-white m-b-md-24">
+          <h1 class="lc__title m-b-8 txt-white fs-p-32 fs-p-md-24 f-w-500">LONG CHÂU LẮNG NGHE &amp; CẢI TIẾN</h1>
+        </div>
+      </div>
+    </div>
+    <!-- note account -->
+    <div class="lc__section section-box m-b-20">
+      <div class="lc__body radius-12 box-full bg-white p-x-40 p-y-24 p-x-md-16 p-y-md-16 m-x-md-10">
+
+        <!-- lc__body-content 1 -->
+        <div class="lc__body-content lc__body-content-1 m-b-20">
+          <div class="txt-note p-b-10">
+            <p class="fs-p-16">Long Châu biết rằng anh, chị đã từng không vui với trải nghiệm từng có tại nhà thuốc. Chúng em rất mong được anh chị dành 2 phút "trút giận", góp ý thẳng thắn giúp chúng em sửa chữa và cải tiến tốt hơn.</p>
+          </div>
+
+          <!-- <div class="lc-wrap-account u-flex justify-between p-t-10 p-b-4">
+            <div class="left fs-p-16">
+              <span class="lc-account-email">
+                <picture>
+                  <img src="images/icon/ic-close-eyes.svg" alt="">
+                </picture>
+                thanhthao1619@gmail.com
+              </span>
+              <span class="lc-account-note txt-gray-600">(not shared)</span>
+              <a href="#" class="lc-account-link">Switch account</a>
+            </div>
+
+            <div class="right p-y-md-4">
+              <p class="txt-save">
+                <picture>
+                  <img src="images/icon/ic-save-cloud.svg" alt="">
+                </picture>
+                <span class="fs-p-14 txt-gray-600" aria-controls="modalAutoSave">Draft restored</span>
+              </p>
+            </div>
+
+          </div>
+
+          <p class="txt-required txt-danger-700 fs-p-15">* Required</p> -->
+
+        </div>
+        <!-- end lc__body-content 1 -->
+
+        <!-- lc__body-content-2 -->
+        <div class="lc__body-content lc__body-content-2 m-b-20">
+          <p class="p-b-10 txt-gray-700 fs-p-18 fs-p-md-16 f-w-500">Anh chị không hài lòng với nhà thuốc Long Châu vì những lý do gì? <span class="txt-danger-700">*</span></p>
+
+          <!-- check-form-1 -->
+          <div class="no-gutters check-form">
+            <div class="radio radio-sm align-items-center p-b-6">
+              <input type="radio" value="radio1" name="grp1" id="ex1">
+              <label for="ex1">Chờ đợi lâu, phục vụ chậm</label>
+            </div>
+            <div class="radio radio-sm align-items-center p-b-6">
+              <input type="radio" value="radio2" name="grp1" id="ex2">
+              <label for="ex2">Tay nghề dược sĩ không như mong đợi</label>
+            </div>
+            <div class="radio radio-sm align-items-center p-b-6">
+              <input type="radio" value="radio3" name="grp1" id="ex3">
+              <label for="ex3">Thái độ nhân viên không thân thiện, nhiệt tình</label>
+            </div>
+            <div class="radio radio-sm align-items-center p-b-6">
+              <input type="radio" value="radio4" name="grp1" id="ex4">
+              <label for="ex4">Thường thiếu thuốc</label>
+            </div>
+            <div class="radio radio-sm align-items-center p-b-6">
+              <input type="radio" value="radio5" name="grp1" id="ex5">
+              <label for="ex5">Giá đắt</label>
+            </div>
+            <div class="radio radio-sm align-items-center p-b-6">
+              <input type="radio" value="radio6" name="grp1" id="ex6">
+              <label for="ex6">Giao hàng trễ</label>
+            </div>
+            <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+              <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+              <span class="alert_phone">Thông tin bắt buộc</span>
+            </div>
+          </div>
+        </div>
+        <!-- end lc__body-content 2 -->
+
+        <!-- lc__body-content 3 -->
+        <div class="lc__body-content lc__body-content-3 m-b-20">
+          <p class="p-b-10 txt-gray-700 fs-p-18 fs-p-md-16 f-w-500">Góp ý khác</p>
+
+          <!-- check-form-2 -->
+          <div class="no-gutters check-form-2">
+            <div class="wrap-textarea js-info">
+              <textarea class="p-b-4 fs-p-16 txt-gray js-info-textbox form-input" id="us-comment" name="review" placeholder="Nhập thông tin"></textarea>
+              <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                <span class="alert_phone">Thông tin bắt buộc</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- end lc__body-content 3 -->
+
+
+        <!-- lc__body-content 4 -->
+        <div class="lc__body-content lc__body-content-4 m-b-20">
+          <p class="p-b-10 txt-gray-700 fs-p-18 fs-p-md-16 f-w-500">Tên người góp ý <span class="txt-danger-700">*</span></p>
+
+          <!-- check-form-3 -->
+          <div class="no-gutters check-form-3">
+            <div class="form-group js-info">
+              <input type="text" class="form-input form-input-lg js-info-textbox compulsory" placeholder="Nhập thông tin" maxlength="60" name="ho_ten">
+              <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert alert_phone">
+                <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                <span class="alert_phone">Thông tin bắt buộc</span>
+              </div>
+          </div>
+          </div>
+
+        </div>
+        <!-- end lc__body-content 4 -->
+
+        <!-- lc__body-content 5 -->
+        <div class="lc__body-content lc__body-content-5 m-b-20">
+          <p class="p-b-10 txt-gray-700 fs-p-18 fs-p-md-16 f-w-500">Số điện thoại <span class="txt-danger-700">*</span></p>
+
+          <!-- check-form-3 -->
+          <div class="no-gutters check-form-4">
+            <div class="form-group">
+              <input type="text" class="form-input form-input-lg js-info-textbox compulsory" placeholder="Nhập thông tin" name="phone">
+              <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert alert_phone">
+                <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                <span class="">Thông tin bắt buộc</span>
+            </div>
+          </div>
+          </div>
+
+        </div>
+        <!-- end lc__body-content 5 -->
+
+
+        <div class="txt-note p-b-10">
+          <p class="fs-p-16">Chúng em rất mong nhận được góp ý, chia sẻ từ anh, chị để ngày càng tốt hơn.</p>
+          <p class="fs-p-16">Và mong rằng anh chị cho chúng em cơ hội "sửa sai".</p>
+          <p class="fs-p-16">Chân thành cám ơn! </p>
+        </div>
+
+        <div class="lc__btn lc__btn--cta txt-center p-t-8 p-t-md-0 ">
+          <a href="" class="btn btn-primary btn-xl circle btn-lg-md txt-uppercase m-r-10 js-submit">
+            gửi thông tin
+          </a>
+          <a href="" class="btn btn-gray btn-xl circle btn-lg-md txt-uppercase js-clear" aria-controls="modalClear">
+            Xóa thông tin
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+  <footer class="lc__footer">
+    <div class="lc__find bg-primary-700 p-y-12 p-y-md-10">
+      <div class="container">
+        <div class="lc__find-inner">
+          <div class="u-flex justify-between align-items-center">
+            <div class="lc__find-link">
+              <a href="https://test.nhathuoclongchau.com/he-thong-cua-hang" class="u-flex align-items-center txt-white">
+                <i class="ic-location fs-ui-28 m-r-14 fs-ui-md-20 m-r-md-8"></i>
+                <span class="fs-p-24 fs-p-md-16 inline-none">Xem hệ thống 200 nhà thuốc toàn quốc</span>
+                <span class="fs-p-md-16 none-block">Hệ thống nhà thuốc</span>
+              </a>
+            </div>
+            <div class="lc__find-btn">
+              <a href="https://test.nhathuoclongchau.com/he-thong-cua-hang" class="btn btn-lg btn-primary circle bg-primary-300 btn-md-sm">
+                <span class="block-none">Xem danh sách nhà thuốc</span>
+                <span class="none-block fs-ui-14">Xem danh sách</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lc__body p-y-24  p-t-md-12 p-b-md-0">
+      <div class="container">
+        <div class="row relative">
+          <div class="col-7 col-md-12 order-mb-2">
+            <div class="footer__link js-accordion">
+              <div class="row">
+                <div class="col-4 col-md-12 footer-col">
+                  <div class="accordion-item p-y-0 p-x-0 p-x-md-10 p-y-md-12 js-acc">
+                    <div class="accordion-title">
+                      <div class="txt-uppercase fs-p-14 txt-gray-700 f-w-500">
+                        VỀ CHÚNG TÔI
+                      </div>
+                    </div>
+                    <div class="accordion-icon none-block">
+                      <i class="ic-angle-down ac-down txt-gray-700"></i>
+                    </div>
+                    <div class="accordion-details p-t-8 p-t-md-12">
+                      <ul>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/gioi-thieu" class="link fs-ui-14 f-w-400 ">Giới thiệu</a>
+                        </li>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/he-thong-cua-hang" class="link fs-ui-14 f-w-400 ">Hệ thống cửa hàng</a>
+                        </li>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/chinh-sach-doi-tra" class="link fs-ui-14 f-w-400 ">Chính sách đổi trả</a>
+                        </li>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/chinh-sach-giao-hang" class="link fs-ui-14 f-w-400 ">Chính sách giao hàng</a>
+                        </li>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/chinh-sach-bao-mat" class="link fs-ui-14 f-w-400 ">Chính sách bảo mật</a>
+                        </li>
+                        <li>
+                          <a href="http://hddt.nhathuoclongchau.com/" class="link fs-ui-14 f-w-400 ">Kiểm tra hóa đơn điện tử</a>
+                        </li>
+                        <li>
+                          <a class="link fs-ui-14 f-w-400 ">
+                            Tra cứu đơn hàng</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-md-12 footer-col">
+                  <div class="accordion-item p-y-0 p-x-0 p-x-md-10 p-y-md-12 js-acc">
+                    <div class="accordion-title">
+                      <div class="txt-uppercase fs-p-14 txt-gray-700 f-w-500">
+                        DANH MỤC
+                      </div>
+                    </div>
+                    <div class="accordion-icon none-block">
+                      <i class="ic-angle-down ac-down txt-gray-700"></i>
+                    </div>
+                    <div class="accordion-details p-t-8 p-t-md-12">
+                      <ul>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang" class="link fs-ui-14 f-w-400 ">Thực phẩm chức năng</a>
+                        </li>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/duoc-my-pham" class="link fs-ui-14 f-w-400 ">Dược mỹ phẩm</a>
+                        </li>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/cham-soc-ca-nhan" class="link fs-ui-14 f-w-400 ">Chăm sóc cá nhân</a>
+                        </li>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/thuoc" class="link fs-ui-14 f-w-400 ">Thuốc</a>
+                        </li>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/trang-thiet-bi-y-te" class="link fs-ui-14 f-w-400 ">Trang thiết bị y tế</a>
+                        </li>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/benh" class="link fs-ui-14 f-w-400 ">Bệnh</a>
+                        </li>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/bai-viet" class="link fs-ui-14 f-w-400 ">
+                            Góc sức khoẻ</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-md-12 footer-col">
+                  <div class="accordion-item p-y-0 p-x-0 p-x-md-10 p-y-md-12 js-acc">
+                    <div class="accordion-title">
+                      <div class="txt-uppercase fs-p-14 txt-gray-700 f-w-500">
+                        THỰC PHẨM CHỨC NĂNG
+                      </div>
+                    </div>
+                    <div class="accordion-icon none-block">
+                      <i class="ic-angle-down ac-down txt-gray-700"></i>
+                    </div>
+                    <div class="accordion-details p-t-8 p-t-md-12">
+                      <ul>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang/sinh-ly-noi-tiet-to" class="link fs-ui-14 f-w-400 ">Sinh lý - Nội tiết tố</a>
+                        </li>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang/cai-thien-tang-cuong-chuc-nang" class="link fs-ui-14 f-w-400 ">Cải thiện tăng cường
+                            chức
+                            năng</a>
+                        </li>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang/thao-duoc-thuc-pham-tu-nhien" class="link fs-ui-14 f-w-400 ">Thảo dược -Thực phẩm tự
+                            nhiên</a>
+                        </li>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang/vitamin" class="link fs-ui-14 f-w-400 ">Vitamin</a>
+                        </li>
+                        <li>
+                          <a href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang/canxi-va-khoan-chat" class="link fs-ui-14 f-w-400 ">Canxi và khoáng chất</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 col-md-12 order-mb-1">
+            <div class="footer__contact">
+              <div class="footer__contact-group p-b-md-12">
+                <div class="u-flex justify-end">
+                  <div class="group-left txt-group fs-p-14 f-w-500 txt-gray-700 txt-uppercase order-mb-2 ">
+                    TƯ VẤN MUA HÀNG (MIỄN PHÍ)
+                    <a href="tel:1800 6928" class="block txt-primary fs-ui-32 f-w-500 m-t-4 fs-ui-md-16">1800 6928</a>
+                  </div>
+                  <div class="group-right txt-group fs-p-14 f-w-500 txt-gray-700 txt-uppercase order-mb-1 m-b-md-12 hidden">
+                    KẾT NỐI VỚI CHÚNG TÔI
+                    <div class="group-icon m-t-4 m-l-md-10 m-t-md-0">
+                      <a href="" class=" m-r-12">
+                        <picture>
+                          <source media="(max-width: 992px)" srcset="images/icon-facebook-mb.png">
+                          <img src="images/icon-facebook.png" alt="Zalo" srcset="">
+                        </picture>
+                      </a>
+                      <a href="" class="">
+                        <picture>
+                          <source media="(max-width: 992px)" srcset="images/icon-zalo-mb.png">
+                          <img src="images/icon-zalo.png" alt="Facebook" srcset="">
+                        </picture>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__contact-social m-t-12">
+                <div class="u-flex align-items-center justify-end">
+                  <a href="http://online.gov.vn/Home/WebDetails/56234?AspxAutoDetectCookieSupport=1" class="footer__contact-social-item ">
+                    <picture>
+                      <source media="(max-width: 992px)" srcset="images/bo-cong-thuong-mb.png">
+                      <img src="images/bo-cong-thuong.png" alt="Zalo" srcset="">
+                    </picture>
+                  </a>
+                  <a href="https://www.dmca.com/Protection/Status.aspx?ID=98d66f66-5a62-47e9-b45c-edaebfb0c9b3&refurl=https://nhathuoclongchau.com/" class="footer__contact-social-item m-l-16">
+                    <picture>
+                      <source media="(max-width: 992px)" srcset="images/dmca-protected-mb.png">
+                      <img src="images/dmca-protected.png" alt="Zalo" srcset="">
+                    </picture>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lc__copyright p-t-8 p-b-12 shadow-t-1 box-shadow-none p-b-md-8">
+      <div class="container">
+        <div class="lc__copyright-content txt-center txt-gray-700">
+          <div class="fs-p-14 fs-p-md-12">
+            © 2007 - 2021 Công ty Cổ Phần Dược Phẩm FPT Long Châu <br class="br-mb"> Số ĐKKD 0315275368 cấp
+            ngày 17/09/2018 tại Sở Kế hoạch <br class="br-mb"> Đầu tư TPHCM
+          </div>
+          <div class="fs-p-14 fs-p-md-12">
+            Địa chỉ: 379-381 Hai Bà Trưng, P.8, Q.3, TP. HCM.
+            <br class="br-mb"> Số điện thoại: <a href="tel:(028)73023456">(028)73023456</a>
+            <span class="inline-none">-</span>
+            <br class="br-mb"> Email: <a href="mailto:sale@nhathuoclongchau.com">sale@nhathuoclongchau.com</a> <span class="inline-none">-</span> <br class="br-mb"> Người quản lý nội dung:
+            Nguyễn Bạch Điệp
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- modal clear form -->
+  <div div class="modal modal-md custom-ratio js-modal modal-form modal-clear-form" id="modalClear" data-animation="on">
+    <div class="modal-wrapper" tabindex="-1">
+        <div class="modal-box radius-12">
+            <!-- <div class="modal-header justify-end p-t-16 p-x-24 p-y-md-8 p-x-md-16">
+                <span class="modal-close js-modal-close">
+                    <i class="ic-close icon-md fs-ui-15 f-w-500 close-modal-create-comment"></i>
+                </span>
+            </div> -->
+            <div class="modal-body txt-gray-700 p-t-8 p-x-md-16">
+                <h4 class="fs-p-24 fs-p-md-20">Xác nhận</h4>
+                <div class="para-content p-t-16">
+                    <p class="fs-p-16 m-b-md-8 txt-gray-700 fs-p-md-18 f-w-400 m-b-8">Bạn muốn xóa câu trả lời?</p>
+
+                </div>
+            </div>
+            <div class="modal-footer p-t-8 p-b-24 p-x-24 p-x-md-16 p-t-md-12 p-y-md-24">
+                <a href="#" class="link f-w-500 fs-ui-16 fs-ui-md-14 m-r-16 js-close">
+                    Hủy bỏ
+                </a>
+                <button class="btn btn-primary btn-lg circle text-uppercase js-reset">
+                    Đồng ý
+                </button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- modal auto saved -->
+  <div class="modal modal-md custom-ratio js-modal modal-form modal-auto-save" id="modalAutoSave" data-animation="on">
+    <div class="modal-wrapper" tabindex="-1">
+        <div class="modal-box radius-12">
+            <!-- <div class="modal-header justify-end p-t-16 p-x-24 p-y-md-8 p-x-md-16">
+                <span class="modal-close js-modal-close">
+                    <i class="ic-close icon-md fs-ui-15 f-w-500 close-modal-create-comment"></i>
+                </span>
+            </div> -->
+            <div class="modal-body txt-gray-700 p-t-8 p-x-md-16">
+                <h4 class="fs-p-24 fs-p-md-20">Autosave your work</h4>
+                <div class="para-content p-t-16">
+                    <p class="fs-p-16 m-b-md-8 txt-gray-700 fs-p-md-14 f-w-400 m-b-8">Google Forms automatically saves your progress for 30 days when you're signed in to your Google account so you can work across devices or take a break without losing a step</p>
+
+                </div>
+            </div>
+            <div class="modal-footer p-t-8 p-b-24 p-x-24 p-x-md-16 p-t-md-12 p-y-md-24">
+                <a href="#" class="link f-w-500 fs-ui-16 fs-ui-md-14 m-r-16 js-close">
+                    Hủy bỏ
+                </a>
+                <button class="btn btn-primary btn-lg circle text-uppercase js-close">
+                    Xác nhận
+                </button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="js/util.js"></script>
+  <script src="js/modal.js"></script>
+
+  <script type="module" src="js/regixers.js"></script>
+  <script type="module" src="js/fn_listen.js"></script>
+</body>
+
+</html>

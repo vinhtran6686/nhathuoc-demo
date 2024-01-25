@@ -1,0 +1,34 @@
+.stepper__exchange {
+  &--inner {
+  }
+  .exchange__item {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+      @include respond-to("md") {
+        margin-bottom: 16px;
+      }
+    }
+    &--image {
+      flex-basis: 64px;
+      max-width: 64px;
+      picture {
+        @include aspect-ratio(1, 1, 0);
+      }
+      @include respond-to("md") {
+        flex-basis: 48px;
+        max-width: 48px;
+      }
+    }
+    &--text {
+      flex: 1;
+    }
+  }
+}
+
+.table-exchange {
+  & > tbody > tr > td:first-child {
+    width: 120px;
+    font-weight: 500;
+  }
+}

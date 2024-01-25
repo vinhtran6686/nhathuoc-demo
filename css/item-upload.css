@@ -1,0 +1,87 @@
+.item__upload {
+  margin-bottom: 8px;
+  border-radius: 0;
+  padding: 12px;
+  background-color: #fff;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  grid-gap: 10px;
+  gap: 10px;
+  width: 100%;
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-left: 4px solid tomato; }
+  .item__upload:hover {
+    background: #f3f3f3; }
+  .item__upload + .item__upload {
+    margin-bottom: 12px; }
+  .item__upload--number {
+    display: inline-flex;
+    padding: 0.375rem 0;
+    width: 20px;
+    min-width: 20px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    text-align: center;
+    align-self: center; }
+  .item__upload--name {
+    flex: 1; }
+  .item__upload--quantity {
+    flex-basis: 100px; }
+  .item__upload--unit {
+    flex-basis: 100px; }
+  .item__upload--score {
+    align-items: flex-end; }
+  .item__upload--badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: gray; }
+  .item__upload--layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .item__upload--layout div {
+      font-size: 14px;
+      line-height: 20px; }
+    .item__upload--layout > div:first-child {
+      margin-bottom: 4px; }
+    .item__upload--layout select,
+    .item__upload--layout input {
+      height: 28px; }
+    .item__upload--layout .group-button {
+      margin-bottom: 0 !important; }
+      .item__upload--layout .group-button button {
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 20px;
+        outline: none;
+        color: #333;
+        border-color: transparent;
+        background-color: transparent;
+        font-weight: bold; }
+        .item__upload--layout .group-button button.remove {
+          color: red; }
+        .item__upload--layout .group-button button.check {
+          color: green; }
+        .item__upload--layout .group-button button.active {
+          color: tomato; }
+  .item__upload .upload-label {
+    display: block; }
+  .item__upload .upload-search-input select {
+    padding: 0.25rem 0.75rem;
+    height: auto;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    position: relative;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 100%; }

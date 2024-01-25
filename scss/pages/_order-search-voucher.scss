@@ -1,0 +1,47 @@
+.lc__order-search{
+    .form-search-close{
+        display: none;
+    }
+    .lc__final{
+        display: none;
+        .modal-visible{
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            background: transparent;
+            overflow: hidden;
+            .modal-wrapper{
+                margin-top: 20px;
+                // max-width: 100%;
+            }
+        }
+        .cart-final{
+            // max-width: 100%;
+        }
+        .modal-box, .modal-wrapper{
+            box-shadow: none;
+        }
+
+    }
+    .table-info-dh{
+        .name-voucher{
+            border-bottom: 0;
+        }
+        .list-number{
+            li{
+                &:before{
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .cart-check{
+        width: 100%;
+        border-top: 1px solid #e9ecef;
+    }
+    @include respond-to('md'){
+        .lc__btn-search{
+            display: block;
+        }
+    }
+}

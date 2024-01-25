@@ -1,0 +1,115 @@
+.table-content {
+    &_head {
+        i {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+        }
+        .list {
+            display: inline-flex;
+        }
+        .bookmark {
+            display: none;
+        }
+    }
+    &.sticky-top {
+        top: 6px;
+    }
+    ul {
+        li {
+            a {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                padding: 6px 8px;
+                font-size: 16px;
+                line-height: 24px;
+                color: $gray-700;
+                transition: all 0.2s ease-out;
+                &:not(:last-child) {
+                    margin-bottom: 4px;
+                }
+                &:hover,
+                &.active {
+                    background-color: $white-100;
+                    box-shadow: 0 0 0 1px $gray-200;
+                    border-radius: 12px;
+                    font-weight: 500;
+                    padding: 6px 16px;
+                }
+            }
+        }
+    }
+    .dropdown-ic {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 16px;
+        height: 16px;
+        transition: all 0.3s;
+    }
+    @include respond-to("md") {
+        border-radius: 0 !important;
+        &_head {
+            background-color: $gray-200;
+            .list {
+                display: none;
+            }
+            .bookmark {
+                display: inline-flex;
+            }
+            &.expand {
+                .dropdown-ic {
+                    top: 8px;
+                    transform: rotate(-180deg);
+                }
+                + .tab-navigation {
+                    display: block;
+                }
+            }
+        }
+        &.sticky-top {
+            position: relative;
+            top: 0;
+        }
+        &.fixed-top {
+            padding: 0 !important;
+            top: 0;
+        }
+        ul {
+            li {
+                &:not(:last-child) a {
+                    box-shadow: inset 0px -1px 0px $gray-200;
+                }
+                a {
+                    padding: 6px 10px 6px 16px;
+                    transition: unset;
+                    &.active {
+                        background-color: $gray-200;
+                        font-weight: normal;
+                        border-radius: 0;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            font-family: "icon-system" !important;
+                            color: $primary-500;
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .dropdown-ic {
+            display: inline-flex !important;
+            align-items: center;
+        }
+        .tab-navigation {
+            display: none;
+        }
+    }
+}

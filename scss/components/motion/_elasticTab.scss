@@ -1,0 +1,20 @@
+$duration-selector: .6s;
+$transition-timing-function: cubic-bezier(.250, .100, .250, 1);
+.tab {
+    position: relative;
+}
+.motion-box {
+    .selector {
+        border-radius: 6px;
+        z-index: 0;
+        left: 4px;
+
+        transition-duration: $duration-selector;
+        transition-timing-function: $transition-timing-function;
+    }
+    .tab-item {
+        &.active {
+            background: transparent !important;
+        }
+    }
+}

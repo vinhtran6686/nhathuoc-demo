@@ -1,0 +1,10 @@
+.http{
+    &__picture{
+        max-width: 452px;
+    }
+    @include respond-to('sm'){
+        &__picture{
+            max-width: 226px;
+        }
+    }
+}

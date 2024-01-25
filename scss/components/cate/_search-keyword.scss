@@ -1,0 +1,27 @@
+.keyword {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  height: 48px;
+
+  border-radius: 1000px;
+  color: $gray-700;
+  background-color: $primary-100;
+
+  &-warning {
+    background-color: $warning-100;
+  }
+  &-info {
+    background-color: $info-100;
+  }
+  &-success {
+    background-color: $success-100;
+  }
+  &-danger {
+    background-color: $danger-100;
+  }
+  &-gray {
+    background-color: $primary-100;
+  }
+}

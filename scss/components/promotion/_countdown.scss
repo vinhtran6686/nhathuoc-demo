@@ -1,0 +1,95 @@
+.lc__countdown {
+  padding: 8px 12px;
+  background: linear-gradient(270deg, #072d94 0.46%, #597bd9 98.15%);
+  @include respond-to("sm") {
+    margin: 0 -10px;
+  }
+  &--inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  &--time {
+    color: $white-100;
+    .time__wrapper {
+      display: flex;
+      align-items: baseline;
+      @include respond-to("md") {
+        display: block;
+      }
+      &--title {
+        @include respond-to("md") {
+          text-align: right;
+        }
+      }
+    }
+
+    .group__time {
+      display: flex;
+      align-items: baseline;
+      &--item {
+        position: relative;
+        text-align: center;
+        &:not(:first-child) {
+          padding-left: 12px;
+          &::before {
+            content: ":";
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+        p {
+          display: inline-flex;
+          width: 32px;
+          height: 32px;
+          align-items: center;
+          justify-content: center;
+          background-color: $white-100;
+          color: $gray-700;
+          border-radius: 8px;
+          @include respond-to("md") {
+            width: 24px;
+            height: 24px;
+            font-weight: 500;
+          }
+        }
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &-price-alert{
+
+      position: absolute;
+      right: 12px;
+      top: 8px;
+
+      .alert{
+        height: auto;
+      }
+
+      @include respond-to("md") {
+        position: initial;
+        width: 100%;
+      }
+
+  }
+
+  &--price{
+    @include respond-to('xxs'){
+      .main-price{
+        span{
+          font-size: 20px !important;
+        }
+      }
+    }
+  }
+}

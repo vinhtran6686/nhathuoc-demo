@@ -1,0 +1,15 @@
+.pdc-customer{
+    &_vertical{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    &_horizontal{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    &__item{
+        &--content{
+            flex: 1;
+        }
+    }
+}

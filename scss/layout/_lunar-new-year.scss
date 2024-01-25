@@ -1,0 +1,257 @@
+.lc__main-lunar {
+    padding-bottom: 0 !important;
+    .section-keywords {
+        padding-bottom: 40px;
+    }
+    .section-search {
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+    .section-buy-medicine {
+        padding-top: 126px;
+    }
+
+    .theme__lunar {
+        background: linear-gradient(180deg, #faeddf 0%, rgba(249, 234, 212, 0) 90%, rgba(254, 232, 216, 0) 90%)
+            no-repeat top;
+        background-attachment: fixed;
+        position: relative;
+
+        padding-top: 130px;
+        &::before,
+        &::after {
+            max-width: 132px;
+        }
+        .lc__section {
+            position: relative;
+            z-index: 2;
+        }
+    }
+    .lc__section,
+    .section-search,
+    .lc__banner-c3 {
+        background-color: transparent !important;
+    }
+    @include respond-to("lg") {
+        padding-top: 0;
+        .theme__lunar {
+            padding-top: 0;
+        }
+    }
+
+    @include respond-to("md") {
+        .lc__section,
+        .section-search,
+        .lc__banner-c3 {
+            background-color: $white !important;
+        }
+        .theme__lunar {
+            background: none;
+            &-mobile {
+                position: relative;
+            }
+        }
+        .section-cate-list {
+            background-color: transparent !important;
+        }
+    }
+}
+.section-group {
+    position: relative;
+    z-index: 9;
+}
+.lc__footer {
+    z-index: 9 !important;
+}
+.theme__lunar-sticky {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    pointer-events: none;
+    overflow: hidden;
+    will-change: transform;
+    transition: all 0.9s;
+    .sticky-wrap {
+        max-width: 132px;
+        position: sticky;
+        top: 0;
+        transform: translateY(106px);
+        padding-top: 20px;
+    }
+
+    &.scroll-sticky {
+        position: fixed;
+        .sticky-wrap {
+            transform: translateY(0);
+        }
+    }
+
+    .stick1 {
+        position: relative;
+        z-index: 2;
+        img {
+            animation: sway 5s ease-in-out infinite;
+        }
+    }
+
+    .stick2 {
+        margin-top: -10px;
+        img {
+            animation: sway2 5s ease-in-out infinite;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .sticky-left {
+            left: calc(((100vw - 1200px) / 2) - 135px);
+        }
+        .sticky-right {
+            right: calc(((100vw - 1200px) / 2) - 135px);
+        }
+    }
+
+    @media (max-width: 1450px) {
+        .sticky-wrap {
+            max-width: 80px;
+        }
+    }
+
+    @media (max-width: 1130px) {
+        .sticky-wrap {
+            max-width: 50px;
+        }
+    }
+
+    @include respond-to("md") {
+        display: none;
+    }
+}
+.header__lunar {
+    .gift-new-year {
+        position: absolute;
+        top: -16px;
+        left: -10px;
+    }
+    @include respond-to("md") {
+        .gift-new-year {
+            position: absolute;
+            top: -8px;
+            max-width: 147px;
+            margin: auto;
+            right: 0;
+            left: 0;
+        }
+    }
+}
+.theme-lunar-tagline {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 1;
+    .tagline-left {
+        .item {
+            margin-right: auto;
+            padding-top: 140px;
+        }
+    }
+    .tagline-right {
+        .item {
+            margin-left: auto;
+            padding-top: 158px;
+        }
+    }
+    .stick1 {
+        max-width: 404px;
+    }
+    .stick2 {
+        max-width: 345px;
+    }
+    .item {
+        max-width: 168px;
+    }
+    @include respond-to("lg") {
+        .item {
+            max-width: 110px;
+        }
+    }
+    @include respond-to("md") {
+        display: none;
+    }
+}
+
+.falling-leaves {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.leaf-scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+.leaf-scene div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    transform-style: preserve-3d;
+    backface-visibility: visible;
+    will-change: transform;
+    &:nth-child(odd) {
+        background: url(../images/new-year/mai.webp) no-repeat;
+        background-size: 100%;
+    }
+    &:nth-child(even) {
+        background: url(../images/new-year/dao.webp) no-repeat;
+        background-size: 100%;
+    }
+    @include respond-to("md") {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/* Standard syntax */
+@keyframes sway {
+    33% {
+        transform: rotate(5deg);
+        transform-origin: 5px 8px;
+    }
+    66% {
+        transform: rotate(-5deg);
+        transform-origin: 5px 8px;
+    }
+}
+@keyframes sway2 {
+    30% {
+        transform: rotate(-3deg);
+        transform-origin: 5px 8px;
+    }
+    60% {
+        transform: rotate(3deg);
+        transform-origin: 5px 8px;
+    }
+}

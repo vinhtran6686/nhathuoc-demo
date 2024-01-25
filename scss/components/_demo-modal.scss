@@ -1,0 +1,69 @@
+$duration-desktop: .3s;
+$duration-mobile: .3s;
+.modal-rule, .modal-search-drug {
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-items: baseline;
+    .modal-wrapper {
+        transition-duration: .6s !important;
+        transform: translate3d(0, 100px, 0) !important;
+        opacity: 0 !important;
+        transition-property: opacity, transform !important;
+
+        margin: 64px 0 !important;
+    }
+
+    .modal-body {
+        overflow-y: auto;
+    }
+
+    .modal-box {
+        max-height: calc(100vh - 128px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .graphy-16 {
+        font-size: 16px;
+        line-height: 24px;
+        color: #334155;
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    @include respond-to("md") {
+        padding-bottom: 0 !important;
+        .modal-box {
+            height: auto !important;
+        }
+        .modal-wrapper {
+            height: auto !important;
+            margin: auto 0 0 !important;
+        }
+        .modal-body{
+            padding-bottom: 16px !important;
+        }
+        .graphy-16 {
+            font-size: 14px;
+            line-height: 20px;
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+    &.modal--is-visible {
+        transition: opacity $duration-desktop cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
+        padding-right: 15px;
+        overflow: hidden;
+        .modal-wrapper {
+            opacity: 1 !important;
+            transform: none !important;
+        }
+        @include respond-to("md") {
+            padding-right: 0;
+            transition-duration: $duration-mobile !important;
+        }
+    }
+}

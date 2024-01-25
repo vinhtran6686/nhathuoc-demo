@@ -1,0 +1,188 @@
+.ppc-typhography-drug {
+}
+
+.lc__card-drug {
+    .lc__list {
+        padding-left: 18px;
+        .list-group li {
+            padding-left: 16px !important;
+            padding-right: 16px !important;
+        }
+        .list-disc li::before {
+            color: $primary-500;
+        }
+        > a.link {
+            margin-top: 16px;
+            padding-left: 0 !important;
+            margin-left: 12px !important;
+        }
+        @include respond-to("md") {
+            padding-left: 0;
+            &:not(:first-child) {
+                padding-bottom: 16px;
+            }
+            .list-group li {
+                padding-right: 0 !important;
+            }
+            > a.link {
+                margin-top: 8px !important;
+            }
+        }
+    }
+}
+
+.lc__card {
+    @include respond-to("md") {
+        &.lc-card-list-sick-relate {
+            margin-top: 0 !important;
+        }
+    }
+}
+
+// config modal chon nha thuoc
+
+#chonnhathuoc {
+    .modal-wrapper {
+        max-width: 576px;
+        .form-map {
+            &_head {
+                .head-inner {
+                    @include respond-to("md") {
+                        flex-direction: column-reverse;
+                    }
+                }
+                .dropdown-group {
+                    flex-basis: 53.608247422680414%;
+                }
+                .button-group {
+                    flex: 1;
+                }
+                .tab-group {
+                    .tab {
+                        .label-text {
+                            font-size: 14px !important;
+                            line-height: 20px !important;
+                        }
+                    }
+                }
+            }
+            &_body {
+                .map-iframe {
+                    flex-basis: 53.608247422680414%;
+                    iframe {
+                        border-radius: 12px 0 0 12px;
+                        height: 100% !important;
+                        width: 100% !important;
+                    }
+                }
+                .location-block {
+                    flex: 1;
+                }
+            }
+        }
+
+
+        @include respond-to("md") {
+            overflow: hidden;
+        }
+
+        @include respond-to("sm") {
+            height: 100%;
+            .modal-box {
+                height: 100%;
+                overflow-y: auto;
+            }
+        }
+    }
+    .wrap-loading-location {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.lc__card-drug {
+    max-width: 776px;
+    margin-left: auto;
+    margin-right: 50px;
+    .lc__list {
+        a,
+        li {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    @include respond-to("md") {
+        margin-right: 0px;
+        .lc__card {
+            &:first-child {
+                margin-top: 0 !important;
+            }
+        }
+        .lc__list {
+            a,
+            li {
+                font-size: 14px !important;
+                line-height: 20px !important;
+                padding-left: 0 !important;
+            }
+        }
+    }
+}
+
+.wrapper-attention {
+    max-width: 776px;
+    margin-left: auto;
+    margin-right: 50px;
+    .callout {
+        &-content {
+            font-size: 16px !important;
+            line-height: 24px !important;
+        }
+    }
+    .box-expert {
+        min-height: 100px;
+    }
+    @include respond-to("md") {
+        margin-right: 0;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        .callout {
+            padding: 8px 12px 8px 12px !important;
+            border-radius: 0px 8px 8px 0px;
+        }
+    }
+}
+
+.wrapper-attention-head {
+    margin-top: 8px;
+    .alert {
+        height: auto;
+        // padding: 6px 16px;
+        padding: 0;
+        align-items: baseline;
+        span {
+            line-height: 24px;
+            color: $gray-700;
+        }
+        @include respond-to("md") {
+            // padding: 8px;
+            span {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+.pdc-cta {
+    @media (max-width: 359px) {
+        .btn {
+            font-size: 14px !important;
+        }
+    }
+}
+
+.vertical-bottom {
+    vertical-align: bottom;
+}

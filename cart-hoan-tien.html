@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- CSS file import -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="stylesheet" href="css/system.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Js file import -->
+    <script src="js/libs/jquery-3.1.0.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+</head>
+
+<body>
+
+
+    <!-- main  -->
+    <section class="lc-main lc__refund p-y-40 p-y-md-0">
+        <div class="container cs-container">
+            <div class="lc-body radius-12 cart-final radius-none">
+                <div class="lc-head bg-white">
+                    <div class="cart-final txt-center p-x-24 p-y-24">
+                        <div class="cart-icon m-b-8 m-b-md-12">
+                            <picture>
+                                <img src="images/refund.jpg" alt="Nhà Thuốc Long Châu">
+                            </picture>
+                        </div>
+                        <div class="cart-mess">
+                            <p class="fs-p-18 fs-p-md-16 f-w-500 txt-gray-800">
+                                Tiến hành thủ tục hoàn tiền đơn hàng
+                            </p>
+                            <p class="fs-p-16 fs-p-md-14 m-t-4 txt-gray-700 m-t-md-0">
+                                Quý khách vui lòng xác nhận <a class="link">thông tin hoàn tiền.</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lc-content">
+                        <div class="table table-user m-b-md-8">
+                            <div class="table-head box-b-2 p-y-8 p-x-20 p-x-md-10 p-y-md-10 bg-gray-100">
+                                <div class="u-flex no-gutters align-items-center">
+                                    <div class="col">
+                                        <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16">
+                                            Thông tin giao hàng
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-body bg-white p-x-20 p-x-md-10 p-x-md-10 p-t-8 p-b-16 p-x-md-10 p-y-md-0">
+                                <table class="table">
+                                    <tbody>
+                                        <tr class="fs-p-16">
+                                            <td class="txt-gray p-y-6 p-y-md-8">Số đơn hàng</td>
+                                            <td class="txt-gray-700 p-y-6 p-y-md-8">
+                                                <strong class="txt-primary-700 m-r-8">3079183</strong>
+                                            </td>
+                                        </tr>
+                                        <tr class="fs-p-16">
+                                            <td class="txt-gray p-y-6 p-y-md-8">Họ và tên</td>
+                                            <td class="txt-gray-700 p-y-6 p-y-md-8">Chị Vy</td>
+                                        </tr>
+                                        <tr class="fs-p-16">
+                                            <td class="txt-gray p-y-6 p-y-md-8">Số điện thoại</td>
+                                            <td class="txt-gray-700 p-y-6 p-y-md-8">0937108022</td>
+                                        </tr>
+                                        <tr class="fs-p-16">
+                                            <td class="txt-gray p-y-6 p-y-md-8">Email</td>
+                                            <td class="txt-gray-700 p-y-6 p-y-md-8">
+                                                vynguyen1998@gmail.com
+                                            </td>
+                                        </tr>
+                                        <tr class="fs-p-16">
+                                            <td class="txt-gray p-y-6 p-y-md-8">
+                                                Nhận tại nhà thuốc
+                                            </td>
+                                            <td class="txt-gray-700 p-y-6 p-y-md-8">
+                                                422-424 Cách Mạng Tháng Tám, P.11, Q.3, TP. Hồ Chí
+                                                Minh
+                                            </td>
+                                        </tr>
+                                        <tr class="fs-p-16">
+                                            <td class="txt-gray p-y-6 p-y-md-8">
+                                                Thời gian dự kiến
+                                            </td>
+                                            <td class="txt-gray-700 p-y-6 p-y-md-8">
+                                                Thứ 4, 24/02/2021
+                                            </td>
+                                        </tr>
+                                        <tr class="fs-p-16">
+                                            <td class="txt-gray p-y-6 p-y-md-8">
+                                                Phương thức thanh toán
+                                            </td>
+                                            <td class="txt-gray-700 p-y-6 p-y-md-8">
+                                                Trả tiền mặt khi nhận hàng
+                                            </td>
+                                        </tr>
+                                        <tr class="fs-p-16">
+                                            <td class="txt-gray p-y-6 p-y-md-8">Ghi chú yêu cầu</td>
+                                            <td class="txt-gray-700 p-y-6 p-y-md-8">
+                                                Đến nhận sau giờ hành chính
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="table table-user">
+                            <div class="table-head box-b-2 p-y-8 p-x-20 p-x-md-10 p-y-md-10 bg-gray-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16">
+                                            Thông tin đơn hàng
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-hidden">
+                                        <div class="row row-cols-3">
+                                            <div class="col">
+                                                <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16 txt-left">
+                                                    Quy cách
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16 txt-center">
+                                                    Số lượng
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16 txt-right">
+                                                    Thành tiền
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-body p-x-md-10 bg-white p-x-20">
+                                <div class="row p-t-16 p-b-8 box-b-1">
+                                    <div class="col-6 col-sm-12">
+                                        <div class="u-flex no-gutters">
+                                            <div class="item-img m-r-8">
+                                                <a href="">
+                                                    <img src="https://via.placeholder.com/300x300" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item-info col">
+                                                <h3 class="item-tit truncate2">
+                                                    <a href="" class="txt-gray-800 fs-p-16">Viên Uống Bổ Sung Vitamin Và
+                                                        Khoáng Chất Calcium
+                                                        Plus Puri Walgreen</a>
+                                                </h3>
+                                                <div class="item-mess">
+                                                    <ul class="list-group list-disc-small">
+                                                        <li class="txt-gray-600">
+                                                            Tặng 1 suất mua sản phẩm thực phẩm chức năng
+                                                            giảm đến 40%
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item-detai--mb m-t-8">
+                                                    <div class="u-flex justify-between">
+                                                        <div class="item-detail--mb__left">
+                                                            <p class="fs-p-14 txt-gray-700 f-w-400 m-b-4">
+                                                                Quy cách: Hộp 60 viên
+                                                            </p>
+                                                            <p class="fs-p-14 txt-gray-700 f-w-400">
+                                                                Số lượng: 1
+                                                            </p>
+                                                        </div>
+                                                        <div class="item-detail--mb__right">
+                                                            <p class="fs-p-14 f-w-500 txt-gray-700">
+                                                                234.000đ
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-hidden">
+                                        <div class="row row-cols-3">
+                                            <div class="col">
+                                                <div class="fs-p-16 txt-gray-700 f-w-400">
+                                                    Hộp 60 viên
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="fs-p-16 txt-gray-700 f-w-400 txt-center">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col txt-right">
+                                                <div class="fs-p-16 txt-gray-700 f-w-500">
+                                                    200.000đ
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row p-t-16 p-b-8 box-b-1">
+                                    <div class="col-6 col-sm-12">
+                                        <div class="u-flex no-gutters">
+                                            <div class="item-img m-r-8">
+                                                <a href="">
+                                                    <img src="https://via.placeholder.com/300x300" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item-info col">
+                                                <h3 class="item-tit truncate2">
+                                                    <a href="" class="txt-gray-800 fs-p-16">Nước Xịt Khoáng Vichy Eau
+                                                        Thermale Mineralizing
+                                                        Thermal Water 150ml</a>
+                                                </h3>
+                                                <div class="item-mess">
+                                                    <ul class="list-group list-disc-small">
+                                                        <li class="txt-gray-600">
+                                                            Giảm giá 10% khi mua 1 sản phẩm
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item-detai--mb m-t-8">
+                                                    <div class="u-flex justify-between">
+                                                        <div class="item-detail--mb__left">
+                                                            <p class="fs-p-14 txt-gray-700 f-w-400 m-b-4">
+                                                                Quy cách: Hộp 60 viên
+                                                            </p>
+                                                            <p class="fs-p-14 txt-gray-700 f-w-400">
+                                                                Số lượng: 1
+                                                            </p>
+                                                        </div>
+                                                        <div class="item-detail--mb__right">
+                                                            <p class="fs-p-14 f-w-500 txt-gray-700 m-b-4">
+                                                                234.000đ
+                                                            </p>
+                                                            <strike class="fs-p-14 f-w-500 txt-gray">260.000đ</strike>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-hidden">
+                                        <div class="row row-cols-3">
+                                            <div class="col">
+                                                <div class="fs-p-16 txt-gray-700 f-w-400">
+                                                    Chai 150ml
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="fs-p-16 txt-gray-700 f-w-400 txt-center">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col txt-right">
+                                                <div class="fs-p-16 txt-gray-700 f-w-500">
+                                                    234.000đ
+                                                </div>
+                                                <strike class="fs-p-16 f-w-400 txt-gray m-t-4">
+                                                    260.000đ
+                                                </strike>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="check-final p-t-16 p-b-24 p-b-md-16 p-x-0 u-flex justify-end">
+                                    <div class="cart-check">
+                                        <ul>
+                                            <li>
+                                                <span>Tổng tiền</span>
+                                                <span>434.000đ</span>
+                                            </li>
+                                            <li>
+                                                <span>Khuyến mãi giảm</span>
+                                                <span>-26.000đ</span>
+                                            </li>
+                                            <li>
+                                                <span>Phí giao hàng</span>
+                                                <span>15.000đ</span>
+                                            </li>
+                                            <li>
+                                                <span>Cần thanh toán</span>
+                                                <span>423.000đ</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lc__card lc__form box-t-1">
+                                <div class="lc__card-inner p-y-24 p-l-20 p-x-md-10 p-y-md-16">
+                                    <div class="lc__head">
+                                        <div class="lc__tit">
+                                            <p class="fs-p-18 f-w-500 txt-gray-800">
+                                                Thông tin tài khoản tiếp nhận
+                                            </p>
+                                            <i class="fs-ui-16 m-t-4 txt-gray inline-block">
+                                                (Nhà thuốc sẽ hoàn tiền qua tài khoản này)
+                                            </i>
+                                        </div>
+                                    </div>
+                                    <div class="lc__body m-t-12">
+                                        <form action="">
+                                            <!-- bank -->
+                                            <div class="lc__dropdown">
+                                                <div
+                                                    class="dropdown cs-dropdown dropdown-bank dropdown-search js-info-dropdown">
+                                                    <div class="dropdown-button p-r-md-12">
+                                                        <span class="fs-p-xxs-14">Chọn ngân hàng</span>
+                                                        <i class="ic-arrow-select icon-md"></i>
+                                                    </div>
+                                                    <div class="dropdown-menu">
+                                                        <div class="dropdown-menu-top">
+                                                            <div class="dropdown-menu-search">
+                                                                <div class="form-search form-search-sm">
+                                                                    <span class="form-search-icon m-r-4">
+                                                                        <i class="ic-search icon-sm"></i>
+                                                                    </span>
+                                                                    <input type="text"
+                                                                        class="form-search-input m-r-4 js-search"
+                                                                        placeholder="Nhập tìm tỉnh/thành">
+                                                                    <span class="form-search-icon form-search-close"
+                                                                        style="display: none;">
+                                                                        <i class="ic-close icon-sm"></i>
+                                                                    </span>
+                                                                </div>
+                                                                <span class="link none-block close js-close">Huỷ
+                                                                    bỏ</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dropdown-menu-wrapper scrollbar js--city-list">
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP xăng dầu petrolimex - PGBank"
+                                                                token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-xang-dau-petrolimex-pgbank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/pgbank.jpeg" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP xăng dầu petrolimex - PGBank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH Dầu khí toàn cầu - GPBank" token-filter="
+-
+-
+-
+-
+-
+-nh-dau-khi-toan-cau-gpbank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/gpbank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH Dầu khí toàn cầu - GPBank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TNHH MTV Shinhan Việt Nam - Shinhan Bank"
+                                                                token-filter="
+-
+-
+-
+-
+-
+-nh-tnhh-mtv-shinhan-viet-nam-shinhan-bank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/shinhan-bank.png"
+                                                                            alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TNHH MTV Shinhan Việt Nam - Shinhan Bank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH Phương Đông - OCB" token-filter="
+-
+-
+-
+-
+-
+-nh-phuong-dong-ocb
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/ocb.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH Phương Đông - OCB</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Á Châu - ACB" token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-a-chau-acb
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/acb.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Á Châu - ACB</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Ngoại Thương Việt Nam - Vietcombank"
+                                                                token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-ngoai-thuong-viet-nam-vietcombank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/vietcombank.png"
+                                                                            alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Ngoại Thương Việt Nam - Vietcombank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Việt Nam Thịnh Vượng - VPBank"
+                                                                token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-viet-nam-thinh-vuong-vpbank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/vpbank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Việt Nam Thịnh Vượng - VPBank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Tiên Phong - TienPhongBank" token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-tien-phong-tienphongbank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/tienphongbank.png"
+                                                                            alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Tiên Phong - TienPhongBank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Sài Gòn Hà Nội - SHB" token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-sai-gon-ha-noi-shb
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/shb.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Sài Gòn Hà Nội - SHB</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Phát triển nhà TP HCM - HDBank"
+                                                                token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-phat-trien-nha-tp-hcm-hdbank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/hdbank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Phát triển nhà TP HCM - HDBank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Kỹ thương Việt Nam - Techcombank"
+                                                                token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-ky-thuong-viet-nam-techcombank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/techcombank.png"
+                                                                            alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Kỹ thương Việt Nam - Techcombank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Quân Đội - MBBank" token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-quan-doi-mbbank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/mbbank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Quân Đội - MBBank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TM TNHH MTV Đại Dương - OceanBank"
+                                                                token-filter="
+-
+-
+-
+-
+-
+-nh-tm-tnhh-mtv-dai-duong-oceanbank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/oceanbank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TM TNHH MTV Đại Dương - OceanBank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Hàng Hải - Maritime Bank" token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-hang-hai-maritime-bank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/maritime-bank.png"
+                                                                            alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Hàng Hải - Maritime Bank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Sài Gòn Thương Tín - Sacombank"
+                                                                token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-sai-gon-thuong-tin-sacombank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/sacombank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Sài Gòn Thương Tín - Sacombank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Đông Nam Á - SeABank" token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-dong-nam-a-seabank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/seabank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Đông Nam Á - SeABank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Xuất Nhập Khẩu - Eximbank" token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-xuat-nhap-khau-eximbank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/eximbank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Xuất Nhập Khẩu - Eximbank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH Quốc tế - VIB" token-filter="
+-
+-
+-
+-
+-
+-nh-quoc-te-vib
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/vib.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH Quốc tế - VIB</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Việt Á - VietABank" token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-viet-a-vietabank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/vietabank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Việt Á - VietABank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH Nông Nghiệp và Phát triển Nông thôn Việt Nam - Agribank"
+                                                                token-filter="
+-
+-
+-
+-
+-
+-nh-nong-nghiep-va-phat-trien-nong-thon-viet-nam-agribank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/agribank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH Nông Nghiệp và Phát triển Nông thôn Việt Nam -
+                                                                    Agribank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Công Thương Việt Nam - Vietinbank"
+                                                                token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-cong-thuong-viet-nam-vietinbank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/vietinbank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Công Thương Việt Nam - Vietinbank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Nam Á - NamA Bank" token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-nam-a-nama-bank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/nama-bank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Nam Á - NamA Bank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH Bắc Á - BacA Bank" token-filter="
+-
+-
+-
+-
+-
+-nh-bac-a-baca-bank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/baca-bank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH Bắc Á - BacA Bank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Đầu Tư và Phát Triển Việt Nam - BIDV"
+                                                                token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-dau-tu-va-phat-trien-viet-nam-bidv
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/bidv.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Đầu Tư và Phát Triển Việt Nam -
+                                                                    BIDV</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Sài Gòn Công Thương - SaigonBank"
+                                                                token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-sai-gon-cong-thuong-saigonbank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/saigonbank.jpg" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Sài Gòn Công Thương - SaigonBank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Đông Á - DongABank" token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-dong-a-dongabank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/dongabank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Đông Á - DongABank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP An Bình - AnBinh" token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-an-binh-anbinh
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/anbinh.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP An Bình - AnBinh</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Đại chúng - PVcombank" token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-dai-chung-pvcombank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/pvcombank.png" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Đại chúng - PVcombank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Quốc Dân - Navibank" token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-quoc-dan-navibank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/navibank.jpg" alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Quốc Dân - Navibank</span>
+                                                            </a>
+                                                            <a class="dataBank" data-short-name=""
+                                                                data="NH TMCP Bản Việt - VietCapitalBank" token-filter="
+-
+-
+-
+-
+-
+-nh-tmcp-ban-viet-vietcapitalbank
+">
+                                                                <div class="picture m-r-8">
+                                                                    <picture>
+                                                                        <img src="/img/bank-logo/vietcapitalbank.png"
+                                                                            alt="">
+                                                                    </picture>
+                                                                </div>
+                                                                <span>NH TMCP Bản Việt - VietCapitalBank</span>
+                                                            </a>
+                                                            <input type="hidden" name="bank_name" id="bank_name"
+                                                                class="form-control inputBank" value="" token-filter="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert"
+                                                    style="display: inline-flex">
+                                                    <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                                    <span class="">Vui lòng chọn ngân hàng</span>
+                                                </div>
+                                            </div>
+                                            <!-- number card  -->
+                                            <div class="form-group js-info-refund m-t-12">
+                                                <input type="text" class="form-input form-input-lg form-float-input"
+                                                    placeholder="Nhập số trên thẻ " name="">
+                                                <span class="form-float-label data-title fs-p-14 txt-gray-600">Số
+                                                    thẻ</span>
+                                                <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert"
+                                                    style="display:inline-flex">
+                                                    <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                                    <span class="">Thông tin bắt buộc</span>
+                                                </div>
+                                            </div>
+                                            <!-- name card -->
+                                            <div class="form-group js-info-refund m-t-12">
+                                                <input type="text" class="form-input form-input-lg form-float-input"
+                                                    placeholder="Nhập họ tên trên thẻ" name="">
+                                                <span class="form-float-label data-title fs-p-14 txt-gray-600">Tên chủ
+                                                    thẻ</span>
+                                                <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert"
+                                                    style="display:inline-flex">
+                                                    <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                                    <span class="">Thông tin bắt buộc</span>
+                                                </div>
+                                            </div>
+                                            <!-- địa chỉ -->
+                                            <div class="lc__dropdown m-t-12">
+                                                <div
+                                                    class="dropdown cs-dropdown dropdown-city dropdown-search js-info-dropdown">
+                                                    <div class="dropdown-button p-r-md-12">
+                                                        <span class="fs-p-xxs-14">Chọn chi nhánh</span>
+                                                        <i class="ic-arrow-select icon-md"></i>
+                                                    </div>
+                                                    <div class="dropdown-menu">
+                                                        <div class="dropdown-menu-top">
+                                                            <div class="dropdown-menu-search">
+                                                                <div class="form-search form-search-sm">
+                                                                    <span class="form-search-icon m-r-4">
+                                                                        <i class="ic-search icon-sm"></i>
+                                                                    </span>
+                                                                    <input type="text"
+                                                                        class="form-search-input m-r-4 js-search"
+                                                                        placeholder="Nhập tìm tỉnh/thành">
+                                                                    <span class="form-search-icon form-search-close"
+                                                                        style="display: none;">
+                                                                        <i class="ic-close icon-sm"></i>
+                                                                    </span>
+                                                                </div>
+                                                                <span class="link none-block close js-close">Huỷ
+                                                                    bỏ</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dropdown-menu-wrapper scrollbar js--city-list">
+                                                            <a class="item-region active" token-filter="ha-noi">Hà
+                                                                Nội</a>
+                                                            <a class="item-region" token-filter="da-nang">Đà Nẵng</a>
+                                                            <a class="item-region" token-filter="hai-phong">Hải
+                                                                Phòng</a>
+                                                            <a class="item-region" item-region=""
+                                                                token-filter="an-giang">An Giang</a>
+                                                            <a class="item-region" token-filter="ba-ria-vung-tau">Bà Rịa
+                                                                - Vũng Tàu</a>
+                                                            <a class="item-region" token-filter="bac-giang">Bắc
+                                                                Giang</a>
+                                                            <a class="item-region" token-filter="bac-kan">Bắc Kạn</a>
+                                                            <a class="item-region" token-filter="bac-lieu">Bạc Liêu</a>
+                                                            <a class="item-region" token-filter="bac-ninh">Bắc Ninh</a>
+                                                            <a class="item-region" token-filter="ben-tre">Bến Tre</a>
+                                                            <a class="item-region" token-filter="binh-dinh">Bình
+                                                                Định</a>
+                                                            <a class="item-region" token-filter="binh-duong">Bình
+                                                                Dương</a>
+                                                            <a class="item-region" token-filter="binh-phuoc">Bình
+                                                                Phước</a>
+                                                            <a class="item-region" token-filter="binh-thuan">Bình
+                                                                Thuận</a>
+                                                            <a class="item-region" token-filter="ca-mau">Cà Mau</a>
+                                                            <a class="item-region" token-filter="can-tho">Cần Thơ</a>
+                                                            <a class="item-region" token-filter="cao-bang">Cao Bằng</a>
+                                                            <a class="item-region" token-filter="dak-lak">Đắk Lắk</a>
+                                                            <a class="item-region" token-filter="daknong">ĐakNông</a>
+                                                            <a class="item-region" token-filter="dien-bien">Điện
+                                                                Biên</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert"
+                                                    style="display: inline-flex">
+                                                    <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                                    <span class="">Vui lòng chọn chi nhánh</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="cart-final--btn box-t-1 u-flex justify-center p-y-24 p-y-md-16">
+                            <a class="btn btn-xl btn-lg-sm btn-rounded btn-primary txt-uppercase btn-refund">XÁC
+                                NHẬN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end main -->
+
+    <script src="js/functions.js"></script>
+</body>
+
+</html>

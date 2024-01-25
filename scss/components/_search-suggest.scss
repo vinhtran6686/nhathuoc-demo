@@ -1,0 +1,152 @@
+.lc__suggestion {
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+  border-radius: 0px 0px 12px 12px;
+  z-index: 2;
+  padding-top: 18px;
+  margin-top: -18px;
+
+  background-color: #fff;
+
+  max-width: calc(100% - 76px);
+  @include respond-to("sm") {
+    margin-top: 0;
+    padding-top: 0;
+
+    border-radius: 0;
+    max-width: unset;
+  }
+  .highlightLink {
+    color: $primary-500;
+  }
+  .highlight {
+    font-weight: 500;
+  }
+  &-block {
+    padding: 8px 0;
+    i {
+      width: 20px;
+      height: 20px;
+
+      font-size: 11px;
+      line-height: 20px;
+
+      padding-right: 1px;
+    }
+    .line {
+      margin-left: 8px;
+      flex: 1;
+      height: 1px;
+      background-color: $gray-300;
+    }
+    ul {
+      li {
+        padding: 8px 0 8px 16px;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+        a {
+          font-size: 14px;
+          line-height: 20px;
+
+          color: $gray-700;
+        }
+        &:hover {
+          background: $gray-100;
+        }
+        @include respond-to("md") {
+          padding: 8px 0 8px 10px;
+        }
+      }
+    }
+    @include respond-to("sm") {
+      &:not(:last-child) {
+        padding: 0;
+      }
+      .line {
+        display: none;
+      }
+    }
+  }
+  .lc__cateSuggest {
+    ul {
+      li {
+        a {
+          color: $gray-500;
+        }
+      }
+    }
+    @include respond-to("sm") {
+      background-color: $gray-100;
+      margin-bottom: 8px;
+      padding: 8px 0 0 0;
+      ul {
+        background-color: $white-100;
+      }
+    }
+  }
+  .lc__productSuggest {
+    .icon-circle-primary {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+    }
+    &-head {
+      display: flex;
+      align-items: center;
+    }
+    &-item {
+      display: flex;
+      padding: 8px 16px;
+      box-shadow: inset 0px -1px 0px #e4eaf1;
+      cursor: pointer;
+      @include respond-to("md") {
+        padding: 8px 10px;
+      }
+      .product-pic {
+        position: relative;
+        flex-basis: 64px;
+        max-width: 64px;
+        margin-right: 8px;
+        picture {
+          @include aspect-ratio(1, 1, 0);
+        }
+      }
+      .product-info {
+        flex: 1;
+        .product-info__price {
+        }
+      }
+    }
+  }
+}
+
+.lc__history {
+  position: absolute;
+  width: 100%;
+  background: $white-100;
+  box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+  border-radius: 0px 0px 12px 12px;
+  z-index: 2;
+  padding-top: 18px;
+  margin-top: -18px;
+
+  max-width: calc(100% - 76px);
+  @include respond-to("sm") {
+    margin-top: 0;
+    padding-top: 0;
+
+    border-radius: 0;
+    max-width: unset;
+  }
+  .lc__topkeywordSuggest {
+    &-badge {
+      display: flex;
+      flex-wrap: wrap;
+      .badge {
+       margin-right: 8px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

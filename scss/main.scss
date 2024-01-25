@@ -1,0 +1,109 @@
+
+@import "abstracts/variables";
+@import "abstracts/utilities";
+//mixin
+@import "abstracts/_mixins";
+
+@import "core/system";
+//components
+@import "components/_header-cart";
+@import "components/_product-count";
+@import "components/_cart-product";
+@import "components/_cart-final";
+@import "components/_cart-status";
+@import "components/_slide";
+@import "components/_table";
+
+@import "components/_location";
+@import "components/_datapicker";
+@import "components/_banking";
+
+@import "components/_dropdown-mb";
+@import "components/_pdc-feature";
+@import "components/_pdc-subLabel";
+@import "components/_pdc-customer";
+@import "components/_ppc-media";
+@import "components/_pdc_quantity";
+@import "components/_box-expert";
+@import "components/_pcd-transfer-location";
+@import "components/_search-suggest";
+
+//detail
+@import "components/detail/_fontsize-content";
+
+//nhập toa thuốc
+@import "components/upload/_uploader";
+@import "components/upload/_final";
+@import "components/upload/_lc-gallery";
+@import "components/upload/_auto-suggest";
+
+//cate thuốc
+@import "components/cate-thuoc/_cate-thuoc";
+
+//cate hoạt chất & dược liệu
+@import "components/hoat-chat-duoc-lieu/_hoat-chat-duoc-lieu";
+@import "components/_duoc-lieu";
+
+//skeleton loading
+@import "components/skeleton-loading/_skeleton-loading";
+@import "components/skeleton-loading/_skeleton-product";
+
+//đăng ký mặt bằng
+@import "components/_register";
+
+// header
+@import "components/header/_layout-custom";
+
+//motion
+@import "components/motion/_elasticTab";
+
+//layout
+@import "layout/_cart";
+@import "layout/_detail";
+@import "layout/_cate";
+@import "layout/promotion";
+@import "layout/_lunar-new-year";
+@import "layout/_form-covid-regist";
+@import "layout/_landing-pages";
+
+//pages
+@import "pages/_global";
+@import "pages/_fix_home_cate";
+@import "pages/_detail-thuoc";
+@import "pages/_detail-order";
+@import "pages/_home";
+@import "pages/_manage-account";
+@import "pages/_rules";
+@import "pages/list-shop";
+@import "pages/generic-drug";
+@import "pages/search-result";
+@import "pages/_cart-fail";
+@import "pages/_duoc-lieu";
+@import "pages/_http";
+@import "pages/_delivery";
+@import "pages/_form-covid";
+@import "pages/_lang-nghe-thau-hieu";
+@import "pages/_chuyen-trang-du-an";
+@import "pages/_chuyen-trang-ung-thu";
+
+//covid
+@import "pages/_covid";
+
+//livestream-quay-so
+@import "pages/_livestream-quay-so";
+@import "pages/_order-search-voucher";
+
+//sendo
+// @import "pages/_sendo-farm";
+
+// landing template
+@import "pages/_landing-template";
+
+//footer
+@import "layout/_footer";
+
+// @import "components/_demo-modal";
+
+body {
+  position: relative;
+}

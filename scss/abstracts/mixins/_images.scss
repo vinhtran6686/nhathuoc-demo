@@ -1,0 +1,6 @@
+@mixin objectFit($value){
+    object-fit: $value;
+}
+.fit-cover{
+    @include objectFit('cover');
+}

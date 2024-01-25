@@ -1,0 +1,135 @@
+.search__filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &-radio {
+    // padding-block: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    label {
+      input {
+        margin-top: 0;
+      }
+      @include respond-to("sm") {
+        font-size: 14px !important;
+        line-height: 20px !important;
+      }
+      @media (max-width: 359px) {
+        font-size: 12px !important;
+      }
+    }
+    input {
+      @include respond-to("sm") {
+        margin-right: 4px;
+      }
+    }
+    @include respond-to("md") {
+      flex-basis: 100%;
+    }
+  }
+  .radio-md input,
+  .checkbox-md input {
+    margin-top: 0;
+  }
+  .cs-dropdown {
+    flex: 1;
+    max-width: fit-content;
+    .dropdown-button {
+      min-width: 176px;
+      @include respond-to("sm") {
+        &::before {
+          border-radius: 8px;
+        }
+        min-width: 166px;
+        padding: 4px 16px 4px 8px;
+        span {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+      }
+    }
+    @media (max-width: 600px) {
+      width: calc(50% - 8px);
+      max-width: unset;
+    }
+    @media (max-width: 359px) {
+      width: 100%;
+      margin-right: 0 !important;
+    }
+  }
+  .dropdown-ttsk {
+    .dropdown-menu {
+      right: 0;
+      left: inherit;
+    }
+    @include respond-to("md") {
+      .dropdown-button {
+        padding: 4px 30px 4px 8px;
+        &::before {
+          border-radius: 8px;
+        }
+        span {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+      }
+    }
+  }
+  .checkbox {
+    @include respond-to("md") {
+      span {
+        font-size: 14px !important;
+        line-height: 20px !important;
+      }
+    }
+  }
+}
+
+.search__result {
+  display: flex;
+  align-items: center;
+  .badge {
+    margin-right: 0;
+  }
+
+  &-tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.lc__searchproduct {
+  &-inner {
+    .reset-row {
+      .col {
+        margin-bottom: 24px;
+        .product {
+          height: 100%;
+          transition: all 0.3s ease;
+          &-image {
+            picture {
+              @include aspect-ratio(1, 1, 0);
+            }
+          }
+          &-info {
+            h3 {
+              font-weight: 400;
+            }
+          }
+          @include respond-to("md") {
+            &-info {
+              h3 {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+        @include respond-to("md") {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

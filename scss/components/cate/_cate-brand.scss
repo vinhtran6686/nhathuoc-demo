@@ -1,0 +1,150 @@
+.cate__brand {
+  &--img {
+    flex-basis: 126px;
+    max-width: 126px;
+    picture {
+      @include aspect-ratio(1, 1, 0);
+    }
+    img {
+      border-radius: 17px;
+    }
+    @include respond-to("md") {
+      flex-basis: 72px;
+      max-width: 72px;
+      img {
+        border-radius: 8px;
+      }
+    }
+  }
+  &--text {
+    flex: 1;
+  }
+  @include respond-to("md") {
+    padding: 0 10px 12px 10px;
+    margin: 0 -10px 0px -10px;
+    box-shadow: inset 0px -1px 0px #e4eaf1;
+  }
+}
+.cate-list__brand {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  @include respond-to("md") {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.morecontent span {
+  @extend .lc-hide;
+}
+$cate-spacing-desktop: 8px;
+.brand__cate {
+  &--inner {
+    margin-right: -$cate-spacing-desktop;
+    margin-left: -$cate-spacing-desktop;
+    .col {
+      padding-left: $cate-spacing-desktop;
+      padding-right: $cate-spacing-desktop;
+      margin-bottom: 16px;
+    }
+    @include respond-to("lg") {
+      .col {
+        max-width: 174px;
+        flex: 1;
+        margin-bottom: 0;
+      }
+    }
+    @include respond-to("md") {
+      margin-right: calc(4px - #{$cate-spacing-desktop});
+      margin-left: calc(4px - #{$cate-spacing-desktop});
+      .col {
+        max-width: 50%;
+        flex: 50%;
+        padding-left: calc(#{$cate-spacing-desktop} - 4px);
+        padding-right: calc(#{$cate-spacing-desktop} - 4px);
+      }
+    }
+  }
+  &--item {
+    display: block;
+    padding: 12px 0;
+    transition: all 0.6s ease;
+    &:hover {
+      box-shadow: 0 0 0 1px #325dcd;
+      .brand__text {
+        h2 {
+          p {
+            color: $primary-500 !important;
+          }
+        }
+      }
+    }
+    .brand__image {
+      padding: 0 47px;
+      picture {
+        // @include aspect-ratio(1, 1, 0);
+        width: 80px;
+        height: 80px;
+      }
+      @include respond-to("md") {
+        picture {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+    .brand__text {
+      text-align: center;
+      margin-top: 8px;
+    }
+    @include respond-to("md") {
+      margin-bottom: 8px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      .brand__image {
+        flex-basis: 40px;
+        max-width: 40px;
+        margin-right: 8px;
+        padding: 0;
+      }
+      .brand__text {
+        margin-top: 0;
+        text-align: left;
+        flex: 1;
+      }
+    }
+  }
+}
+
+.warpper-listDrug {
+  @include respond-to("md") {
+    background: $gray-100;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0 -10px;
+  }
+}
+
+.lc__filter-group {
+  .group-category {
+    a {
+      display: block;
+      color: #334155;
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+      &.active {
+        color: #1d48ba;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.br-spacing {
+  padding-top: 20px;
+  @include respond-to("md") {
+    padding-top: 8px;
+    margin: 0 -10px 0px -10px;
+    background-color: $gray-100;
+  }
+}

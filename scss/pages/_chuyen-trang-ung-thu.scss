@@ -1,0 +1,630 @@
+// chuyen trang du an
+.cart-html .cart-body.lc-wrap-chuyen-trang-ung-thu {
+    overflow-x: initial !important;
+}
+
+.banner-chuyen-trang-ung-thu {
+    img {
+        border-radius: 12px;
+    }
+    @include respond-to("md") {
+        margin-top: -8px;
+        img {
+            border-radius: 0;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+        padding-top: 20px;
+        .none-block {
+            display: none !important;
+        }
+        .block-none {
+            display: block !important;
+        }
+    }
+    @media (max-width: 767px) {
+        .container {
+            padding: 0 !important;
+        }
+        img {
+            width: 100%;
+        }
+        .none-block {
+            display: block !important;
+        }
+        .block-none {
+            display: none !important;
+        }
+    }
+}
+
+.lc-chuyen-trang-ung-thu {
+    background: $gray-100;
+}
+
+.lc-chuyen-trang-ung-thu-banner {
+    text-align: center;
+    .container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+    .banner-text {
+        position: absolute;
+        width: 100%;
+        margin-top: 4%;
+        z-index: 1;
+        .title {
+            font-size: 40px;
+            line-height: 56px;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+        .content {
+            font-size: 36px;
+            line-height: 48px;
+        }
+    }
+    .inner-banner {
+        > p {
+            @include aspect-ratio(1440, 237, 0);
+            img {
+                @extend %ratio-img;
+            }
+        }
+    }
+    @include respond-to("md") {
+        .banner-text {
+            margin-top: 16px;
+            left: 30px;
+            right: 30px;
+            width: auto;
+            .content {
+                padding: 0 15px;
+            }
+        }
+        .inner-banner {
+            > p {
+                @include aspect-ratio(360, 203, 0);
+            }
+        }
+    }
+}
+
+.lc-du-an-title-big {
+    font-size: 40px;
+    line-height: 56px;
+    @include respond-to("md") {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+
+.lc-ung-thu-section-1 {
+    .lc-ung-thu-content {
+        color: $primary-500;
+    }
+}
+
+.lc-ung-thu-section-2 {
+    .lc-txt-info {
+        padding: 0 100px;
+    }
+    .lc-ung-thu-list-info {
+        .item {
+            border: 1px solid $info-300;
+            background: $info-100;
+            width: 32%;
+            img {
+                height: 68px;
+            }
+        }
+    }
+    @include respond-to("md") {
+        .lc-txt-info {
+            padding: 0;
+        }
+        .lc-ung-thu-list-info {
+            flex-wrap: wrap;
+            .item {
+                width: 100%;
+                justify-content: flex-start !important;
+                img {
+                    height: 45px;
+                }
+            }
+        }
+    }
+}
+
+.lc-ung-thu-section-3 {
+    @include respond-to("md") {
+        .container {
+            padding: 0 !important;
+        }
+        .lc-ung-thu-tabs {
+            border-radius: 0%;
+            box-shadow: none;
+            .lc-ung-thu-tabs-nav {
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+.lc-ung-thu-tabs {
+    background: #ffffff;
+    box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+    border-radius: 12px;
+    .wrap-lc-ung-thu-tabs-nav {
+        overflow: hidden;
+
+        background: url("../images/chuyen-trang-ung-thu/tab.png") no-repeat 0 0 transparent;
+        background-size: cover;
+        padding: 12px 24px;
+        border-radius: 12px 12px 0 0;
+        position: sticky;
+        top: 0;
+        z-index: 9;
+        &.active{
+        border-radius: 0;
+        }
+        @include respond-to("md") {
+            padding: 8px 0 8px 10px;
+            border: none;
+            border-radius: 0;
+            .lc-ung-thu-tabs-nav{
+                padding: 0;
+            }
+        }
+    }
+    #tab4 {
+        .img-border {
+            background-color: #f6f6f6;
+        }
+    }
+
+    .lc-ung-thu-tabs-nav {
+        // overflow-y: auto;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #f5f5f5;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+            width: 0.6px;
+            background-color: #f5f5f5;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            border: 0;
+        }
+        .selector {
+            border-radius: 6px;
+            z-index: 0;
+            left: 4px;
+            transition-duration: 0.6s;
+            transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        li {
+            display: inline-block;
+            padding-right: 13px;
+            width: auto;
+            &.active {
+                a {
+                    background: $primary-500;
+                    color: $white;
+                    font-weight: 500;
+                    border-color: $primary-500;
+                }
+            }
+        }
+        a {
+            display: block;
+            color: $gray-600;
+            padding: 10px 32px 8px;
+            border: 2px solid $gray-300;
+            border-radius: 100px;
+            text-transform: uppercase;
+            background-color: $white;
+            transition: $btn-transition;
+            &.active,
+            &:hover {
+                background-color: $primary-500;
+                color: $white;
+                font-weight: 500;
+                border-color: $primary-500;
+            }
+            &:hover {
+                font-weight: 400;
+            }
+        }
+        @include respond-to('md'){
+            // overflow-y: auto;
+        }
+    }
+    .lc-ung-thu-tabs-content {
+        .img-border {
+            width: 260px;
+            height: 260px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 100%;
+            img {
+                border: 13px solid #e1e9ff;
+                border-radius: 100%;
+            }
+        }
+    }
+    .lc-tab-content {
+        border-bottom: 1px solid $gray-300;
+        &:last-child {
+            border-bottom: none;
+        }
+        .spacing-x {
+            padding: 0 126px;
+        }
+        .list-group {
+            li {
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 12px;
+                    right: 0;
+                    border-bottom: 1px solid $gray-300;
+                    bottom: 0;
+                }
+                &:before {
+                    color: $gray-700;
+                    top: 8px;
+                }
+                &:last-child:after {
+                    display: none;
+                }
+            }
+        }
+
+        &-2 {
+            padding-bottom: 56px;
+        }
+        &-image {
+            .img {
+                img {
+                    border-radius: 12px;
+                }
+            }
+            .left {
+                margin-right: 44px;
+                flex: 0 0 560px;
+            }
+            .right {
+                width: 100%;
+            }
+            .wrap-link .link {
+                margin-top: 30px;
+            }
+            .list-num {
+                li {
+                    padding-left: 0;
+                    &:after {
+                        left: 36px;
+                    }
+                }
+                .num {
+                    flex: 0 0 24px;
+                    background: $gray-100;
+                    border: 1px solid $gray-300;
+                    border-radius: 100%;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+        &-5 {
+            .inner {
+                align-items: center;
+            }
+            .left {
+                margin-right: 24px;
+            }
+        }
+        &-6 {
+            .left {
+                margin-right: 24px;
+            }
+        }
+        &-hotline {
+            border-top: 1px solid $gray-300;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1180px) {
+        .lc-tab-content {
+            &-image {
+                .left {
+                    flex: 0 0 480px;
+                }
+            }
+        }
+    }
+    @include respond-to("md") {
+        .lc-ung-thu-tabs-nav {
+            padding: 8px 10px;
+            li {
+                padding-right: 5px;
+            }
+            a {
+                padding: 7px 16px 5px;
+                border-width: 1px;
+            }
+        }
+        .lc-tab-content {
+            border-bottom: 8px solid $gray-100;
+            .spacing-x {
+                padding: 0;
+            }
+            &-2 {
+                padding-bottom: 32px;
+            }
+            &-image {
+                .inner {
+                    flex-wrap: wrap;
+                    > * {
+                        width: 100%;
+                    }
+                }
+                .left {
+                    flex: auto;
+                    text-align: center;
+                    margin: 0;
+                }
+                .wrap-link {
+                    text-align: center;
+                }
+            }
+            &-6 {
+                .left {
+                    justify-content: center !important;
+                }
+                .right {
+                    border-bottom: 1px solid $gray-300;
+                }
+            }
+            &-hotline {
+                border-top: 8px solid $gray-100;
+                .group-btn {
+                    > div {
+                        flex-wrap: wrap;
+                    }
+                    .btn {
+                        padding: 0 16px 0 12px;
+                        min-width: 260px;
+                    }
+                    [class^="ic-"] {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 359px) {
+        .lc-tab-content {
+            &-hotline {
+                .group-btn {
+                    .btn span {
+                        font-size: 13px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lc-ung-thu-list-disease {
+    .item {
+        width: 49%;
+        border: 1px solid $info-300;
+        border-radius: 12px;
+        background: $info-100;
+        .tit {
+            color: $primary-500;
+            span {
+                width: 24px;
+                height: 24px;
+                line-height: 24px !important;
+                background: $primary-500;
+                color: $white;
+                border-radius: 100%;
+                vertical-align: bottom;
+            }
+        }
+    }
+    @include respond-to("md") {
+        flex-wrap: wrap;
+        .item {
+            width: 100%;
+        }
+    }
+}
+.txt-primary-500 {
+    color: #1d48ba;
+}
+
+.lc-ung-thu-list-prognostic {
+    flex-wrap: wrap;
+    .item {
+        width: 49%;
+        background: $gray-100;
+        border: 1px solid $gray-300;
+        border-radius: 1000px;
+        .img {
+            flex: 0 0 80px;
+            margin-right: 10px;
+            width: 78px;
+            height: 78px;
+            border-radius: 1000px;
+            img {
+                border-radius: 1000px;
+            }
+        }
+    }
+    @include respond-to("md") {
+        .item {
+            width: 100%;
+            padding: 8px 10px;
+            .txt {
+                position: relative;
+                padding-left: 10px;
+                &:before {
+                    content: "•";
+                    position: absolute;
+                    color: $primary-600;
+                    font-size: 18px;
+                    top: 0px;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.lc-ung-thu-form-advise {
+    background: $primary-500;
+    border-radius: 12px;
+    max-width: 480px;
+    .form-input {
+        font-size: 16px;
+        line-height: 24px;
+        color: $gray-700;
+        padding: 5px 16px;
+    }
+    textarea {
+        color: $gray-700 !important;
+    }
+    .btn {
+        text-transform: uppercase;
+        width: 100%;
+        border-radius: 100px;
+    }
+    .lc-du-an-title {
+        text-transform: uppercase;
+    }
+    .label-text {
+        color: $white;
+    }
+    .cs-row {
+        margin-right: -8px;
+        margin-left: -8px;
+    }
+    .alert-danger {
+        color: $danger-300;
+        i {
+            background-color: $danger-300 !important;
+        }
+    }
+    .dropdown-button {
+        border-radius: 12px;
+        & + .dropdown-menu + .alert {
+            display: none;
+        }
+    }
+    @include respond-to("md") {
+        margin: 0 auto;
+        .form-input {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 5px 12px;
+        }
+        .btn {
+            font-size: 16px;
+            height: 32px;
+        }
+        .dropdown-button {
+            border-radius: 8px;
+            padding-left: 12px;
+            &:before {
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+.lc-ung-thu-section-4 {
+    margin-top: -8px;
+    .inner-section-4 {
+        box-shadow: 0px 2px 4px rgba(10, 10, 10, 0.15);
+        border-radius: 0 0 12px 12px;
+        border-top: 1px solid $gray-300;
+    }
+    .left {
+        margin-right: 24px;
+        flex: 0 0 560px;
+    }
+    .right {
+        width: 100%;
+    }
+    @media (min-width: 992px) and (max-width: 1180px) {
+        .left {
+            flex: 0 0 480px;
+        }
+    }
+    @include respond-to("md") {
+        .container {
+            padding: 0 !important;
+        }
+        .inner-section-4 {
+            border-top: 8px solid $gray-100;
+            border-radius: 0;
+            box-shadow: none;
+        }
+        .inner {
+            flex-wrap: wrap;
+        }
+        .left {
+            flex: auto;
+            text-align: center;
+            margin: 0;
+            justify-content: center !important;
+        }
+        .wrap-link {
+            text-align: center;
+        }
+        .right {
+            border-bottom: 1px solid $gray-300;
+        }
+    }
+}
+
+.lc-ung-thu-section-5 {
+    .container .container {
+        padding: 0;
+    }
+    .section-news {
+        padding: 24px;
+        box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+        border-radius: 12px;
+    }
+
+    @include respond-to("md") {
+        .container {
+            padding: 0 !important;
+        }
+        .section-news {
+            box-shadow: none;
+            border-radius: 0;
+            padding: 16px 10px;
+        }
+    }
+}
+
+.lc-ung-thu-section-6 {
+    .lc-box {
+        margin: 0;
+    }
+}

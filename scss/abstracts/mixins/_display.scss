@@ -1,0 +1,9 @@
+@mixin displayShow($show: true){
+    @if $show{
+        display: block;
+    }@else{
+        display: none;
+    }
+}
+.lc-show{ @include displayShow(); }
+.lc-hide{ @include displayShow(false);}

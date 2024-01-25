@@ -1,0 +1,285 @@
+.location-left {
+    padding-left: 88px;
+    @include respond-to("md") {
+        padding-left: 0;
+    }
+}
+.product-location,
+.option-location,
+.find-location {
+    .row {
+        margin-right: -8px;
+        margin-left: -8px;
+    }
+    @include respond-to("md") {
+        .location-block {
+            .tit {
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.option .custom-underline,
+.option .alert-text span {
+    text-decoration: underline;
+    &:before {
+        display: none;
+    }
+}
+.product-location {
+    .col-alert-success {
+        .alert {
+            height: auto;
+            padding: 4px 8px;
+            span {
+                line-height: 24px;
+            }
+            [class*="alert-ic"] {
+                margin-top: 4px;
+                font-size: 8px;
+            }
+        }
+    }
+
+    @include respond-to("lg") {
+        .option {
+            min-width: 240px;
+        }
+    }
+    @include respond-to("md") {
+        > .row {
+            [class*="col"] {
+                &:first-child {
+                    order: 1;
+                }
+                &:nth-child(2) {
+                    order: 3;
+                }
+                &.col-alert-success {
+                    order: 2;
+                    .alert {
+                        height: auto;
+                        padding: 4px 8px;
+                        span {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                        [class*="alert-ic"] {
+                            margin-right: 4px;
+                            font-size: 8px;
+                        }
+                    }
+                }
+                &:last-child {
+                    order: 2;
+                }
+            }
+        }
+    }
+}
+.option-location {
+    .dropdown-menu {
+        z-index: 1031;
+    }
+    .dropdown-button {
+        + .dropdown-menu + .alert {
+            display: none;
+        }
+        &.is-invalid {
+            &:before {
+                border-color: #ef4444;
+            }
+            + .dropdown-menu + .alert {
+                display: inline-flex;
+            }
+        }
+    }
+}
+.form-receiving-location {
+    > .check-form {
+        .radio {
+        }
+    }
+    > .txt-gray-800.fs-p-18.f-w-500 {
+        margin-bottom: 12px !important;
+    }
+    .tab-item {
+        .icon-circle-primary {
+            background: transparent;
+            color: $gray-600;
+            line-height: 100%;
+        }
+        &.active {
+            .icon-circle-primary {
+                color: $white;
+            }
+        }
+        @media (min-width: 992px) {
+            &:hover,
+            &:focus {
+                .icon-circle-primary {
+                    color: $white;
+                }
+            }
+        }
+    }
+    @include respond-to("md") {
+        .tab-item {
+            padding: 6px 8px;
+            .label {
+                align-items: center;
+            }
+            .icon-circle-primary {
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+            }
+            &:not(:last-child) {
+                margin-right: 4px;
+            }
+            .label-text {
+                font-size: 14px !important;
+                line-height: 20px !important;
+                padding-top: 1px;
+            }
+        }
+    }
+    @media (max-width: 352px) {
+        .tab-item {
+            padding: 8px 4px;
+            .label-text {
+                font-size: 12px !important;
+                line-height: 16px !important;
+            }
+        }
+    }
+}
+// .form-chuyenhang,
+// .form-vanchuyen {
+//     padding-right: 220px;
+//     .alert {
+//         height: auto;
+//         padding: 4px 8px;
+//         &-ic {
+//             margin-top: 1px;
+//         }
+//     }
+//     @include respond-to("md") {
+//         // padding-right: 0px;
+//     }
+// }
+// .form-vanchuyen {
+//     margin-top: -12px;
+//     @include respond-to("md") {
+//         margin-top: -4px;
+//     }
+// }
+.block-dropdown-city {
+    .none-drug {
+        margin-right: -8px;
+        margin-left: -8px;
+    }
+}
+@media (max-width: 356px) {
+    // .form-coc,
+    // .form-vanchuyen {
+    //     .radio {
+    //         &:first-child {
+    //             margin-right: 8px !important;
+    //         }
+    //         label {
+    //             font-size: 14px !important;
+    //             line-height: 20px !important;
+    //         }
+    //     }
+    // }
+}
+.disable {
+    pointer-events: none;
+    > * {
+        color: $gray-500 !important;
+        input:after {
+            box-shadow: none !important;
+            background: $gray-200 !important;
+            border: 1px solid $gray-300 !important;
+        }
+    }
+}
+.form-location {
+    > .check-form {
+        border-radius: 6px;
+        box-shadow: inset 0 -1px 0 #e4eaf1;
+        background-color: #edf2f8;
+        padding: 8px;
+        .col-auto {
+            flex: 1;
+            margin-right: 0 !important;
+        }
+        .radio {
+            flex: 1;
+            justify-content: center;
+            label {
+                padding: 6px 12px;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .icon-circle-primary {
+                background: 0 0;
+                color: #52637a;
+                line-height: 100%;
+            }
+            &.checked,
+            &:hover {
+                border-radius: 6px;
+                position: relative;
+                text-align: center;
+                background: #1d48ba;
+                color: #fff;
+                transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                span {
+                    color: #fff;
+                    font-weight: 500;
+                }
+                .icon-circle-primary {
+                    color: #fff;
+                }
+            }
+        }
+        .hidden-location {
+            display: none;
+            opacity: 0;
+        }
+        @include respond-to("md") {
+            > .check-form {
+            .radio {
+                label {
+                    padding: 6px 8px;
+                }
+                span {
+                    font-size: 14px !important;
+                    line-height: 20px !important;
+                    padding-top: 1px;
+                }
+
+                .icon-circle-primary {
+                    width: 16px;
+                    height: 16px;
+                    line-height: 16px;
+                    margin-right: 4px !important;
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+        @media (max-width: 352px) {
+            .radio {
+                label {
+                    padding: 8px 4px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.table {
+  width: 100%;
+  tr {
+    &:not(:first-child) {
+      border-top: 1px solid #e9ecef;
+    }
+  }
+  td {
+    &:nth-child(1) {
+      width: 216px;
+    }
+    &:last-child {
+      padding-left: 4px;
+    }
+  }
+  &-head {
+    background-color: #f8f9fa;
+  }
+  @include respond-to("sm") {
+    &-head {
+      background-color: $white;
+    }
+    td {
+      &:nth-child(1) {
+        width: 116px;
+      }
+    }
+  }
+}

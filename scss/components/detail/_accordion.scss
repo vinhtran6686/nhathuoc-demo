@@ -1,0 +1,18 @@
+.accordion{
+    // margin-top: 32px;
+    ol,ul{
+        list-style: none;
+    }
+    table,tr,td{
+        border: none !important;
+    }
+}
+@include respond-to('md'){
+    .accordion{
+        margin-top: 0px;
+        margin-bottom: 16px !important;
+    }
+    .accordion-item .accordion-title .icon-md.icon-circle{
+        display: none;
+    }
+}

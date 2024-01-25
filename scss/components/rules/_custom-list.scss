@@ -1,0 +1,17 @@
+.lc__rules {
+  .breadcrumb {
+    @include respond-to("md") {
+      margin: 0 -10px;
+    }
+  }
+  .list {
+    li {
+      display: block;
+      color: $gray-700;
+      a {
+        display: inline-block !important;
+        line-height: initial;
+      }
+    }
+  }
+}

@@ -1,0 +1,243 @@
+.cart-list-promo {
+  .dropdown {
+    &-button {
+      &::before {
+        @include respond-to("md") {
+          border-radius: 8px;
+        }
+      }
+      @include respond-to("sm") {
+        span {
+          white-space: nowrap;
+          width: 290px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    &-menu {
+      width: 100%;
+      max-width: inherit;
+      box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+    }
+  }
+}
+
+.combo__wallet {
+  $this: &;
+
+  @include respond-to("md") {
+    &--cart {
+      // @debug #{$this}-picture;
+      #{$this}-picture {
+        width: 48px;
+        height: 48px;
+        padding: 4px;
+      }
+    }
+  }
+}
+
+.cart__voucher {
+  &--title {
+    .badge {
+      border-radius: 0 0 8px 8px;
+      cursor: default;
+    }
+  }
+  &--item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  .voucher {
+    &__img {
+      display: inline-flex;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      padding: 5px;
+    }
+    &__text {
+      flex: 1;
+      .cs-tooltip {
+        .lc-tooltip-box {
+          min-width: 278px;
+          @include respond-to("md") {
+            min-width: 340px;
+            padding: 12px 12px 16px 12px;
+            left: calc(100% - 150px);
+            border-radius: 12px;
+          }
+        }
+      }
+      .list {
+        li {
+          &:before {
+            top: 8px;
+            margin-right: 0 !important;
+          }
+        }
+      }
+    }
+    @include respond-to("md") {
+      &__img {
+        padding: 5px;
+      }
+      &__text {
+        .label-text {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+      }
+    }
+  }
+  @include respond-to("md") {
+    &--item {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+.lc__voucher-alert {
+  @include respond-to("md") {
+    .alert {
+      height: auto;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      align-items: flex-start;
+    }
+  }
+}
+
+// slide promo
+
+.cart__slide {
+  &--promo {
+    .slide-container {
+      [class*="sw-btn"] {
+        width: 32px;
+        height: 32px;
+        line-height: 34px;
+
+        margin-top: 0;
+
+        top: calc(100% - 115px);
+      }
+      .swiper-button-next {
+        margin-right: 0;
+      }
+      .swiper-button-prev {
+        margin-left: 0;
+      }
+      @media (min-width: 992px) {
+        .swiper-slide-active + .swiper-slide-next + .swiper-slide {
+          margin-right: 20px !important;
+        }
+      }
+      @include respond-to("md") {
+        .swiper-slide {
+          max-width: calc(100% / 2.5);
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  &--item {
+    &-picture {
+      width: 80px;
+      height: 80px;
+      margin: auto;
+    }
+  }
+}
+
+// Interaction dropdown
+.dropdown-promotion {
+  &.not-valueable {
+    .dropdown {
+      &-button {
+        background-color: $gray-200;
+        border-radius: 12px;
+        span {
+          text-decoration: line-through;
+          color: $gray-500;
+        }
+      }
+      &-menu {
+        a.not-able {
+          background-color: $gray-200;
+          span {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Popup cart promotion
+.modal-promotion {
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(336.8deg, #f59e0b 15.39%, #fcd34d 85.51%);
+    border-radius: 50%;
+    i {
+      font-size: 50px;
+      color: $white-100;
+    }
+    @include respond-to("md") {
+      width: 72px;
+      height: 72px;
+      i {
+        font-size: 45px;
+      }
+    }
+  }
+  &__image {
+    display: flex;
+    justify-content: center;
+    picture {
+      @include respond-to("md") {
+        max-width: 200px;
+        margin: auto;
+      }
+    }
+  }
+  .modal-wrapper {
+    max-width: 576px;
+    @include respond-to("md") {
+      margin: 0 10px;
+    }
+  }
+  .modal-box {
+    border-radius: 12px;
+  }
+  .modal-header {
+    box-shadow: none;
+    position: relative;
+    min-height: 36px;
+    .modal-close {
+      position: absolute;
+      right: 20px;
+      top: 16px;
+    }
+  }
+}
+
+// config modal
+#thongbaokhuyenmaithaydoi {
+  .modal-body {
+    padding: 24px 24px 0;
+  }
+  .modal-footer {
+    padding: 12px 24px 24px 24px;
+  }
+}

@@ -1,0 +1,134 @@
+.slide-container {
+  [class*="sw-btn"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 44px;
+    background: $white-100;
+    box-shadow: 0 0 0 1px #d8e0e8;
+    border-radius: 50%;
+    margin-top: -36px;
+
+    outline: none;
+    i {
+      font-size: 16px;
+      color: $gray-600;
+      font-weight: 500;
+    }
+    &:after,
+    &:before {
+      content: "";
+      font-size: 0;
+    }
+
+    &.swiper-button-disabled {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  .swiper-button-next {
+    margin-right: -30px;
+    i {
+      margin-left: 4px;
+    }
+  }
+  .swiper-button-prev {
+    margin-left: -30px;
+  }
+}
+
+.cs-slide {
+  // margin: auto -12px;
+  .swiper-slide {
+    padding: 0 12px;
+    height: auto;
+
+    .product {
+      transition: all 0.3s ease-out;
+      box-shadow: none !important;
+      border: 1px solid $gray-300 !important;
+
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      &-btn {
+        margin-top: auto;
+      }
+      &:hover {
+        border: solid 1px $primary-400 !important;
+      }
+    }
+
+    a {
+      cursor: pointer;
+      font-weight: 400;
+    }
+
+    picture {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 100%;
+      & > :first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  @include respond-to("md") {
+    margin: auto -10px auto -4px;
+    .swiper-slide {
+      max-width: calc(100% / 2.5);
+      width: 100% !important;
+      padding: 0 4px;
+    }
+  }
+}
+.lc-body {
+  margin-top: 0 !important;
+}
+.cart-buy {
+  // padding-top: 32px;
+  margin-bottom: 0 !important;
+
+  &.cart-buy--together,
+  &.cart-buy--later {
+    padding-bottom: 32px;
+  }
+  h2 {
+    font-weight: 500;
+  }
+  .swiper-wrapper {
+    padding-bottom: 0 !important;
+  }
+  .swiper-container {
+    margin: 0 -12px;
+  }
+  @include respond-to("md") {
+    &.cart-buy--together,
+    &.cart-buy--related,
+    &.cart-buy--later {
+      padding-bottom: 16px;
+    }
+    .product-btn {
+      padding: 0 !important;
+      .btn {
+        width: 100%;
+        margin-right: 0 !important;
+      }
+    }
+    .swiper-container {
+      margin: 0 0 0 -4px;
+    }
+  }
+}

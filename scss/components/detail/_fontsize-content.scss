@@ -1,0 +1,161 @@
+.option {
+    &-box {
+        border: 1px solid #e4eaf1;
+        position: relative;
+        .selector {
+            background: #718198;
+            border-radius: 1000px;
+            box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+            left: 2px;
+        }
+    }
+    &-label {
+        color: $gray-600;
+        @include respond-to("md") {
+            color: $gray-700;
+        }
+    }
+
+    &-item {
+        display: inline-flex;
+        align-items: center;
+        @extend .p-y-4, .p-x-8;
+
+        &.active {
+            // background: #718198;
+            // box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+            span {
+                color: $white !important;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+.detail-wrap-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: inset 0px -1px 0px #d8e0e8;
+    padding-bottom: 16px;
+    & > h2,
+    h1 {
+        flex-basis: 65%;
+        width: 100%;
+        margin-right: 12px;
+        margin-bottom: 0 !important;
+    }
+    .option-wrap {
+        // flex: 1;
+    }
+    @include respond-to("md") {
+        display: block;
+        box-shadow: none;
+        padding-bottom: 0;
+        & > strong {
+            padding-bottom: 16px;
+            box-shadow: inset 0px -1px 0px #d8e0e8;
+            margin-right: 0;
+        }
+        .option-wrap {
+            padding-top: 8px;
+            margin-top: 16px;
+            box-shadow: inset 0px 1px 0px #e4eaf1;
+        }
+    }
+}
+
+// define class change font-size detail
+.large-text {
+    .detail-drug h2.alert-head span,
+    .medicine__section h2.alert-head span {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .detail-drug h2, .medicine__section h2 {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 36px;
+        @include respond-to("md") {
+            font-size: 24px !important;
+            line-height: 32px !important;
+        }
+    }
+    .detail-drug ul.list p, .medicine__section ul.list p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .detail-drug h3,
+    .detail-drug h4,
+    .medicine__section h3,
+    .medicine__section h4 {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 500;
+        @include respond-to("md") {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+    .detail-drug > p,.medicine__section > p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .detail-drug > ul li,
+    .detail-drug > ol li,
+    .detail-drug > div > ul li ,
+    .medicine__section > ul li,
+    .medicine__section > ol li,
+    .medicine__section > div > ul li {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    blockquote > * {
+        font-size: 20px !important;
+        line-height: 28px !important;
+        @include respond-to("md") {
+            font-size: 18px !important;
+            line-height: 24px !important;
+        }
+    }
+
+    &.generic-drugs, &.medicine__section {
+        h1 {
+            font-size: 36px;
+            line-height: 48px;
+            @include respond-to("md") {
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        h2 {
+            font-size: 28px;
+            line-height: 36px;
+            @include respond-to("md") {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+        h3,
+        h4 {
+            font-size: 24px;
+            line-height: 32px;
+            @include respond-to("md") {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+        ul.list,
+        ol.list {
+            & > li {
+                font-size: 18px !important;
+                line-height: 24px !important;
+            }
+        }
+    }
+}

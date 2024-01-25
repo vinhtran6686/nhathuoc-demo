@@ -1,0 +1,13 @@
+.lch-loginsearch {
+  flex: 0 0 168px;
+  @include respond-to("lg") {
+    flex: 0 0 140px;
+  }
+}
+
+.lch__cart {
+  flex: 0 0 107px;
+  @include respond-to("md") {
+    flex: 0;
+  }
+}

@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>Danh sách nhà thuốc</title>
+  <!-- CSS file import -->
+  <!-- <link rel="stylesheet" href="css/all.css" /> -->
+  <link rel="stylesheet" href="css/system.css" />
+  <!-- <link rel="stylesheet" href="css/libs/lightgallery.css" /> -->
+  <link rel="stylesheet" href="css/libs/new-gallery.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css">
+  <!-- Js file import -->
+  <script src="js/libs/jquery-3.1.0.min.js"></script>
+  <!-- <script src="js/libs/lightgallery-all.min.js"></script> -->
+  <script src="js/libs/new-gallery.min.js"></script>
+</head>
+
+<body>
+  <section class="lc__wrapper relative">
+    <div class="lc__section banner-dsnt position-relative">
+      <div class="container">
+        <div class="dsnt-inner">
+          <div class="row align-items-center m-x-0">
+            <div class="col col-md-12 cs-col p-x-0">
+              <div class="banner-content">
+                <h1 class="banner-title txt-white fs-p-32 fs-p-lg-28 fs-p-md-24 m-b-md-8">Hệ Thống 200 Nhà Thuốc Trên
+                  Toàn Quốc</h1>
+                <p class="txt-white">Thời gian hoạt động: 7:00 - 21:00 hằng ngày</p>
+              </div>
+            </div>
+            <div class="col col-md-12 cs-col p-x-0">
+              <div class="banner-image txt-center">
+                <picture>
+                  <source media="(max-width: 992px)" srcset="images/banner-html/imagesmb-dsnt.png" sizes="">
+                  <img src="images/banner-html/images-dsnt.png" alt="">
+                </picture>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- <div class="background-dsnt">
+        <picture>
+          <img src="images/banner-html/banner-dsnt.png" alt="">
+        </picture>
+      </div> -->
+    </div>
+
+    <div class="lc__dsnt m-b-md-12 p-b-40 p-b-md-0">
+      <div class="container">
+        <div class="lc__dsnt-inner">
+          <div class="row no-gutters">
+            <div class="col-4 col-md-12 bg-white p-t-24 p-t-md-0">
+              <div class="lc__section lc__dsnt-list p-x-24 p-x-md-0">
+                <div class="list-top p-x-md-16 p-t-md-16">
+                  <h2 class="fs-p-20 txt-gray-700 m-b-12">Chọn vị trí nhà thuốc</h2>
+                  <div class="tab tab-sm tab-fill tab-radius tab-container tab-inner  js-tab">
+                    <a class="tab-item active" rel="tab1">
+                      <div class="label label-sm">
+                        <i class="ic-store-pharmacy fs-ui-16 m-r-4"></i>
+                        <span class="label-text">Theo địa phương</span>
+                      </div>
+                    </a>
+                    <a class="tab-item" rel="tab2">
+                      <div class="label label-sm">
+                        <i class="ic-line-location fs-ui-16 m-r-4"></i>
+                        <span class="label-text">Vị trí của bạn</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="dropdown-group form-groups m-t-12">
+                    <div class="dropdown dropdown-extra dropdown-search dropdown-city select__region m-b-12 select__city">
+                      <div class="dropdown-button blockCityFinal currentCity is-invalid" data-city="" data-region="">
+                        <span>
+
+                          <span>Hồ Chí Minh</span>
+                        </span>
+                        <i class="ic-arrow-select icon-md"></i>
+                      </div>
+                      <div class="dropdown-menu select__region_city" data-type="city">
+                        <div class="dropdown-menu-top">
+                          <div class="dropdown-menu-search">
+                            <div class="form-search form-search-sm">
+
+                              <span class="form-search-icon m-r-4">
+                                <i class="ic-search icon-sm"></i>
+                              </span>
+
+                              <input type="text" class="form-search-input m-r-4 js-search"
+                                placeholder="Nhập tìm Tỉnh/Thành">
+                              <span class="form-search-icon form-search-close" style="display: none;">
+                                <i class="ic-cancel icon-sm"></i>
+                              </span>
+
+                            </div>
+                            <span class="link none-block close js-close">Huỷ bỏ</span>
+                          </div>
+                        </div>
+                        <div class="dropdown-menu-wrapper scrollbar js--city-list">
+                          <a class="item-region active" data-id="10958" token-filter="thanh-pho-ho-chi-minh"
+                            href="https://github.com/" data-htcity="23" data-htdistrict="" data-ajax="false">
+
+                            Hồ Chí Minh
+                          </a>
+                          <a class="item-region" data-id="1940" token-filter="thanh-pho-ha-noi" data-htcity="26"
+                            data-htdistrict="">
+
+                            <span>Hà Nội</span>
+                          </a>
+                          <a class="item-region" data-id="4408" token-filter="thanh-pho-da-nang" data-htcity="17"
+                            data-htdistrict="">
+
+                            <span>Đà Nẵng</span>
+                          </a>
+                          <a class="item-region" data-id="11428" token-filter="tinh-bac-ninh" data-htcity="7"
+                            data-htdistrict="">
+
+                            <span>Bắc Ninh</span>
+                          </a>
+                          <a class="item-region" data-id="11563" token-filter="tinh-bac-giang" data-htcity="4"
+                            data-htdistrict="">
+
+                            <span>Bắc Giang</span>
+                          </a>
+                          <a class="item-region" data-id="11305" token-filter="tinh-ha-nam" data-htcity="27"
+                            data-htdistrict="">
+
+                            <span>Hà Nam</span>
+                          </a>
+                          <a class="item-region" data-id="10790" token-filter="tinh-quang-binh" data-htcity="48"
+                            data-htdistrict="">
+
+                            <span>Quảng Bình</span>
+                          </a>
+                          <a class="item-region" data-id="10499" token-filter="tinh-phu-tho" data-htcity="46"
+                            data-htdistrict="">
+
+                            <span>Phú Thọ</span>
+                          </a>
+                          <a class="item-region" data-id="10298" token-filter="tinh-quang-ninh" data-htcity="49"
+                            data-htdistrict="">
+
+                            <span>Quảng Ninh</span>
+                          </a>
+                          <a class="item-region" data-id="10213" token-filter="tinh-hau-giang" data-htcity="32"
+                            data-htdistrict="">
+
+                            <span>Hậu Giang</span>
+                          </a>
+                          <a class="item-region" data-id="10005" token-filter="tinh-long-an" data-htcity="37"
+                            data-htdistrict="">
+
+                            <span>Long An</span>
+                          </a>
+                          <a class="item-region" data-id="9848" token-filter="tinh-dong-thap" data-htcity="20"
+                            data-htdistrict="">
+
+                            <span>Đồng Tháp</span>
+                          </a>
+                          <a class="item-region" data-id="9499" token-filter="tinh-ha-tinh" data-htcity="29"
+                            data-htdistrict="">
+
+                            <span>Hà Tĩnh</span>
+                          </a>
+                          <a class="item-region" data-id="9088" token-filter="tinh-tra-vinh" data-htcity="61"
+                            data-htdistrict="">
+
+                            <span>Trà Vinh</span>
+                          </a>
+                          <a class="item-region" data-id="9204" token-filter="tinh-thai-binh" data-htcity="55"
+                            data-htdistrict="">
+
+                            <span>Thái Bình</span>
+                          </a>
+                          <a class="item-region" data-id="9016" token-filter="tinh-bac-lieu" data-htcity="6"
+                            data-htdistrict="">
+
+                            <span>Bạc Liêu</span>
+                          </a>
+                          <a class="item-region" data-id="8738" token-filter="tinh-hai-duong" data-htcity="24"
+                            data-htdistrict="">
+
+                            <span>Hải Dương</span>
+                          </a>
+                          <a class="item-region" data-id="8348" token-filter="tinh-dak-lak" data-htcity="16"
+                            data-htdistrict="">
+
+                            <span>Đắk Lắk</span>
+                          </a>
+                          <a class="item-region" data-id="8085" token-filter="tinh-quang-nam" data-htcity="51"
+                            data-htdistrict="">
+
+                            <span>Quảng Nam</span>
+                          </a>
+                          <a class="item-region" data-id="7612" token-filter="tinh-tien-giang" data-htcity="56"
+                            data-htdistrict="">
+
+                            <span>Tiền Giang</span>
+                          </a>
+                          <a class="item-region" data-id="7429" token-filter="tinh-dong-nai" data-htcity="18"
+                            data-htdistrict="">
+
+                            <span>Đồng Nai</span>
+                          </a>
+                          <a class="item-region" data-id="7172" token-filter="thanh-pho-can-tho" data-htcity="14"
+                            data-htdistrict="">
+
+                            <span>Cần Thơ</span>
+                          </a>
+                          <a class="item-region" data-id="7267" token-filter="tinh-thua-thien-hue" data-htcity="31"
+                            data-htdistrict="">
+
+                            <span>Thừa Thiên Huế</span>
+                          </a>
+                          <a class="item-region" data-id="7071" token-filter="tinh-binh-duong" data-htcity="2"
+                            data-htdistrict="">
+
+                            <span>Bình Dương</span>
+                          </a>
+                          <a class="item-region" data-id="6870" token-filter="tinh-ba-ria-vung-tau" data-htcity="9"
+                            data-htdistrict="">
+
+                            <span>Bà Rịa - Vũng Tàu</span>
+                          </a>
+                          <a class="item-region" data-id="6960" token-filter="tinh-ca-mau" data-htcity="13"
+                            data-htdistrict="">
+
+                            <span>Cà Mau</span>
+                          </a>
+                          <a class="item-region" data-id="6064" token-filter="tinh-ninh-binh" data-htcity="43"
+                            data-htdistrict="">
+
+                            <span>Ninh Bình</span>
+                          </a>
+                          <a class="item-region" data-id="5826" token-filter="thanh-pho-hai-phong" data-htcity="28"
+                            data-htdistrict="">
+
+                            <span>Hải Phòng</span>
+                          </a>
+                          <a class="item-region" data-id="5475" token-filter="tinh-binh-thuan" data-htcity="11"
+                            data-htdistrict="">
+
+                            <span>Bình Thuận</span>
+                          </a>
+                          <a class="item-region" data-id="5325" token-filter="tinh-khanh-hoa" data-htcity="35"
+                            data-htdistrict="">
+
+                            <span>Khánh Hòa</span>
+                          </a>
+                          <a class="item-region" data-id="5151" token-filter="tinh-ben-tre" data-htcity="10"
+                            data-htdistrict="">
+
+                            <span>Bến Tre</span>
+                          </a>
+                          <a class="item-region" data-id="4794" token-filter="tinh-nam-dinh" data-htcity="44"
+                            data-htdistrict="">
+
+                            <span>Nam Định</span>
+                          </a>
+                          <a class="item-region" data-id="4689" token-filter="tinh-tay-ninh" data-htcity="58"
+                            data-htdistrict="">
+
+                            <span>Tây Ninh</span>
+                          </a>
+                          <a class="item-region" data-id="4170" token-filter="tinh-lang-son" data-htcity="41"
+                            data-htdistrict="">
+
+                            <span>Lạng Sơn</span>
+                          </a>
+                          <a class="item-region" data-id="4048" token-filter="tinh-phu-yen" data-htcity="47"
+                            data-htdistrict="">
+
+                            <span>Phú Yên</span>
+                          </a>
+                          <a class="item-region" data-id="3680" token-filter="tinh-kien-giang" data-htcity="34"
+                            data-htdistrict="">
+
+                            <span>Kiên Giang</span>
+                          </a>
+                          <a class="item-region" data-id="3178" token-filter="tinh-nghe-an" data-htcity="42"
+                            data-htdistrict="">
+
+                            <span>Nghệ An</span>
+                          </a>
+                          <a class="item-region" data-id="3007" token-filter="tinh-binh-dinh" data-htcity="3"
+                            data-htdistrict="">
+
+                            <span>Bình Định</span>
+                          </a>
+                          <a class="item-region" data-id="2729" token-filter="tinh-vinh-long" data-htcity="62"
+                            data-htdistrict="">
+
+                            <span>Vĩnh Long</span>
+                          </a>
+                          <a class="item-region" data-id="2555" token-filter="tinh-lao-cai" data-htcity="38"
+                            data-htdistrict="">
+
+                            <span>Lào Cai</span>
+                          </a>
+                          <a class="item-region" data-id="1741" token-filter="tinh-quang-ngai" data-htcity="50"
+                            data-htdistrict="">
+
+                            <span>Quảng Ngãi</span>
+                          </a>
+                          <a class="item-region" data-id="1441" token-filter="tinh-quang-tri" data-htcity="52"
+                            data-htdistrict="">
+
+                            <span>Quảng Trị</span>
+                          </a>
+                          <a class="item-region" data-id="778" token-filter="tinh-thanh-hoa" data-htcity="57"
+                            data-htdistrict="">
+
+                            <span>Thanh Hóa</span>
+                          </a>
+                          <a class="item-region" data-id="483" token-filter="tinh-binh-phuoc" data-htcity="8"
+                            data-htdistrict="">
+
+                            <span>Bình Phước</span>
+                          </a>
+                          <a class="item-region" data-id="362" token-filter="tinh-soc-trang" data-htcity="54"
+                            data-htdistrict="">
+
+                            <span>Sóc Trăng</span>
+                          </a>
+                          <a class="item-region" data-id="169" token-filter="tinh-kon-tum" data-htcity="36"
+                            data-htdistrict="">
+
+                            <span>Kon Tum</span>
+                          </a>
+                          <a class="item-region" data-id="282" token-filter="tinh-dak-nong" data-htcity="19"
+                            data-htdistrict="">
+
+                            <span>Đắk Nông</span>
+                          </a>
+                          <a class="item-region" data-id="1" token-filter="tinh-an-giang" data-htcity="1"
+                            data-htdistrict="">
+
+                            <span>An Giang</span>
+                          </a>
+
+
+                        </div>
+                      </div>
+                      <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert alert_city">
+                        <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                        <span class="">Vui lòng chọn Tỉnh/Thành</span>
+                      </div>
+                    </div>
+                    <div class="dropdown dropdown-extra dropdown-search dropdown-district select__region ">
+                      <div class="dropdown-button currentDistrict" data-region="">
+                        <span>Quận/Huyện</span>
+                        <i class="ic-arrow-select icon-md"></i>
+                      </div>
+                      <div class="dropdown-menu select__region_district blockCityFinal" data-type="district">
+                        <div class="dropdown-menu-top">
+                          <div class="dropdown-menu-search">
+                            <div class="form-search form-search-sm">
+                              <span class="form-search-icon m-r-4">
+                                <i class="ic-search icon-sm"></i>
+                              </span>
+                              <input type="text" class="form-search-input m-r-4 js-search"
+                                placeholder="Nhập tìm Quận/Huyện">
+                              <span class="form-search-icon form-search-close" style="display: none;">
+                                <i class="ic-cancel icon-sm"></i>
+                              </span>
+                            </div>
+                            <span class="link none-block close js-close">Huỷ bỏ</span>
+                          </div>
+                        </div>
+                        <div class="dropdown-menu-wrapper scrollbar  js--city-list region__wapper"><a
+                            class="item-region" data-id="11429" token-filter="thanh-pho-bac-ninh" data-htcity="7"
+                            data-htdistrict="55">
+
+                            <span>Bắc Ninh</span>
+                          </a>
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lc__tab tab-location active" id="tab1">
+                  <div class="tab__list">
+
+                    <div class="location-block m-t-16">
+                      <div class="feature__location">
+                        <div
+                          class="feature__location-inner full check-form radius-8 box-full p-x-12 scrollbar js-check-list">
+                          <div class="feature__location-title p-x-12 p-t-12 p-b-8">
+                            <p class="f-w-500 txt-gray-700 fs-p-14">Hân hạnh phục vụ quý khách tại các địa điểm sau:
+                            </p>
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm">
+                              <label class="u-flex" for="radioShopId90">
+                                <input type="radio" value="80091" name="cuahang_id" id="radioShopId90">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    359 Trưng Nữ Vương, P. Hòa Thuận Đông, Q. Hải Châu, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId254">
+                                <input type="radio" value="80245" name="cuahang_id" id="radioShopId254">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    120 - 122 Đống Đa, P. Thuận Phước, Q. Hải Châu, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId235">
+                                <input type="radio" value="80238" name="cuahang_id" id="radioShopId235">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    145 Phan Đăng Lưu, P. Hòa Cường, Q. Hải Châu, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId145">
+                                <input type="radio" value="80146" name="cuahang_id" id="radioShopId145">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    264-266 Ông Ích Khiêm, P. Tân Chính, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId99">
+                                <input type="radio" value="80101" name="cuahang_id" id="radioShopId99">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    65 Nguyễn Văn Thoại, P. An Hải Đông, Q. Sơn Trà, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId93">
+                                <input type="radio" value="80072" name="cuahang_id" id="radioShopId93">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    64 Trần Cao Vân, P. Tam Thuận, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId81">
+                                <input type="radio" value="80078" name="cuahang_id" id="radioShopId81">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    166 Ông Ích Khiêm, P. Tam Thuận, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId81">
+                                <input type="radio" value="80078" name="cuahang_id" id="radioShopId81">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    166 Ông Ích Khiêm, P. Tam Thuận, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId81">
+                                <input type="radio" value="80078" name="cuahang_id" id="radioShopId81">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    166 Ông Ích Khiêm, P. Tam Thuận, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId81">
+                                <input type="radio" value="80078" name="cuahang_id" id="radioShopId81">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    166 Ông Ích Khiêm, P. Tam Thuận, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId81">
+                                <input type="radio" value="80078" name="cuahang_id" id="radioShopId81">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    166 Ông Ích Khiêm, P. Tam Thuận, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId81">
+                                <input type="radio" value="80078" name="cuahang_id" id="radioShopId81">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    166 Ông Ích Khiêm, P. Tam Thuận, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="rs-view text-center u-flex justify-center p-y-8 p-x-12" style="display: none;">
+                            <a class="link link-icon link-xs js-loadMore"> Xem thêm <span class="m-x-4">7</span> nhà
+                              thuốc
+                              <i class="ic-angle-down m-l-4 fs-ui-12"></i>
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lc__tab tab-location" id="tab2">
+                  <div class="tab__list">
+
+                    <div class="location-block m-t-16">
+                      <div class="feature__location">
+                        <div
+                          class="feature__location-inner check-form radius-8 box-full p-x-12 scrollbar js-check-list">
+                          <div class="feature__location-title p-x-12 p-t-12 p-b-8">
+                            <p class="f-w-500 txt-gray-700 fs-p-14">Hân hạnh phục vụ quý khách tại các địa điểm sau:
+                            </p>
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm">
+                              <label class="u-flex" for="radioShopId90">
+                                <input type="radio" value="80091" name="cuahang_id" id="radioShopId90">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    359 Trưng Nữ Vương, P. Hòa Thuận Đông, Q. Hải Châu, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId254">
+                                <input type="radio" value="80245" name="cuahang_id" id="radioShopId254">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    120 - 122 Đống Đa, P. Thuận Phước, Q. Hải Châu, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId235">
+                                <input type="radio" value="80238" name="cuahang_id" id="radioShopId235">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    145 Phan Đăng Lưu, P. Hòa Cường, Q. Hải Châu, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId145">
+                                <input type="radio" value="80146" name="cuahang_id" id="radioShopId145">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    264-266 Ông Ích Khiêm, P. Tân Chính, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId99">
+                                <input type="radio" value="80101" name="cuahang_id" id="radioShopId99">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    65 Nguyễn Văn Thoại, P. An Hải Đông, Q. Sơn Trà, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId93">
+                                <input type="radio" value="80072" name="cuahang_id" id="radioShopId93">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    64 Trần Cao Vân, P. Tam Thuận, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId81">
+                                <input type="radio" value="80078" name="cuahang_id" id="radioShopId81">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    166 Ông Ích Khiêm, P. Tam Thuận, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId81">
+                                <input type="radio" value="80078" name="cuahang_id" id="radioShopId81">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    166 Ông Ích Khiêm, P. Tam Thuận, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId81">
+                                <input type="radio" value="80078" name="cuahang_id" id="radioShopId81">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    166 Ông Ích Khiêm, P. Tam Thuận, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId81">
+                                <input type="radio" value="80078" name="cuahang_id" id="radioShopId81">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    166 Ông Ích Khiêm, P. Tam Thuận, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId81">
+                                <input type="radio" value="80078" name="cuahang_id" id="radioShopId81">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    166 Ông Ích Khiêm, P. Tam Thuận, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="address-item relative b-b-100 p-y-8 shop__item" aria-tab='block2'>
+                            <div class="radio radio-sm ">
+                              <label class="u-flex" for="radioShopId81">
+                                <input type="radio" value="80078" name="cuahang_id" id="radioShopId81">
+
+                                <div class="address-name">
+                                  <div class="lct-txt fs-p-14">
+                                    166 Ông Ích Khiêm, P. Tam Thuận, Q. Thanh Khê, TP. Đà Nẵng
+                                  </div>
+
+
+
+
+                                  <div class="dropdown-address-status">
+                                    <div class="alert alert-sm alert-success alert-des">
+                                      <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                      <span class="shopStatus" data-time="2021/06/30 11:37:33">Có hàng sẵn</span>
+                                    </div>
+                                  </div>
+
+
+
+
+
+                                </div>
+
+
+                              </label>
+
+
+                            </div>
+
+                          </div>
+                          <div class="rs-view text-center u-flex justify-center p-y-8 p-x-12" style="display: none;">
+                            <a class="link link-icon link-xs js-loadMore"> Xem thêm <span class="m-x-4">7</span> nhà
+                              thuốc
+                              <i class="ic-angle-down m-l-4 fs-ui-12"></i>
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-md-12 tab-fixed p-x-md-10 bg-white p-t-24 p-t-md-0">
+              <div class="lc__section p-x-md-10">
+                <a class="heading-back txt-white fs-p-20 none-block p-y-md-8 p-x-md-24  txt-center  js-back sticky-top"><i
+                    class="ic-angle-left-thin fs-ui-16 position-absolute"></i>Sản Phẩm Mua Sau</a>
+                <div class="lc__dsnt-info" id="block1">
+                  <p class="paragraph paragraph-normal paragraph-padding p-t-24">Long Châu là hệ thống nhà thuốc bán lẻ
+                    & phân
+                    phối
+                    trải khắp 63 tỉnh thành luôn luôn mở rộng để phục vụ
+                    Khách hàng trên
+                    toàn quốc, cung cấp dịch vụ bán hàng và phục vụ hàng đầu:</p>
+                </div>
+                <div class="lc__dsnt-info" id="block2">
+                  <div class="shop__image">
+                    <picture><img src="images/shop-image.png" class="radius-12 radius-none" alt=""></picture>
+                  </div>
+                  <div class="shop__logo txt-center relative">
+                    <div class="logo-item"><img src="images/banner-html/dsnt-logo.svg" alt=""></div>
+                  </div>
+
+                  <h1 class="fs-p-20 txt-gray-800 fs-p-md-16 p-t-24 p-b-24 p-t-md-16 p-b-md-8 shop__title">Nhà Thuốc
+                    Long
+                    Châu
+                    379-381 Hai Bà Trưng,
+                    Quận 3, Hồ Chí
+                    Minh</h1>
+
+                  <div class="shop__address relative p-t-12 p-b-md-0 box-b-1">
+                    <div class="shop__address-item">
+                      <div class="address-content">
+                        <p class="txt-gray fs-p-md-14">Địa chỉ</p>
+                        <p class="txt-gray-700 fs-p-md-14">379-381 Hai Bà Trưng, P. Võ Thị Sáu, Q. 3, TP. Hồ Chí Minh
+                        </p>
+                      </div>
+                      <div class="shop__address-map position-absolute">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.976539392315!2d106.71596781423541!3d10.736291462870357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f295bb70001%3A0xf084244d40b18170!2zTmjDoCB0aHXhu5FjIExvbmcgQ2jDonUgNg!5e0!3m2!1svi!2s!4v1527473079286"
+                          width="276" height="188" frameborder="0" style="border:0"></iframe>
+                      </div>
+                    </div>
+                    <!-- <div class="shop__address-item">
+                      <div class="address-content">
+                        <p class="txt-gray fs-p-md-14">Thời gian hoạt động</p>
+                        <p class="txt-gray-700 fs-p-md-14">6:00 - 21:00 cả thứ 7, chủ nhật và ngày lễ
+                        </p>
+                      </div>
+                    </div> -->
+                    <div class="shop__address-item">
+                      <div class="address-content">
+                        <p class="txt-gray fs-p-md-14">Điện thoại</p>
+                        <p class="txt-primary f-w-500 fs-p-24 fs-ui-md-20">1800 6928</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="paragraph paragraph-normal m-t-24 m-t-md-8 m-b-12 m-b-md-8">Nhà thuốc Long Châu là hệ thống
+                    bán
+                    lẻ khắp
+                    ba miền,
+                    trải
+                    khắp 63 tỉnh thành luôn luôn mở rộng để phục
+                    vụ Khách hàng
+                    trên toàn quốc.
+                  </p>
+                  <p class="paragraph paragraph-normal paragraph-padding">Nhà Thuốc Long Châu cung cấp dịch vụ bán hàng
+                    và
+                    phục vụ hàng đầu:
+                  </p>
+                </div>
+                <div class="lc__dsnt-highlight">
+                  <ul class="lc__dsnt-highlight--wrap row">
+                    <li class="txt-center col-4 col-md-12">
+                      <i class="ic-health circle bg-primary-100 fs-p-20 fs-ui-md-15 txt-primary item-icon"></i>
+                      <div class="content-wrap">
+                        <h4 class="fs-p-20 txt-gray-800 m-t-8 m-t-md-0 fs-p-md-14">Nhà Thuốc Chính Hãng</h4>
+                        <p class="txt-gray-700 m-t-4 m-t-md-0 fs-p-md-14">Sở hữu danh mục thuốc chính hãng vừa đa dạng,
+                          phong phú lại
+                          vừa
+                          chuyên
+                          sâu.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="txt-center col-4 col-md-12">
+                      <i class="ic-drug-2 circle bg-primary-100 fs-p-20 txt-primary item-icon fs-ui-md-15"></i>
+                      <div class="content-wrap">
+                        <h4 class="fs-p-20 txt-gray-800 m-t-8 m-t-md-0 fs-p-md-14">Chuyên Thuốc Theo Toa</h4>
+                        <p class="txt-gray-700 m-t-4 m-t-md-0 fs-p-md-14">Long Châu có đầy đủ các loại thuốc để có thể
+                          đáp
+                          đứng đầy đủ
+                          nhu cầu của người dùng.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="txt-center col-4 col-md-12">
+                      <i class="ic-pharmacist circle bg-primary-100 fs-p-20 txt-primary item-icon fs-ui-md-15"></i>
+                      <div class="content-wrap">
+                        <h4 class="fs-p-20 txt-gray-800  m-t-8 m-t-md-0 fs-p-md-14">Dược Sĩ Tư Vấn Tại Chỗ</h4>
+                        <p class="txt-gray-700 m-t-4 m-t-md-0 fs-p-md-14">Với kinh nghiệm và chuyên môn cao với 4 tiêu
+                          chí:
+                          đúng thuốc,
+                          đúng liều, đúng
+                          cách và đúng giá.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="txt-center col-4 col-md-12">
+                      <i class="ic-drug-2  circle bg-primary-100 fs-p-20 txt-primary item-icon fs-ui-md-15"></i>
+                      <div class="content-wrap">
+                        <h4 class="fs-p-20 txt-gray-800 m-t-8 m-t-md-0 fs-p-md-14">Mua Lẻ Với Giá Sỉ
+                        </h4>
+                        <p class="txt-gray-700 m-t-4 m-t-md-0 fs-p-md-14">Sản phẩm đúng chất lượng với giá thấp hơn so
+                          với
+                          thị trường
+                          chung, tương đương
+                          với giá bán sỉ.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="txt-center col-4 col-md-12">
+                      <i class="ic-local-shipping circle bg-primary-100 fs-p-20 txt-primary item-icon fs-ui-md-15"></i>
+                      <div class="content-wrap">
+                        <h4 class="fs-p-20 txt-gray-800 m-t-8 m-t-md-0 fs-p-md-14">Giao Hàng Tận Nơi
+                        </h4>
+                        <p class="txt-gray-700 m-t-4 m-t-md-0 fs-p-md-14">Giao hàng cực nhanh trong khu vực Tp.HCM và
+                          chuyển
+                          hàng đến
+                          tận
+                          nhà tại các
+                          tỉnh thành khác.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="txt-center col-4 col-md-12">
+                      <i class="ic-cart-refresh circle bg-primary-100 fs-p-20 txt-primary item-icon fs-ui-md-15"></i>
+                      <div class="content-wrap">
+                        <h4 class="fs-p-20 txt-gray-800 m-t-8 m-t-md-0 fs-p-md-14">Đổi Trả Nguyên Giá</h4>
+                        <p class="txt-gray-700 m-t-4 m-t-md-0 fs-p-md-14">Chỉ cần đọc SĐT hoặc giữ lại hóa đơn, bạn sẽ
+                          được
+                          đổi trả /
+                          hoàn tiền đã mua
+                          trong vòng 30 ngày.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="lc__section gallery-dsnt p-x-md-10 p-b-md-12 m-t-8 m-t-md-4">
+                <h4 class="txt-gray-800 fs-p-20 fs-p-md-14 m-b-16 m-b-md-8">Hình ảnh nhận dạng hệ thống nhà thuốc Long
+                  Châu:</h4>
+                <div class="list-view u-flex">
+                  <div class="list-view_wrap u-flex js-gallery" id="list-gallery">
+                    <div class=" slide-gallery"
+                      data-src="https://images.fpt.shop/unsafe/fit-in/600x600/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2019/08/00345396-via-him-vien-uong-ho-tro-sinh-ly-nam-7317-5d63_large.jpg">
+                      <picture>
+                        <img src="./images/banner-html/dsnt-img-1.png" alt="Nhà Thuốc Long Châu 379-381 Hai Bà Trưng">
+                      </picture>
+                    </div>
+                    <div class=" slide-gallery"
+                      data-src="https://images.fpt.shop/unsafe/fit-in/600x600/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2019/08/00345396-via-him-vien-uong-ho-tro-sinh-ly-nam-7317-5d63_large.jpg">
+                      <picture>
+                        <img src="./images/banner-html/dsnt-img-1.png" alt="Nhà Thuốc Long Châu 379-381 Hai Bà Trưng">
+                      </picture>
+                    </div>
+                    <div class=" slide-gallery"
+                      data-src="https://images.fpt.shop/unsafe/fit-in/600x600/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2019/08/00345396-via-him-vien-uong-ho-tro-sinh-ly-nam-7317-5d63_large.jpg">
+                      <picture>
+                        <img src="./images/banner-html/dsnt-img-1.png" alt="Nhà Thuốc Long Châu 379-381 Hai Bà Trưng">
+                      </picture>
+                    </div>
+                    <div class=" slide-gallery"
+                      data-src="https://images.fpt.shop/unsafe/fit-in/600x600/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2019/08/00345396-via-him-vien-uong-ho-tro-sinh-ly-nam-7317-5d63_large.jpg">
+                      <picture>
+                        <img src="./images/banner-html/dsnt-img-1.png" alt="Nhà Thuốc Long Châu 379-381 Hai Bà Trưng">
+                      </picture>
+                    </div>
+                    <div class=" slide-gallery"
+                      data-src="https://images.fpt.shop/unsafe/fit-in/600x600/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2019/08/00345396-via-him-vien-uong-ho-tro-sinh-ly-nam-7317-5d63_large.jpg">
+                      <picture>
+                        <img src="./images/banner-html/dsnt-img-1.png" alt="Nhà Thuốc Long Châu 379-381 Hai Bà Trưng">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class=" btn-view">
+                    <div class="view-gallery-dsnt relative js-open-gallery radius-12">
+                      <picture><img src="./images/banner-html/dsnt-img-2.png" alt=""></picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-content bg-white p-y-24 p-t-md-12 p-b-md-4 shadow-t-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-7 col-md-12 col-sm-12 p-x-md-0">
+            <div class="row">
+              <div class="col-4 col-sm-12">
+                <div class="footer-content_block">
+                  <div class="footer-content_block--inner p-x-md-10">
+                    <div class="fs-p-14 fs-ui-md-14 f-w-500 txt-gray-700 m-b-8 title-colapse">
+                      VỀ CHÚNG TÔI
+                    </div>
+                    <ul class="">
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/gioi-thieu" class="fs-ui-14 f-w-400 txt-primary">Giới
+                          thiệu</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/he-thong-cua-hang"
+                          class="fs-ui-14 f-w-400 txt-primary">Hệ thống cửa hàng</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/chinh-sach-doi-tra"
+                          class="fs-ui-14 f-w-400 txt-primary">Chính sách đổi trả</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/chinh-sach-giao-hang"
+                          class="fs-ui-14 f-w-400 txt-primary">Chính sách giao hàng</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/chinh-sach-bao-mat"
+                          class="fs-ui-14 f-w-400 txt-primary">Chính sách bảo mật</a>
+                      </li>
+                      <li>
+                        <a href="http://hddt.nhathuoclongchau.com/" class="fs-ui-14 f-w-400 txt-primary">Kiểm tra hóa
+                          đơn
+                          điện tử</a>
+                      </li>
+                      <li>
+                        <a class="fs-ui-14 f-w-400 txt-primary">
+                          Tra cứu đơn hàng</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-sm-12">
+                <div class="footer-content_block">
+                  <div class="footer-content_block--inner p-x-md-10">
+                    <div class="fs-p-14 fs-ui-md-14 f-w-500 txt-gray-700 m-b-8 title-colapse">
+                      DANH MỤC
+                    </div>
+                    <ul class="">
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang"
+                          class="fs-ui-14 f-w-400 txt-primary">Thực phẩm chức năng</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/duoc-my-pham"
+                          class="fs-ui-14 f-w-400 txt-primary">Dược
+                          mỹ phẩm</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/cham-soc-ca-nhan"
+                          class="fs-ui-14 f-w-400 txt-primary">Chăm sóc cá nhân</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/thuoc" class="fs-ui-14 f-w-400 txt-primary">Thuốc</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/trang-thiet-bi-y-te"
+                          class="fs-ui-14 f-w-400 txt-primary">Trang thiết bị y tế</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/benh" class="fs-ui-14 f-w-400 txt-primary">Bệnh</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/bai-viet" class="fs-ui-14 f-w-400 txt-primary">
+                          Góc sức khoẻ</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-sm-12">
+                <div class="footer-content_block">
+                  <div class="footer-content_block--inner p-x-md-10">
+                    <div class="fs-p-14 fs-ui-md-14 f-w-500 txt-gray-700 m-b-8 title-colapse">
+                      THỰC PHẨM CHỨC NĂNG
+                    </div>
+                    <ul class="">
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang/sinh-ly-noi-tiet-to"
+                          class="fs-ui-14 f-w-400 txt-primary">Sinh lý - Nội tiết tố</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang/cai-thien-tang-cuong-chuc-nang"
+                          class="fs-ui-14 f-w-400 txt-primary">Cải thiện tăng cường chức năng</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang/thao-duoc-thuc-pham-tu-nhien"
+                          class="fs-ui-14 f-w-400 txt-primary">Thảo dược -Thực phẩm tự nhiên</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang/vitamin"
+                          class="fs-ui-14 f-w-400 txt-primary">Vitamin</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang/canxi-va-khoan-chat"
+                          class="fs-ui-14 f-w-400 txt-primary">Canxi và khoáng chất</a>
+                      </li>
+                      <li>
+                        <a href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang/dau-ca-omega"
+                          class="fs-ui-14 f-w-400 txt-primary">Dầu cá - Omega</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 col-md-12 col-sm-12 order-1 m-b-md-12 m-b-sm-0">
+            <div class="footer-social u-flex justify-end">
+              <div class="call-tele m-r-48">
+                <h4 class="fs-p-14 fs-ui-md-14 txt-gray-700 f-w-500 m-b-4 m-b-md-0">
+                  TƯ VẤN MUA HÀNG (MIỄN PHÍ)
+                </h4>
+                <a href="tel:18006928" class="fs-ui-32 fs-ui-md-16 f-w-500 txt-primary">
+                  1800 6928
+                </a>
+              </div>
+              <!-- <div class="social-connect">
+                    <h4 class="fs-p-14 f-w-500 txt-gray-700 m-r-8">
+                      KẾT NỐI VỚI CHÚNG TÔI
+                    </h4>
+                    <div class="group-icon u-flex">
+                      <a class="m-r-12">
+                        <picture>
+                          <source media="(max-width:768px )" srcset="images/icon-facebook-mb.png" />
+                          <img src="images/icon-facebook.png" alt="" />
+                        </picture>
+                      </a>
+                      <a>
+                        <picture>
+                          <source media="(max-width:768px )" srcset="images/icon-zalo-mb.png" />
+                          <img src="images/icon-zalo.png" alt="" /> </picture>
+                      </a>
+                    </div>
+                  </div> -->
+            </div>
+            <div class="footer-app block-none"></div>
+            <div class="footer-copyright block-none u-flex align-items-baseline justify-end">
+              <a href="http://online.gov.vn/Home/WebDetails/56234?AspxAutoDetectCookieSupport=1" class="m-r-16"><img
+                  src="frontend_v3/images/bo-cong-thuong.png" alt=""></a>
+              <a
+                href="https://www.dmca.com/Protection/Status.aspx?ID=98d66f66-5a62-47e9-b45c-edaebfb0c9b3&amp;refurl=https://nhathuoclongchau.com/"><img
+                  src="frontend_v3/images/dmca-protected.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyrights box-t-1 p-t-8 p-b-12">
+      <div class="container">
+        <div class="u-flex align-items-center justify-center none-block txt-center m-b-16">
+          <a href="https://www.dmca.com/Protection/Status.aspx?ID=98d66f66-5a62-47e9-b45c-edaebfb0c9b3&amp;refurl=https://nhathuoclongchau.com/"
+            class="m-r-16"><img src="frontend_v3/images/dmca-protected-mb.png" alt=""></a>
+          <a href="http://online.gov.vn/Home/WebDetails/56234?AspxAutoDetectCookieSupport=1"><img
+              src="frontend_v3/images/bo-cong-thuong-mb.png" alt=""></a>
+        </div>
+        <div class="fs-p-14 fs-p-md-12 txt-center f-w-400 txt-gray-700 copyrights-content">
+          © 2007 - 2021 Công ty Cổ Phần Dược Phẩm FPT Long Châu Số ĐKKD
+          0315275368 cấp ngày 17/09/2018 tại Sở Kế hoạch<br class="br-mb">
+          Đầu tư TPHCM <br>
+          Địa chỉ: 379-381 Hai Bà Trưng, P.8, Q.3, TP. HCM.<br class="br-mb">
+          Số điện thoại:
+          <span class="txt-primary">(028)73023456</span>
+          <br class="br-mb">
+          <span class="hidden-char">-</span> Email:
+          <span class="txt-primary">sale@nhathuoclongchau.com</span>
+          <span class="hidden-char">-</span><br class="br-mb">
+          Người quản lý nội dung: Nguyễn Bạch Điệp
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/fn_dsnt.js"></script>
+</body>
+
+</html>

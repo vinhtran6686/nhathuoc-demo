@@ -1,0 +1,183 @@
+$cubiz : cubic-bezier(0.12, -0.22, 0.265, 1.45);
+.cate-active-drug {
+    @include respond-to("md") {
+        .lc__auto-suggest {
+            ul li {
+                box-shadow: inset 0px -1px 0px $gray-300;
+                a {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+%target {
+    background: $primary;
+    border-color: $primary;
+    color: $white !important;
+}
+
+.letter__group {
+    position: relative;
+    .selector{
+        // @media (min-width: 992px){
+        //     height: 36px;
+        //     border-radius: 8px;
+
+        //     left: 0;
+        //     transition-timing-function: $cubiz;
+        //     box-shadow: none;
+        // }
+        // @include respond-to('md'){
+        //     display: none;
+        // }
+    }
+    &-item {
+        width: 37.5px;
+        flex-basis: 37.5px;
+        height: 36px;
+
+        z-index: 2;
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid $gray-300;
+            box-sizing: border-box;
+            border-radius: 8px;
+
+            width: 100%;
+            height: inherit;
+            text-align: center;
+
+            transition: all .3s;
+            // @media(min-width: 992px){
+            //     transition-duration: 1.6s;
+            // }
+        }
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+
+        &.active {
+            a{
+                color: $white !important;
+                border-color: $primary;
+                background-color: $primary;
+            }
+
+        }
+        &.letter-disable {
+            a {
+                border-color: $gray-300 !important;
+                background: $gray-100;
+                cursor: no-drop;
+                color: $gray-400 !important;
+                // pointer-events: none;
+            }
+        }
+    }
+    &-row {
+        white-space: nowrap;
+    }
+    @include respond-to("md") {
+        // .selector{
+        //     height: 32px;
+        // }
+        &-item {
+            flex-basis: 32px;
+            height: 32px;
+            a {
+                width: 32px;
+                font-size: 16px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+.lc__drug-result {
+    .drug-row {
+        position: relative;
+        .rs-col {
+            box-shadow: inset 0px -1px 0px $gray-300;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background: $white;
+        }
+    }
+    .drug__list {
+        &-item a {
+            @extend .w-break-word;
+        }
+    }
+    @include respond-to("md") {
+        .drug-row-mobile {
+            display: none;
+            &:before {
+                display: none;
+            }
+            &:first-child {
+                display: flex;
+            }
+        }
+    }
+}
+.lc__pagination {
+    .pagination-item {
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+        &.disable {
+            a {
+                color: $gray-400 !important;
+            }
+        }
+        &.next-page {
+            i {
+                color: $gray !important;
+                margin-right: -4px;
+            }
+        }
+        @include respond-to("md") {
+            margin-right: 0 !important;
+        }
+    }
+    .pagination-link {
+        border: 1px solid $gray-300;
+        box-sizing: border-box;
+        border-radius: 100px;
+
+        @media (min-width: 992px) {
+            &:hover,
+            &.active,
+            &:focus {
+                border-color: $primary;
+                background: $primary;
+                i {
+                    color: inherit !important;
+                }
+            }
+        }
+        @include respond-to("md") {
+            border: none;
+        }
+    }
+}
+.lc__null {
+    .lc__picture {
+        max-width: 216px;
+        margin: auto auto 16px;
+        picture {
+            @include aspect-ratio(216, 200, 0);
+        }
+    }
+}

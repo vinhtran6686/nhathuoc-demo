@@ -1,0 +1,118 @@
+.lc__refund{
+    .alert-danger{
+        height: auto;
+    }
+    .cart-final{
+        overflow: unset;
+        box-shadow: none;
+        .lc-head{
+            box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+            border-radius: inherit;
+        }
+        .cart-icon{
+            max-width: 102px;
+            margin-left: auto;
+            margin-right: auto;
+            picture{
+                @include aspect-ratio(102,100,0);
+            }
+        }
+        .table{
+            tr, td {
+                @extend .w-break-word;
+            }
+        }
+        @include respond-to('sm'){
+            .cart-icon{
+                max-width: 90px;
+                picture{
+                    @include aspect-ratio(90,88,0);
+                }
+            }
+        }
+    }
+    .lc__form{
+        padding-right: 290px;
+        @include respond-to('sm'){
+            padding-right: 0;
+        }
+    }
+    .dropdown-menu{
+        max-width: 100%;
+        a {
+            box-shadow: none;
+        }
+        @include respond-to('sm'){
+            &.open{
+
+            }
+        }
+    }
+    .dropdown-bank{
+        .dropdown-menu-wrapper{
+            max-height: 380px;
+        }
+        a{
+            &:not(:last-child){
+                box-shadow: inset 0px -1px 0px #EDEEEF;
+            }
+            .picture{
+                max-width: 90px;
+                + span{
+                    flex: 1;
+                }
+            }
+            picture{
+                @include aspect-ratio(90,60,0);
+                width: 90px;
+            }
+            img{
+                border-radius: 4px;
+            }
+            &.active{
+                background: $gray-100;
+            }
+        }
+
+    }
+    .dropdown-city{
+        a{
+            display: inline-flex;
+            width: 50%;
+        }
+    }
+    .cs-dropdown{
+        @include respond-to('md'){
+            .dropdown-menu-top{
+                width: 100%;
+            }
+            .dropdown-menu-wrapper {
+                max-height: 100%;
+            }
+        }
+    }
+
+    .form-group{
+        .form-input{
+            &:focus,&:active,&:not(:placeholder-shown) {
+                ~ .data-title{
+                    top:6px;
+
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+       .data-title{
+        position: absolute;
+        left: 16px;
+        top: 0px;
+
+        transition: all .3s;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+       }
+    }
+}

@@ -1,0 +1,155 @@
+%zero-padding{
+    padding: 0;
+}
+%zero-margin{
+    padding: 0;
+}
+.lc__main {
+    background-color: $white;
+    padding-bottom: 40px;
+    .lc__box-title {
+        > * {
+            text-transform: capitalize;
+        }
+    }
+    .lc__section:not(.section-product-block) .product {
+        padding: 0;
+        border: none !important;
+        > a {
+            display: block;
+            position: relative;
+            @extend .full-block;
+        }
+    }
+
+    .cs-slide {
+        @extend %zero-margin;
+        .swiper-slide {
+            @extend %zero-padding;
+        }
+    }
+    .list1 .reset-col,
+    .list3 .reset-col,
+    .list5 .reset-col {
+        &:nth-child(odd) > .product {
+            box-shadow: 0 0 0 1px $info-100 !important;
+            background-color: $info-100 !important;
+        }
+        &:nth-child(even) > .product {
+            box-shadow: 0 0 0 1px $warning-100 !important;
+            background-color: $warning-100 !important;
+        }
+    }
+
+    .list2 .reset-col,
+    .list4 .reset-col,
+    .list6 .reset-col {
+        &:nth-child(even) > .product {
+            box-shadow: 0 0 0 1px $info-100 !important;
+            background-color: $info-100 !important;
+        }
+        &:nth-child(odd) > .product {
+            box-shadow: 0 0 0 1px $warning-100 !important;
+            background-color: $warning-100 !important;
+        }
+    }
+    .section-keywords {
+        margin-bottom: 0 !important;
+    }
+    @include respond-to("lg") {
+        .container {
+            overflow: hidden;
+        }
+    }
+    @include respond-to("md") {
+        background-color: $gray-100;
+        padding-bottom: 0;
+
+        .section-keywords {
+            padding-bottom: 16px;
+        }
+    }
+}
+.lc__section {
+    @include respond-to("lg") {
+        .container {
+            overflow: hidden;
+        }
+    }
+}
+
+.section-group {
+    padding-top: 32px !important;
+
+    .lc__section {
+        margin-bottom: 0 !important;
+        .cart-buy.cart-buy--together,
+        .cart-buy.cart-buy--later {
+            padding-top: 0 !important;
+        }
+        .cart-buy.cart-buy--later {
+            padding-bottom: 32px !important;
+        }
+        @include respond-to("lg") {
+            margin-bottom: 0 !important;
+            .cart-buy.cart-buy--later,
+            .cart-buy.cart-buy--together {
+                padding-bottom: 16px !important;
+            }
+            .titleRecently {
+                padding-bottom: 0;
+            }
+        }
+    }
+    @include respond-to("md") {
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+        .container {
+            padding: 0 !important;
+        }
+    }
+}
+
+.lc__box-title {
+    .link {
+        padding-top: 2px;
+        @include font-base(16px, 100%);
+    }
+
+    @include respond-to("md") {
+        margin-bottom: 8px !important;
+        .link {
+            font-size: 12px;
+            @extend .p-t-md-0;
+        }
+    }
+}
+.section-cate-list,
+.section-news,
+.section-keywords {
+    .lc__box-title {
+        @include respond-to("md") {
+            margin-bottom: 12px !important;
+        }
+    }
+}
+.scrollX-mobile {
+    @include respond-to("md") {
+        overflow-x: scroll;
+    }
+}
+
+@import "../components/home/_section-medicine";
+@import "../components/banner-html/_banner-html";
+@import "../components/home/_section-banner";
+@import "../components/home/_cate-list";
+@import "../components/home/_lc-hotsale";
+@import "../components/home/_lc-tab";
+@import "../components/home/_lc-news";
+@import "../components/home/_label-group";
+@import "../components/home/_lc-box-filter";
+@import "../components/home/_lc-box-product";
+@import "../components/home/_section-method";
+@import "../components/home/_section-search";
+@import "../components/home/_section-status";
+@import "../components/home/section-chuyenmuc";

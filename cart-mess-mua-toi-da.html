@@ -1,0 +1,2208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- CSS file import -->
+  <!-- <link rel="stylesheet" href="css/all.css"> -->
+  <link rel="stylesheet" href="css/headers.css" />
+  <link rel="stylesheet" href="css/system.css" />
+  <link rel="stylesheet" href="css/libs/swiper.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+
+  <!-- Js file import -->
+  <script src="js/libs/jquery-3.1.0.min.js"></script>
+  <!-- <script src="js/libs/rel.js"></script> -->
+  <script src="https://nhathuoclongchau.com/frontend_v3/asset/jquery.cookie.js"></script>
+  <script src="js/libs/swiper.min.js"></script>
+</head>
+
+<body>
+  <section class="lc-main">
+    <div class="cart-content p-t-md-0">
+      <div class="container cs-container">
+        <div class="breadcum m-b-8 p-x-md-10 p-t-md-8 ">
+          <p class="fs-ui-16 link fs-p-md-14">
+            <i class="ic-angle-left fs-p-14 m-r-4"></i>Tiếp tục mua hàng
+          </p>
+        </div>
+        <div class="cart m-b-md-24 clearfix">
+          <div class="col-8 col-md-12 cs-col">
+            <!-- <div class="cart-top m-b-16 m-b-md-12 p-x-md-10 m-b-md-12">
+              <div class="progress-group">
+                <div class="alert alert-md alert-success alert-des m-b-8">
+                  <i class="ic-check alert-ic-md bg-success m-b-2"></i>
+                  <span class="block-none">Đơn hàng của bạn còn thiếu <strong>100.000đ</strong> để
+                    áp dụng
+                    <strong>miễn phí giao hàng toàn quốc</strong></span>
+                  <span class="none-block">Còn thiếu
+                    <strong>100.000đ để miễn phí giao hàng</strong></span>
+                </div>
+                <div class="progress-success progress-sm progress-line">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+              </div>
+            </div> -->
+            <div class="cart-bottom">
+              <div class="cart-bottom__title bg-white p-x-20 p-y-12 p-x-md-10 p-y-md-8">
+                <h3 class="fs-p-20 txt-gray-900 fs-p-md-16">
+                  CÓ 1 SẢN PHẨM TRONG GIỎ HÀNG
+                </h3>
+              </div>
+              <div class="cart-bottom__product m-b-md-8">
+                <div class="cart-product bg-white box-t-1 p-y-24 p-x-20 p-x-md-10 p-y-md-16">
+                  <div class="row">
+                    <div class="col-9 col-md-12">
+                      <div class="u-flex no-gutters">
+                        <div class="cart-img m-r-8">
+                          <a href="#"><img src="https://via.placeholder.com/80x80" alt="" /></a>
+                        </div>
+                        <div class="col cart-info">
+                          <h3 class="cart-tit truncate2 m-b-8 m-b-md-0">
+                            <a href="" class="txt-primary-700">Viên Uống Bổ Sung Vitamin Và Khoáng Chất
+                              Calcium Plus Puri Walgreen</a>
+                          </h3>
+                          <!-- mobile -->
+                          <div class="none-block m-t-8 m-b-12">
+                            <div class="u-flex no-gutters justify-content-between">
+                              <div class="col">
+                                <div class="u-flex product-count js-product--count">
+                                  <button class="button-count">
+                                    <i class="ic-minus"></i>
+                                  </button>
+                                  <input type="text" readonly class="form-input form-input-sm number-product txt-center"
+                                    value="4" />
+                                  <button class="button-count no-active disabled">
+                                    <i class="ic-plus"></i>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="cart-prices txt-right txt-gray-700 f-w-500 fs-p-16">
+                                  200.000đ
+                                  <strike class="block txt-gray fs-p-14 f-w-400">260.000đ</strike>
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+
+                          <p class="fs-p-14 quantity-alert txt-warning-700 m-b-12 none-block" style="margin-top: -22px;">
+                            chỉ mua tối đa 4 sản phẩm
+                          </p>
+
+                          <!-- end mobile -->
+                          <div class="cart-select cart-spon-md js-select">
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto m-b-8 m-r-8">
+                                <span class="txt-gray-600 fs-p-16">Quy cách</span>
+                              </div>
+                              <div class="col">
+                                <div class="u-flex flex-wrap align-items-center no-gutters">
+                                  <div class="col-auto m-r-8 m-b-8">
+                                    <div class="option option-sm active">
+                                      <div class="option-title">
+                                        Hộp 60 viên
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-auto m-r-8 m-b-8">
+                                    <div class="option option-sm">
+                                      <div class="option-title">
+                                        Hộp 120 viên
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-auto m-r-8 m-b-8">
+                                    <div class="option option-sm">
+                                      <div class="option-title">
+                                        Hộp 150 viên
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cart-mess cart-spon-md txt-gray-600">
+                            <ul class="list list list-group list-disc">
+                              <li>
+                                Tặng 1 suất mua sản phẩm thực phẩm chức năng
+                                giảm đến 40%
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="link-group m-t-6 none-block">
+                            <div class="u-flex no-gutters justify-end">
+                              <div class="col-auto">
+                                <span class="link"> Mua sau </span>
+                              </div>
+                              <div class="col-auto">
+                                <span class="txt-gray-400 m-x-8">|</span>
+                              </div>
+                              <div class="col-auto">
+                                <span class="link js-remove"> Xoá </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="col-right block-none">
+                        <div class="u-flex justify-end product-count js-product--count">
+                          <button class="button-count">
+                            <i class="ic-minus"></i>
+                          </button>
+                          <input type="text" readonly class="form-input form-input-sm number-product txt-center"
+                            value="4" />
+                          <button class="button-count disabled">
+                            <i class="ic-plus"></i>
+                          </button>
+                        </div>
+                        <p class="fs-p-14 quantity-alert txt-warning-700 p-t-8 txt-right">
+                            chỉ mua tối đa 4 sản phẩm
+                        </p>
+                        <div class="cart-prices txt-right txt-gray-700 f-w-500 fs-p-18 m-t-8">
+                          200.000đ
+                          <strike class="block txt-gray fs-p-16 f-w-400">260.000đ</strike>
+                        </div>
+                        <div class="link-group m-t-8">
+                          <div class="u-flex no-gutters justify-end">
+                            <div class="col-auto">
+                              <span class="link">
+                                <i class="ic-bookmark m-r-4"></i>
+                                Để mua sau
+                              </span>
+                            </div>
+                            <div class="col-auto">
+                              <span class="txt-gray-400 m-x-8">|</span>
+                            </div>
+                            <div class="col-auto">
+                              <span class="link js-remove">
+                                <i class="ic-trash m-r-4"></i>
+                                Xoá
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-product bg-white box-t-1 p-y-24 p-x-20 p-x-md-10 p-y-md-16">
+                  <div class="row">
+                    <div class="col-9 col-md-12">
+                      <div class="u-flex no-gutters">
+                        <div class="cart-img m-r-8">
+                          <a href="#"><img src="https://via.placeholder.com/80x80" alt="" /></a>
+                        </div>
+                        <div class="col cart-info">
+                          <h3 class="cart-tit truncate2 m-b-8 m-b-md-0">
+                            <a href="" class="txt-primary-700">Viên Uống Bổ Sung Vitamin Và Khoáng Chất
+                              Calcium Plus Puri Walgreen</a>
+                          </h3>
+                          <!-- mobile -->
+                          <div class="none-block m-t-8 m-b-12">
+                            <div class="u-flex no-gutters justify-content-between">
+                              <div class="col">
+                                <div class="u-flex product-count js-product--count">
+                                  <button class="button-count no-active disabled">
+                                    <i class="ic-minus"></i>
+                                  </button>
+                                  <input type="text" readonly class="form-input form-input-sm number-product txt-center"
+                                    value="1" />
+                                  <button class="button-count">
+                                    <i class="ic-plus"></i>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="cart-prices txt-right txt-gray-700 f-w-500 fs-p-16">
+                                  200.000đ
+                                  <strike class="block txt-gray fs-p-14 f-w-400">260.000đ</strike>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- end mobile -->
+                          <div class="cart-select cart-spon-md js-select">
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto m-b-8 m-r-8">
+                                <span class="txt-gray-600 fs-p-16">Quy cách</span>
+                              </div>
+                              <div class="col">
+                                <div class="u-flex flex-wrap align-items-center no-gutters">
+                                  <div class="col-auto m-r-8 m-b-8">
+                                    <div class="option option-sm active">
+                                      <div class="option-title">
+                                        Hộp 60 viên
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-auto m-r-8 m-b-8">
+                                    <div class="option option-sm">
+                                      <div class="option-title">
+                                        Hộp 120 viên
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-auto m-r-8 m-b-8">
+                                    <div class="option option-sm">
+                                      <div class="option-title">
+                                        Hộp 150 viên
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cart-mess cart-spon-md txt-gray-600">
+                            <ul class="list list-group list-disc">
+                              <li>
+                                Tặng 1 suất mua sản phẩm thực phẩm chức năng
+                                giảm đến 40%
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="link-group m-t-6 none-block">
+                            <div class="u-flex no-gutters justify-end">
+                              <div class="col-auto">
+                                <span class="link"> Mua sau </span>
+                              </div>
+                              <div class="col-auto">
+                                <span class="txt-gray-400 m-x-8">|</span>
+                              </div>
+                              <div class="col-auto">
+                                <span class="link js-remove"> Xoá </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="col-right block-none">
+                        <div class="u-flex justify-end product-count js-product--count">
+                          <button class="button-count disabled">
+                            <i class="ic-minus"></i>
+                          </button>
+                          <input type="text" readonly class="form-input form-input-sm number-product txt-center"
+                            value="1" />
+                          <button class="button-count">
+                            <i class="ic-plus"></i>
+                          </button>
+                        </div>
+                        <div class="cart-prices txt-right txt-gray-700 f-w-500 fs-p-18 m-t-8">
+                          200.000đ
+                          <strike class="block txt-gray fs-p-16 f-w-400">260.000đ</strike>
+                        </div>
+                        <div class="link-group m-t-8">
+                          <div class="u-flex no-gutters justify-end">
+                            <div class="col-auto">
+                              <span class="link">
+                                <i class="ic-bookmark m-r-4"></i>
+                                Để mua sau
+                              </span>
+                            </div>
+                            <div class="col-auto">
+                              <span class="txt-gray-400 m-x-8">|</span>
+                            </div>
+                            <div class="col-auto">
+                              <span class="link js-remove">
+                                <i class="ic-trash m-r-4"></i>
+                                Xoá
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-product bg-white box-t-1 p-y-24 p-x-20 p-x-md-10 p-y-md-16">
+                  <div class="row">
+                    <div class="col-9 col-md-12">
+                      <div class="u-flex no-gutters">
+                        <div class="cart-img m-r-8">
+                          <a href="#"><img src="https://via.placeholder.com/80x80" alt="" /></a>
+                        </div>
+                        <div class="col cart-info">
+                          <h3 class="cart-tit truncate2 m-b-8 m-b-md-0">
+                            <a href="" class="txt-primary-700">Viên Uống Bổ Sung Vitamin Và Khoáng Chất
+                              Calcium Plus Puri Walgreen</a>
+                          </h3>
+                          <!-- mobile -->
+                          <div class="none-block m-t-8 m-b-12">
+                            <div class="u-flex no-gutters justify-content-between">
+                              <div class="col">
+                                <div class="u-flex product-count js-product--count">
+                                  <button class="button-count no-active disabled">
+                                    <i class="ic-minus"></i>
+                                  </button>
+                                  <input type="text" readonly class="form-input form-input-sm number-product txt-center"
+                                    value="1" />
+                                  <button class="button-count">
+                                    <i class="ic-plus"></i>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="cart-prices txt-right txt-gray-700 f-w-500 fs-p-16">
+                                  200.000đ
+                                  <strike class="block txt-gray fs-p-14 f-w-400">260.000đ</strike>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- end mobile -->
+                          <div class="cart-select cart-spon-md js-select">
+                            <div class="row align-items-center no-gutters">
+                              <div class="col-auto m-b-8 m-r-8">
+                                <span class="txt-gray-600 fs-p-16">Quy cách</span>
+                              </div>
+                              <div class="col">
+                                <div class="u-flex flex-wrap align-items-center no-gutters">
+                                  <div class="col-auto m-r-8 m-b-8">
+                                    <div class="option option-sm active">
+                                      <div class="option-title">
+                                        Hộp 60 viên
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-auto m-r-8 m-b-8">
+                                    <div class="option option-sm">
+                                      <div class="option-title">
+                                        Hộp 120 viên
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-auto m-r-8 m-b-8">
+                                    <div class="option option-sm">
+                                      <div class="option-title">
+                                        Hộp 150 viên
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cart-mess cart-spon-md txt-gray-600">
+                            <ul class="list list-group list-disc">
+                              <li>
+                                Tặng 1 suất mua sản phẩm thực phẩm chức năng
+                                giảm đến 40%
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="link-group m-t-6 none-block">
+                            <div class="u-flex no-gutters justify-end">
+                              <div class="col-auto">
+                                <span class="link"> Mua sau </span>
+                              </div>
+                              <div class="col-auto">
+                                <span class="txt-gray-400 m-x-8">|</span>
+                              </div>
+                              <div class="col-auto">
+                                <span class="link js-remove"> Xoá </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="col-right block-none">
+                        <div class="u-flex justify-end product-count js-product--count">
+                          <button class="button-count disabled">
+                            <i class="ic-minus"></i>
+                          </button>
+                          <input type="text" readonly class="form-input form-input-sm number-product txt-center"
+                            value="1" />
+                          <button class="button-count">
+                            <i class="ic-plus"></i>
+                          </button>
+                        </div>
+                        <div class="cart-prices txt-right txt-gray-700 f-w-500 fs-p-18 m-t-8">
+                          200.000đ
+                          <strike class="block txt-gray fs-p-16 f-w-400">260.000đ</strike>
+                        </div>
+                        <div class="link-group m-t-8">
+                          <div class="u-flex no-gutters justify-end">
+                            <div class="col-auto">
+                              <span class="link">
+                                <i class="ic-bookmark m-r-4"></i>
+                                Để mua sau
+                              </span>
+                            </div>
+                            <div class="col-auto">
+                              <span class="txt-gray-400 m-x-8">|</span>
+                            </div>
+                            <div class="col-auto">
+                              <span class="link js-remove">
+                                <i class="ic-trash m-r-4"></i>
+                                Xoá
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-cta radius-12 radius-none none-block">
+                <div class="cart-cta__total box-b-1 p-t-md-8 p-x-md-10 p-b-md-12 box-shad-none">
+                  <div class="u-flex flex-row justify-between">
+                    <span class="fs-p-16 txt-gray-700">Tổng tiền</span>
+                    <span class="fs-p-16 txt-gray-700">434.000đ</span>
+                  </div>
+                  <div class="u-flex flex-row justify-between">
+                    <div class="label label-md label-is-icon label-icon-right m-r-12 relative">
+                      <div class="ic-help icon-md icon-circle lc-tooltip lc-tooltip-gray lc-tooltip-top tooltip-cs lc-tooltip-hover js-tooltip-open">
+                        <div class="lc-tooltip-box">
+                          <div class="fs-p-16 f-w-500 m-b-4 none-block">
+                            Phí giao hàng dự kiến
+                          </div>
+                          <a class="close close-tip button fs-ui-12 none-block"><i class="ic-close-thin"></i></a>
+                          <p class="fs-p-14">
+                            Phí giao hàng sẽ thay đổi theo hình thức nhận hàng
+                            của quý khách
+                          </p>
+                        </div>
+                      </div>
+
+                      <span class="label-text">Phí giao hàng dự kiến</span>
+                    </div>
+                    <!-- <span class="fs-p-16 txt-gray-700">Phí giao hàng dự kiến<i class="ic-help icon-circle-gray m-l-4"></i></span> -->
+                    <span class="fs-p-16 txt-gray-700">15.000đ</span>
+                  </div>
+                  <div class="u-flex flex-row justify-between m-t-16 m-t-md-4">
+                    <span class="fs-p-20 f-w-500 txt-gray-900 fs-p-md-18">Cần thanh toán</span>
+                    <span class="fs-p-20 f-w-500 txt-primary-700 fs-p-md-18">423.000đ</span>
+                  </div>
+                </div>
+              </div>
+              <!-- form -->
+              <div class="cart-bottom__form bg-white box-t-1 p-y-24 p-x-20 p-y-md-16 p-x-md-10 m-t-md-8 box-shad-none">
+                <div class="form">
+                  <div class="u-flex flex-wrap no-gutters check-form">
+                    <div class="radio radio-sm m-r-16">
+                      <label class="u-flex align-items-center label-text" for="">
+                        <input type="radio" value="radio3" name="grp1" id="" />
+                        Anh
+                      </label>
+                    </div>
+                    <div class="radio radio-sm">
+                      <label class="u-flex align-items-center abel-text" for="">
+                        <input type="radio" value="radio3" name="grp1" id="" />
+                        Chị
+                      </label>
+                    </div>
+                    <div class="col-12">
+                      <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                        <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                        <span class="">Thông tin bắt buộc</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Thông tin khách hàng -->
+                  <div class="form-groups">
+                    <div class="row cs-row">
+                      <div class="col-6 col-md-12 ">
+                        <div class="form-group js-info m-t-12">
+                          <input type="text" class="form-input form-input-lg  js--info-input inputInfoCustomer inputInfoCheck compulsory" placeholder="Nhập họ và tên" maxlength="190" name="ho_ten">
+
+                          <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert alert_ho_ten">
+                            <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                            <span class="alert_ho_ten">Thông tin bắt buộc</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12 ">
+                        <div class="form-group js-info m-t-12">
+                          <input type="text" class="form-input form-input-lg  js--info-input inputInfoCustomer inputInfoCheck compulsory" placeholder="Nhập số điện thoại" phone="" name="phone" maxlength="10" value="">
+
+                          <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert alert_phone">
+                            <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                            <span class="alert_phone">Thông tin bắt buộc</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group js-info m-t-12">
+                          <input type="text" class="form-input form-input-lg js--info-input inputInfoCustomer inputInfoCheck" placeholder="Nhập Email (Không bắt buộc)" email="" name="email" maxlength="190">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="form-groups">
+                    <div class="row cs-row">
+                      <div class="col-6 col-md-12 ">
+                        <div class="form-group js-info m-t-12">
+                          <input type="text" class="form-input form-input-lg  js--info-input inputInfoCustomer inputInfoCheck compulsory" placeholder="Nhập họ và tên" maxlength="190" name="ho_ten">
+
+                          <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert alert_ho_ten">
+                            <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                            <span class="alert_ho_ten">Thông tin bắt buộc</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-12 ">
+                        <div class="form-group js-info m-t-12">
+                          <input type="text" class="form-input form-input-lg  js--info-input inputInfoCustomer inputInfoCheck compulsory" placeholder="Nhập số điện thoại" phone="" name="phone" maxlength="10" value="">
+
+                          <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert alert_phone">
+                            <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                            <span class="alert_phone">Thông tin bắt buộc</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group js-info m-t-12">
+                          <input type="text" class="form-input form-input-lg js--info-input inputInfoCustomer inputInfoCheck" placeholder="Nhập Email (Không bắt buộc)" email="" name="email" maxlength="190">
+                          <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                            <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                            <span class="">Địa chỉ email không hợp lệ</span>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+
+                  <!-- thông tin thuế -->
+                  <div class="cart-tax m-t-16">
+                    <div class="form-groups">
+                      <div class="checkbox checkbox-sm form-check-error align-items-center check-tax js-check-tax">
+                        <input type="checkbox" value="checkbox3" name="grp1" id="ex4">
+                        <label for="ex4" class="f-w-500">Yêu cầu xuất hoá đơn công ty</label>
+                      </div>
+                      <div class="cart-tax-info" style="display: none">
+                        <div class="row cs-row">
+                          <div class="col-6 col-md-12">
+                            <div class="form-group js-info m-t-12">
+                              <input type="text" class="form-input form-input-lg tax0 js-input-tax"
+                                placeholder="Nhập tên công ty*" maxlength="60" />
+                              <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                                <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                <span class="">Thông tin bắt buộc</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-12">
+                            <div class="form-group js-info m-t-12">
+                              <input type="text" class="form-input form-input-lg tax1 js-input-tax"
+                                placeholder="Nhập mã số thuế*" number-tax />
+                              <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                                <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                <span class="">Thông tin bắt buộc</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-group js-info m-t-12">
+                              <input type="text" class="form-input form-input-lg tax2 js-input-tax"
+                                placeholder="Nhập địa chỉ công ty*" name-address />
+                              <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                                <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                <span class="">Thông tin bắt buộc</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__info-user js-info-user" style="display: none">
+                <div class="table table-user m-b-md-8">
+                  <div class="table-head box-b-2 p-y-6 p-x-20 p-x-md-10 p-y-md-10">
+                    <div class="u-flex no-gutters align-items-center">
+                      <div class="col">
+                        <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16">
+                          Thông tin khách hàng
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="form-edit link js-edit">
+                          <i class="ic-edit"></i>
+                          Chỉnh sửa
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="table-body bg-white p-x-20 p-t-8 p-b-16 p-x-md-10 p-y-md-0">
+                    <table class="table">
+                      <tbody>
+                        <tr class="fs-p-16 js-table-info">
+                          <td class="txt-gray p-y-6 p-y-md-8">Họ và tên</td>
+                          <td class="txt-gray-700 p-y-6 p-y-md-8 js-tab-val" name></td>
+                        </tr>
+                        <tr class="fs-p-16 js-table-info">
+                          <td class="txt-gray p-y-6 p-y-md-8">
+                            Số điện thoại
+                          </td>
+                          <td class="txt-gray-700 p-y-6 p-y-md-8 js-tab-val" phone></td>
+                        </tr>
+                        <tr class="fs-p-16 js-table-info">
+                          <td class="txt-gray p-y-6 p-y-md-8">Email</td>
+                          <td class="txt-gray-700 p-y-6 p-y-md-8 js-tab-val"></td>
+                        </tr>
+                        <tr class="fs-p-16 js-table-info">
+                          <td class="txt-gray p-y-6 p-y-md-8">Tên công ty</td>
+                          <td class="txt-gray-700 p-y-6 p-y-md-8 js-tab-val"></td>
+                        </tr>
+                        <tr class="fs-p-16 js-table-info">
+                          <td class="txt-gray p-y-6 p-y-md-8">Mã số thuế</td>
+                          <td class="txt-gray-700 p-y-6 p-y-md-8 js-tab-val"></td>
+                        </tr>
+                        <tr class="fs-p-16 js-table-info">
+                          <td class="txt-gray p-y-6 p-y-md-8">Địa chỉ công ty</td>
+                          <td class="txt-gray-700 p-y-6 p-y-md-8 js-tab-val"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="table table-receive m-b-md-8" style="display: none">
+                  <div class="table-head box-b-2 p-y-6 p-x-20 p-x-md-10 p-y-md-10">
+                    <div class="u-flex no-gutters align-items-center">
+                      <div class="col">
+                        <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16">
+                          Thông tin nhận hàng
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="form-edit link js-edit">
+                          <i class="ic-edit"></i>
+                          Chỉnh sửa
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-body bg-white p-x-20 p-t-8 p-x-md-10 p-y-md-0">
+                    <table class="table">
+                      <tbody>
+                        <tr class="fs-p-16 js-table-info">
+                          <td class="txt-gray p-y-6 p-y-md-8 js-tab-val">
+                            Nhận tại nhà thuốc
+                          </td>
+                          <td class="txt-gray-700 p-y-6 p-y-md-8 js-tab-val">
+
+                          </td>
+                        </tr>
+                        <tr class="fs-p-16 js-table-info">
+                          <td class="txt-gray p-y-6 p-y-md-8">
+                            Thời gian dự kiến
+                          </td>
+                          <td class="txt-gray-700 p-y-6 p-y-md-8 js-tab-val">
+
+                          </td>
+                        </tr>
+                        <tr class="fs-p-16 js-table-info">
+                          <td class="txt-gray p-y-6 p-y-md-8">
+                            Ghi chú yêu cầu
+                          </td>
+                          <td class="txt-gray-700 p-y-6 p-y-md-8 js-tab-val">
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- chọn hình thức nhận hàng responsive mobile-->
+              <div class="form-receiving bg-white p-x-20 p-b-24 p-x-md-10 p-y-md-16 m-t-md-8">
+                <div class="txt-gray-800 fs-p-18 f-w-500">
+                  Chọn hình thức nhận hàng
+                </div>
+
+                <div class="row no-gutters check-form m-t-12 js-cart-tabs">
+                  <div class="col-auto m-r-16 m-r-md-0 p-x-md-8">
+                    <div class="radio radio-sm js-tabs m-r-md-16" data-tab="tab1">
+                      <label class="u-flex align-items-center" for="">
+                        <input type="radio" value="radio3" name="grp1" class="paymentship" id="ex3" />
+                        <span class="fs-p-xxs-14">Nhận tại nhà thuốc</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-auto p-x-md-8">
+                    <div class="radio radio-sm js-tabs" data-tab="tab2">
+                      <label class="u-flex align-items-center" for="">
+                        <input type="radio" value="radio3" name="grp1" class="paymentship" id="ex4" />
+                        <span class="fs-p-xxs-14">Giao hàng tận nơi</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                      <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                      <span class="">Vui lòng chọn hình thức nhận hàng</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown  responsive mobile-->
+                <div class="row sectionTPQuan triggersectionTPQuan">
+                  <div class="col p-x-8 p-x-md-8">
+                    <div class="dropdown dropdown-extra dropdown-search dropdown-city m-t-12 select__region_city">
+                      <div class="dropdown-button p-r-md-20" data-city="">
+                        <span class="fs-p-xxs-14">
+                          <i class="inline-none f-style-normal">Chọn</i> Tỉnh/thành
+                        </span>
+                        <i class="ic-arrow-select icon-md"></i>
+                      </div>
+
+                      <div class="dropdown-menu">
+                        <div class="dropdown-menu-top">
+                          <div class="dropdown-menu-search">
+                            <div class="form-search form-search-sm">
+                              <span class="form-search-icon m-r-4">
+                                <i class="ic-search icon-sm"></i>
+                              </span>
+                              <input type="text" class="form-search-input m-r-4 js-search"
+                                placeholder="Nhập tìm tỉnh/thành" />
+                              <span class="form-search-icon form-search-close">
+                                <i class="ic-cancel icon-sm"></i>
+                              </span>
+                            </div>
+                            <span class="link none-block close js-close">Huỷ bỏ</span>
+                          </div>
+                        </div>
+                        <div class="dropdown-menu-wrapper scrollbar js--city-list js-dropdown-list">
+                          <a class="item-region ">Hà Nội</a>
+                          <a class="item-region active" token-filter="">Thành phố Hồ Chí Minh thanh pho ho chi minh</a>
+                          <a class="item-region ">Đà Nẵng</a>
+                          <a class="item-region ">Hải Phòng</a>
+                          <a class="item-region ">An Giang</a>
+                          <a class="item-region ">Bà Rịa - Vũng Tàu</a>
+                          <a class="item-region ">Bắc Giang</a>
+                          <a class="item-region ">Bắc Kạn</a>
+                          <a class="item-region ">Bạc Liêu</a>
+                          <a class="item-region ">Bắc Ninh</a>
+                          <a class="item-region ">Bến Tre</a>
+                          <a class="item-region ">Bình Định</a>
+                          <a class="">Bình Dương</a>
+                          <a class="">Bình Phước</a>
+                          <a class="">Bình Thuận</a>
+                          <a class="">Cà Mau</a>
+                          <a class="">Cần Thơ</a>
+                          <a class="">Cao Bằng</a>
+                          <a class="">Đắk Lắk</a>
+                          <a class="">ĐakNông</a>
+                          <a class="">Điện Biên</a>
+                          <a class="">Đồng Nai</a>
+                          <a class="">Đồng Tháp</a>
+                          <a class="">Gia Lai</a>
+                          <a class="">Hà Giang</a>
+                          <a class="">Hà Nam</a>
+                          <a class="">Hà Tĩnh</a>
+                          <a class="">Hải Dương</a>
+                          <a class="">Hậu Giang</a>
+                          <a class="">HòaBình</a>
+                          <a class="">Hưng Yên</a>
+                          <a class="">Khánh Hòa</a>
+                          <a class="">Kiên Giang</a>
+                          <a class="">Kon Tum</a>
+                          <a class="">Lai châu</a>
+                          <a class="">Lâm Đồng</a>
+                          <a class="">Lạng Sơn</a>
+                          <a class="">Lào Cai</a>
+                          <a class="">Long An</a>
+                          <a class="">Nam Định</a>
+                          <a class="">Nghệ An</a>
+                          <a class="">Ninh Bình</a>
+                          <a class="">Ninh Thuận</a>
+                          <a class="">Phú Thọ</a>
+                          <a class="">Phú Yên</a>
+                          <a class="">Quảng Bình</a>
+                          <a class="">Quảng Nam</a>
+                          <a class="">Quảng Ngãi</a>
+                          <a class="">Quảng Ninh</a>
+                          <a class="">Quảng Trị</a>
+                          <a class="">Sóc Trăng</a>
+                          <a class="">Sơn La</a>
+                          <a class="">Tây Ninh</a>
+                          <a class="">Thái Bình</a>
+                          <a class="">Thái Nguyên</a>
+                          <a class="">Thanh Hóa</a>
+                          <a class="">Thừa Thiên Huế</a>
+                          <a class="">Tiền Giang</a>
+                          <a class="">Trà Vinh</a>
+                          <a class="">Tuyên Quang</a>
+                          <a class="">Vĩnh Long</a>
+                          <a class="">Vĩnh Phúc</a>
+                          <a class="">Yên Bái</a>
+                        </div>
+                      </div>
+
+                      <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                        <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                        <span class="">Thông tin bắt buộc</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col p-x-8 p-x-md-8">
+                    <div class="dropdown dropdown-extra dropdown-search dropdown-city select__region_district m-t-12 ">
+                      <div class="dropdown-button p-r-md-20" data-city="">
+                        <span class="fs-p-xxs-14">
+                          <i class="inline-none f-style-normal">Chọn</i> Quận/Huyện
+                        </span>
+                        <i class="ic-arrow-select icon-md"></i>
+                      </div>
+                      <div class="dropdown-menu">
+                        <div class="dropdown-menu-top">
+                          <div class="dropdown-menu-search">
+                            <div class="form-search form-search-sm">
+                              <span class="form-search-icon m-r-4">
+                                <i class="ic-search icon-sm"></i>
+                              </span>
+                              <input type="text" class="form-search-input m-r-4 js-search"
+                                placeholder="Nhập tìm quận/huyện" />
+                              <span class="form-search-icon form-search-close">
+                                <i class="ic-cancel icon-sm"></i>
+                              </span>
+                            </div>
+                            <span class="link none-block close js-close">Huỷ bỏ</span>
+                          </div>
+                        </div>
+                        <div class="dropdown-menu-wrapper scrollbar js--city-list js-dropdown-list">
+                          <a href="#" class="active">
+                            <span>An Giang</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hà Nội</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hải Phòng</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hồ Chí Minh</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hà Nội</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hải Phòng</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hồ Chí Minh</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hà Nội</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hải Phòng</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hồ Chí Minh</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hà Nội</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hải Phòng</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hồ Chí Minh</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hà Nội</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hải Phòng</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hồ Chí Minh</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hà Nội</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hà Nội</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hải Phòng</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hồ Chí Minh</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hà Nội</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hải Phòng</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hồ Chí Minh</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hà Nội</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hà Nội</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hải Phòng</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hồ Chí Minh</span>
+                          </a>
+                          <a href="#" class="">
+                            <span>Hà Nội</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                        <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                        <span class="">Thông tin bắt buộc</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- tabs1 responsive mobile-->
+                <div class="tabs" id="tab1" style="display: none">
+                  <!-- location-->
+                  <div class="location-block m-t-12">
+                    <div class="tit fs-p-16 f-w-500 m-b-12">
+                      Có 8 nhà thuốc tại Quận 3, Hồ Chí Minh:
+                    </div>
+                    <div class="feature__location">
+                      <div class="feature__location-inner check-form radius-12 box-full p-x-12 scrollbar">
+                        <div class="address-item relative b-b-100 p-y-8">
+                          <div class="radio radio-sm justify-between js-receive checked">
+                            <label for="" class="u-flex">
+                              <input type="radio" value="radio3" name="grp1" id="" />
+                              <div class="address-name">
+                                <div class="lct-txt fs-p-14">
+                                  141 Trần Não, Khu Phố 3, P. Bình An , Quận
+                                  2, Hồ Chí Minh
+                                </div>
+                                <div class="dropdown-address-status">
+                                  <div class="alert alert-sm alert-success alert-des">
+                                    <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                    <span class="">Có sẵn hàng</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </label>
+                            <a href="#" class="btn btn-rounded btn-outline-gray btn-sm cs-map block-none"><span>Xem bản
+                                đồ</span></a>
+                          </div>
+                        </div>
+                        <div class="address-item relative out-of-stock b-b-100 p-y-8">
+                          <div class="radio radio-sm justify-between js-receive">
+                            <label for="" class="u-flex">
+                              <input type="radio" value="radio3" name="grp1" id="" />
+                              <div class="address-name">
+                                <div class="lct-txt fs-p-14">
+                                  141 Trần Não, Khu Phố 3, P. Bình An , Quận
+                                  2, Hồ Chí Minh
+                                </div>
+                                <div class="dropdown-address-status">
+                                  <div class="alert alert-sm alert-warning alert-des">
+                                    <i class="ic-exclamation alert-ic-sm bg-warning alert-ic-sm-md"></i>
+                                    <span class="">Chờ nhận hàng 24h nếu đặt tại đây</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </label>
+                            <a href="#" class="btn btn-rounded btn-outline-gray btn-sm cs-map block-none"><span>Xem bản
+                                đồ</span></a>
+                          </div>
+                        </div>
+                        <div class="address-item relative out-of-stock b-b-100 p-y-8">
+                          <div class="radio radio-sm justify-between js-receive">
+                            <label for="" class="u-flex">
+                              <input type="radio" value="radio3" name="grp1" id="" />
+                              <div class="address-name">
+                                <div class="lct-txt fs-p-14">
+                                  379-381 Hai Bà Trưng, P.8, Q.3, TP. Hồ Chí
+                                  Minh
+                                </div>
+                                <div class="dropdown-address-status">
+                                  <div class="alert alert-sm alert-danger alert-des">
+                                    <i class="ic-minus alert-ic-sm bg-danger alert-ic-sm-md"></i>
+                                    <span class="">Tất cả không có hàng</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </label>
+                            <a href="#" class="btn btn-rounded btn-outline-gray btn-sm cs-map block-none"><span>Xem bản
+                                đồ</span></a>
+                          </div>
+                        </div>
+                        <div class="address-item relative b-b-100 p-y-8">
+                          <div class="radio radio-sm justify-between js-receive">
+                            <label for="" class="u-flex">
+                              <input type="radio" value="radio3" name="grp1" id="" />
+                              <div class="address-name">
+                                <div class="lct-txt fs-p-14">
+                                  141 Trần Não, Khu Phố 3, P. Bình An , Quận
+                                  2, Hồ Chí Minh
+                                </div>
+                                <div class="dropdown-address-status">
+                                  <div class="alert alert-sm alert-success alert-des">
+                                    <i class="ic-check alert-ic-sm alert-ic-xs-md bg-success"></i>
+                                    <span class="">Có sẵn hàng</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </label>
+                            <a href="#" class="btn btn-rounded btn-outline-gray btn-sm cs-map block-none"><span>Xem bản
+                                đồ</span></a>
+                          </div>
+                        </div>
+                        <div class="address-item relative out-of-stock b-b-100 p-y-8">
+                          <div class="radio radio-sm justify-between js-receive">
+                            <label for="" class="u-flex">
+                              <input type="radio" value="radio3" name="grp1" id="" />
+                              <div class="address-name">
+                                <div class="lct-txt fs-p-14">
+                                  141 Trần Não, Khu Phố 3, P. Bình An , Quận
+                                  2, Hồ Chí Minh
+                                </div>
+                                <div class="dropdown-address-status">
+                                  <div class="alert alert-sm alert-warning alert-des">
+                                    <i class="ic-exclamation alert-ic-sm bg-warning alert-ic-sm-md"></i>
+                                    <span class="">Chờ nhận hàng 24h nếu đặt tại đây</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </label>
+                            <a href="#" class="btn btn-rounded btn-outline-gray btn-sm cs-map block-none"><span>Xem bản
+                                đồ</span></a>
+                          </div>
+                        </div>
+                        <div class="address-item relative out-of-stock b-b-100 p-y-8">
+                          <div class="radio radio-sm justify-between js-receive">
+                            <label for="" class="u-flex">
+                              <input type="radio" value="radio3" name="grp1" id="" />
+                              <div class="address-name">
+                                <div class="lct-txt fs-p-14">
+                                  379-381 Hai Bà Trưng, P.8, Q.3, TP. Hồ Chí
+                                  Minh
+                                </div>
+                                <div class="dropdown-address-status">
+                                  <div class="alert alert-sm alert-danger alert-des">
+                                    <i class="ic-minus alert-ic-sm bg-danger alert-ic-sm-md"></i>
+                                    <span class="">Tất cả không có hàng</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </label>
+                            <a href="#" class="btn btn-rounded btn-outline-gray btn-sm cs-map block-none"><span>Xem bản
+                                đồ</span></a>
+                          </div>
+                        </div>
+                        <div class="rs-view text-center u-flex justify-center p-y-8 p-x-12">
+                          <a href="#" class="link link-icon link-xs js-loadMore">
+                            Xem thêm <span class="m-x-4"> </span> nhà thuốc
+                            <i class="ic-angle-down m-l-4 fs-ui-12"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script></script>
+                  <!-- date picker -->
+                  <div class="date m-t-12">
+                    <div class="u-flex no-gutters flex-wrap align-items-center js--">
+                      <div class="col-auto m-b-8">
+                        <span class="fs-p-16 f-w-500 txt-gray-800">Thời gian nhận hàng</span>
+                      </div>
+                      <div class="col-12">
+                        <div class="u-flex no-gutters">
+                          <div class="col m-r-16 m-r-md-8">
+                            <div class="dropdown cs-dropdown">
+                              <div class="dropdown-button p-r-md-12">
+                                <span class="fs-p-xxs-14">Chọn ngày</span>
+                                <i class="ic-arrow-select icon-md"></i>
+                              </div>
+                              <div class="dropdown-menu">
+                                <div class="dropdown-menu-wrapper scrollbar js--city-list js-dropdown-list">
+                                  <a href="#" class="active js-check">
+                                    <span>Apple (iPhone)</span>
+                                    <i class="ic-check icon-sm m-l-8"></i>
+                                  </a>
+                                  <a href="#" class="js-check">
+                                    <span>Apple (iPhone)</span>
+                                    <i class="ic-check icon-sm m-l-8"></i>
+                                  </a>
+                                  <a href="#" class="js-check">
+                                    <span>Apple (iPhone)</span>
+                                    <i class="ic-check icon-sm m-l-8"></i>
+                                  </a>
+                                  <a href="#" class="js-check">
+                                    <span>Apple (iPhone)</span>
+                                    <i class="ic-check icon-sm m-l-8"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="dropdown cs-dropdown wrapChonGioGiao">
+                              <div class="dropdown-button p-r-md-12">
+                                <span class="fs-p-xxs-14">Chọn giờ</span>
+                                <i class="ic-arrow-select icon-md"></i>
+                              </div>
+                              <div class="dropdown-menu">
+                                <div class="dropdown-menu-wrapper scrollbar js--city-list js-dropdown-list">
+                                  <a href="#" class="active js-check">
+                                    <span>Apple (iPhone)</span>
+                                    <i class="ic-check icon-sm m-l-8"></i>
+                                  </a>
+                                  <a href="#" class="js-check">
+                                    <span>Apple (iPhone)</span>
+                                    <i class="ic-check icon-sm m-l-8"></i>
+                                  </a>
+                                  <a href="#" class="js-check">
+                                    <span>Apple (iPhone)</span>
+                                    <i class="ic-check icon-sm m-l-8"></i>
+                                  </a>
+                                  <a href="#" class="js-check">
+                                    <span>Apple (iPhone)</span>
+                                    <i class="ic-check icon-sm m-l-8"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- note -->
+                  <div class="note m-t-12">
+                    <textarea class="radius-12 box-full p-y-6 p-x-12 fs-p-16 txt-gray" id="us-comment" name="review"
+                      rows="4" placeholder="Ghi chú yêu cầu"></textarea>
+                  </div>
+                </div>
+                <!-- tab2 -->
+                <div class="tabs" id="tab2" style="display: none">
+                  <!-- chọn phườn xã -->
+                  <div
+                    class="dropdown dropdown-extra dropdown-search dropdown-city m-t-12 cs-dropdown dropdown-ward select__region_ward">
+                    <div class="dropdown-button" data-city="">
+                      <span><i class="block-none inline-block f-style-normal">Chọn</i> Phường/Xã</span>
+                      <i class="ic-arrow-select icon-md"></i>
+                    </div>
+                    <div class="dropdown-menu">
+                      <div class="dropdown-menu-top p-b-md-0">
+                        <div class="dropdown-menu-search">
+                          <div class="form-search form-search-sm">
+                            <span class="form-search-icon m-r-4">
+                              <i class="ic-search icon-sm"></i>
+                            </span>
+                            <input type="text" class="form-search-input m-r-4 js-search"
+                              placeholder="Enter keyword..." />
+                            <span class="form-search-icon form-search-close">
+                              <i class="ic-cancel icon-sm"></i>
+                            </span>
+                          </div>
+                          <span class="link none-block close js-close">Huỷ bỏ</span>
+                        </div>
+                      </div>
+                      <div class="dropdown-menu-wrapper scrollbar js--city-list js-dropdown-list">
+                        <a href="#" class="active">
+                          <span>Apple (iPhone)</span>
+                        </a>
+                        <a href="#" class="">
+                          <span>Apple (iPhone)</span>
+                        </a>
+                        <a href="#" class="">
+                          <span>Apple (iPhone)</span>
+                        </a>
+                        <a href="#" class="">
+                          <span>Apple (iPhone)</span>
+                        </a>
+                        <a href="#" class="">
+                          <span>Apple (iPhone)</span>
+                        </a>
+                        <a href="#" class="">
+                          <span>Apple (iPhone)</span>
+                        </a>
+                        <a href="#" class="">
+                          <span>Apple (iPhone)</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                      <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                      <span class="">Thông tin bắt buộc</span>
+                    </div>
+                  </div>
+                  <!-- nhập địa chỉ -->
+                  <div class="form-group m-t-12">
+                    <input type="text" class="form-input form-input-lg" placeholder="Nhập địa chỉ*" />
+                    <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                      <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                      <span class="">Thông tin bắt buộc</span>
+                    </div>
+                  </div>
+                  <!-- note -->
+                  <div class="note m-t-12">
+                    <textarea class="radius-12 box-full p-y-6 p-x-12 fs-p-16 txt-gray" id="us-comment" name="review"
+                      rows="4" placeholder="Ghi chú yêu cầu"></textarea>
+                  </div>
+                </div>
+
+
+              </div>
+              <!-- hình thức thanh toán -->
+              <div
+                class="cart-bottom__payments bg-white box-t-1 p-y-24 p-x-20 p-x-md-10 p-y-md-16 m-y-md-8 box-shad-none">
+                <h3 class="fs-p-18 txt-gray-700">
+                  Chọn hình thức thanh toán
+                </h3>
+                <div class="form">
+                  <div class="u-flex flex-wrap flex-column check-form">
+                    <div class="radio radio-sm m-t-12">
+                      <label class="u-flex align-items-center" for="ex5">
+                        <input type="radio" value="radio3" name="grp1" id="ex5" />
+                        Trả tiền mặt khi nhận hàng</label>
+                    </div>
+                    <div class="radio radio-sm m-t-12">
+                      <label class="u-flex align-items-center" for="ex5">
+                        <input type="radio" value="radio3" name="grp1" id="ex5" />
+                        Thẻ ATM nội địa/ Internet Banking</label>
+                    </div>
+                    <div class="lc__box lc-banking m-t-8">
+                      <div class="lc__box-inner">
+                        <div class="lc__box-head m-b-8">
+                          <div class="form-search form-search-md p-x-md-10 cs-form-search js--focus-input">
+                            <div class="u-flex align-items-center form-search_wrap no-gutters">
+                              <div class="col u-flex">
+                                <span class="form-search-icon m-r-4">
+                                  <i class="ic-search icon-sm"></i>
+                                </span>
+                                <input type="text" class="form-search-input js-input js-search"
+                                  placeholder="Nhập tìm ngân hàng" />
+                                <span class="form-search-icon form-search-close">
+                                  <i class="ic-cancel icon-sm"></i>
+                                </span>
+                              </div>
+                              <div class="col-auto">
+                                <span class="link close bank-close m-l-8">Huỷ bỏ</span>
+                              </div>
+                            </div>
+
+                            <div class="dropdown-menu">
+                              <div class="dropdown-menu-wrapper scrollbar js--city-list js-dropdown-list ">
+                                <a class="select--bankcode active" data-short-name="tkm">
+                                  <div class="photo">
+                                    <img src="images/bank-logo/acb.png" alt="" />
+                                  </div>
+                                  <span>Ngân hàng thương mại cổ phần Ngoại thương
+                                    Việt Nam (Vietcombank)</span>
+                                  <i class="ic-check icon-sm m-l-8"></i>
+                                </a>
+                                <a class="select--bankcode" data-short-name="tkm">
+                                  <div class="photo">
+                                    <img src="images/bank-logo/acb.png" alt="" />
+                                  </div>
+                                  <span>Ngân hàng thương mại cổ phần Ngoại thương
+                                    Việt Nam (Vietcombank)</span>
+                                  <i class="ic-check icon-sm m-l-8"></i>
+                                </a>
+                                <a class="" data-short-name="VPBANK">
+                                  <div class="photo">
+                                    <img src="images/bank-logo/vp.png" alt="" />
+                                  </div>
+                                  <span>Ngân hàng TMCP Việt Nam Thịnh Vượng
+                                    (VPBank)</span>
+                                  <i class="ic-check icon-sm m-l-8"></i>
+                                </a>
+                                <a class="" data-short-name="TPBANK">
+                                  <div class="photo">
+                                    <img src="images/bank-logo/acb.png" alt="" />
+                                  </div>
+                                  <span>Ngân hàng thương mại cổ phần Ngoại thương
+                                    Việt Nam (Vietcombank)</span>
+                                  <i class="ic-check icon-sm m-l-8"></i>
+                                </a>
+                                <a class="" data-short-name="VPBANK">
+                                  <div class="photo">
+                                    <img src="images/bank-logo/acb.png" alt="" />
+                                  </div>
+                                  <span>Ngân hàng thương mại cổ phần Ngoại thương
+                                    Việt Nam (Vietcombank)</span>
+                                  <i class="ic-check icon-sm m-l-8"></i>
+                                </a>
+                                <a class="" data-short-name="VPBANK">
+                                  <div class="photo">
+                                    <img src="images/bank-logo/acb.png" alt="" />
+                                  </div>
+                                  <span>Ngân hàng thương mại cổ phần Ngoại thương
+                                    Việt Nam (Vietcombank)</span>
+                                  <i class="ic-check icon-sm m-l-8"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="lc__box-content">
+                          <ul class="lc-banking--list row row-cols-5 row-cols-md-4 cs-row js--check-list">
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/exim.png" alt="eximbank" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/vietcom.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/viettin.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/acb.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/dongabank.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/vib.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/sacom.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/agribank.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/bidv.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/hdbank.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/mb.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/msb.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/namabank.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/ocb.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/ocean.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/sea.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/techcom.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/tp.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/shb.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/vieta.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/vp.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/baca.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/baoviet.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols">
+                              <div
+                                class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 img-ratio js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/asbank.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radio radio-sm m-t-12">
+                      <label class="u-flex align-items-center" for="ex5">
+                        <input type="radio" value="radio3" name="grp1" id="ex5" />
+                        <span class="block-none">Thanh toán bằng thẻ quốc tế Visa, Master, JCB</span>
+                        <span class="none-block">Thẻ thanh toán quốc tế Visa, Master, JCB</span>
+                      </label>
+                    </div>
+                    <div class="lc__box lc-banking m-t-8">
+                      <div class="lc__box-inner">
+                        <div class="lc__box-content">
+                          <ul class="lc-banking--list banking-visa row row-cols-5 row-cols-md-4 cs-row js--check-list">
+                            <li class="col cs-cols m-b-0">
+                              <div class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/visa.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols m-b-0">
+                              <div class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/master.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                            <li class="col cs-cols m-b-0">
+                              <div class="lc__box-block relative box-full radius-6 p-y-6 p-x-10 p-x-sm-6 js-check">
+                                <picture class="">
+                                  <img src="images/bank-logo/jcb.png" alt="" srcset="" />
+                                </picture>
+                                <i class="ic-check absolute-center fs-ui-28 txt-white"></i>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lc__banking-alert m-t-8">
+                    <div class="alert alert-md alert-success alert-default alert-des">
+                      <i class="ic-check alert-ic bg-success"></i>
+                      <span class="">Quý khách đã chọn xong hình thức thanh toán. Vui lòng nhấn <strong
+                          class="f-w-500">“Hoàn tất đặt hàng”</strong></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- mobile -->
+          <div class="col-md-12 none-block">
+            <div class="cart-cta__voucher p-x-md-10 p-y-16 m-b-8 bg-white">
+              <a class="link js-voucher fs-ui-16"> <i class="ic-tags m-r-4 fs-ui-14"></i> Sử dụng mã giảm giá</a>
+              <div class="voucher-input">
+                <div class="voucher-input_wrap u-flex">
+                  <div class="form-group m-r-8">
+                    <input type="text" class="form-input form-input-lg" placeholder="Nhập mã giảm giá">
+                  </div>
+                  <div class="voucher-btn">
+                    <a href="" class="btn btn-primary btn-lg">
+                      <span>Áp dụng</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="badge-group m-t-12">
+                  <span class="badge badge-sub-gray badge-sub-ic badge-md">
+                    <i class="ic-tag icon-left"></i>
+                    GIAM20
+                    <i class="ic-cancel icon-right"></i>
+                  </span>
+                </div>
+                <div class="alert alert-md alert-success alert-text m-t-12">
+                  <i class="ic-check alert-ic-md bg-success m-b-2"></i>
+                  <span>Áp dụng thành công giảm 20.000đ cho đơn hàng từ
+                    200.000đ</span>
+                </div>
+              </div>
+            </div>
+            <div class="lc-content none-block txt-center m-b-8">
+              <div class="fs-p-14 txt-gray">
+                Bằng cách đặt hàng, bạn đồng ý với <br />
+                <a class="fs-p-14 txt-gray underline">Điều khoản sử dụng</a>
+                của Nhà thuốc Long Châu
+              </div>
+            </div>
+          </div>
+          <!-- end mobile -->
+          <div class="col-4 col-md-12 m-b-md-8 cs-col sticky-top">
+            <div class="cart-cta radius-12 radius-none">
+              <div class="cart-cta__title p-x-20 p-y-12 box-b-1 block-none">
+                <h3 class="u-flex fs-p-20 text-uppercase txt-primary-700">
+                  <i class="ic-cart-2 icon-circle-primary m-r-8 p-l-1 m-b-4"></i>THÔNG TIN ĐƠN HÀNG
+                </h3>
+              </div>
+              <div class="cart-cta__total p-x-20 p-y-16 box-b-1 p-t-md-8 p-x-md-10 p-b-md-0 box-shad-none">
+                <div class="u-flex flex-row justify-between">
+                  <span class="fs-p-16 txt-gray-700">Tổng tiền</span>
+                  <span class="fs-p-16 txt-gray-700">434.000đ</span>
+                </div>
+                <div class="u-flex flex-row justify-between">
+                  <div class="label label-md label-is-icon label-icon-right m-r-12 relative">
+                    <div
+                      class="ic-help icon-md icon-circle lc-tooltip lc-tooltip-gray lc-tooltip-top tooltip-cs lc-tooltip-hover js-tooltip-open">
+                      <div class="lc-tooltip-box">
+                        <div class="fs-p-16 f-w-500 m-b-4 none-block">
+                          Phí giao hàng dự kiến
+                        </div>
+                        <a class="close close-tip button fs-ui-12 none-block"><i class="ic-close-thin"></i></a>
+                        <p class="fs-p-14">
+                          Phí giao hàng sẽ thay đổi theo hình thức nhận hàng
+                          của quý khách
+                        </p>
+                      </div>
+                    </div>
+
+                    <span class="label-text">Phí giao hàng dự kiến</span>
+                  </div>
+                  <!-- <span class="fs-p-16 txt-gray-700">Phí giao hàng dự kiến<i class="ic-help icon-circle-gray m-l-4"></i></span> -->
+                  <span class="fs-p-16 txt-gray-700">15.000đ</span>
+                </div>
+                <div class="u-flex flex-row justify-between m-t-16 m-t-md-4">
+                  <span class="fs-p-20 f-w-500 txt-gray-900 fs-p-md-18">Cần thanh toán</span>
+                  <span class="fs-p-20 f-w-500 txt-primary-700 fs-p-md-18">423.000đ</span>
+                </div>
+              </div>
+              <!-- cart voucher desktop-->
+              <div class="cart-cta__voucher p-x-20 p-y-16 box-b-1 block-none">
+                <a class="link js-voucher fs-ui-16"> <i class="ic-tags m-r-4 fs-ui-14"></i> Sử dụng mã giảm giá</a>
+                <!-- <div class="alert alert-md alert-primary alert-des txt-primary link js-voucher">
+                  <i class="ic-tags m-r-4 fs-ui-14"></i>
+                  <span class=""></span>
+                </div> -->
+                <div class="voucher-input">
+                  <div class="voucher-input_wrap u-flex">
+                    <div class="form-group m-r-8">
+                      <input type="text" class="form-input form-input-lg" placeholder="Nhập mã giảm giá" />
+                    </div>
+                    <div class="voucher-btn">
+                      <a href="" class="btn btn-primary btn-lg">
+                        <span>Áp dụng</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="badge-group m-t-12">
+                    <span class="badge badge-sub-gray badge-sub-ic badge-md">
+                      <i class="ic-tag icon-left"></i>
+                      GIAM20
+                      <i class="ic-cancel icon-right"></i>
+                    </span>
+                  </div>
+                  <div class="alert alert-md alert-success alert-des m-t-12">
+                    <i class="ic-check alert-ic-md bg-success m-b-2"></i>
+                    <span>Áp dụng thành công giảm 20.000đ cho đơn hàng từ
+                      200.000đ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-cta__btn p-x-20 p-y-20 p-y-md-12 p-x-md-10 txt-center">
+                <button class="col btn btn-rounded btn-primary btn-xl btn-lg-lg js-final" disabled>
+                  <span>HOÀN TẤT ĐẶT HÀNG</span>
+                </button>
+                <div class="fs-p-14 m-t-16 txt-gray block-none">
+                  Bằng cách đặt hàng, bạn đồng ý với <br />
+                  <a class="fs-p-14 txt-gray underline">Điều khoản sử dụng</a>
+                  của Nhà thuốc Long Châu
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" value="Thứ Hai ngày 28/06/2021" name="ngaySelected">
+        <input type="hidden" value="12h00-13h00" name="gioSelected">
+        <!--- Product combo -->
+        <div class="lc-body p-x-md-10">
+          <div class="cart-buy cart-buy--later">
+            <h2 class="u-flex align-items-center fs-p-20 fs-p-md-16 txt-gray-800">
+              <i class="ic-bookmark icon-circle-primary m-r-8 m-b-4"></i>Để
+              Dành Mua Sau
+            </h2>
+            <div class="slide-container relative">
+              <div class="swiper-container cs-slide js-slide--later">
+                <div class="swiper-wrapper p-y-16 p-y-md-8">
+                  <div class="swiper-slide lc-slide">
+                    <div class="product p-x-12 p-y-12 txt-center bg-white box-full radius-12 p-x-md-8 p-y-md-8">
+                      <div class="product-image m-b-12 m-b-md-8">
+                        <a href="">
+                          <picture>
+                            <img src="https://via.placeholder.com/192x192" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="product-info txt-left m-b-8 m-b-md-4">
+                        <h4 class="m-b-8 m-b-md-4">
+                          <a class="product-detail__name truncate2 fs-p-16 txt-gray-700 hover-link fs-p-md-14">
+                            Thực Phẩm Chức Năng Jpanwell Premium30 Viên
+                          </a>
+                        </h4>
+                        <div class="product-info__price txt-gray-700 fs-p-md-14">
+                          <span class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14">414.000đ</span>
+                          / Hộp
+                          <strike class="fs-p-16 txt-gray block fs-p-md-13">960.000đ</strike>
+                        </div>
+                      </div>
+                      <div class="product-btn row no-gutters justify-between align-items-baseline p-x-md-8">
+                        <a class="btn btn-rounded btn-outline-gray-300 btn-md btn-sm-lg m-r-16 col col-md-12">
+                          <span class="txt-gray-600"> Chọn mua</span>
+                        </a>
+                        <a class="link link-md link-sm-md col-auto col-md-12 m-t-4">Xóa</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide lc-slide">
+                    <div class="product p-x-12 p-y-12 txt-center bg-white box-full radius-12 p-x-md-8 p-y-md-8">
+                      <div class="product-image m-b-12 m-b-md-8">
+                        <a href="">
+                          <picture>
+                            <img src="https://via.placeholder.com/192x192" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="product-info txt-left m-b-8 m-b-md-4">
+                        <h4 class="m-b-8 m-b-md-4">
+                          <a class="product-detail__name truncate2 fs-p-16 txt-gray-700 hover-link fs-p-md-14">
+                            Thực Phẩm Chức Năng Jpanwell Premium30 Viên
+                          </a>
+                        </h4>
+                        <div class="product-info__price txt-gray-700 fs-p-md-14">
+                          <span class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14">414.000đ</span>
+                          / Hộp
+                          <strike class="fs-p-16 txt-gray block fs-p-md-13">960.000đ</strike>
+                        </div>
+                      </div>
+                      <div class="product-btn row no-gutters justify-between align-items-baseline p-x-md-8">
+                        <a class="btn btn-rounded btn-outline-gray-300 btn-md btn-sm-lg m-r-16 col col-md-12">
+                          <span class="txt-gray-600"> Chọn mua</span>
+                        </a>
+                        <a class="link link-md link-sm-md col-auto col-md-12 m-t-4">Xóa</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide lc-slide">
+                    <div class="product p-x-12 p-y-12 txt-center bg-white box-full radius-12 p-x-md-8 p-y-md-8">
+                      <div class="product-image m-b-12 m-b-md-8">
+                        <a href="">
+                          <picture>
+                            <img src="https://via.placeholder.com/192x192" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="product-info txt-left m-b-8 m-b-md-4">
+                        <h4 class="m-b-8 m-b-md-4">
+                          <a class="product-detail__name truncate2 fs-p-16 txt-gray-700 hover-link fs-p-md-14">
+                            Thực Phẩm Chức Năng Jpanwell Premium30 Viên
+                          </a>
+                        </h4>
+                        <div class="product-info__price txt-gray-700 fs-p-md-14">
+                          <span class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14">414.000đ</span>
+                          / Hộp
+                          <strike class="fs-p-16 txt-gray block fs-p-md-13">960.000đ</strike>
+                        </div>
+                      </div>
+                      <div class="product-btn row no-gutters justify-between align-items-baseline p-x-md-8">
+                        <a class="btn btn-rounded btn-outline-gray-300 btn-md btn-sm-lg m-r-16 col col-md-12">
+                          <span class="txt-gray-600"> Chọn mua</span>
+                        </a>
+                        <a class="link link-md link-sm-md col-auto col-md-12 m-t-4">Xóa</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide lc-slide">
+                    <div class="product p-x-12 p-y-12 txt-center bg-white box-full radius-12 p-x-md-8 p-y-md-8">
+                      <div class="product-image m-b-12 m-b-md-8">
+                        <a href="">
+                          <picture>
+                            <img src="https://via.placeholder.com/192x192" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="product-info txt-left m-b-8 m-b-md-4">
+                        <h4 class="m-b-8 m-b-md-4">
+                          <a class="product-detail__name truncate2 fs-p-16 txt-gray-700 hover-link fs-p-md-14">
+                            Thực Phẩm Chức Năng Jpanwell Premium30 Viên
+                          </a>
+                        </h4>
+                        <div class="product-info__price txt-gray-700 fs-p-md-14">
+                          <span class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14">414.000đ</span>
+                          / Hộp
+                          <strike class="fs-p-16 txt-gray block fs-p-md-13">960.000đ</strike>
+                        </div>
+                      </div>
+                      <div class="product-btn row no-gutters justify-between align-items-baseline p-x-md-8">
+                        <a class="btn btn-rounded btn-outline-gray-300 btn-md btn-sm-lg m-r-16 col col-md-12">
+                          <span class="txt-gray-600"> Chọn mua</span>
+                        </a>
+                        <a class="link link-md link-sm-md col-auto col-md-12 m-t-4">Xóa</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide lc-slide">
+                    <div class="product p-x-12 p-y-12 txt-center bg-white box-full radius-12 p-x-md-8 p-y-md-8">
+                      <div class="product-image m-b-12 m-b-md-8">
+                        <a href="">
+                          <picture>
+                            <img src="https://via.placeholder.com/192x192" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="product-info txt-left m-b-8 m-b-md-4">
+                        <h4 class="m-b-8 m-b-md-4">
+                          <a class="product-detail__name truncate2 fs-p-16 txt-gray-700 hover-link fs-p-md-14">
+                            Thực Phẩm Chức Năng Jpanwell Premium30 Viên
+                          </a>
+                        </h4>
+                        <div class="product-info__price txt-gray-700 fs-p-md-14">
+                          <span class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14">414.000đ</span>
+                          / Hộp
+                          <strike class="fs-p-16 txt-gray block fs-p-md-13">960.000đ</strike>
+                        </div>
+                      </div>
+                      <div class="product-btn row no-gutters justify-between align-items-baseline p-x-md-8">
+                        <a class="btn btn-rounded btn-outline-gray-300 btn-md btn-sm-lg m-r-16 col col-md-12">
+                          <span class="txt-gray-600"> Chọn mua</span>
+                        </a>
+                        <a class="link link-md link-sm-md col-auto col-md-12 m-t-4">Xóa</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide lc-slide">
+                    <div class="product p-x-12 p-y-12 txt-center bg-white box-full radius-12 p-x-md-8 p-y-md-8">
+                      <div class="product-image m-b-12 m-b-md-8">
+                        <a href="">
+                          <picture>
+                            <img src="https://via.placeholder.com/192x192" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="product-info txt-left m-b-8 m-b-md-4">
+                        <h4 class="m-b-8 m-b-md-4">
+                          <a class="product-detail__name truncate2 fs-p-16 txt-gray-700 hover-link fs-p-md-14">
+                            Thực Phẩm Chức Năng Jpanwell Premium30 Viên
+                          </a>
+                        </h4>
+                        <div class="product-info__price txt-gray-700 fs-p-md-14">
+                          <span class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14">414.000đ</span>
+                          / Hộp
+                          <strike class="fs-p-16 txt-gray block fs-p-md-13">960.000đ</strike>
+                        </div>
+                      </div>
+                      <div class="product-btn row no-gutters justify-between align-items-baseline p-x-md-8">
+                        <a class="btn btn-rounded btn-outline-gray-300 btn-md btn-sm-lg m-r-16 col col-md-12">
+                          <span class="txt-gray-600"> Chọn mua</span>
+                        </a>
+                        <a class="link link-md link-sm-md col-auto col-md-12 m-t-4">Xóa</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide lc-slide">
+                    <div class="product p-x-12 p-y-12 txt-center bg-white box-full radius-12 p-x-md-8 p-y-md-8">
+                      <div class="product-image m-b-12 m-b-md-8">
+                        <a href="">
+                          <picture>
+                            <img src="https://via.placeholder.com/192x192" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="product-info txt-left m-b-8 m-b-md-4">
+                        <h4 class="m-b-8 m-b-md-4">
+                          <a class="product-detail__name truncate2 fs-p-16 txt-gray-700 hover-link fs-p-md-14">
+                            Thực Phẩm Chức Năng Jpanwell Premium30 Viên
+                          </a>
+                        </h4>
+                        <div class="product-info__price txt-gray-700 fs-p-md-14">
+                          <span class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14">414.000đ</span>
+                          / Hộp
+                          <strike class="fs-p-16 txt-gray block fs-p-md-13">960.000đ</strike>
+                        </div>
+                      </div>
+                      <div class="product-btn row no-gutters justify-between align-items-baseline p-x-md-8">
+                        <a class="btn btn-rounded btn-outline-gray-300 btn-md btn-sm-lg m-r-16 col col-md-12">
+                          <span class="txt-gray-600"> Chọn mua</span>
+                        </a>
+                        <a class="link link-md link-sm-md col-auto col-md-12 m-t-4">Xóa</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next sw-btn-next next block-none">
+                <i class="ic-angle-right"></i>
+              </div>
+              <div class="swiper-button-prev sw-btn-prev prev block-none">
+                <i class="ic-angle-left"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--- Product list -->
+        <div class="lc-body p-x-md-10 m-t-32 m-t-md-16">
+          <div class="cart-buy cart-buy--together">
+            <h2 class="u-flex align-items-center fs-p-20 fs-p-md-16 txt-gray-800">
+              <i class="ic-cart-2 icon-circle-primary m-r-8 p-l-1 m-b-4"></i>Bạn Có Thể Muốn Mua Cùng
+            </h2>
+            <div class="slide-container relative">
+              <div class="swiper-container cs-slide js-slide--together">
+                <div class="swiper-wrapper p-y-16 p-y-md-8">
+                  <div class="swiper-slide lc-slide">
+                    <div class="product p-x-12 p-y-12 txt-center bg-white box-full radius-12 p-x-md-8 p-y-md-8">
+                      <div class="product-image m-b-12 m-b-md-8">
+                        <a href="">
+                          <picture>
+                            <img src="https://via.placeholder.com/192x192" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="product-info txt-left m-b-8 m-b-md-4">
+                        <h4 class="m-b-8 m-b-md-4">
+                          <a class="product-detail__name truncate2 fs-p-16 txt-gray-700 hover-link fs-p-md-14">
+                            Thực Phẩm Chức Năng Jpanwell Premium30 Viên
+                          </a>
+                        </h4>
+                        <div class="product-info__price txt-gray-700 fs-p-md-14">
+                          <span class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14">414.000đ</span>
+                          / Hộp
+                          <strike class="fs-p-16 txt-gray block fs-p-md-13">960.000đ</strike>
+                        </div>
+                      </div>
+                      <div class="product-btn row no-gutters justify-between align-items-baseline p-x-md-8">
+                        <a class="btn btn-rounded btn-outline-gray-300 btn-md btn-sm-lg col">
+                          <span class="txt-gray-600"> Chọn mua</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide lc-slide">
+                    <div class="product p-x-12 p-y-12 txt-center bg-white box-full radius-12 p-x-md-8 p-y-md-8">
+                      <div class="product-image m-b-12 m-b-md-8">
+                        <a href="">
+                          <picture>
+                            <img src="https://via.placeholder.com/192x192" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="product-info txt-left m-b-8 m-b-md-4">
+                        <h4 class="m-b-8 m-b-md-4">
+                          <a class="product-detail__name truncate2 fs-p-16 txt-gray-700 hover-link fs-p-md-14">
+                            Thực Phẩm Chức Năng Jpanwell Premium30 Viên
+                          </a>
+                        </h4>
+                        <div class="product-info__price txt-gray-700 fs-p-md-14">
+                          <span class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14">414.000đ</span>
+                          / Hộp
+                          <strike class="fs-p-16 txt-gray block fs-p-md-13">960.000đ</strike>
+                        </div>
+                      </div>
+                      <div class="product-btn row no-gutters justify-between align-items-baseline p-x-md-8">
+                        <a class="btn btn-rounded btn-outline-gray-300 btn-md btn-sm-lg col">
+                          <span class="txt-gray-600"> Chọn mua</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide lc-slide">
+                    <div class="product p-x-12 p-y-12 txt-center bg-white box-full radius-12 p-x-md-8 p-y-md-8">
+                      <div class="product-image m-b-12 m-b-md-8">
+                        <a href="">
+                          <picture>
+                            <img src="https://via.placeholder.com/192x192" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="product-info txt-left m-b-8 m-b-md-4">
+                        <h4 class="m-b-8 m-b-md-4">
+                          <a class="product-detail__name truncate2 fs-p-16 txt-gray-700 hover-link fs-p-md-14">
+                            Thực Phẩm Chức Năng Jpanwell Premium30 Viên
+                          </a>
+                        </h4>
+                        <div class="product-info__price txt-gray-700 fs-p-md-14">
+                          <span class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14">414.000đ</span>
+                          / Hộp
+                          <strike class="fs-p-16 txt-gray block fs-p-md-13">960.000đ</strike>
+                        </div>
+                      </div>
+                      <div class="product-btn row no-gutters justify-between align-items-baseline p-x-md-8">
+                        <a class="btn btn-rounded btn-outline-gray-300 btn-md btn-sm-lg col">
+                          <span class="txt-gray-600"> Chọn mua</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide lc-slide">
+                    <div class="product p-x-12 p-y-12 txt-center bg-white box-full radius-12 p-x-md-8 p-y-md-8">
+                      <div class="product-image m-b-12 m-b-md-8">
+                        <a href="">
+                          <picture>
+                            <img src="https://via.placeholder.com/192x192" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="product-info txt-left m-b-8 m-b-md-4">
+                        <h4 class="m-b-8 m-b-md-4">
+                          <a class="product-detail__name truncate2 fs-p-16 txt-gray-700 hover-link fs-p-md-14">
+                            Thực Phẩm Chức Năng Jpanwell Premium30 Viên
+                          </a>
+                        </h4>
+                        <div class="product-info__price txt-gray-700 fs-p-md-14">
+                          <span class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14">414.000đ</span>
+                          / Hộp
+                          <strike class="fs-p-16 txt-gray block fs-p-md-13">960.000đ</strike>
+                        </div>
+                      </div>
+                      <div class="product-btn row no-gutters justify-between align-items-baseline p-x-md-8">
+                        <a class="btn btn-rounded btn-outline-gray-300 btn-md btn-sm-lg col">
+                          <span class="txt-gray-600"> Chọn mua</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide lc-slide">
+                    <div class="product p-x-12 p-y-12 txt-center bg-white box-full radius-12 p-x-md-8 p-y-md-8">
+                      <div class="product-image m-b-12 m-b-md-8">
+                        <a href="">
+                          <picture>
+                            <img src="https://via.placeholder.com/192x192" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="product-info txt-left m-b-8 m-b-md-4">
+                        <h4 class="m-b-8 m-b-md-4">
+                          <a class="product-detail__name truncate2 fs-p-16 txt-gray-700 hover-link fs-p-md-14">
+                            Thực Phẩm Chức Năng Jpanwell Premium30 Viên
+                          </a>
+                        </h4>
+                        <div class="product-info__price txt-gray-700 fs-p-md-14">
+                          <span class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14">414.000đ</span>
+                          / Hộp
+                          <strike class="fs-p-16 txt-gray block fs-p-md-13">960.000đ</strike>
+                        </div>
+                      </div>
+                      <div class="product-btn row no-gutters justify-between align-items-baseline p-x-md-8">
+                        <a class="btn btn-rounded btn-outline-gray-300 btn-md btn-sm-lg col">
+                          <span class="txt-gray-600"> Chọn mua</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide lc-slide">
+                    <div class="product p-x-12 p-y-12 txt-center bg-white box-full radius-12 p-x-md-8 p-y-md-8">
+                      <div class="product-image m-b-12 m-b-md-8">
+                        <a href="">
+                          <picture>
+                            <img src="https://via.placeholder.com/192x192" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="product-info txt-left m-b-8 m-b-md-4">
+                        <h4 class="m-b-8 m-b-md-4">
+                          <a class="product-detail__name truncate2 fs-p-16 txt-gray-700 hover-link fs-p-md-14">
+                            Thực Phẩm Chức Năng Jpanwell Premium30 Viên
+                          </a>
+                        </h4>
+                        <div class="product-info__price txt-gray-700 fs-p-md-14">
+                          <span class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14">414.000đ</span>
+                          / Hộp
+                          <strike class="fs-p-16 txt-gray block fs-p-md-13">960.000đ</strike>
+                        </div>
+                      </div>
+                      <div class="product-btn row no-gutters justify-between align-items-baseline p-x-md-8">
+                        <a class="btn btn-rounded btn-outline-gray-300 btn-md btn-sm-lg col">
+                          <span class="txt-gray-600"> Chọn mua</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide lc-slide">
+                    <div class="product p-x-12 p-y-12 txt-center bg-white box-full radius-12 p-x-md-8 p-y-md-8">
+                      <div class="product-image m-b-12 m-b-md-8">
+                        <a href="">
+                          <picture>
+                            <img src="https://via.placeholder.com/192x192" alt="" />
+                          </picture>
+                        </a>
+                      </div>
+                      <div class="product-info txt-left m-b-8 m-b-md-4">
+                        <h4 class="m-b-8 m-b-md-4">
+                          <a class="product-detail__name truncate2 fs-p-16 txt-gray-700 hover-link fs-p-md-14">
+                            Thực Phẩm Chức Năng Jpanwell Premium30 Viên
+                          </a>
+                        </h4>
+                        <div class="product-info__price txt-gray-700 fs-p-md-14">
+                          <span class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14">414.000đ</span>
+                          / Hộp
+                          <strike class="fs-p-16 txt-gray block fs-p-md-13">960.000đ</strike>
+                        </div>
+                      </div>
+                      <div class="product-btn row no-gutters justify-between align-items-baseline p-x-md-8">
+                        <a class="btn btn-rounded btn-outline-gray-300 btn-md btn-sm-lg col">
+                          <span class="txt-gray-600"> Chọn mua</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next sw-btn-next sw-next block-none">
+                <i class="ic-angle-right"></i>
+              </div>
+              <div class="swiper-button-prev sw-btn-prev sw-prev block-none">
+                <i class="ic-angle-left"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="lc__loa hidden">
+    <div class="wrap-spinner txt-center border">
+      <div class="spinner spinner-primary spinner-big"></div>
+      <span class="spinner-text">Đang cập nhật...</span>
+  </div>
+  </div>
+
+  <script src="js/functions.js"></script>
+  <!-- <script src="js/clone-function.js"></script> -->
+</body>
+
+</html>

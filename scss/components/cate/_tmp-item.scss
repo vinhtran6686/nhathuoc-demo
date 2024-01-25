@@ -1,0 +1,61 @@
+.tmp-item {
+  padding: 4px;
+  background-color: $white-100;
+  border: 1px solid #d8e0e8;
+  border-radius: 1000px;
+  margin-bottom: 16px;
+  @include respond-to("md") {
+    margin-bottom: 12px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+  }
+  &_img {
+    padding: 8px;
+
+    background-color: $gray-100;
+    border-radius: 50%;
+    margin-right: 4px;
+    picture {
+      @include aspect-ratio(52, 52, 0);
+      width: 52px;
+      height: 52px;
+      img {
+        mix-blend-mode: multiply;
+        // border-radius: 50%;
+      }
+    }
+    @include respond-to("md") {
+      padding: 4px;
+      picture {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+  &_text {
+    font-weight: 500;
+    @include respond-to("md") {
+      font-weight: 400;
+    }
+  }
+}
+
+.cate-lv2-list {
+  margin: 0 -8px;
+  max-height: 108px;
+  overflow: hidden;
+  &.full {
+    max-height: 100%;
+  }
+  & > .col-3 {
+    padding: 0 8px;
+  }
+  @include respond-to("md") {
+    margin: 0 -4px;
+    & > .col-3 {
+      padding: 0 4px;
+    }
+  }
+}

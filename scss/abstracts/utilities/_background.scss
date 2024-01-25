@@ -1,0 +1,13 @@
+@mixin bg-variant($parent, $color, $ignore-warning: false) {
+  #{$parent} {
+    background-color: $color !important;
+  }
+}
+
+// @include bg-variant(".bg-white", $white, true);
+@include bg-variant(".bg-black", $black, true);
+
+@mixin bg-image($url, $size:cover){
+  background: url($url) no-repeat center center;
+  background-size: cover;
+}

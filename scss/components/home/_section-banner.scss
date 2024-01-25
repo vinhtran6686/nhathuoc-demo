@@ -1,0 +1,105 @@
+.section-banner {
+    picture {
+        @extend .lc-show;
+    }
+    .swiper-slide {
+        picture {
+            @include aspect-ratio(1440, 360, 0);
+            img {
+                @extend %ratio-img;
+            }
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .btn-next {
+        right: 20px;
+    }
+    .btn-prev {
+        left: 20px;
+    }
+    @include respond-to("lg") {
+        min-height: unset;
+    }
+
+    @include respond-to("md") {
+        img {
+            object-fit: initial;
+        }
+    }
+
+    @include respond-to("sm") {
+        // margin-top: -8px;
+        padding-bottom: 8px;
+        background: $white-100;
+        .swiper-slide {
+            picture {
+                @include aspect-ratio(768, 299, 0);
+                img {
+                    object-fit: cover;
+
+                }
+            }
+        }
+        .slide-control {
+            display: none;
+        }
+        .swiper-pagination {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+
+            height: 4px;
+            bottom: 4px;
+
+            position: initial;
+            margin-top: 2px;
+            span {
+                width: 40px;
+                height: 4px;
+
+                background: $gray-400;
+                border-radius: 100px;
+
+                opacity: 1;
+                &.swiper-pagination-bullet-active {
+                    background: $primary-500;
+                }
+            }
+        }
+    }
+    @media (max-width: 468px) {
+        .swiper-pagination {
+            span {
+                width: 30px;
+            }
+        }
+    }
+}
+.lc__banner-c3 {
+    padding-top: 0 !important;
+    &--item {
+        picture {
+            @include aspect-ratio(576, 176, 0);
+            img {
+                @extend .fit-cover;
+            }
+        }
+    }
+    @include respond-to("md") {
+        .container {
+            padding: 0 !important;
+            picture {
+                img {
+                    border-radius: 0 !important;
+                }
+            }
+        }
+        .row {
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+        }
+    }
+}

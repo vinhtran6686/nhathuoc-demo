@@ -1,0 +1,35 @@
+.tab__list {
+  &-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.5s all ease-out;
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+    i {
+      color: $gray-500;
+    }
+    a {
+      color: $gray-700;
+      padding: 8px;
+      display: inline-block;
+      width: 100%;
+    }
+    &:hover {
+      a {
+        color: $primary-500;
+      }
+    }
+    &.active {
+      background-color: $gray-100;
+      i {
+        color: $primary-500;
+      }
+      a {
+        font-weight: 500;
+      }
+    }
+  }
+}

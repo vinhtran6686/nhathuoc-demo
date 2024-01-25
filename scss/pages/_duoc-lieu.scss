@@ -1,0 +1,38 @@
+.medicine__section {
+  color: $gray-700;
+  figure{
+    margin-bottom: 24px;
+    & > img{
+      height: auto !important;
+    }
+    figcaption{
+      margin-top: 12px;
+    }
+    @include respond-to('md'){
+      margin-bottom: 16px;
+      figcaption{
+        margin-top: 8px;
+      }
+    }
+  }
+  & > p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 24px;
+    strong {
+      display: inline;
+    }
+  }
+
+  @include respond-to("md") {
+    margin-bottom: 12px !important;
+    padding-bottom: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    & > p {
+      font-size: 14px;
+      line-height: 20px;
+      padding-bottom: 16px;
+    }
+  }
+}

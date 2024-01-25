@@ -1,0 +1,119 @@
+.section__chuyenmuc {
+  margin-top: 32px;
+  &--wrapper {
+    padding: 24px 12px;
+    background: url("/frontend_v3/images/covid/bg-chuyenmuc-covid-desk.png") no-repeat top center;
+    background-size: 100% 100%;
+    @include respond-to("md") {
+      background-image: unset;
+      padding: 0;
+    }
+  }
+  .box-content {
+    display: flex;
+    align-items: center;
+    background: $white-100;
+    border-radius: 12px;
+    &__img {
+      flex: 1;
+      flex-basis: 235px;
+      max-width: 235px;
+      picture {
+        @include aspect-ratio(235, 142, 0);
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      img {
+        border-radius: 12px 0 0 12px;
+      }
+    }
+    &__text {
+      transform: translateX(-32px);
+    }
+    @include respond-to("md") {
+      flex-direction: column;
+      border-radius: 8px;
+      &__text {
+        transform: translateX(0);
+        padding: 8px;
+        text-align: center;
+      }
+      &__img {
+        min-width: 100%;
+        flex-basis: 76px;
+        picture {
+          @include aspect-ratio(108, 76, 0);
+        }
+        img {
+          border-radius: 8px 8px 0 0;
+          object-fit: cover;
+        }
+      }
+    }
+    @media (max-width: 359px) {
+      &__text {
+        padding: 0;
+      }
+    }
+  }
+  @include respond-to("md") {
+    margin-top: 0;
+    background: url("/frontend_v3/images/covid/bg-chuyenmuc-covid.png") no-repeat top center;
+    background-size: cover;
+    padding: 22px 0 26px;
+  }
+}
+
+.circle-ripple {
+  background-color: #f53c3c;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: ripple 2s linear infinite;
+  display: inline-block;
+  margin-right: 13px;
+}
+
+$ripple-color: #ef4444;
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba($ripple-color, 0.3), 0 0 0 0.1em rgba($ripple-color, 0.3),
+      0 0 0 0.5em rgba($ripple-color, 0.3), 0 0 0 1em rgba($ripple-color, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 0em rgba($ripple-color, 0.3), 0 0 0 0.5em rgba($ripple-color, 0.3),
+      0 0 0 1em rgba($ripple-color, 0.3), 0 0 0 1em rgba($ripple-color, 0);
+  }
+}
+
+.nofication-block {
+  background-color: $info-100;
+  position: relative;
+  z-index: 1062;
+  &__wrap {
+    background: url("/frontend_v3/images/covid/notification-bar.png") no-repeat top center;
+    // background: url("/images/home/notification-bar.png") no-repeat center center;
+    background-size: contain;
+    max-width: 1400px;
+    margin: auto;
+  }
+  @include respond-to("sm") {
+    &__wrap {
+      background-image: none;
+    }
+  }
+  @media (max-width: 339px) {
+    span.txt-danger {
+      font-size: 13px;
+      line-height: 100%;
+    }
+  }
+}

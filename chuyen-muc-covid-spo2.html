@@ -1,0 +1,2697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- CSS file import -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/system.css" />
+    <link rel="stylesheet" href="css/libs/swiper.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <!-- Js file import -->
+    <script src="js/libs/jquery-3.1.0.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="overlay-full" style="display: none;"></div>
+        <div class="main-header">
+            <div class="lc-header">
+                <div class="container">
+                    <div class="lc-header-inner">
+                        <div class="lch-logo">
+                            <a href="https://nhathuoclongchau.com"
+                                onclick="ga('send', 'event', 'Header ', 'Click Header', 'Header - Logo');">
+                                <picture>
+                                    <img src="images/longchau-logo.svg" alt="logo" />
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="lch-menu-mb m-b-12">
+                            <div class="u-flex justify-between align-items-center">
+                                <span id="show" onclick="w3_open()"> <i class="ic-menu fs-ui-24 txt-white"></i></span>
+                                <a href="#">
+                                    <picture>
+                                        <img src="images/longchau-logo-mb.svg" alt="" />
+                                    </picture>
+                                </a>
+                                <div class="lch-cart-mb">
+                                    <a class="u-flex align-items-baseline js-notify-mb js-check-form">
+                                        <div class="group-icon">
+                                            <i class="ic-cart-2 m-r-8"></i>
+                                            <span class="fs-ui-15 txt-gray-900 f-w-500">200</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lch-search">
+                            <div class="lch-search-wrap">
+                                <form action="https://nhathuoclongchau.com/tim-kiem" method="get" id="form-search"
+                                    autocomplete="off">
+                                    <div class="lch-gr-search">
+                                        <div class="lch-search-input">
+                                            <input type="text" id="input-main" name="s" value=""
+                                                placeholder="Tìm thuốc, thực phẩm chức năng, bệnh lý, mỹ phẩm…" />
+                                            <span id="close-icon"><i class="ic-cancel"></i></span>
+
+                                            <input type="hidden" name="loai" value="tatca" />
+                                            <input type="hidden" name="doituong" value="tatca" />
+                                        </div>
+
+                                        <button class="lch-search-btn" type="submit">
+                                            <i class="ic-search"></i>
+                                        </button>
+                                    </div>
+                                </form>
+
+                                <div id="result" class="result">
+                                    <div class="lch-search-suggestion" style="display: none;">
+                                        <div class="lch-search-suggestion-inner"></div>
+                                    </div>
+
+                                    <div class="lch-search-suggestion-history" style="display: none;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="lch-hotline">
+                            <div class="u-flex align-items-center">
+                                <i class="ic-call-center txt-white fs-ui-36 m-r-8"></i>
+                                <div class="h2 txt-white">
+                                    <p class="fs-ui-18 f-w-500 m-b-2">1800 6928</p>
+                                    <p class="fs-ui-13 f-w-400">Tư vấn miễn phí</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="lch-cart lc-tooltip lc-tooltip-grayscale lc-tooltip-bottom lc-tooltip-hover">
+                            <a class="u-flex align-items-baseline">
+                                <div class="group-icon">
+                                    <i class="ic-cart-2 m-r-8"></i>
+                                    <span class="fs-ui-15 txt-gray-900 f-w-500">200</span>
+                                </div>
+                                <p class="fs-ui-16 txt-white">Giỏ hàng</p>
+                            </a>
+                            <div class="lc-tooltip-box notitfy-box drop-s-300">
+                                <div class="notitfy-box_top box-b-1 p-y-12" style="display: none;">
+                                    <div class="alert alert-md alert-success alert-des">
+                                        <i class="ic-check alert-ic bg-success"></i>
+                                        <span class="">Thêm thành công sản phẩm vào giỏ hàng</span>
+                                    </div>
+                                </div>
+                                <div class="notitfy-box_bottom scrollbar">
+                                    <div class="notify-item p-y-12 box-b-1">
+                                        <div class="u-flex">
+                                            <div class="item-img m-r-4">
+                                                <a>
+                                                    <img src="https://via.placeholder.com/72x72" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item-info">
+                                                <a class="fs-p-14 f-w-400 txt-gray-700 truncate2">Viên Uống Bổ Sung
+                                                    Vitamin Và Khoáng Chất
+                                                    Calcium Plus Puri</a>
+                                                <div class="u-flex justify-between align-items-center m-t-4">
+                                                    <div class="product-count u-flex">
+                                                        <button class="button-count disabled">
+                                                            <i class="ic-minus"></i>
+                                                        </button>
+                                                        <input type="text" readonly=""
+                                                            class="form-input form-input-sm number-product txt-center"
+                                                            value="1" />
+                                                        <button class="button-count">
+                                                            <i class="ic-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div
+                                                        class="product-price u-flex justify-end align-items-center flex-wrap fs-p-14">
+                                                        <strike class="txt-gray m-l-2 m-r-8">3.360.000đ</strike>
+                                                        <div>
+                                                            <strong class="txt-gray-700">1.200.000đ</strong>
+                                                            <span class="txt-gray-400 p-x-8">|</span>
+                                                            <span
+                                                                class="txt-primary fs-ui-14 cursor-pointer p-r-6">Xóa</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notify-item p-y-12 box-b-1">
+                                        <div class="u-flex">
+                                            <div class="item-img m-r-4">
+                                                <a>
+                                                    <img src="https://via.placeholder.com/72x72" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item-info">
+                                                <a class="fs-p-14 f-w-400 txt-gray-700 truncate2">Viên Uống Bổ Sung
+                                                    Vitamin Và Khoáng Chất
+                                                    Calcium Plus Puri</a>
+                                                <div class="u-flex justify-between align-items-center m-t-4">
+                                                    <div class="product-count u-flex">
+                                                        <button class="button-count disabled">
+                                                            <i class="ic-minus"></i>
+                                                        </button>
+                                                        <input type="text" readonly=""
+                                                            class="form-input form-input-sm number-product txt-center"
+                                                            value="1" />
+                                                        <button class="button-count">
+                                                            <i class="ic-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="product-price u-flex justify-end flex-wrap fs-p-14">
+                                                        <strike class="txt-gray ">260.000đ</strike>
+                                                        <strong class="txt-gray-700 m-l-8">200.000đ</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notify-item p-y-12 box-b-1">
+                                        <div class="u-flex">
+                                            <div class="item-img m-r-4">
+                                                <a>
+                                                    <img src="https://via.placeholder.com/72x72" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item-info">
+                                                <a class="fs-p-14 f-w-400 txt-gray-700 truncate2">Viên Uống Bổ Sung
+                                                    Vitamin Và Khoáng Chất
+                                                    Calcium Plus Puri</a>
+                                                <div class="u-flex justify-between align-items-center m-t-4">
+                                                    <div class="product-count u-flex">
+                                                        <button class="button-count disabled">
+                                                            <i class="ic-minus"></i>
+                                                        </button>
+                                                        <input type="text" readonly=""
+                                                            class="form-input form-input-sm number-product txt-center"
+                                                            value="1" />
+                                                        <button class="button-count">
+                                                            <i class="ic-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="product-price u-flex justify-end flex-wrap fs-p-14">
+                                                        <strike class="txt-gray ">260.000đ</strike>
+                                                        <strong class="txt-gray-700 m-l-8">200.000đ</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notify-item p-y-12 box-b-1">
+                                        <div class="u-flex">
+                                            <div class="item-img m-r-4">
+                                                <a>
+                                                    <img src="https://via.placeholder.com/72x72" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item-info">
+                                                <a class="fs-p-14 f-w-400 txt-gray-700 truncate2">Viên Uống Bổ Sung
+                                                    Vitamin Và Khoáng Chất
+                                                    Calcium Plus Puri</a>
+                                                <div class="u-flex justify-between align-items-center m-t-4">
+                                                    <div class="product-count u-flex">
+                                                        <button class="button-count disabled">
+                                                            <i class="ic-minus"></i>
+                                                        </button>
+                                                        <input type="text" readonly=""
+                                                            class="form-input form-input-sm number-product txt-center"
+                                                            value="1" />
+                                                        <button class="button-count">
+                                                            <i class="ic-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="product-price u-flex justify-end flex-wrap fs-p-14">
+                                                        <strike class="txt-gray ">260.000đ</strike>
+                                                        <strong class="txt-gray-700 m-l-8">200.000đ</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notify-item p-y-12 box-b-1">
+                                        <div class="u-flex">
+                                            <div class="item-img m-r-4">
+                                                <a>
+                                                    <img src="https://via.placeholder.com/72x72" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item-info">
+                                                <a class="fs-p-14 f-w-400 txt-gray-700 truncate2">Viên Uống Bổ Sung
+                                                    Vitamin Và Khoáng Chất
+                                                    Calcium Plus Puri</a>
+                                                <div class="u-flex justify-between align-items-center m-t-4">
+                                                    <div class="product-count u-flex">
+                                                        <button class="button-count disabled">
+                                                            <i class="ic-minus"></i>
+                                                        </button>
+                                                        <input type="text" readonly=""
+                                                            class="form-input form-input-sm number-product txt-center"
+                                                            value="1" />
+                                                        <button class="button-count">
+                                                            <i class="ic-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="product-price u-flex justify-end flex-wrap fs-p-14">
+                                                        <strike class="txt-gray ">260.000đ</strike>
+                                                        <strong class="txt-gray-700 m-l-8">200.000đ</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notify-item p-y-12 box-b-1">
+                                        <div class="u-flex">
+                                            <div class="item-img m-r-4">
+                                                <a>
+                                                    <img src="https://via.placeholder.com/72x72" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="item-info">
+                                                <a class="fs-p-14 f-w-400 txt-gray-700 truncate2">Viên Uống Bổ Sung
+                                                    Vitamin Và Khoáng Chất
+                                                    Calcium Plus Puri</a>
+                                                <div class="u-flex justify-between align-items-center m-t-4">
+                                                    <div class="product-count u-flex">
+                                                        <button class="button-count disabled">
+                                                            <i class="ic-minus"></i>
+                                                        </button>
+                                                        <input type="text" readonly=""
+                                                            class="form-input form-input-sm number-product txt-center"
+                                                            value="1" />
+                                                        <button class="button-count">
+                                                            <i class="ic-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="product-price u-flex justify-end flex-wrap fs-p-14">
+                                                        <strike class="txt-gray ">260.000đ</strike>
+                                                        <strong class="txt-gray-700 m-l-8">200.000đ</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notitfy-checkout p-t-12">
+                                    <div class="price-result u-flex justify-between fs-p-18">
+                                        <p class="price-result_text txt-gray-700 f-w-500">
+                                            Tạm tính
+                                        </p>
+                                        <p class="price-result_numb txt-primary-700 f-w-500">
+                                            2.400.000đ
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn btn-rounded btn-primary btn-lg col m-t-12">
+                                        <span class="f-w-500">HOÀN TẤT ĐẶT HÀNG</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="lcmenu lc-menu--desktop">
+                <div class="container lcmenu__inner">
+                    <ul class="menu js-menu">
+                        <li class="menu__item">
+                            <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang" class="menu__link">Thực phẩm chức
+                                năng <i class="ic-angle-down"> </i></a>
+                            <div class="menu__child">
+                                <h2 class="menu__child--title margin-25">
+                                    Thực phẩm chức năng
+                                </h2>
+
+                                <div class="menu__child--row menu__list text-center">
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/sinh-ly-noi-tiet-to">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2020/10/00345332-bang-vien-uong-tang-cuong-sinh-ly-nam-3809-5f7e_large.JPG"
+                                                    alt="Sinh lý - Nội tiết tố" />
+                                            </picture>
+                                            <h4>Sinh lý - Nội tiết tố</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a
+                                            href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/cai-thien-tang-cuong-chuc-nang">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2021/01/00029360-lipitas-jpanwell-60v-4493-6006_large.JPG"
+                                                    alt="Cải thiện tăng cường chức năng" />
+                                            </picture>
+                                            <h4>Cải thiện tăng cường chức năng</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a
+                                            href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/the-hinh-kiem-soat-can-nang">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2021/02/00020462-alltimes-care-platinum-weightloss-3300mg-50v-2902-601e_large.JPG"
+                                                    alt="Thể hình - kiểm soát cân nặng" />
+                                            </picture>
+                                            <h4>Thể hình - kiểm soát cân nặng</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/lam-dep">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2021/01/00021929-perfect-white-60v-3739-600f_large.JPG"
+                                                    alt="Làm đẹp" />
+                                            </picture>
+                                            <h4>Làm đẹp</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a
+                                            href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/thao-duoc-thuc-pham-tu-nhien">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2020/11/00345360-dong-trung-ha-thao-kotimogin-8997-5fb0_large.jpg"
+                                                    alt="Thảo dược - Thực phẩm tự nhiên" />
+                                            </picture>
+                                            <h4>Thảo dược - Thực phẩm tự nhiên</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/vitamin">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2020/05/00018667-multi-vitamin-effer-vescent-tablets-haas-20v-vien-sui-2592-5ebb_large.JPG"
+                                                    alt="Vitamin" />
+                                            </picture>
+                                            <h4>Vitamin</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/canxi-va-khoang-chat">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2020/12/00345430-vien-uong-bo-sung-canxi-magie-kem-2569-5fdc_large.jpg"
+                                                    alt="Canxi và khoáng chất" />
+                                            </picture>
+                                            <h4>Canxi và khoáng chất</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/dau-ca-omega">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2020/12/00028684-omega-3-6-9-naturecare-3x20-3929-5fd3_large.JPG"
+                                                    alt="Dầu cá - Omega" />
+                                            </picture>
+                                            <h4>Dầu cá - Omega</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/vi-sinh-probiotic">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2021/02/00029695-bot-xo-meisen-aojiru-60-goi-x-3g-3637-602f_large.JPG"
+                                                    alt="Vi sinh (Probiotic)" />
+                                            </picture>
+                                            <h4>Vi sinh (Probiotic)</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang">
+                                            <picture class="margin-10">
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                            </picture>
+                                            <h4>Xem tất cả</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- row 2 -->
+                                <div class="menu__child-row link-static-row">
+                                    <div class="link-static">
+                                        <div class="link-static__item">
+                                            <a
+                                                href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/sinh-ly-noi-tiet-to">Sinh
+                                                lý - Nội tiết
+                                                tố</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/sinh-ly-nam">Sinh
+                                                        lý nam</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/sinh-ly-nu">Sinh
+                                                        lý nữ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a
+                                                href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/cai-thien-tang-cuong-chuc-nang">Cải
+                                                thiện tăng cường chức năng</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/tim-mach-huyet-ap">Tim
+                                                        mạch - Huyết
+                                                        áp</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/tinh-mach">Tĩnh
+                                                        Mạch</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/tieu-duong">Tiểu
+                                                        đường</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/chuc-nang-gan">Chức
+                                                        năng gan</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/than-tien-liet-tuyen">Thận
+                                                        - Tiền
+                                                        Liệt Tuyến</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/dai-trang">Đại
+                                                        tràng</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/tieu-hoa">Tiêu
+                                                        hóa</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/tri">Trĩ</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/ho-hap-xoang">Hô
+                                                        hấp - Xoang</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/xuong-khop">Xương
+                                                        khớp</a>
+                                                </li>
+                                                <li class="view-more">
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/cai-thien-tang-cuong-chuc-nang"><i
+                                                            class="icon-angle-right"> </i>Xem thêm</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a
+                                                href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/the-hinh-kiem-soat-can-nang">Thể
+                                                hình -
+                                                kiểm soát cân nặng</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/thuc-pham-giam-can">Thực
+                                                        phẩm giảm
+                                                        cân</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/phan-giai-mo">Phân
+                                                        giải mỡ</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/whey-protein">Whey
+                                                        protein</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/lam-dep">Làm
+                                                đẹp</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/da">Da</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/toc">Tóc</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/kich-co-nguc">Kích
+                                                        cỡ ngực</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a
+                                                href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/thao-duoc-thuc-pham-tu-nhien">Thảo
+                                                dược
+                                                - Thực phẩm tự nhiên</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/nghe-and-curcumin">Nghệ
+                                                        &amp;
+                                                        Curcumin</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/nhan-sam">Nhân
+                                                        sâm</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/dong-trung-ha-thao">Đông
+                                                        trùng hạ
+                                                        thảo</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/trinh-nu-hoang-cung">Trinh
+                                                        nữ hoàng
+                                                        cung</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/to-yen">Tổ
+                                                        yến</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/mat-ong">Mật
+                                                        ong</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/giao-co-lam">Giảo
+                                                        cổ lam</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/sua-ong-chua">Sữa
+                                                        ong chúa</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/nhau-thai-cuu">Nhau
+                                                        thai cừu</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/toi">Tỏi</a>
+                                                </li>
+                                                <li class="view-more">
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/thao-duoc-thuc-pham-tu-nhien"><i
+                                                            class="icon-angle-right"> </i>Xem thêm</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a
+                                                href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/vitamin">Vitamin</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/multivitamins-vitamin-tong-hop">Multivitamins
+                                                        - Vitamin tổng hợp</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/vitamin-c">Vitamin
+                                                        C</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/vitamin-e">Vitamin
+                                                        E</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/vitamin-d">Vitamin
+                                                        D</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="link-static__item">
+                                            <a
+                                                href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/canxi-va-khoang-chat">Canxi
+                                                và khoáng
+                                                chất</a>
+                                            <ul class="link-static__item--list clearfix">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/canxi">Canxi</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/khoang-chat">Khoáng
+                                                        chất</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/collagen">Collagen</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/sua-bot">Sữa
+                                                        bột</a>
+                                                </li>
+                                            </ul>
+
+                                            <div class="item-list-lv2">
+                                                <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/dau-ca-omega">
+                                                    <b>Dầu cá -
+                                                        Omega</b></a>
+                                                <ul class="link-static__item--list clearfix">
+                                                    <li>
+                                                        <a
+                                                            href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/dau-ca">Dầu
+                                                            cá</a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/omega-3">Omega
+                                                            3</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="link-static__item">
+                                            <a
+                                                href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/vi-sinh-probiotic">Vi
+                                                sinh
+                                                (Probiotic)</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/lactobacillus-acidophilus">Lactobacillus
+                                                        acidophilus</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/acidophilus">Acidophilus</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://nhathuoclongchau.com/duoc-my-pham" class="menu__link">Dược mỹ phẩm <i
+                                    class="ic-angle-down"> </i></a>
+                            <div class="menu__child">
+                                <h2 class="menu__child--title margin-25">Dược mỹ phẩm</h2>
+
+                                <div class="menu__child--row menu__list text-center">
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-co-the">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2019/08/00017854-panthenol-nano-bac-spray-bimex-130g-5997-5d63_large.png"
+                                                    alt="Chăm sóc cơ thể" />
+                                            </picture>
+                                            <h4>Chăm sóc cơ thể</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-da-chuyen-sau">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2019/03/00015281-uriage-depiderm-soin-cible-anti-taches-15ml-9847-5c8f_large.png"
+                                                    alt="Chăm sóc da chuyên sâu" />
+                                            </picture>
+                                            <h4>Chăm sóc da chuyên sâu</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-da-mat">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2019/08/00021449-mieng-dan-mun-somaderm-spot-24-mieng-8379-5d5c_large.jpg"
+                                                    alt="Chăm sóc da mặt" />
+                                            </picture>
+                                            <h4>Chăm sóc da mặt</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-toc-da-dau">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2021/02/00011134-dau-goi-dau-thao-duoc-kingphar-200g-2027-6017_large.JPG"
+                                                    alt="Chăm sóc tóc - da đầu" />
+                                            </picture>
+                                            <h4>Chăm sóc tóc - da đầu</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-da-vung-mat">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2019/08/00008541-eucerin-hyluron-filler-eye-15ml-63536-1176-5d51_large.png"
+                                                    alt="Chăm sóc da vùng mắt" />
+                                            </picture>
+                                            <h4>Chăm sóc da vùng mắt</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/duoc-my-pham/san-pham-tu-thien-nhien">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2020/12/00028923-tinh-dau-sa-chanh-thao-nguyen-50ml-2467-5fd9_large.JPG"
+                                                    alt="Sản phẩm từ thiên nhiên" />
+                                            </picture>
+                                            <h4>Sản phẩm từ thiên nhiên</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/duoc-my-pham/my-pham-trang-diem">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2021/01/00029574-bong-tay-trang-da-dung-niva-hop-80-mieng-3734-6009_large.JPG"
+                                                    alt="Mỹ phẩm trang điểm" />
+                                            </picture>
+                                            <h4>Mỹ phẩm trang điểm</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/duoc-my-pham">
+                                            <picture class="margin-10">
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                            </picture>
+                                            <h4>Xem tất cả</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- row 2 -->
+                                <div class="menu__child-row link-static-row">
+                                    <div class="link-static">
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-co-the">Chăm sóc
+                                                cơ thể</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/duoc-my-pham/chong-nang-toan-than">Chống
+                                                        nắng toàn
+                                                        thân</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/duong-the">Dưỡng
+                                                        thể</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/duoc-my-pham/tay-te-bao-chet-toan-than">Tẩy
+                                                        tế bào chết
+                                                        toàn thân</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-nguc">Chăm
+                                                        sóc ngực</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/sua-tam-xa-bong">Sữa
+                                                        tắm, xà bông</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/khu-mui">Khử
+                                                        mùi</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/tri-nut-da">Trị
+                                                        nứt da</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/duong-tay-chan">Dưỡng
+                                                        tay, chân</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-da-chuyen-sau">Chăm
+                                                sóc da chuyên
+                                                sâu</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/duong-trang-da">Dưỡng
+                                                        trắng da</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/nam-sam">Nám
+                                                        sạm</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/seo-vet-tham">Sẹo-
+                                                        Vết thâm</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/da-kho-mat-am">Da
+                                                        khô - mất ẩm</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/nhay-cam">Nhạy
+                                                        cảm</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/viem-da-co-dia">Viêm
+                                                        da cơ địa</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-da-mat">Chăm sóc
+                                                da mặt</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/duoc-my-pham/chong-nang-da-mat">Chống
+                                                        nắng da mặt</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/tri-mun">Trị
+                                                        mụn</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/tay-te-bao-chet">Tẩy
+                                                        tế bào chết</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/duoc-my-pham/sua-rua-mat-kem-gel-sua">Sữa
+                                                        rửa mặt (Kem,
+                                                        gel, sữa)</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/nuoc-tay-trang">Nước
+                                                        tẩy trang</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/duoc-my-pham/toner-nuoc-hoa-hong-lotion">Toner
+                                                        (nước hoa
+                                                        hồng) / Lotion</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/mat-na">Mặt
+                                                        nạ</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/duoc-my-pham/serum-essence-hoac-ampoule">Serum,
+                                                        Essence
+                                                        hoặc Ampoule</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/duong-da-mat">Dưỡng
+                                                        da mặt</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/xit-khoang">Xịt
+                                                        khoáng</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-toc-da-dau">Chăm
+                                                sóc tóc - da đầu</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/dac-tri">Đặc
+                                                        trị</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/dau-goi-dau-xa">Dầu
+                                                        gội dầu xả</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/duong-toc-u-toc">Dưỡng
+                                                        tóc, ủ tóc</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-da-vung-mat">Chăm
+                                                sóc da vùng mắt</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/duoc-my-pham/duong-da-ngan-ngua-lao-hoa-vung-mat">Dưỡng
+                                                        da &amp; ngăn ngừa lão hóa vùng mắt</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/duoc-my-pham/ngan-ngua-tri-tham-quang-bong-mat">Ngăn
+                                                        ngừa &amp; Trị thâm quầng, bọng mắt</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/duoc-my-pham/san-pham-tu-thien-nhien">Sản
+                                                phẩm từ thiên
+                                                nhiên</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/tinh-dau">Tinh
+                                                        dầu</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/dau-dua">Dầu
+                                                        dừa</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/duoc-my-pham/my-pham-trang-diem">Mỹ
+                                                phẩm trang điểm</a>
+                                            <ul class="link-static__item--list clearfix">
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/trang-diem-mat">Trang
+                                                        điểm mặt</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/son-moi">Son
+                                                        môi</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/duoc-my-pham/bong-tay-trang">Bông
+                                                        tẩy trang</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan" class="menu__link">Chăm sóc cá nhân
+                                <i class="ic-angle-down"> </i></a>
+                            <div class="menu__child">
+                                <h2 class="menu__child--title margin-25">Chăm sóc cá nhân</h2>
+
+                                <div class="menu__child--row menu__list text-center">
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/ho-tro-tinh-duc">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2019/03/00008408-bcs-ok-original-12s-2305-5c93_large.JPG"
+                                                    alt="Hỗ trợ tình dục" />
+                                            </picture>
+                                            <h4>Hỗ trợ tình dục</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/cham-soc-rang-mieng">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2020/12/00029208-kem-danh-rang-dental-hot-red-jumbo-extra-whitening-cong-thuc-trang-sang-vuot-troi-250ml-6660-5fed_large.jpg"
+                                                    alt="Chăm sóc răng miệng" />
+                                            </picture>
+                                            <h4>Chăm sóc răng miệng</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/ve-sinh-ca-nhan">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2019/06/00013661-ve-sinh-pn-herbal-nano-vinapharma-5245-5d00_large.JPG"
+                                                    alt="Vệ sinh cá nhân" />
+                                            </picture>
+                                            <h4>Vệ sinh cá nhân</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/do-dung-gia-dinh">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2020/12/00028901-tinh-dau-khuynh-diep-uphace-25ml-dau-cho-me-va-be-7824-5fcf_large.JPG"
+                                                    alt="Đồ dùng gia đình" />
+                                            </picture>
+                                            <h4>Đồ dùng gia đình</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/thuc-pham-do-uong">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2019/04/00018464-ngam-ho-bach-bo-mom-and-baby-tat-thanh-5x4-7543-5cc1_large.jpg"
+                                                    alt="Thực phẩm - Đồ uống" />
+                                            </picture>
+                                            <h4>Thực phẩm - Đồ uống</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/hang-tong-hop">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2021/04/00030313-mat-na-banobagi-vita-genic-jelly-mask-hydrating-vitamin-e-duong-am-cung-cap-nuoc-cang-da-mat-2764-6065_large.jpg"
+                                                    alt="Hàng tổng hợp" />
+                                            </picture>
+                                            <h4>Hàng tổng hợp</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/dung-cu-cao-rau">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2020/07/00028445-dao-cao-rau-gillette-super-thin-can-vang-goi-2-cai-2427-5f1e_large.JPG"
+                                                    alt="Dụng cụ cạo râu" />
+                                            </picture>
+                                            <h4>Dụng cụ cạo râu</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan">
+                                            <picture class="margin-10">
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                            </picture>
+                                            <h4>Xem tất cả</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- row 2 -->
+                                <div class="menu__child-row link-static-row">
+                                    <div class="link-static">
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/ho-tro-tinh-duc">Hỗ
+                                                trợ tình dục</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/bao-cao-su">Bao
+                                                        cao su</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/cham-soc-ca-nhan/gel-boi-tron">Gel
+                                                        bôi trơn</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/cham-soc-rang-mieng">Chăm
+                                                sóc răng
+                                                miệng</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/cham-soc-ca-nhan/cham-soc-rang">Chăm
+                                                        sóc răng</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/cham-soc-ca-nhan/nuoc-suc-mieng">Nước
+                                                        súc miệng</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/cham-soc-ca-nhan/chi-nha-khoa">Chỉ
+                                                        nha khoa</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/cham-soc-ca-nhan/kem-danh-rang">Kem
+                                                        đánh răng</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/cham-soc-ca-nhan/ban-chai-danh-rang">Bàn
+                                                        chải đánh
+                                                        răng</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/ve-sinh-ca-nhan">Vệ
+                                                sinh cá nhân</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/cham-soc-ca-nhan/nuoc-rua-tay">Nước
+                                                        rửa tay</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/cham-soc-ca-nhan/dung-dich-ve-sinh-phu-nu">Dung
+                                                        dịch vệ
+                                                        sinh phụ nữ</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/cham-soc-ca-nhan/bang-ve-sinh">Băng
+                                                        vệ sinh</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/do-dung-gia-dinh">Đồ
+                                                dùng gia đình</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/cham-soc-ca-nhan/do-dung-cho-be">Đồ
+                                                        dùng cho bé</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/cham-soc-ca-nhan/do-dung-cho-me">Đồ
+                                                        dùng cho mẹ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/chong-muoi">Chống
+                                                        muỗi</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/thuc-pham-do-uong">Thực
+                                                phẩm - Đồ uống</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/keo-cung">Kẹo
+                                                        cứng</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/keo-deo">Kẹo
+                                                        dẻo</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/keo-cao-su">Kẹo
+                                                        cao su</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/cham-soc-ca-nhan/nuoc-uong-khong-gas">Nước
+                                                        uống không
+                                                        gas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/sua-nuoc">Sữa
+                                                        nước</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/hang-tong-hop">Hàng
+                                                tổng hợp</a>
+                                        </div>
+
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/dung-cu-cao-rau">Dụng
+                                                cụ cạo râu</a>
+                                            <ul class="link-static__item--list clearfix">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/cham-soc-ca-nhan/dao-luoi-cao-rau">Dao,
+                                                        lưỡi cạo râu</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://nhathuoclongchau.com/thuoc" class="menu__link">Thuốc</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te" class="menu__link">Thiết bị y tế
+                                <i class="ic-angle-down"> </i></a>
+                            <div class="menu__child">
+                                <h2 class="menu__child--title margin-25">Thiết bị y tế</h2>
+
+                                <div class="menu__child--row menu__list text-center">
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dung-cu-y-te">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2020/11/00018413-fysoline-dang-truong-gifrer-40-ong-dung-dich-lam-sach-mat-mui-3053-5fa9_large.JPG"
+                                                    alt="Dụng cụ y tế" />
+                                            </picture>
+                                            <h4>Dụng cụ y tế</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/khau-trang">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2021/03/00029785-khau-trang-hamita-tre-em-meo-kitty-hop-50-cai-4297-603c_large.JPG"
+                                                    alt="Khẩu trang" />
+                                            </picture>
+                                            <h4>Khẩu trang</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dung-cu-theo-doi">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2020/12/00028635-may-do-duong-huyet-tu-dong-mediusa-gm3300-1967-5fc9_large.JPG"
+                                                    alt="Dụng cụ theo dõi" />
+                                            </picture>
+                                            <h4>Dụng cụ theo dõi</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/thu-thai">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2021/03/00029865-allisa-pregnancy-test-kit-que-thu-thai-4902-6041_large.JPG"
+                                                    alt="Thử thai" />
+                                            </picture>
+                                            <h4>Thử thai</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dung-cu-so-cuu">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2021/03/00030068-bang-keo-cuon-co-gian-fix-roll-10cmx25m-1358-6055_large.JPG"
+                                                    alt="Dụng cụ sơ cứu" />
+                                            </picture>
+                                            <h4>Dụng cụ sơ cứu</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a
+                                            href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/gang-tay-vo-ngan-tinh-mach">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2019/04/00009559-duomed-vo-dui-l-2575-5caa_large.JPG"
+                                                    alt="Găng tay, vớ ngăn tĩnh mạch" />
+                                            </picture>
+                                            <h4>Găng tay, vớ ngăn tĩnh mạch</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/tui-chuom">
+                                            <picture class="margin-10 text-center">
+                                                <img src="https://images.fpt.shop/unsafe/fit-in/200x200/filters:quality(90):fill(white)/nhathuoclongchau.com/images/product/2019/10/00021682-mieng-dan-ha-sot-lion-hiepita-for-child-8-goi-x-2-mieng-8063-5d9e_large.JPG"
+                                                    alt="Túi chườm" />
+                                            </picture>
+                                            <h4>Túi chườm</h4>
+                                        </a>
+                                    </div>
+                                    <div class="menu__list--item">
+                                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te">
+                                            <picture class="margin-10">
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                            </picture>
+                                            <h4>Xem tất cả</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- row 2 -->
+                                <div class="menu__child-row link-static-row">
+                                    <div class="link-static">
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dung-cu-y-te">Dụng
+                                                cụ y tế</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dung-cu-ve-sinh-mui">Dụng
+                                                        cụ vệ sinh
+                                                        mũi</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/kim-cac-loai">Kim
+                                                        các loại</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dai-lung">Đai
+                                                        lưng</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dung-cu-khac">Dụng
+                                                        cụ khác</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/khau-trang">Khẩu
+                                                trang</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/khau-trang-y-te">Khẩu
+                                                        trang y tế</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/khau-trang-vai">Khẩu
+                                                        trang vải</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dung-cu-theo-doi">Dụng
+                                                cụ theo dõi</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/nhiet-ke">Nhiệt
+                                                        kế</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/may-do-huyet-ap">Máy
+                                                        đo huyết áp</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/may-que-thu-duong-huyet">Máy,
+                                                        que
+                                                        thử đường huyết</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/thu-thai">Thử
+                                                thai</a>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dung-cu-so-cuu">Dụng
+                                                cụ sơ cứu</a>
+                                            <ul class="link-static__item--list">
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/bang-y-te">Băng
+                                                        y tế</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/con-va-nuoc-sat-trung">Cồn
+                                                        và nước
+                                                        sát trùng</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/tam-bong">Tăm
+                                                        bông</a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/bong-y-te">Bông
+                                                        y tế</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="link-static__item">
+                                            <a
+                                                href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/gang-tay-vo-ngan-tinh-mach">Găng
+                                                tay, vớ
+                                                ngăn tĩnh mạch</a>
+                                        </div>
+
+                                        <div class="link-static__item">
+                                            <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/tui-chuom">Túi
+                                                chườm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/benh" class="menu__link">Bệnh</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/bai-viet" class="menu__link">Góc sức khỏe</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/he-thong-cua-hang" class="menu__link">Hệ thống nhà thuốc</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="w3-sidebar w3-bar-block w3-mau w3-animate-left" style="display: none; top: 0px; z-index: 100;"
+                id="mySidebar">
+                <button class="w3-bar-item w3-large text-right" onclick="w3_close()">
+                    <p class="pull-right">×</p>
+                </button>
+                <a class="logov2" href="https://nhathuoclongchau.com"
+                    onclick="ga('send', 'event', 'Header ', 'Click Header', 'Header - Logo');">
+                    <img src="/frontend_v2/lc-logo.png" alt="logo" />
+                </a>
+                <a href="https://nhathuoclongchau.com"
+                    onclick="ga('send', 'event', 'Header ', 'Click Navigation', 'Trang Chủ');"
+                    class="w3-bar-item w3-button home active">Trang chủ</a>
+
+                <button class="w3-button w3-block w3-left-align item-btn-js">
+                    <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang">Thực phẩm chức năng</a>
+                    <span class="xxx the1" id="xoay1">
+                        <i class="icon-angle-down"> </i>
+                    </span>
+                </button>
+
+                <div id="demoAcc1" class="w3-hide w3-white w3-card">
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/sinh-ly-noi-tiet-to">Sinh lý - Nội
+                            tiết tố</a>
+                    </button>
+
+                    <div id="demoAcc2" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/sinh-ly-nam"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Sinh lý nam</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/sinh-ly-nu"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Sinh lý nữ</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/cai-thien-tang-cuong-chuc-nang">Cải
+                            thiện tăng
+                            cường chức năng</a>
+                    </button>
+
+                    <div id="demoAcc3" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/tim-mach-huyet-ap"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Tim mạch - Huyết áp</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/tinh-mach"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Tĩnh Mạch</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/tieu-duong"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Tiểu đường</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/chuc-nang-gan"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Chức năng gan</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/than-tien-liet-tuyen"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Thận - Tiền Liệt Tuyến</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/dai-trang"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Đại tràng</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/tieu-hoa"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Tiêu hóa</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/tri" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Trĩ</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/ho-hap-xoang"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Hô hấp - Xoang</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/xuong-khop"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Xương khớp</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/bo-mat" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Bổ mắt</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/gout" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Gout</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/than-kinh-nao"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Thần kinh não</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/ung-thu" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Ung thư</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/the-hinh-kiem-soat-can-nang">Thể hình
+                            - kiểm soát
+                            cân nặng</a>
+                    </button>
+
+                    <div id="demoAcc4" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/thuc-pham-giam-can"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Thực phẩm giảm cân</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/phan-giai-mo"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Phân giải mỡ</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/whey-protein"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Whey protein</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/lam-dep">Làm đẹp</a>
+                    </button>
+
+                    <div id="demoAcc5" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/da" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Da</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/toc" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Tóc</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/kich-co-nguc"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Kích cỡ ngực</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/thao-duoc-thuc-pham-tu-nhien">Thảo
+                            dược - Thực
+                            phẩm tự nhiên</a>
+                    </button>
+
+                    <div id="demoAcc6" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/nghe-and-curcumin"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Nghệ &amp; Curcumin</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/nhan-sam"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Nhân sâm</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/dong-trung-ha-thao"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Đông trùng hạ thảo</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/trinh-nu-hoang-cung"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Trinh nữ hoàng cung</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/to-yen" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Tổ yến</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/mat-ong" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Mật ong</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/giao-co-lam"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Giảo cổ lam</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/sua-ong-chua"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Sữa ong chúa</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/nhau-thai-cuu"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Nhau thai cừu</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/toi" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Tỏi</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/dau-gac" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Dầu gấc</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/che-vang"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Chè Vằng</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/ha-thu-o"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Hà Thủ Ô</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/tra-thao-duoc"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Trà thảo dược</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/tao-xoan"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Tảo xoắn</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/nam-linh-chi"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Nấm linh chi</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/tong-hop-khac"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Tổng hợp khác</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/vitamin">Vitamin</a>
+                    </button>
+
+                    <div id="demoAcc7" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/multivitamins-vitamin-tong-hop"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Multivitamins -
+                            Vitamin tổng hợp</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/vitamin-c"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Vitamin C</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/vitamin-e"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Vitamin E</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/vitamin-d"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Vitamin D</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/canxi-va-khoang-chat">Canxi và khoáng
+                            chất</a>
+                    </button>
+
+                    <div id="demoAcc8" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/canxi" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Canxi</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/khoang-chat"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Khoáng chất</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/collagen"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Collagen</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/sua-bot" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Sữa bột</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/dau-ca-omega">Dầu cá - Omega</a>
+                    </button>
+
+                    <div id="demoAcc9" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/dau-ca" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Dầu cá</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/omega-3" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Omega 3</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/vi-sinh-probiotic">Vi sinh
+                            (Probiotic)</a>
+                    </button>
+
+                    <div id="demoAcc10" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/lactobacillus-acidophilus"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Lactobacillus
+                            acidophilus</a>
+                        <a href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/acidophilus"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Acidophilus</a>
+                    </div>
+                </div>
+                <button class="w3-button w3-block w3-left-align item-btn-js">
+                    <a href="https://nhathuoclongchau.com/duoc-my-pham">Dược mỹ phẩm</a>
+                    <span class="xxx the1" id="xoay1">
+                        <i class="icon-angle-down"> </i>
+                    </span>
+                </button>
+
+                <div id="demoAcc1" class="w3-hide w3-white w3-card">
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-co-the">Chăm sóc cơ thể</a>
+                    </button>
+
+                    <div id="demoAcc2" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/chong-nang-toan-than"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Chống nắng toàn thân</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/duong-the" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Dưỡng thể</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/tay-te-bao-chet-toan-than"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Tẩy tế bào chết toàn
+                            thân</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-nguc" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Chăm sóc ngực</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/sua-tam-xa-bong"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Sữa tắm, xà bông</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/khu-mui" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Khử mùi</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/tri-nut-da" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Trị nứt da</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/duong-tay-chan" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Dưỡng tay, chân</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-da-chuyen-sau">Chăm sóc da chuyên
+                            sâu</a>
+                    </button>
+
+                    <div id="demoAcc3" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/duong-trang-da" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Dưỡng trắng da</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/nam-sam" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Nám sạm</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/seo-vet-tham" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Sẹo- Vết thâm</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/da-kho-mat-am" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Da khô - mất ẩm</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/nhay-cam" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Nhạy cảm</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/viem-da-co-dia" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Viêm da cơ địa</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-da-mat">Chăm sóc da mặt</a>
+                    </button>
+
+                    <div id="demoAcc4" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/chong-nang-da-mat"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Chống nắng da mặt</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/tri-mun" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Trị mụn</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/tay-te-bao-chet"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Tẩy tế bào chết</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/sua-rua-mat-kem-gel-sua"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Sữa rửa mặt (Kem, gel,
+                            sữa)</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/nuoc-tay-trang" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Nước tẩy trang</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/toner-nuoc-hoa-hong-lotion"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Toner (nước hoa hồng) /
+                            Lotion</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/mat-na" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Mặt nạ</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/serum-essence-hoac-ampoule"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Serum, Essence hoặc
+                            Ampoule</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/duong-da-mat" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Dưỡng da mặt</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/xit-khoang" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Xịt khoáng</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-toc-da-dau">Chăm sóc tóc - da
+                            đầu</a>
+                    </button>
+
+                    <div id="demoAcc5" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/dac-tri" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Đặc trị</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/dau-goi-dau-xa" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Dầu gội dầu xả</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/duong-toc-u-toc"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Dưỡng tóc, ủ tóc</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/cham-soc-da-vung-mat">Chăm sóc da vùng
+                            mắt</a>
+                    </button>
+
+                    <div id="demoAcc6" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/duong-da-ngan-ngua-lao-hoa-vung-mat"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Dưỡng da &amp; ngăn
+                            ngừa lão hóa vùng
+                            mắt</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/ngan-ngua-tri-tham-quang-bong-mat"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Ngăn ngừa &amp; Trị thâm
+                            quầng, bọng
+                            mắt</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/san-pham-tu-thien-nhien">Sản phẩm từ thiên
+                            nhiên</a>
+                    </button>
+
+                    <div id="demoAcc7" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/tinh-dau" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Tinh dầu</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/dau-dua" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Dầu dừa</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/my-pham-trang-diem">Mỹ phẩm trang điểm</a>
+                    </button>
+
+                    <div id="demoAcc8" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/trang-diem-mat" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Trang điểm mặt</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/son-moi" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Son môi</a>
+                        <a href="https://nhathuoclongchau.com/duoc-my-pham/bong-tay-trang" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Bông tẩy trang</a>
+                    </div>
+                </div>
+                <button class="w3-button w3-block w3-left-align item-btn-js">
+                    <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan">Chăm sóc cá nhân</a>
+                    <span class="xxx the1" id="xoay1">
+                        <i class="icon-angle-down"> </i>
+                    </span>
+                </button>
+
+                <div id="demoAcc1" class="w3-hide w3-white w3-card">
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/ho-tro-tinh-duc">Hỗ trợ tình dục</a>
+                    </button>
+
+                    <div id="demoAcc2" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/bao-cao-su" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Bao cao su</a>
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/gel-boi-tron"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Gel bôi trơn</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/cham-soc-rang-mieng">Chăm sóc răng
+                            miệng</a>
+                    </button>
+
+                    <div id="demoAcc3" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/cham-soc-rang"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Chăm sóc răng</a>
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/nuoc-suc-mieng"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Nước súc miệng</a>
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/chi-nha-khoa"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Chỉ nha khoa</a>
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/kem-danh-rang"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Kem đánh răng</a>
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/ban-chai-danh-rang"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Bàn chải đánh răng</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/ve-sinh-ca-nhan">Vệ sinh cá nhân</a>
+                    </button>
+
+                    <div id="demoAcc4" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/nuoc-rua-tay"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Nước rửa tay</a>
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/dung-dich-ve-sinh-phu-nu"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Dung dịch vệ sinh phụ
+                            nữ</a>
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/bang-ve-sinh"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Băng vệ sinh</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/do-dung-gia-dinh">Đồ dùng gia đình</a>
+                    </button>
+
+                    <div id="demoAcc5" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/do-dung-cho-be"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Đồ dùng cho bé</a>
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/do-dung-cho-me"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Đồ dùng cho mẹ</a>
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/chong-muoi" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Chống muỗi</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/thuc-pham-do-uong">Thực phẩm - Đồ
+                            uống</a>
+                    </button>
+
+                    <div id="demoAcc6" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/keo-cung" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Kẹo cứng</a>
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/keo-deo" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Kẹo dẻo</a>
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/keo-cao-su" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Kẹo cao su</a>
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/nuoc-uong-khong-gas"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Nước uống không gas</a>
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/sua-nuoc" class="w3-bar-item w3-button"
+                            style="background-color: #225689;">Sữa nước</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/hang-tong-hop">Hàng tổng hợp</a>
+                    </button>
+
+                    <div id="demoAcc7" class="w3-hide w3-white w3-card demo"></div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/dung-cu-cao-rau">Dụng cụ cạo râu</a>
+                    </button>
+
+                    <div id="demoAcc8" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/cham-soc-ca-nhan/dao-luoi-cao-rau"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Dao, lưỡi cạo râu</a>
+                    </div>
+                </div>
+                <a href="/thuoc" class="w3-bar-item w3-button item1"
+                    onclick="ga('send', 'event', 'Header ', 'Click Navigation', 'Thuốc');">Thuốc</a>
+                <button class="w3-button w3-block w3-left-align item-btn-js">
+                    <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te">Thiết bị y tế</a>
+                    <span class="xxx the1" id="xoay1">
+                        <i class="icon-angle-down"> </i>
+                    </span>
+                </button>
+
+                <div id="demoAcc1" class="w3-hide w3-white w3-card">
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dung-cu-y-te">Dụng cụ y tế</a>
+                    </button>
+
+                    <div id="demoAcc2" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dung-cu-ve-sinh-mui"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Dụng cụ vệ sinh mũi</a>
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/kim-cac-loai"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Kim các loại</a>
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dai-lung"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Đai lưng</a>
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dung-cu-khac"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Dụng cụ khác</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/khau-trang">Khẩu trang</a>
+                    </button>
+
+                    <div id="demoAcc3" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/khau-trang-y-te"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Khẩu trang y tế</a>
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/khau-trang-vai"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Khẩu trang vải</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dung-cu-theo-doi">Dụng cụ theo dõi</a>
+                    </button>
+
+                    <div id="demoAcc4" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/nhiet-ke"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Nhiệt kế</a>
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/may-do-huyet-ap"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Máy đo huyết áp</a>
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/may-que-thu-duong-huyet"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Máy, que thử đường
+                            huyết</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/thu-thai">Thử thai</a>
+                    </button>
+
+                    <div id="demoAcc5" class="w3-hide w3-white w3-card demo"></div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/dung-cu-so-cuu">Dụng cụ sơ cứu</a>
+                    </button>
+
+                    <div id="demoAcc6" class="w3-hide w3-white w3-card demo">
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/bang-y-te"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Băng y tế</a>
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/con-va-nuoc-sat-trung"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Cồn và nước sát trùng</a>
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/tam-bong"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Tăm bông</a>
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/bong-y-te"
+                            class="w3-bar-item w3-button" style="background-color: #225689;">Bông y tế</a>
+                    </div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/gang-tay-vo-ngan-tinh-mach">Găng tay,
+                            vớ ngăn tĩnh
+                            mạch</a>
+                    </button>
+
+                    <div id="demoAcc7" class="w3-hide w3-white w3-card demo"></div>
+
+                    <button class="w3-button w3-block w3-left-align the2">
+                        <a href="https://nhathuoclongchau.com/trang-thiet-bi-y-te/tui-chuom">Túi chườm</a>
+                    </button>
+
+                    <div id="demoAcc8" class="w3-hide w3-white w3-card demo"></div>
+                </div>
+                <a href="/benh" class="w3-bar-item w3-button item1"
+                    onclick="ga('send', 'event', 'Header ', 'Click Navigation', 'Bệnh');">Bệnh</a>
+                <a href="/bai-viet" class="w3-bar-item w3-button item1"
+                    onclick="ga('send', 'event', 'Header ', 'Click Navigation', 'Góc sức khỏe');">Góc sức khỏe</a>
+
+                <button class="w3-button w3-block w3-left-align item-btn-js">
+                    <a href="https://nhathuoclongchau.com/gioi-thieu"
+                        onclick="ga('send', 'event', 'Header ', 'Click Navigation', 'Giới thiệu nhà thuốc Long Châu');">Giới
+                        thiệu
+                        Long Châu</a>
+                    <span class="xxx the2" id="xoay2" onclick="gioithieu()"><i class="icon-angle-down"> </i> </span>
+                </button>
+
+                <!--DROPDOWN HERE-->
+                <div id="gioithieu-dropdown" class="w3-hide w3-white w3-card">
+                    <button class="w3-button w3-block w3-left-align">
+                        <a href="https://nhathuoclongchau.com/gioi-thieu"
+                            onclick="ga('send', 'event', 'Header ', 'Click Navigation', 'Giới thiệu nhà thuốc Long Châu');">Giới
+                            thiệu</a>
+                    </button>
+
+                    <button class="w3-button w3-block w3-left-align">
+                        <a href="https://nhathuoclongchau.com/he-thong-cua-hang"
+                            onclick="ga('send', 'event', 'Header ', 'Click Navigation', 'Tìm nhà thuốc');">Hệ thống cửa
+                            hàng</a>
+                    </button>
+
+                    <button class="w3-button w3-block w3-left-align">
+                        <a href="https://nhathuoclongchau.com/chinh-sach-doi-tra">Chính sách đổi trả</a>
+                    </button>
+                    <button class="w3-button w3-block w3-left-align">
+                        <a href="https://nhathuoclongchau.com/chinh-sach-giao-hang">Chính sách giao hàng</a>
+                    </button>
+                </div>
+
+                <a href="https://nhathuoclongchau.com/he-thong-cua-hang" class="w3-bar-item w3-button item1">Tìm nhà
+                    thuốc</a>
+                <div class="item3 row">
+                    <div class="phone">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">
+                                        <img src="/frontend_v2/images/icon-phone.png" alt="" />
+                                    </td>
+                                    <td class="td1">
+                                        <a href="tel:18006928"
+                                            onclick="ga('send', 'event', 'Header ', 'Click Header', 'Header - Hotline');">Hotline:<span>
+                                                1800
+                                                6928</span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td2">(Miễn phí cuộc gọi)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="lc-main lc__landing section__covid">
+
+        <section class="landing__banner section__covid-banner relative">
+            <div class="landing__inner txt-center">
+                <div class="landing__banner-picture">
+                    <picture>
+                        <source media="(max-width: 992px)" srcset="images/covid/banner-mb.webp">
+                        <img src="images/covid/banner.webp" alt="">
+                    </picture>
+                </div>
+
+                <div class="title-group">
+                    <h1 class="ld__title f-w-900 fs-p-44 txt-primary txt-uppercase fs-p-md-20
+            ">CHUYÊN MỤC COVID <span class="none-inline f-w-500">19</span></h1>
+                    <p class="ld__desc fs-p-28 txt-gray-700 block-none">
+                        Hướng dẫn chăm sóc F0 cách ly tại nhà
+                    </p>
+                    <p class="fs-p-16 txt-gray-700 none-block">Chăm sóc sức khoẻ F0 tại nhà</p>
+                </div>
+
+                <div class="ld__btn-group relative none-block">
+                    <div class="ld__btn-group--title txt-uppercase fs-p-md-18 txt-gray-700 f-w-500">
+                        NỘI DUNG CHÍNH
+                    </div>
+
+                    <div class="ld__btn-group--list ">
+                        <ul class="u-inline-flex flex-column">
+                            <li class="m-t-md-12">
+                                <a href="" class="btn btn-lg btn-outline-gray circle f-w-500">Hướng dẫn F0</a>
+                            </li>
+                            <li class="m-t-md-12">
+                                <a href="" class="btn btn-lg btn-outline-gray circle f-w-500">Thuốc trị F0</a>
+                            </li>
+                            <li class="m-t-md-12">
+                                <a href="" class="btn btn-lg btn-outline-gray circle f-w-500">Chăm sóc trẻ em</a>
+                            </li>
+                            <li class="m-t-md-12">
+                                <a href="" class="btn btn-lg btn-outline-gray circle f-w-500 active">Sử dụng thiết bị SPO2</a>
+                            </li>
+                            <li class="m-t-md-12">
+                                <a href="" class="btn btn-lg btn-outline-gray circle f-w-500">Cấp cứu - Liên hệ hỗ
+                                    trợ</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <div class="container cs-container p-b-32 p-b-md-16">
+            <!-- thiết bị do spo2 -->
+            <div class="section__topic">
+                <!-- wrap-navbar-tab -->
+                <div class="wrap-navbar-tab">
+                    <ul class="navbar-tab">
+                        <li class="navbar-item"><a href="#" class="navbar-link active">Hướng dẫn F0</a></li>
+                        <li class="navbar-item"><a href="#" class="navbar-link">Thuốc trị F0</a></li>
+                        <li class="navbar-item"><a href="#" class="navbar-link">Chăm sóc trẻ em</a></li>
+                        <li class="navbar-item"><a href="#" class="navbar-link">Sử dụng thiết bị SPO2</a></li>
+                        <li class="navbar-item"><a href="#" class="navbar-link">Cấp cứu - Liên hệ hỗ trợ</a></li>
+                    </ul>
+                </div>
+                <!-- end wrap-navbar-tab -->
+                <div class="wrap-device-spo2">
+                    <div class="guide-device-spo2-block">
+                        <h2 class="tit-guide-covid txt-center none-block">Những lưu ý khi sử dụng<br
+                                class="none-block">thiết bị đo SPO2</h2>
+                        <div class="guide-device-img txt-center m-b-0">
+                            <picture>
+                                <source media="(max-width:992px )" srcset="images/covid/img-14-mb.webp">
+                                <img src="images/covid/img-14.webp" alt="">
+                            </picture>
+                        </div>
+
+                        <div class="guide-device-content">
+                            <h2 class="tit-guide-covid block-none p-b-24">Những lưu ý khi sử dụng<br
+                                    class="none-block">thiết bị đo SPO2</h2>
+                            <div class="list-guide-device">
+                                <h3 class="tit-sub-guide">Chỉ số SPO2:</h3>
+                                <ul>
+                                    <li>Độ bão hòa oxy trong máu bình thường là 98-100%</li>
+                                    <li>Người bệnh mắc COVID-19 khi có chỉ số SpO2 dưới 94% sẽ được chỉ định thở oxy
+                                    </li>
+                                </ul>
+                                <h3 class="tit-sub-guide">Các bước sử dụng thiết bị đo SpO2:</h3>
+                                <ul>
+                                    <li><span class="bold">Bước 1:</span> Xoa ấm bàn tay trước khi kẹp thiết bị đo SpO2
+                                    </li>
+                                    <li><span class="bold">Bước 2:</span> Để cố định bàn tay lên trên mặt bàn</li>
+                                    <li><span class="bold">Bước 3:</span> Khi đo cố gắng không cử động trong vòng 1 phút
+                                        để kết quả được chính xác hơn</li>
+                                </ul>
+                                <h3 class="tit-sub-guide">Yếu tố ảnh hưởng tới độ chính xác của máy đo SpO2:</h3>
+                                <ul>
+                                    <li>Người bệnh bị lạnh, huyết áp thấp</li>
+                                    <li>Người bệnh cử động nhiều</li>
+                                    <li>Đo ở môi trường có ánh sáng chiếu trực tiếp</li>
+                                    <li>Người được đo SpO2 có sơn móng tay</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ld__line"></div>
+                <div class="section__link-pages section-spacing-y p-x-24 p-x-md-10 bg-white">
+                    <div class="section__inner ">
+                        <div class="u-flex justify-between">
+                            <a href="" class="link-group txt-left">
+                                <i class="ic-angle-left"></i>
+                                <div class="link fs-p-16"><span class="txt-uppercase">Trước</span>
+                                    <p class="f-w-500">Chăm sóc trẻ em</p>
+                                </div>
+
+                            </a>
+                            <a href="" class="link-group txt-right">
+                                <div class="link fs-p-16"><span class="txt-uppercase">TIẾP</span>
+                                    <p class="f-w-500">Cấp cứu - Liên hệ hỗ trợ</p>
+                                </div>
+                                <i class="ic-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end thiết bị do spo2 -->
+        </div>
+
+        <section class="section__comment">
+            <div class="container">
+                <div class="lc__section-comment p-b-32 p-b-md-0">
+                    <div class="lc-box comment radius-12 bg-white block" id="lcBoxComments">
+                        <div class="box-heading u-flex justify-between p-x-16 p-y-12 shadow-b-200 p-x-md-12 p-y-md-12">
+                            <h2 class="box-title fs-p-20 f-w-500 txt-gray-800 m-r-8 fs-p-md-16 m-r-md-4">
+                                Bình Luận
+                                <div class="badge badge-primary badge-xs badge-md-xxs total-comments cursor-default">59
+                                </div>
+                            </h2>
+                            <div class="cs-dropdown none-block relative top-0 right-0 menu-filter-comments">
+                                <div class="dropdown width-auto">
+                                    <div class="dropdown-button active">
+                                        <span class="fs-p-14 label-filter-comments">Mới nhất</span>
+                                        <i class="ic-arrow-select icon-md"></i>
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-menu-wrapper scrollbar">
+                                            <a class="filter-comments active" id="descMb" data-type="desc"
+                                                data-text="Mới nhất">
+                                                <span>Mới nhất</span>
+                                                <i class="ic-check icon-sm m-l-8"></i>
+                                            </a>
+                                            <a class="filter-comments" id="ascMb" data-type="asc" data-text="Cũ nhất">
+                                                <span>Cũ nhất</span>
+                                                <i class="ic-check icon-sm m-l-8"></i>
+                                            </a>
+                                            <a class="filter-comments" id="helpfulMb" data-type="helpful"
+                                                data-text="Hữu ích nhất">
+                                                <span>Hữu ích nhất</span>
+                                                <i class="ic-check icon-sm m-l-8"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="lc__form bg-gray-100 p-x-16 p-y-16 p-x-md-12 p-y-md-12">
+                                <form contact="">
+                                    <div class="lc-reply relative" form-wrap="">
+                                        <div class="form-group" form-group="">
+                                            <textarea id="contentComment" data-text="" name="contentComment"
+                                                class="form-input form-input-lg" rows="3"
+                                                placeholder="Nhập nội dung câu hỏi (Vui lòng gõ tiếng Việt có dấu)…"></textarea>
+                                            <div class="alert alert-md alert-danger alert-des u-inline-flex"
+                                                id="errorContentComment" style="margin-top: 8px;">
+                                                <i class="ic-minus alert-ic-sm bg-danger"></i>
+                                                <span class="">Mời bạn viết bình luận. (Tối thiểu 3 ký tự)</span>
+                                            </div>
+                                            <div class="lc-reply-button txt-center width-100 js-check-form m-t-md-8">
+                                                <div class="btn btn-md btn-primary btn-lg-md circle-mb btn-rounded"
+                                                    id="openModalCreateComment" aria-controls="modalCreateComment">
+                                                    GỬI BÌNH LUẬN
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="lc__cmt relative section-comments">
+
+                                <div class="lc__cmt-list p-x-16 p-y-16 relative p-x-md-12 p-t-md-12 p-b-md-8">
+
+                                    <div id="commentList">
+                                        <div class="lc__cmt-block">
+                                            <div class="u-flex">
+                                                <div class="lc__cmt-avatar m-r-8 block-none">
+                                                    <div class="avatar avatar-info avatar-md avatar-circle circle">
+                                                        <div class="avatar-picture">
+                                                            <span class="name">TM</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="lc__cmt-content flex-fill">
+                                                    <div class="lc__cmt-name">
+                                                        <div class="avatar avatar-info avatar-md avatar-circle circle">
+                                                            <div class="avatar-info">
+                                                                <div
+                                                                    class="avatar-name fs-p-18 txt-gray-800 fs-p-md-14">
+                                                                    Huỳnh thị Mỹ <span
+                                                                        class="avatar-time fs-p-14 m-l-8">3
+                                                                        tháng trước</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="lc__cmt-content--full fs-p-16 txt-gray-700 m-t-4 fs-p-md-14 fs-p-md-14">
+                                                        Có thể uống chung thuốc khác được ko ? Ví dụ Aquima
+                                                    </div>
+                                                    <div class="lc__cmt-status m-t-4">
+                                                        <div class="u-inline-flex align-items-center fs-ui-14">
+                                                            <span
+                                                                class="lc__cmt-reply js-btn-reply pointer link open-modal-reply-comment"
+                                                                aria-controls="modalReplyComment"
+                                                                data-name="Huỳnh thị Mỹ" data-id="28760">
+                                                                Trả lời
+                                                            </span>
+                                                            <span
+                                                                class="m-x-8 ic-circle-md fs-ui-12 txt-gray-400"></span>
+                                                            <div class="lc__cmt-like pointer link" data-id="28760"
+                                                                onclick="ga('send', 'event', 'Product Detail Page', 'Click bình luận', 'Thích', {'nonInteraction': 1});">
+                                                                <!-- <i class="ic-like icon-sm m-r-2"></i> -->
+                                                                Thích
+                                                                <span class="m-l-4 total-like-28760" data-like="0"
+                                                                    style="display:none;">(0)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lc__cmt-block comment-reply-box-28760" style="display: none;"></div>
+                                        <div class="lc__cmt-block">
+                                            <div class="u-flex">
+                                                <div class="lc__cmt-avatar m-r-8 block-none">
+                                                    <div class="avatar avatar-info avatar-md avatar-circle circle">
+                                                        <div class="avatar-picture">
+                                                            <span class="name">L</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="lc__cmt-content flex-fill">
+                                                    <div class="lc__cmt-name">
+                                                        <div class="avatar avatar-info avatar-md avatar-circle circle">
+                                                            <div class="avatar-info">
+                                                                <div
+                                                                    class="avatar-name fs-p-18 txt-gray-800 fs-p-md-14">
+                                                                    Linh <span class="avatar-time fs-p-14 m-l-8">3 tháng
+                                                                        trước</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="lc__cmt-content--full fs-p-16 txt-gray-700 m-t-4 fs-p-md-14 fs-p-md-14">
+                                                        Người huyết áp thấp có uống được không?
+                                                    </div>
+                                                    <div class="lc__cmt-status m-t-4">
+                                                        <div class="u-inline-flex align-items-center fs-ui-14">
+                                                            <span
+                                                                class="lc__cmt-reply js-btn-reply pointer link open-modal-reply-comment"
+                                                                aria-controls="modalReplyComment" data-name="Linh"
+                                                                data-id="28570">
+                                                                Trả lời
+                                                            </span>
+                                                            <span
+                                                                class="m-x-8 ic-circle-md fs-ui-12 txt-gray-400"></span>
+                                                            <div class="lc__cmt-like pointer link" data-id="28570"
+                                                                onclick="ga('send', 'event', 'Product Detail Page', 'Click bình luận', 'Thích', {'nonInteraction': 1});">
+                                                                <!-- <i class="ic-like icon-sm m-r-2"></i> -->
+                                                                Thích
+                                                                <span class="m-l-4 total-like-28570" data-like="0"
+                                                                    style="display:none;">(0)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lc__cmt-block comment-reply-box-28570" style="display: none;"></div>
+                                        <div class="lc__cmt-block">
+                                            <div class="u-flex">
+                                                <div class="lc__cmt-avatar m-r-8 block-none">
+                                                    <div class="avatar avatar-info avatar-md avatar-circle circle">
+                                                        <div class="avatar-picture">
+                                                            <span class="name">L</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="lc__cmt-content flex-fill">
+                                                    <div class="lc__cmt-name">
+                                                        <div class="avatar avatar-info avatar-md avatar-circle circle">
+                                                            <div class="avatar-info">
+                                                                <div
+                                                                    class="avatar-name fs-p-18 txt-gray-800 fs-p-md-14">
+                                                                    Linh <span class="avatar-time fs-p-14 m-l-8">3 tháng
+                                                                        trước</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="lc__cmt-content--full fs-p-16 txt-gray-700 m-t-4 fs-p-md-14 fs-p-md-14">
+                                                        Uống Nattocerebest có ảnh hưởng đến việc ăn uống không? Sao mẹ
+                                                        tôi
+                                                        uống nhưng thấy ăn không ngon miệng, nếu uống thêm viên thuốc bổ
+                                                        tổng hợp được không?
+                                                    </div>
+                                                    <div class="lc__cmt-status m-t-4">
+                                                        <div class="u-inline-flex align-items-center fs-ui-14">
+                                                            <span
+                                                                class="lc__cmt-reply js-btn-reply pointer link open-modal-reply-comment"
+                                                                aria-controls="modalReplyComment" data-name="Linh"
+                                                                data-id="28569">
+                                                                Trả lời
+                                                            </span>
+                                                            <span
+                                                                class="m-x-8 ic-circle-md fs-ui-12 txt-gray-400"></span>
+                                                            <div class="lc__cmt-like pointer link" data-id="28569"
+                                                                onclick="ga('send', 'event', 'Product Detail Page', 'Click bình luận', 'Thích', {'nonInteraction': 1});">
+                                                                <i class="ic-like icon-sm m-r-2"></i>
+                                                                Thích (1)
+                                                                <span class="m-l-4 total-like-28569" data-like="0"
+                                                                    style="display:none;">(0)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lc__cmt-block comment-reply-box-28569" style="display: none;"></div>
+                                        <div class="lc__cmt-block">
+                                            <div class="u-flex">
+                                                <div class="lc__cmt-avatar m-r-8 block-none">
+                                                    <div class="avatar avatar-info avatar-md avatar-circle circle">
+                                                        <div class="avatar-picture">
+                                                            <span class="name">NT</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="lc__cmt-content flex-fill">
+                                                    <div class="lc__cmt-name">
+                                                        <div class="avatar avatar-info avatar-md avatar-circle circle">
+                                                            <div class="avatar-info">
+                                                                <div
+                                                                    class="avatar-name fs-p-18 txt-gray-800 fs-p-md-14">
+                                                                    Lê
+                                                                    Ngọc thuy <span class="avatar-time fs-p-14 m-l-8">4
+                                                                        tháng trước</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="lc__cmt-content--full fs-p-16 txt-gray-700 m-t-4 fs-p-md-14 fs-p-md-14">
+                                                        Thuốc này uống buổi tối có tốt không vậy bạn
+                                                    </div>
+                                                    <div class="lc__cmt-status m-t-4">
+                                                        <div class="u-inline-flex align-items-center fs-ui-14">
+                                                            <span
+                                                                class="lc__cmt-reply js-btn-reply pointer link open-modal-reply-comment"
+                                                                aria-controls="modalReplyComment"
+                                                                data-name="Lê Ngọc thuy" data-id="27024">
+                                                                Trả lời
+                                                            </span>
+                                                            <span
+                                                                class="m-x-8 ic-circle-md fs-ui-12 txt-gray-400"></span>
+                                                            <div class="lc__cmt-like pointer link" data-id="27024"
+                                                                onclick="ga('send', 'event', 'Product Detail Page', 'Click bình luận', 'Thích', {'nonInteraction': 1});">
+                                                                <i class="ic-like icon-sm m-r-2"></i>
+                                                                Thích (1)
+                                                                <span class="m-l-4 total-like-27024" data-like="0"
+                                                                    style="display:none;">(0)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lc__cmt-block feedback">
+                                            <div class="u-flex relative">
+                                                <div class="lc__cmt-content flex-fill line-vertical p-l-12">
+                                                    <div class="lc__cmt-name">
+                                                        <div class="avatar avatar-info avatar-md avatar-circle circle">
+                                                            <div class="avatar-info u-flex align-items-center">
+                                                                <div
+                                                                    class="avatar-name fs-p-18 txt-gray-800 fs-p-md-14">
+                                                                    HoangHPD
+                                                                    <span
+                                                                        class="badge badge-sub-gray badge-xs m-l-4">Quản
+                                                                        trị viên</span>
+                                                                </div>
+                                                                <div class="avt-time txt-gray m-l-8 m-t-0 fs-p-14">4
+                                                                    tháng
+                                                                    trước</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="lc__cmt-content--full fs-p-16 txt-gray-700 m-t-4 fs-p-md-14">
+                                                        <p>Chào bạn Thuy</p>
+
+                                                        <p>Dạ bạn có thể sử dụng&nbsp;<a
+                                                                href="https://nhathuoclongchau.com/thuc-pham-chuc-nang/nattocerebest-vien-uong-bo-nao-tro-tim-24.html"
+                                                                target="_blank" class="link">Viên Uống Bổ Não Trợ Tim
+                                                                Nattocerebest 1000-Q10</a>&nbsp;vào buổi tối ạ.</p>
+
+                                                        <p>Bạn vui lòng liên hệ tổng đài 18006928 để được tư vấn và đặt
+                                                            hàng. Thân mến.<br>
+                                                            &nbsp;</p>
+                                                    </div>
+                                                    <div class="lc__cmt-status m-t-4">
+                                                        <div class="u-inline-flex align-items-center fs-ui-14">
+                                                            <span
+                                                                class="lc__cmt-reply js-btn-reply pointer link open-modal-reply-comment"
+                                                                aria-controls="modalReplyComment" data-name="HoangHPD"
+                                                                data-id="27024">
+                                                                Trả lời
+                                                            </span>
+                                                            <span
+                                                                class="m-x-8 ic-circle-md fs-ui-12 txt-gray-400"></span>
+                                                            <div class="lc__cmt-like pointer link" data-id="27040"
+                                                                onclick="ga('send', 'event', 'Product Detail Page', 'Click bình luận', 'Thích', {'nonInteraction': 1});">
+                                                                <i class="ic-like icon-sm m-r-2"></i>
+                                                                Thích (1)
+                                                                <span class="m-l-4 total-like-27040" data-like="0"
+                                                                    style="display:none;">(0)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="u-flex relative m-t-10">
+                                                <div class="lc__cmt-content flex-fill line-vertical p-l-12">
+                                                    <div class="lc__cmt-name">
+                                                        <div class="avatar avatar-info avatar-md avatar-circle circle">
+                                                            <div class="avatar-info u-flex align-items-center">
+                                                                <div
+                                                                    class="avatar-name fs-p-18 txt-gray-800 fs-p-md-14">
+                                                                    LyPTT5
+                                                                    <span
+                                                                        class="badge badge-sub-gray badge-xs m-l-4">Quản
+                                                                        trị viên</span>
+                                                                </div>
+                                                                <div class="avt-time txt-gray m-l-8 m-t-0 fs-p-14">4
+                                                                    tháng
+                                                                    trước</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="lc__cmt-content--full fs-p-16 txt-gray-700 m-t-4 fs-p-md-14">
+                                                        <p>Chào bạn Hương,<br>
+                                                            Nhà thuốc xin ghi nhận ý kiến đóng góp của bạn ạ. Và nhà
+                                                            thuốc
+                                                            sẽ cố gắng hoàn tiên để phục vụ Khách hàng tốt hơn trong
+                                                            thời
+                                                            gian tới. Thân mến!</p>
+                                                    </div>
+                                                    <div class="lc__cmt-status m-t-4">
+                                                        <div class="u-inline-flex align-items-center fs-ui-14">
+                                                            <span
+                                                                class="lc__cmt-reply js-btn-reply pointer link open-modal-reply-comment"
+                                                                aria-controls="modalReplyComment" data-name="LyPTT5"
+                                                                data-id="25933">
+                                                                Trả lời
+                                                            </span>
+                                                            <span
+                                                                class="m-x-8 ic-circle-md fs-ui-12 txt-gray-400"></span>
+                                                            <div class="lc__cmt-like pointer link" data-id="25945"
+                                                                onclick="ga('send', 'event', 'Product Detail Page', 'Click bình luận', 'Thích', {'nonInteraction': 1});">
+                                                                <i class="ic-like icon-sm m-r-2"></i>
+                                                                Thích (1)
+                                                                <span class="m-l-4 total-like-25945" data-like="0"
+                                                                    style="display:none;">(0)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- btn xem them -->
+                                            <div class="wrap-btn-more-reply p-t-20">
+                                                <a class="link fs-ui-md-14">
+                                                    Xem thêm trả lời <i class="ic-angle-down fs-ui-12 p-l-4"></i>
+                                                </a>
+                                            </div>
+                                            <!-- end btn xem them -->
+
+                                        </div>
+                                        <div class="lc__cmt-block comment-reply-box-27024" style="display: none;"></div>
+                                        <div class="lc__cmt-block">
+                                            <div class="u-flex">
+                                                <div class="lc__cmt-avatar m-r-8 block-none">
+                                                    <div class="avatar avatar-info avatar-md avatar-circle circle">
+                                                        <div class="avatar-picture">
+                                                            <span class="name">DH</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="lc__cmt-content flex-fill">
+                                                    <div class="lc__cmt-name">
+                                                        <div class="avatar avatar-info avatar-md avatar-circle circle">
+                                                            <div class="avatar-info">
+                                                                <div
+                                                                    class="avatar-name fs-p-18 txt-gray-800 fs-p-md-14">
+                                                                    Hoàng thị Diệu Hương <span
+                                                                        class="avatar-time fs-p-14 m-l-8">4 tháng
+                                                                        trước</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="lc__cmt-content--full fs-p-16 txt-gray-700 m-t-4 fs-p-md-14 fs-p-md-14">
+                                                        Cần thiết kế mục mua thêm nhiều loại thuốc,để chung 1 đơn hàng
+                                                    </div>
+                                                    <div class="lc__cmt-status m-t-4">
+                                                        <div class="u-inline-flex align-items-center fs-ui-14">
+                                                            <span
+                                                                class="lc__cmt-reply js-btn-reply pointer link open-modal-reply-comment"
+                                                                aria-controls="modalReplyComment"
+                                                                data-name="Hoàng thị Diệu Hương" data-id="25933">
+                                                                Trả lời
+                                                            </span>
+                                                            <span
+                                                                class="m-x-8 ic-circle-md fs-ui-12 txt-gray-400"></span>
+                                                            <div class="lc__cmt-like pointer link" data-id="25933"
+                                                                onclick="ga('send', 'event', 'Product Detail Page', 'Click bình luận', 'Thích', {'nonInteraction': 1});">
+                                                                <i class="ic-like icon-sm m-r-2"></i>
+                                                                Thích (1)
+                                                                <span class="m-l-4 total-like-25933" data-like="0"
+                                                                    style="display:none;">(0)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lc__cmt-block feedback">
+                                            <div class="u-flex relative">
+                                                <div class="lc__cmt-content flex-fill line-vertical p-l-12">
+                                                    <div class="lc__cmt-name">
+                                                        <div class="avatar avatar-info avatar-md avatar-circle circle">
+                                                            <div class="avatar-info u-flex align-items-center">
+                                                                <div
+                                                                    class="avatar-name fs-p-18 txt-gray-800 fs-p-md-14">
+                                                                    LyPTT5
+                                                                    <span
+                                                                        class="badge badge-sub-gray badge-xs m-l-4">Quản
+                                                                        trị viên</span>
+                                                                </div>
+                                                                <div class="avt-time txt-gray m-l-8 m-t-0 fs-p-14">4
+                                                                    tháng
+                                                                    trước</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="lc__cmt-content--full fs-p-16 txt-gray-700 m-t-4 fs-p-md-14">
+                                                        <p>Chào bạn Hương,<br>
+                                                            Nhà thuốc xin ghi nhận ý kiến đóng góp của bạn ạ. Và nhà
+                                                            thuốc
+                                                            sẽ cố gắng hoàn tiên để phục vụ Khách hàng tốt hơn trong
+                                                            thời
+                                                            gian tới. Thân mến!</p>
+                                                    </div>
+                                                    <div class="lc__cmt-status m-t-4">
+                                                        <div class="u-inline-flex align-items-center fs-ui-14">
+                                                            <span
+                                                                class="lc__cmt-reply js-btn-reply pointer link open-modal-reply-comment"
+                                                                aria-controls="modalReplyComment" data-name="LyPTT5"
+                                                                data-id="25933">
+                                                                Trả lời
+                                                            </span>
+                                                            <span
+                                                                class="m-x-8 ic-circle-md fs-ui-12 txt-gray-400"></span>
+                                                            <div class="lc__cmt-like pointer link" data-id="25945"
+                                                                onclick="ga('send', 'event', 'Product Detail Page', 'Click bình luận', 'Thích', {'nonInteraction': 1});">
+                                                                <i class="ic-like icon-sm m-r-2"></i>
+                                                                Thích (1)
+                                                                <span class="m-l-4 total-like-25945" data-like="0"
+                                                                    style="display:none;">(0)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lc__cmt-block comment-reply-box-25933" style="display: none;"></div>
+                                    </div>
+                                    <div id="newPageComments" class="lc__cmt-block"></div>
+                                </div>
+
+
+                                <div class="cs-dropdown block-none menu-filter-comments">
+                                    <div class="dropdown width-auto">
+                                        <div class="dropdown-button active">
+                                            <span class="fs-p-14 label-filter-comments">Mới nhất</span>
+                                            <i class="ic-arrow-select icon-md"></i>
+                                        </div>
+                                        <div class="dropdown-menu">
+                                            <div class="dropdown-menu-wrapper scrollbar">
+                                                <a class="filter-comments active" id="desc" data-type="desc"
+                                                    data-text="Mới nhất">
+                                                    <span>Mới nhất</span>
+                                                    <i class="ic-check icon-sm m-l-8"></i>
+                                                </a>
+                                                <a class="filter-comments" id="asc" data-type="asc" data-text="Cũ nhất">
+                                                    <span>Cũ nhất</span>
+                                                    <i class="ic-check icon-sm m-l-8"></i>
+                                                </a>
+                                                <a class="filter-comments" id="helpful" data-type="helpful"
+                                                    data-text="Hữu ích nhất">
+                                                    <span>Hữu ích nhất</span>
+                                                    <i class="ic-check icon-sm m-l-8"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="lc__view-more txt-center p-b-16 m-t-md-12 p-b-md-12" id="lcViewMoreCm">
+                                    <input type="hidden" value="54" id="countLoadMoreCm">
+                                    <div class="block-none">
+                                        <a class="btn btn-md btn-outline-gray btn-icon  f-w-500 loadMoreComments">
+                                            Xem thêm bình luận
+                                            <i class="ic-angle-down-thin fs-ui-14 p-l-6"></i>
+                                        </a>
+                                    </div>
+                                    <div class="none-block boder-t-2 p-t-md-12">
+                                        <a class="link link-xs link-icon loadMoreComments">
+                                            Xem thêm bình luận
+                                            <i class="ic-angle-down-thin m-l-4 fs-p-md-12"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lc-box reviews radius-12 bg-white m-b-16 none-block" id="noneComments"
+                        style="display:none !important;">
+                        <div class="lc__cmt-none txt-center p-x-12 p-y-12">
+                            <div class="lc__cmt-ic m-b-16 circle bg-primary-100">
+                                <i class="ic-chat txt-primary"></i>
+                            </div>
+                            <p class="fs-p-14 txt-gray-700">
+                                Hãy là người đầu tiên bình luận sản phẩm này
+                            </p>
+                            <div class="lc-reply-button txt-center width-100 m-t-16">
+                                <div class="btn btn-md btn-primary btn-lg-md circle-mb"
+                                    aria-controls="modalCreateComment" id="openModalCreateCommentBlockNone">
+
+                                    GỬI BÌNH LUẬN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lc-box reviews radius-12 bg-white m-b-16 none-block" id="noneComments">
+                    <div class="lc__cmt-none txt-center p-x-12 p-y-12">
+                        <div class="lc__cmt-ic m-b-16 circle bg-primary-100">
+                            <i class="ic-chat txt-primary"></i>
+                        </div>
+                        <p class="fs-p-14 txt-gray-700">
+                            Hãy là người đầu tiên bình luận sản phẩm này
+                        </p>
+                        <div class="lc-reply-button txt-center width-100 m-t-16">
+                            <div class="btn btn-md btn-primary btn-lg-md circle-mb" aria-controls="thaoluan"
+                                id="openModalCreateCommentBlockNone">
+
+                                GỬI BÌNH LUẬN
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+</body>
+
+</html>

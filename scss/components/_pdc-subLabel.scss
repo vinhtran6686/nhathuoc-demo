@@ -1,0 +1,54 @@
+.card {
+  background: $white-100;
+  border: 1px solid $gray-400;
+}
+%font16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.pdc-subLabel {
+  padding: 8px 16px;
+  max-width: 100%;
+  &_head {
+    border-bottom: 8px solid $gray-700;
+  }
+  &_desc {
+    border-bottom: 4px solid $gray-700;
+  }
+  strong {
+    display: inline-block !important;
+  }
+  &_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    p {
+      @extend %font16;
+      font-weight: 500;
+    }
+  }
+  &_subItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    p {
+      @extend %font16;
+    }
+  }
+  @include respond-to("sm") {
+    padding: 8px;
+    &_item {
+      // p {
+      //   font-size: 14px;
+      //   line-height: 14px;
+      // }
+    }
+    &_subItem {
+      padding: 4px 0 4px 8px;
+      // p {
+      //   font-size: 14px;
+      //   line-height: 20px;
+      // }
+    }
+  }
+}

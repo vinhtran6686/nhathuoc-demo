@@ -1,0 +1,128 @@
+$label-group: (
+    "1": (
+        param2: 7,
+        bg: $primary-100,
+    ),
+    "2": (
+        param2: 8,
+        bg: $warning-100,
+    ),
+    "3": (
+        param2: 9,
+        bg: $info-100,
+    ),
+    "4": (
+        // param1: 6,
+        param2: 10,
+        bg: $success-100,
+    ),
+    "5": (
+        param2: 11,
+        bg: $danger-100,
+    ),
+    "6": (
+        param2: 12,
+        bg: $gray-100,
+    ),
+);
+.lc__keyword-group {
+    @include respond-to("md") {
+        margin-bottom: -8px;
+    }
+}
+.lc__keyword-group--mobile {
+    @include respond-to("md") {
+        .label-group {
+            .row {
+                margin-right: -4px;
+                margin-left: -4px;
+            }
+        }
+    }
+}
+.label-group {
+    .label {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: auto;
+        @extend  .p-x-16;
+        word-break: break-word;
+        padding: 12px 16px;
+    }
+    &-item {
+        max-width: 200px;
+        width: auto;
+        a {
+            @extend .lc-show;
+        }
+
+        @each $key, $value in $label-group {
+            $param2: map-get($value, "param2");
+            $bg: map-get($value, "bg");
+            &:nth-child(#{$key}),
+            &:nth-child(6n + #{$param2}) {
+                .label {
+                    background: #{$bg};
+                }
+            }
+        }
+        @include respond-to("md") {
+            .label {
+                background: $white !important;
+                border: 1px solid #d8e0e8;
+                word-break: break-word;
+                height: auto;
+                padding: 4px 12px !important;
+                @extend .p-x-md-12, .p-y-md-0;
+                font-size: 14px !important;
+    line-height: 20px !important;
+            }
+        }
+    }
+    &-slide {
+        [class*="btn-"] {
+            width: 100px !important;
+            height: 48px !important;
+            display: flex;
+            align-items: center;
+            top: 22px;
+            i {
+                @extend .f-w-500;
+                color: $gray-600;
+            }
+            &:after {
+                font-size: 0;
+                position: absolute;
+            }
+            &.btn-next {
+                justify-content: flex-end;
+                right: 0;
+                background: linear-gradient(270deg, #ffffff 0.46%, rgba(255, 255, 255, 0) 98.15%);
+                i {
+                    &:before {
+                        @extend .m-l-2;
+                    }
+                }
+            }
+            &.btn-prev {
+                justify-content: flex-start;
+                left: 0;
+                background: linear-gradient(90deg, #ffffff 0.46%, rgba(255, 255, 255, 0) 98.15%);
+            }
+        }
+    }
+    @include respond-to("md") {
+        &-item {
+            margin-top: 0 !important;
+            @extend .m-b-md-8;
+        }
+        &-slide {
+            [class*="btn-"] {
+                display: none;
+            }
+        }
+    }
+}

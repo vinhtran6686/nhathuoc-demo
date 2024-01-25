@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- CSS file import -->
+  <link rel="stylesheet" href="css/system.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Js file import -->
+  <script src="js/libs/jquery-3.1.0.min.js"></script>
+  <script src="js/libs/swiper.min.js"></script>
+</head>
+
+<body>
+  <section class="lc-main p-y-48 p-y-md-0">
+    <div class="container cs-container">
+      <div class="lc-body radius-12 cart-final radius-none">
+        <div class="lc-head bg-white">
+          <div class="cart-title box-b-1 p-x-24 p-x-md-10 p-y-16 p-y-md-12 p-x-md-10">
+            <div class="fs-ui-24 fs-ui-md-20 f-w-500 txt-gray-700 m-b-8 m-b-md-4">
+              Đơn hàng <span class="f-w-500">7/4/2021</span>
+            </div>
+            <div class="cart-date txt-gray fs-p-14">
+              Đặt hàng lúc: <span> 11:58 </span>, <span> Thứ Bảy 7/4/2021 </span>
+            </div>
+            
+            <!-- button huy don hang -->
+            <a href="" class="btn btn-rounded btn-outline-gray btn-md position-absolute btn-order-cancel" aria-controls="huydon">Hủy đơn</a>
+            <!-- end button huy don hang -->
+
+          </div>
+          <div class="cart-final-status">
+            <div class="table-head box-b-2 p-t-16 p-b-8 p-x-24 p-x-md-10 bg-gray-100">
+              <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16">
+                Trạng thái đơn hàng
+              </div>
+            </div>
+            <div class="cart-stepper p-x-24 p-y-16 p-x-md-10">
+              <ul class="stepper stepper-vertical">
+                <li class="stepper-item relative fs-ui-16 fs-ui-md-14">
+                  <div class="stepper-circle">
+                    <i class="ic-check"></i>
+                  </div>
+                  <div class="stepper-label m-l-8">
+                    Đang vận chuyển
+                  </div>
+                  <div class="stepper-panel txt-gray  m-t-6">
+                    Grab đang vận chuyển
+                    <p class=" fs-ui-16 fs-ui-md-14 m-t-6">TrackingURL: <a href
+                        class="link">https://express.grab.com/X6Ryge5</a></p>
+                  </div>
+                  <div class="lc-maps m-t-6">
+                    <div class="lc-maps-inner">
+                      <!-- <iframe class="radius-8" src="https://express.grab.com/track/muKfcx0"
+                      width="" height="" style="border:0;" allowfullscreen="" loading="lazy" scroll="no"></iframe> -->
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.2267732958126!2d105.88443091486472!3d19.914846386612194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDU0JzUzLjUiTiAxMDXCsDUzJzExLjgiRQ!5e0!3m2!1svi!2s!4v1622260473706!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0433011781533!2d106.72215631509536!3d10.731143762961569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752578d08de3d3%3A0xe51243ce2c43e2e2!2sFPT%20Digital%20Retail%20Joint%20Stock%20Company!5e0!3m2!1svi!2s!4v1623472706745!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                    </div>
+                  </div>
+                  <div class="stepper-date m-t-md-6 txt-gray">
+                    <span>15:58</span>, Chủ Nhật 23/05/2021
+                  </div>
+                </li>
+                <li class="stepper-item relative active fs-ui-16 fs-ui-md-14">
+                  <div class="stepper-circle">
+                    <i class="ic-check"></i>
+                  </div>
+                  <div class="stepper-label m-l-8">
+                    Chờ thanh toán qua chuyển khoản
+                  </div>
+                  <div class="stepper-alert">
+                    <div class="card__alert m-t-8">
+                      <!-- alert -->
+                      <div class="alert alert-md alert-gray alert-default alert-des alert-full-text p-t-md-8">
+                        <div class="alert-head">
+                          <i class="ic-exclamation alert-ic bg-gray"></i>
+                          <span class="fs-p-md-14">Quý khách vui lòng thanh toán vào tài khoản:</span>
+                        </div>
+                        <div class="alert-description txt-gray-700">
+                          <div class="bank-group m-b-8 m-b-md-4">
+                            <div class="bank-item m-b-4 m-b-md-8">
+                              <div class="u-inline-flex bank-item-child txt-gray-700">
+                                <div class="bank-label m-r-4 fs-p-16 fs-p-md-14 m-r-md-8">Ngân hàng:</div>
+                                <div class="bank-val bank-name fs-p-16 fs-p-md-14">Vietinbank - Ngân hàng TMCP Công
+                                  Thương Việt Nam - Chi nhánh 1, PGD Tân Định</div>
+                              </div>
+                            </div>
+
+                            <div class="bank-item m-b-4 m-b-md-8">
+                              <div class="u-inline-flex bank-item-child txt-gray-700">
+                                <div class="bank-label m-r-4 fs-p-16 fs-p-md-14 m-r-md-8">
+                                  Số tài khoản:
+                                </div>
+                                <div class="bank-val u-inline-flex bank-account fs-p-16 fs-p-md-14 f-w-500">
+                                  <strong class="f-w-500">113002672043</strong>
+                                  <p class="lc__ic m-l-8 js--copy txt-primary fs-ui-14 u-flex align-items-center cursor-pointer m-l-md-4">
+                                    <picture class="pic-copy">
+                                      <img src="fonts/icon-design/ic-copy.svg" alt="">
+                                    </picture>
+                                    <span class="copy-txt m-l-4">Sao chép</span>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="bank-item m-b-4 m-b-md-8">
+                              <div class="u-inline-flex bank-item-child txt-gray-700">
+                                <div class="bank-label m-r-4 fs-p-16 fs-p-md-14 m-r-md-8">
+                                  Chủ tài khoản:
+                                </div>
+                                <div class="bank-val bank-account fs-p-16 fs-p-md-14">
+                                  Công ty Cổ Phần Dược Phẩm FPT Long Châu
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="bank-item m-b-4 m-b-md-8">
+                              <div class="u-inline-flex bank-item-child txt-gray-700">
+                                <div class="bank-label m-r-4 fs-p-16 fs-p-md-14 m-r-md-8">
+                                  Số tiền:
+                                </div>
+                                <div class="bank-val bank-account fs-p-16 fs-p-md-14">
+                                  408.000VNĐ
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="bank-item m-b-4 m-b-md-8 bank-content">
+                              <div class="u-inline-flex bank-item-child txt-gray-700">
+                                <div class="bank-label m-r-4 fs-p-16 fs-p-md-14 m-r-md-8">Nội dung <span class="none-inline">:</span> <span class="inline-none">chuyển khoản:</span> </div>
+                                <div class="bank-val u-inline-flex fs-p-16 lc-tooltip lc-tooltip-gray lc-tooltip-bottom">
+                                  <strong class="f-w-500 txt-danger-700">0943717477 - 60000075</strong>
+
+                                  <p class="lc__ic m-l-8 js--copy txt-primary fs-ui-14 u-flex align-items-center cursor-pointer m-l-md-0">
+                                    <picture class="pic-copy">
+                                      <img src="fonts/icon-design/ic-copy.svg" alt="">
+                                    </picture>
+                                    <span class="copy-txt m-l-4">Sao chép</span>
+                                  </p>
+                                  <div class="lc-tooltip-box">
+                                    <div class="fs-p-14">Đã copy nội dung</div>
+                                  </div>
+                                <input class="input-copy" style="opacity:0;position:absolute;z-index:-1;"></div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card-bottom">
+                            <div class="bank-btn">
+                              <a href="" class="btn btn-sm btn-primary circle">
+                                Xác nhận đã chuyển khoản
+                              </a>
+                            </div>
+                            <div class="lc__success">
+                              <div class="alert alert-md alert-success alert-default alert-des align-items-start">
+                                <i class="ic-check alert-ic bg-success fs-ui-8"></i>
+                                <span class="fs-p-md-14">Cảm ơn quý khách, sau khi nhận được được số tiền thanh toán,
+                                  chúng tôi sẽ tiến hành xử lý & giao hàng đến quý khách trong thời gian sớm
+                                  nhất.</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end alert -->
+                    </div>
+                  </div>
+                  <!-- <div class="stepper-panel txt-gray m-t-6">
+                    Giao hàng không thành công lần 2
+                  </div> -->
+                  <!-- <div class="stepper-date m-t-md-6 txt-gray">
+                    <span>15:58</span>, Chủ Nhật 23/05/2021
+                  </div> -->
+                </li>
+                <li class="stepper-item relative  fs-ui-16 fs-ui-md-14">
+                  <div class="stepper-circle">
+                    <i class="ic-check"></i>
+                  </div>
+                  <div class="stepper-label m-l-8">
+                    Đang vận chuyển
+                  </div>
+                  <div class="stepper-panel txt-gray  m-t-6">
+                    Grab đang vận chuyển
+                  </div>
+                  <div class="stepper-date m-t-md-6 txt-gray">
+                    <span>15:58</span>, Chủ Nhật 23/05/2021
+                  </div>
+                </li>
+                <li class="stepper-item relative  fs-ui-16 fs-ui-md-14">
+                  <div class="stepper-circle">
+                    <i class="ic-check"></i>
+                  </div>
+                  <div class="stepper-label m-l-8">
+                    Đang vận chuyển
+                  </div>
+                  <div class="stepper-panel txt-gray  m-t-6">
+                    Giao hàng không thành công lần 1
+                  </div>
+                  <div class="stepper-date m-t-md-6 txt-gray">
+                    <span>15:58</span>, Chủ Nhật 23/05/2021
+                  </div>
+                </li>
+                <li class="stepper-item relative  fs-ui-16 fs-ui-md-14">
+                  <div class="stepper-circle">
+                    <i class="ic-check"></i>
+                  </div>
+                  <div class="stepper-label m-l-8">
+                    Nhập vào  HNI, HBHNDV, HUB Dịch Vọng Hậu - Cầu Giấy - Hà Nội, <a href="tel:0984826090">0984826090</a>, 122003, PHƯỜNG DỊCH VỌNG HẬU
+                  </div>
+                  <div class="stepper-panel txt-gray  m-t-6">
+                    Ahamove đang vận chuyển
+                  </div>
+                  <div class="stepper-date m-t-md-6 txt-gray">
+                    <span>15:58</span>, Chủ Nhật 23/05/2021
+                  </div>
+                </li>
+                <li class="stepper-item relative  fs-ui-16 fs-ui-md-14">
+                  <div class="stepper-circle">
+                    <i class="ic-check"></i>
+                  </div>
+                  <div class="stepper-label m-l-8">
+                    Đang xử lý
+                  </div>
+                  <div class="stepper-panel txt-gray  m-t-6">
+                    Đang đóng gói
+                  </div>
+                  <div class="stepper-date m-t-md-6 txt-gray">
+                    <span>15:58</span>, Chủ Nhật 23/05/2021
+                  </div>
+                </li>
+                <li class="stepper-item relative  fs-ui-16 fs-ui-md-14">
+                  <div class="stepper-circle">
+                    <i class="ic-check"></i>
+                  </div>
+                  <div class="stepper-label m-l-8">
+                    Đặt hàng thành công
+                  </div>
+                  <div class="stepper-panel txt-gray  m-t-6">
+                    Chờ Long Châu xác nhận
+                  </div>
+                  <div class="stepper-date m-t-md-6 txt-gray">
+                    <span>15:58</span>, Chủ Nhật 23/05/2021
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="lc-content ">
+          <div class="table table-user m-b-md-8 cart-detail-table">
+            <div class="table-head box-b-2 p-t-16 p-b-8 p-x-20 p-x-md-10 p-y-md-10 bg-gray-100">
+              <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16">
+                Thông tin đơn hàng
+              </div>
+            </div>
+            <div class="table-body bg-white p-x-24 p-x-md-10 p-x-md-10 p-t-8 p-b-16 p-x-md-10 p-y-md-0">
+              <table class="table">
+                <tbody>
+                  <tr class="fs-p-16">
+                    <td class="txt-gray p-y-6 p-y-md-8">
+                      Phương thức thanh toán
+                    </td>
+                    <td class="txt-gray-700 p-y-6 p-y-md-8">
+                      Trả tiền mặt khi nhận hàng
+                    </td>
+                  </tr>
+                  <tr class="fs-p-16">
+                    <td class="txt-gray p-y-6 p-y-md-8">Giao hàng đến</td>
+                    <td class="txt-gray-700 p-y-6 p-y-md-8">
+                      160/12 Xô Viết Nghệ Tĩnh, Phường 21, Quận Bình Thạnh, Hồ Chí Minh
+                    </td>
+                  </tr>
+                  <tr class="fs-p-16">
+                    <td class="txt-gray p-y-6 p-y-md-8">Thời gian</td>
+                    <td class="txt-gray-700 p-y-6 p-y-md-8">
+                      Đến nhận sau giờ hành chính
+                    </td>
+                  </tr>
+                  <tr class="fs-p-16">
+                    <td class="txt-gray p-y-6 p-y-md-8">Ghi chú yêu cầu</td>
+                    <td class="txt-gray-700 p-y-6 p-y-md-8">
+                      Đến nhận sau giờ hành chính
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="table table-user">
+            <div class="table-head box-b-2 p-t-16 p-b-8 p-x-24 p-x-md-10 p-y-md-10 bg-gray-100">
+              <div class="row">
+                <div class="col-6">
+                  <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16">
+                    Thông tin đơn hàng
+                  </div>
+                </div>
+                <div class="col-6 col-hidden">
+                  <div class="row row-cols-3">
+                    <div class="col">
+                      <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16 txt-left">
+                        Quy cách
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16 txt-center">
+                        Số lượng
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16 txt-right">
+                        Thành tiền
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table-body p-x-md-10 bg-white p-x-20">
+              <div class="row p-t-16 p-b-8 box-b-1">
+                <div class="col-6 col-sm-12">
+                  <div class="u-flex no-gutters">
+                    <div class="item-img m-r-8">
+                      <a href="">
+                        <img src="https://via.placeholder.com/300x300" alt="" />
+                      </a>
+                    </div>
+                    <div class="item-info col">
+                      <h3 class="item-tit truncate2">
+                        <a href="" class="txt-gray-800 fs-p-16 fs-p-md-14">Viên Uống Bổ Sung Vitamin Và Khoáng Chất
+                          Calcium
+                          Plus Puri Walgreen</a>
+                      </h3>
+                      <div class="item-mess">
+                        <ul class="list-group list-disc-small">
+                          <li class="txt-gray-600">
+                            Tặng 1 suất mua sản phẩm thực phẩm chức năng
+                            giảm đến 40%
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="item-detai--mb m-t-8">
+                        <div class="u-flex justify-between">
+                          <div class="item-detail--mb__left">
+                            <p class="fs-p-14 txt-gray-700 f-w-400 m-b-4">
+                              Quy cách: Hộp 60 viên
+                            </p>
+                            <p class="fs-p-14 txt-gray-700 f-w-400">
+                              Số lượng: 1
+                            </p>
+                          </div>
+                          <div class="item-detail--mb__right">
+                            <p class="fs-p-14 f-w-500 txt-gray-700">
+                              234.000đ
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-hidden">
+                  <div class="row row-cols-3">
+                    <div class="col">
+                      <div class="fs-p-16 txt-gray-700 f-w-400">
+                        Hộp 60 viên
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="fs-p-16 txt-gray-700 f-w-400 txt-center">
+                        1
+                      </div>
+                    </div>
+                    <div class="col txt-right">
+                      <div class="fs-p-16 txt-gray-700 f-w-500">
+                        200.000đ
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row p-t-16 p-b-8 box-b-1">
+                <div class="col-6 col-sm-12">
+                  <div class="u-flex no-gutters">
+                    <div class="item-img m-r-8">
+                      <a href="">
+                        <img src="https://via.placeholder.com/300x300" alt="" />
+                      </a>
+                    </div>
+                    <div class="item-info col">
+                      <h3 class="item-tit truncate2">
+                        <a href="" class="txt-gray-800 fs-p-16 fs-p-md-14">Nước Xịt Khoáng Vichy Eau Thermale
+                          Mineralizing
+                          Thermal Water 150ml</a>
+                      </h3>
+                      <div class="item-mess">
+                        <ul class="list-group list-disc-small">
+                          <li class="txt-gray-600">
+                            Giảm giá 10% khi mua 1 sản phẩm
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="item-detai--mb m-t-8">
+                        <div class="u-flex justify-between">
+                          <div class="item-detail--mb__left">
+                            <p class="fs-p-14 txt-gray-700 f-w-400 m-b-4">
+                              Quy cách: Hộp 60 viên
+                            </p>
+                            <p class="fs-p-14 txt-gray-700 f-w-400">
+                              Số lượng: 1
+                            </p>
+                          </div>
+                          <div class="item-detail--mb__right">
+                            <p class="fs-p-14 f-w-500 txt-gray-700 m-b-4">
+                              234.000đ
+                            </p>
+                            <strike class="fs-p-14 f-w-500 txt-gray">260.000đ</strike>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-hidden">
+                  <div class="row row-cols-3">
+                    <div class="col">
+                      <div class="fs-p-16 txt-gray-700 f-w-400">
+                        Chai 150ml
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="fs-p-16 txt-gray-700 f-w-400 txt-center">
+                        1
+                      </div>
+                    </div>
+                    <div class="col txt-right">
+                      <div class="fs-p-16 txt-gray-700 f-w-500">
+                        234.000đ
+                      </div>
+                      <strike class="fs-p-16 f-w-400 txt-gray m-t-4">
+                        260.000đ
+                      </strike>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="check-final p-t-16 p-b-24 p-b-md-16 p-x-0 u-flex justify-end">
+                <div class="cart-check">
+                  <ul>
+                    <li>
+                      <span>Tổng tiền</span>
+                      <span>434.000đ</span>
+                    </li>
+                    <li>
+                      <span>Khuyến mãi giảm</span>
+                      <span>-26.000đ</span>
+                    </li>
+                    <li>
+                      <span>Phí giao hàng</span>
+                      <span>15.000đ</span>
+                    </li>
+                    <li>
+                      <span>Cần thanh toán</span>
+                      <span>423.000đ</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-final--btn box-t-1 u-flex justify-center p-y-24 p-y-md-16 none-block">
+            <a class="btn btn-xl btn-md-md btn-rounded btn-primary">VỀ TRANG CHỦ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- modal -->
+  <div class="section__modal">
+
+    <!-- huy don -->
+    <div class="modal modal-md custom-ratio js-modal modal-final modal-huydon" id="huydon" data-animation="on">
+      <div class="modal-wrapper" tabindex="-1">
+          <div class="modal-box radius-12">
+              <div class="modal-header justify-end p-t-16 p-x-24 p-y-md-8 p-x-md-16">
+                <span class="modal-close js-modal-close">
+                    <i class="ic-close icon-md fs-ui-15 f-w-500 close-modal-create-comment"></i>
+                </span>
+              </div>
+              <div class="modal-body txt-center txt-gray-700 p-t-0 p-x-md-16">
+                <div class="modal-icon">
+                    <div class="cart-icon m-b-24 m-b-md-12">
+                        <img class="img-cancel" src="images/cart-cancel.png" alt="">
+                    </div>
+                </div>
+                <div class="para-content">
+                    <p class="fs-p-18 m-b-md-4 txt-gray-700 fs-p-md-16 p-b-4"><strong class="f-w-500">Bạn có chắc muốn hủy đơn hàng này?</strong></p>
+                </div>
+              </div>
+              <div class="modal-footer p-t-24 p-b-24 p-x-24 p-x-md-16 p-t-md-12 p-b-md-32">
+                  <button class="btn btn-rounded btn-outline-gray btn-lg circle text-uppercase m-x-8">Không</button>
+                  <button class="btn btn-primary btn-lg circle text-uppercase m-x-8">Hủy đơn</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- end huy don -->
+
+    <!-- huy thanh cong -->
+    <div class="modal modal-md custom-ratio js-modal modal-final modal-huydon" id="huydonthanhcong" data-animation="on">
+      <div class="modal-wrapper" tabindex="-1">
+          <div class="modal-box radius-12">
+              <div class="modal-header justify-end p-t-16 p-x-24 p-y-md-8 p-x-md-16">
+                <span class="modal-close js-modal-close">
+                    <i class="ic-close icon-md fs-ui-15 f-w-500 close-modal-create-comment"></i>
+                </span>
+              </div>
+              <div class="modal-body txt-center txt-gray-700 p-t-0 p-x-md-16">
+                <div class="modal-icon">
+                    <div class="cart-icon m-b-12">
+                        <i class="ic-check icon-circle-outline bg-success-200 txt-success"></i>
+                    </div>
+                </div>
+                <div class="para-content">
+                    <p class="fs-p-18 m-b-md-4 txt-gray-700 fs-p-md-16 p-b-4"><strong class="f-w-500">Đơn hàng đã được hủy thành công</strong></p>
+                    <p class="para-desc fs-p-md-14 txt-gray-700">Quý khách có thể liên hệ tổng đài miễn phí <a href="tel:18006928" class="link f-w-500 txt-primary-700 inline-block">1800 6928</a> để được hỗ trợ</p>
+                </div>
+              </div>
+              <div class="modal-footer p-t-24 p-b-24 p-x-24 p-x-md-16 p-t-md-12 p-b-md-32">
+                  <button class="btn btn-primary btn-lg circle text-uppercase">TIẾP TỤC MUA HÀNG</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- end huy thanh cong -->
+
+
+    <!-- huy không thanh cong -->
+    <div class="modal modal-md custom-ratio js-modal modal-final modal-huydon" id="huydonkhongthanhcong" data-animation="on">
+      <div class="modal-wrapper" tabindex="-1">
+          <div class="modal-box radius-12">
+              <div class="modal-header justify-end p-t-16 p-x-24 p-y-md-8 p-x-md-16">
+                <span class="modal-close js-modal-close">
+                    <i class="ic-close icon-md fs-ui-15 f-w-500 close-modal-create-comment"></i>
+                </span>
+              </div>
+              <div class="modal-body txt-center txt-gray-700 p-t-0 p-x-md-16">
+                <div class="modal-icon">
+                    <div class="cart-icon m-b-12">
+                        <i class="ic-close icon-circle-outline bg-danger-200 txt-danger"></i>
+                    </div>
+                </div>
+                <div class="para-content">
+                    <p class="fs-p-18 m-b-md-4 txt-gray-700 fs-p-md-16 p-b-4"><strong class="f-w-500">Yêu cầu huỷ đơn hàng không thành công</strong></p>
+                    <p class="para-desc fs-p-md-14 txt-gray-700">Quý khách có thể liên hệ tổng đài miễn phí <a href="tel:18006928" class="link f-w-500 txt-primary-700 inline-block">1800 6928</a> để được hỗ trợ</p>
+                </div>
+              </div>
+              <div class="modal-footer p-t-24 p-b-24 p-x-24 p-x-md-16 p-t-md-12 p-b-md-32">
+                  <button class="btn btn-primary btn-lg circle text-uppercase">TIẾP TỤC MUA HÀNG</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- end không huy thanh cong -->
+
+  </div>
+
+
+  <!-- <script src="js/functions.js"></script> -->
+  
+  <script src="js/util.js"></script>
+  <script src="js/modal.js"></script>
+  <script>
+    function copyToClipboard() {
+
+      $('.js--copy').each(function () {
+
+        var tempInput = '<input class="input-copy" style="opacity:0;position:absolute;z-index:-1;">';
+        var parent = $(this).parent();
+        parent.append(tempInput);
+
+        var copyValue = parent.find('.input-copy'), valueBank = $(this).prev().text();
+        copyValue.attr('value', valueBank);
+
+        var showTip = $(this).siblings('.lc-tooltip-box');
+
+        $(this).click(function () {
+
+          var copyText = $(this).siblings('.input-copy');
+
+          copyText.select();
+
+          document.execCommand("copy");
+          copyText.remove();
+
+          // copyText.blur();
+          showTip.addClass('active');
+          setTimeout(function () {
+            showTip.removeClass('active');
+          }, 1000);
+          parent.append(tempInput);
+        });
+
+      });
+
+    }
+
+    copyToClipboard();
+  </script>
+</body>
+
+</html>

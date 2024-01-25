@@ -1,0 +1,12 @@
+.ppc-media {
+    max-width: 100%;
+    width: 676px;
+    margin: 0 auto 24px;
+  &__structure {
+      @include aspect-ratio(678,385,0);
+    img {
+      border-radius: 12px;
+      border: 1px solid $gray-300;
+    }
+  }
+}

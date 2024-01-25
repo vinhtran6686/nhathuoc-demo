@@ -1,0 +1,308 @@
+.section__f0 {
+    &-pic2 {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+    @include respond-to("md") {
+        .ld__note {
+            text-align: left !important;
+        }
+    }
+}
+[class*="section__f0-pic"] {
+    position: relative;
+
+    .badge {
+        cursor: auto;
+    }
+
+    @include respond-to("md") {
+        margin-bottom: 8px;
+        background: $white;
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+        .section__inner {
+            max-width: 768px;
+            margin: auto;
+        }
+
+        .section__heading {
+            text-align: center;
+        }
+    }
+}
+.ld {
+    &__list {
+        .reset-col {
+            margin-top: 24px;
+        }
+        &-name {
+            .link {
+                color: $primary !important;
+            }
+        }
+    }
+    &__picture {
+        max-width: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        picture {
+            @include aspect-ratio(100, 100, 0);
+        }
+    }
+    @include respond-to("md") {
+        &__list {
+            .reset-col {
+                margin-top: 16px;
+            }
+        }
+        &__picture {
+            max-width: 80px;
+        }
+    }
+}
+.ld__list-horizontal {
+    $list: ".ld__list";
+    #{$list}-name {
+        flex: 1;
+        .ld-hight-light {
+            color: $primary;
+            font-weight: 500;
+        }
+    }
+    .ld {
+        &__picture {
+            max-width: 80px;
+            margin: 0;
+            flex-basis: 80px;
+        }
+    }
+}
+
+//pic1
+.section__f0-pic1 {
+    .ld__desc {
+        max-width: 876px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include respond-to("md") {
+        .ld__title {
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @include respond-to("xs") {
+        .ld__desc {
+            max-width: 334px;
+        }
+    }
+}
+
+//pic2
+.section__f0-pic2 {
+    @include respond-to("md") {
+    }
+}
+
+//pic3
+.section__f0-pic3 {
+    $spacing-x: 22px;
+    .row {
+        margin-right: -$spacing-x;
+        margin-left: -$spacing-x;
+        .col-6 {
+            padding-right: $spacing-x !important;
+            padding-left: $spacing-x !important;
+            &:nth-child(even) {
+                .ld__list-name {
+                    order: 1;
+                    margin-left: 0 !important;
+                    margin-right: 12px !important;
+                }
+                .ld__picture {
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    .ld__list-horizontal {
+    }
+
+    @include respond-to("md") {
+        padding-bottom: 0 !important;
+        .row {
+            margin-right: 0;
+            margin-left: 0;
+            .col-6 {
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+                &:not(:last-child) {
+                    border-bottom: 1px solid $gray-300;
+                }
+            }
+        }
+        .ld__list-item {
+            padding: 16px 0;
+        }
+    }
+}
+//pic4
+.section__f0-pic4 {
+    li {
+        font-size: 16px;
+        line-height: 24px;
+        &:before {
+            color: $danger;
+            top: 8px;
+        }
+        span,
+        strong {
+            font-weight: 500 !important;
+        }
+        &:not(:first-child) {
+            margin-top: 8px;
+        }
+    }
+    .section__right {
+        picture {
+            @include aspect-ratio(504, 293, 0);
+        }
+    }
+    @include respond-to("md") {
+        .section__heading {
+            text-align: center;
+        }
+        .list-disc {
+            li {
+                padding-left: 10px;
+                &::before {
+                    font-size: 4px;
+                    top: 8px;
+                }
+            }
+        }
+    }
+}
+
+//pic5
+.section__f0-pic5 {
+    $spacing-border-left: 44px;
+    .list-group {
+        &-content {
+            display: flex;
+            padding: 12px 8px;
+            position: relative;
+        }
+    }
+
+    li {
+        padding-left: 0;
+        &:before {
+            display: none;
+        }
+
+        &:not(:last-child) {
+            .list-group-content:after {
+                content: "";
+                width: calc(100% - #{$spacing-border-left});
+                height: 1px;
+                background: $gray-300;
+                position: absolute;
+                bottom: 0;
+                left: $spacing-border-left;
+            }
+        }
+
+        span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            background: $gray-100;
+            border: 1px solid $gray-300;
+            box-sizing: border-box;
+            border-radius: 100px;
+
+            margin-right: 12px;
+            font-weight: 500;
+        }
+        p {
+            flex: 1;
+            position: relative;
+            @extend .w-break-word;
+        }
+    }
+    .section__right {
+        picture {
+            @include aspect-ratio(528, 250, 0);
+        }
+    }
+    .row {
+        align-items: center;
+    }
+    .col-6 {
+        &:first-child {
+            flex: 1;
+            max-width: 100%;
+        }
+
+        &:last-child {
+            max-width: calc(100% - 552px);
+            flex-basis: calc(100% - 552px);
+        }
+    }
+    @include respond-to("md") {
+        .col-6 {
+            &:first-child {
+                // flex: 1;
+                // max-width: 100%;
+            }
+
+            &:last-child {
+                max-width: 100%;
+                flex-basis: 100%;
+            }
+        }
+
+        .section__right {
+            padding-top: 120px;
+        }
+        .col-6.col-md-12 {
+            position: unset;
+        }
+        .section__heading {
+            position: absolute;
+            top: 16px;
+            left: 0;
+            right: 0;
+            max-width: 340px;
+            margin: auto;
+        }
+        .list-group {
+            &-content {
+                padding: 8px 0px;
+            }
+        }
+
+        li {
+            &:not(:last-child) {
+                .list-group-content:after {
+                    width: calc(100% - #{$spacing-border-left - 8px});
+                    left: calc(#{$spacing-border-left} - 8px);
+                }
+            }
+
+            span {
+            }
+            p {
+            }
+        }
+    }
+}

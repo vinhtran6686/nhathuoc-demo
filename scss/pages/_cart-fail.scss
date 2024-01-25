@@ -1,0 +1,33 @@
+.lc__fail {
+    @include respond-to("md") {
+        .cart-icon {
+            max-width: 117px;
+        }
+    }
+}
+.lc__fail,.cart__fail{
+    .cart__icon, .cart-icon{
+        max-width: 140px;
+        @include auto();
+        picture {
+            @include aspect-ratio(140, 120, 0);
+            > * {
+                @include objectFit(cover);
+            }
+        }
+    }
+}
+
+.cart__fail {
+    &-body{
+        max-width: 576px;
+        @include auto();
+
+        -webkit-box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+        box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+
+        @include respond-to('md'){
+            border-radius: 6px !important;
+        }
+    }
+}

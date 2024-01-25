@@ -1,0 +1,103 @@
+.stepper__deposit {
+  &--inner {
+    display: flex;
+  }
+  .deposit__item {
+    max-width: 170px;
+    flex-basis: 170px;
+    text-align: center;
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 32px;
+      &::before {
+        position: absolute;
+        content: "";
+        font-family: icon-system !important;
+        color: $primary-500;
+        right: -23px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+      }
+    }
+
+    &--image {
+      flex-basis: 64px;
+      max-width: 64px;
+      margin: auto;
+      picture {
+        @include aspect-ratio(1, 1, 0);
+      }
+    }
+  }
+  @include respond-to("md") {
+    &--inner {
+      display: block;
+    }
+    .deposit__item {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 16px;
+        &::before {
+          content: unset;
+        }
+      }
+      &--image {
+        margin: auto 0;
+        flex-basis: 48px;
+      }
+      &--text {
+        text-align: left;
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.table-deposit {
+  & > thead > tr > th {
+    border: 1px solid $gray-200;
+  }
+  & > tbody > tr > td {
+    border: 1px solid $gray-200;
+
+    &:first-child {
+      width: 133px;
+    }
+    &:nth-child(3) {
+      width: 300px;
+      padding-left: 16px;
+    }
+  }
+}
+
+.list-table-mb {
+  .table {
+    td:last-child {
+      padding: 8px 12px;
+    }
+    .list {
+      li {
+        display: block;
+        font-size: 16px !important;
+        line-height: 24px !important;
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.lc__deposit {
+  @include respond-to("md") {
+    .breadcrumb {
+      margin: 0 -10px !important;
+    }
+  }
+}

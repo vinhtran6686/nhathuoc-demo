@@ -1,0 +1,27 @@
+.lc__register{
+    .upload-gallery{
+        .lc__gallery-picture{
+            picture{
+             cursor: default;
+            }
+             &:before{
+                 display: none;
+             }
+         }
+    }
+    @include respond-to('md'){
+        .section-bg{
+            width: 100%;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+picture{
+    display: block;
+}
+.lc__distance{
+
+}

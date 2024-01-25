@@ -1,0 +1,135 @@
+.covid-html {
+    font-size: 62.5%;
+}
+.lc__form-covid {
+    .section-box {
+        max-width: 1176px;
+    }
+    input::placeholder, input[type=number]::placeholder{
+        color: #718198;
+        opacity: 1;
+    }
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    input, textarea{
+        &:focus{
+            outline: none;
+        }
+    }
+    .lc__btn{
+        padding-top: 3.2rem !important;
+    }
+}
+.table-disease {
+    width: 100%;
+    border-radius: .6rem;
+    // overflow: hidden;
+    border: 1px solid #d8e0e8;
+    th {
+        width: 100%;
+    }
+    tr,
+    th {
+        border: .1rem solid $gray-300;
+    }
+    td {
+        border: $border-default;
+        vertical-align: middle;
+    }
+    td,
+    th {
+        padding: 1.2rem 1.2rem 0.8rem;
+        color: $gray-700;
+    }
+    &-title {
+        td {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+    }
+    &-item {
+        &:nth-child(2) {
+            td:first-child {
+                width: 15rem;
+                border-right: .1rem solid $gray-300;
+            }
+        }
+        &:not(:nth-child(2)) {
+            td:first-child {
+                width: auto;
+            }
+        }
+    }
+    &-empty {
+        td {
+            padding: 1.8rem;
+        }
+    }
+    .label-text{
+        font-size: 1.4rem !important;
+        line-height: 2rem !important;
+        input[type="text"]{
+            border: $border-default;
+            height: 2.6rem;
+            border-radius: .6rem;
+            padding: .4rem;
+            width: 10rem;
+            margin-left: .8rem;
+            &:focus,&:hover{
+                outline: none;
+            }
+        }
+    }
+}
+.table-disease-age{
+    .checkbox{
+        justify-content: center;
+    }
+}
+.table-disease-age,
+.table-disease-vaccin {
+    .checkbox {
+        input {
+            margin-left: .8rem;
+            margin-right: 0;
+        }
+    }
+}
+
+.table-disease-vaccin {
+    .label-text{
+        cursor: default;
+    }
+}
+.table-disease-test{
+    input[type="text"]{
+        border: $border-default;
+        margin-left: .4rem;
+        border-radius: .4rem;
+        padding: .4rem;
+        font-size: 1.4rem;
+    }
+    &.table-disease-title{
+        input[type="text"]{
+            width: 8rem;
+            margin-left: .4rem;
+        }
+    }
+}
+.table-disease-symptom{
+    .title-group{
+        span{
+            // border-left: $border-default;
+            width: 23.9rem;
+            text-align: right;
+        }
+    }
+}
+.form-textarea{
+    textarea{
+        width: 100%;
+        border-radius: .4rem;
+        padding: .4rem;
+    }
+}

@@ -1,0 +1,43 @@
+.cart {
+  &-img {
+    width: 80px;
+    height: 80px;
+  }
+  &-product {
+    position: relative;
+  }
+}
+.product-location{
+  display: none;
+  &-update{
+
+    .alert{
+      height: auto;
+      @extend .w-break-word;
+      align-items: baseline;
+      [class*="alert-ic"]{
+      top: -1px;
+      position: relative;
+      }
+    }
+
+    @include respond-to('md'){
+      position: relative;
+      + .u-flex .cart-info{
+        padding-top: 0;
+      }
+      .alert{
+        height: auto;
+      }
+
+      [class*="alert-ic"]{
+        width: 14px;
+        height: 14px;
+
+        font-size: 8px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+

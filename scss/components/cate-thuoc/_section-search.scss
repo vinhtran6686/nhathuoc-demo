@@ -1,0 +1,411 @@
+.section__search {
+    margin-top: -200px;
+    @include respond-to('lg'){
+        margin-top: -126px;
+    }
+
+    $lc: '.lc';
+    .card__box {
+        position: relative;
+        z-index: 1050;
+
+        padding-right: 80px;
+        padding-left: 80px;
+
+        border-radius: 16px;
+        box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+    }
+    .lc__form-search {
+        input.form-reset {
+            height: 56px;
+            border: 2px solid $gray-300;
+
+            padding: 16px 194px 16px 24px;
+
+            font-size: 18px !important;
+            // line-height: 24px !important;
+        }
+        .btn-search {
+            position: absolute;
+            right: 0;
+            // margin-left: -128px;
+            border-radius: 0px 100px 100px 0px;
+            padding-right: 49px;
+            padding-left: 49px;
+            border: none;
+        }
+        .lc__cancel {
+            display: none;
+
+            position: absolute;
+            right: 150px;
+
+            align-items: center;
+            justify-items: center;
+            width: 20px;
+            height: 20px;
+        }
+        .lc__back,.none-drug {
+            display: none;
+        }
+        &.focus-search {
+            .lc__cancel {
+                display: inline-flex;
+            }
+            .lc__auto-suggest {
+                display: block;
+            }
+        }
+        .none-drug{
+            max-width: 216px;
+            margin: 24px auto 0 !important;
+        }
+    }
+    .form-group {
+        z-index: 24;
+    }
+    .lc__auto-suggest {
+        max-width: calc(100% - 128px);
+
+        padding-top: 28px;
+        margin-top: -28px;
+
+        border-radius: 0px 0px 12px 12px;
+        box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+
+        position: absolute;
+        width: 100%;
+        z-index: 3;
+
+        display: none;
+        // display: block !important;
+        &.all {
+            .auto__suggest {
+                &-brand {
+                    min-width: 77px;
+                    max-width: 85px;
+                }
+            }
+        }
+
+        ul li {
+            &:not(:first-child) {
+                background: $white;
+            }
+            &:not(:last-child) {
+                box-shadow: inset 0px -1px 0px $gray-300;
+            }
+
+        }
+    }
+    .radio-group {
+        .radio {
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+
+            input[type="radio"] {
+                margin-top: 0;
+                margin-bottom: 1.333px;
+            }
+        }
+    }
+    .auto__suggest {
+        &-item {
+            padding-right: 97px;
+            .btn-add {
+                right: 24px;
+            }
+            @media(min-width: 992px){
+                &:hover{
+                    background: $gray-100;
+                }
+            }
+        }
+
+        &-keywords {
+            flex: 1;
+            @extend .w-break-word;
+        }
+    }
+
+    @include respond-to("lg") {
+        .container {
+            overflow: initial !important;
+        }
+    }
+    @include respond-to("md") {
+        .container {
+            overflow: hidden !important;
+        }
+
+        .lc__title{
+            text-align: center;
+        }
+
+        &.search-mobile {
+                position: fixed !important;
+                top:0;
+                right: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 999999;
+                touch-action: none;
+                background: $white;
+                overflow-y: auto;
+                .card__box {
+                   padding: 0 !important;
+                   box-shadow: none;
+                //    height: inherit;
+                }
+                #{$lc}__title, .section__search-radio{
+                    display: none;
+                }
+                // .container{
+                //     height: inherit;
+                // }
+
+        }
+
+        .card__box {
+            border-radius: 0;
+            border: none;
+        }
+        .lc__form-search {
+            // transition: all 0.3s;
+            input.form-reset {
+                flex: 1;
+                height: 36px;
+                border: 1px solid $gray-300;
+                padding: 6px 90px 6px 12px;
+
+                outline: none;
+                box-shadow: none;
+                font-size: 14px !important;
+
+                &::-webkit-input-placeholder{
+                    font-size: 14px !important;
+                }
+                &:-moz-placeholder{
+                    font-size: 14px !important;
+                }
+                &::placeholder{
+                    font-size: 14px !important;
+                }
+            }
+            .btn-search {
+                padding-right: 19px;
+                padding-left: 19px;
+            }
+            .lc__cancel {
+                width: 28px;
+                height: 36px;
+                // line-height: 36px;
+                right: 56px;
+
+                i {
+                    font-size: 12px !important;
+                    line-height: 12px !important;
+                    width: inherit;
+                }
+            }
+
+            &.fixed-top {
+                margin-bottom: 0 !important;
+                form {
+                    display: block;
+                    position: fixed !important;
+                    top:0;
+                    width: 100%;
+                    background: $white;
+                    z-index: 99999;
+                }
+                .form-group {
+                    box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+                    padding: 10px 10px 10px 36px;
+
+                }
+                input.form-reset {
+                    padding-right: 90px;
+                }
+
+                .btn-search {
+                    right: 10px;
+                }
+                .none-drug {
+                    display: block;
+                    max-width: 200px;
+                    padding-top: 108px;
+                    margin: auto;
+                    height: 100%;
+                }
+                .lc__back {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-items: center;
+                    width: 36px;
+                    height: 100%;
+
+                    position: absolute;
+                    left: 0px;
+                    i {
+                        margin: auto;
+                        color: $gray !important;
+                    }
+                }
+                .lc__cancel {
+                    right: 66px;
+                }
+            }
+        }
+
+        .lc__auto-suggest {
+            // display: none;
+
+            margin-top: 0;
+
+            max-width: 100%;
+            border-radius: 0;
+
+            // max-height: 80%;
+            overflow-y: scroll;
+            height: 100%;
+
+            padding: 56px 0 72px 0;
+             background: $white !important;
+             position: relative;
+            box-shadow: none;
+            //  display: block !important;
+             ul > li {
+                &.active{
+                    background: $gray-100;
+                }
+             }
+            &.all {
+                .auto__suggest {
+                    &-brand {
+                        min-width: 82px;
+                        max-width: 82px;
+                    }
+                }
+            }
+        }
+
+        &-radio {
+            display: flex;
+            justify-items: center;
+            .radio input[type="radio"]{
+                &:after,&:before{
+                    width: 16px;
+                    height: 16px;
+                }
+
+            }
+        }
+
+        .radio-group {
+            margin: auto;
+            .radio {
+                &:not(:last-child) {
+                    margin-right: 16px;
+                }
+                input[type="radio"]{
+                    margin-right: 4px;
+                }
+                label {
+                    font-size: 14px !important;
+                    line-height: 20px !important;
+                }
+            }
+        }
+        .auto__suggest {
+            &-item {
+                padding-right: 10px;
+                .btn-add {
+                    top: 6px;
+                    right: 10px;
+                }
+            }
+        }
+    }
+    // @media (max-width: )
+    @include respond-to("xxs") {
+        .card__box {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .radio-group {
+            .radio {
+                &:not(:last-child) {
+                    margin-right: 4px;
+                }
+
+                label {
+                    font-size: 13px !important;
+                    line-height: 18px !important;
+                }
+            }
+        }
+    }
+}
+.cate-active-drug{
+    .section__search{
+        .card__box{
+            padding-bottom: 64px !important;
+        }
+        @include respond-to('md'){
+            .card__box{
+                padding-bottom: 16px !important;
+            }
+        }
+    }
+}
+.lc__suggest-keyword{
+    ul{
+        li:not(:last-child){
+            margin-bottom: 8px;
+        }
+        @include respond-to('md'){
+            li:not(:last-child){
+                margin-bottom: 4px;
+            }
+        }
+    }
+}
+.result__empty{
+    .lc__block-product{
+        margin-bottom: -16px;
+    }
+    .product{
+        height: 100%;
+    }
+    .product-image{
+        a{
+            display: block;
+            margin: -12px -12px 12px;
+            padding: 7px;
+        }
+        @include respond-to('md'){
+            a{
+                margin: -8px -8px 8px;
+            }
+        }
+    }
+    @include respond-to('md'){
+        .list{
+            li{
+                font-size: 16px !important;
+                line-height: 24px !important;
+            }
+        }
+    }
+}
+@include respond-to('md'){
+    .lc__mask{
+        display: none;
+    }
+}

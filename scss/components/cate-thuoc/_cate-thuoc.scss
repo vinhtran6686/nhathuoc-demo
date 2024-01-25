@@ -1,0 +1,373 @@
+.lc__breadcrumb--cate-thuoc {
+    .breadcrumb {
+        margin-bottom: -40px !important;
+    }
+    @include respond-to("lg") {
+        .container {
+            overflow: visible !important;
+        }
+    }
+    @include respond-to("md") {
+        .container {
+            overflow: hidden !important;
+        }
+        .breadcrumb {
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+.lc__cate-thuoc,
+.cate-thuoc-lv2 {
+    .lc__none {
+        &-result {
+            padding-top: 28px;
+            padding-bottom: 44px;
+            picture {
+                @include aspect-ratio(216, 200, 0);
+            }
+            .list {
+                max-width: 312px;
+                text-align: left;
+                margin: auto;
+                li:before {
+                    top: 8px;
+                }
+            }
+        }
+        &-img {
+            max-width: 216px;
+            margin: auto auto 16px;
+        }
+    }
+
+    .section-buy-medicine {
+        margin-top: -32px;
+    }
+
+    .section-banner {
+        margin: auto;
+        //    background: url(../images/banner-thuoc.jpg) no-repeat center;
+        background: url(/frontend_v3/images/banner-html/banner-thuoc.jpg) no-repeat center;
+        background-size: 100% 100%;
+
+        padding-top: 40px;
+        picture {
+            max-width: 792px;
+            margin: auto;
+
+            @include respond-to("lg") {
+                max-width: 692px;
+            }
+        }
+    }
+    @include respond-to("lg") {
+        .section-buy-medicine {
+            margin-top: -32px;
+        }
+    }
+
+    @include respond-to("md") {
+        .section-buy-medicine {
+            margin-top: 0;
+        }
+        .lc__none {
+            &-result {
+                padding-top: 8px;
+                picture {
+                    @include aspect-ratio(180, 166, 0);
+                }
+                .list {
+                    max-width: 271px;
+                    text-align: left;
+                    margin: auto;
+                    li {
+                        padding-left: 10px;
+                        &:before {
+                            font-size: 4px;
+                        }
+                    }
+                }
+            }
+            &-img {
+                max-width: 180px;
+                margin: auto auto 12px;
+            }
+        }
+        .section__search .lc__form-search {
+            &.fixed-top {
+                z-index: 9999999;
+            }
+        }
+        .section-news {
+            .lc__box-title {
+                a {
+                    font-weight: 500;
+                }
+            }
+        }
+        .section-banner {
+            display: none;
+            position: relative;
+            clear: both;
+            z-index: 0;
+        }
+    }
+
+    .section__description {
+        &-box {
+            box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+            &--left {
+                max-width: 76px;
+                flex-basis: 76px;
+                picture {
+                    @include aspect-ratio(76, 76, 0);
+                }
+            }
+            &--right {
+                flex: 1;
+            }
+            .description__box-content {
+                @extend .w-break-word;
+            }
+        }
+        @include respond-to("md") {
+            .container {
+                padding: 0 !important;
+                overflow: unset;
+            }
+            &-box {
+                &--left {
+                    max-width: 64px;
+                    flex-basis: 64px;
+                    picture {
+                        @include aspect-ratio(76, 76, 0);
+                    }
+                }
+            }
+        }
+    }
+}
+.lc__cate-thuoc,
+.cate-thuoc-lv2 {
+    @include respond-to("md") {
+
+    }
+}
+.section-cate-all {
+    // margin-block: 120px;
+    .lc__card {
+        height: 100%;
+        border-radius: 8px;
+        border: 1px solid $gray-300;
+        &-inner {
+            height: inherit;
+            border: none;
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        }
+    }
+    @include respond-to("md") {
+        .lc__card {
+            height: auto;
+        }
+    }
+}
+
+.cate__product {
+    transition: all 0.3s;
+    padding-right: 12px;
+    padding-left: 12px;
+
+    &-img {
+        width: 40px;
+        picture {
+            @include aspect-ratio(40, 40, 0);
+            box-shadow: none;
+            border-radius: 0 !important;
+        }
+        img {
+            // padding: 4px;
+        }
+        @include respond-to('md'){
+            // picture {
+            //     box-shadow: none;
+            // }
+        }
+    }
+    &-info {
+        flex: 1;
+    }
+
+    &-name {
+        padding-right: 24px !important;
+    }
+
+    .lc__icon {
+        position: absolute;
+        right: 0;
+
+        display: inline-flex;
+        align-items: center;
+        width: 16px;
+        height: 100%;
+
+        transition: all 0.3s $timing-linear;
+    }
+
+    .lc__link {
+        padding-right: 24px;
+    }
+    .lc__dropdown-list {
+        box-shadow: inset 0px 1px 0px $gray-200;
+        border-radius: 0;
+        &:hover {
+            will-change: opacity;
+        }
+        .lc__dropdown-item {
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+    &.lc-expand {
+        .lc__icon {
+            transform: rotate(-180deg);
+        }
+
+        &.lc__card {
+            box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+        }
+    }
+    @media (min-width: 992px) {
+        .lc__dropdown-list {
+            width: calc(100% + 2px);
+            background: $white;
+
+            box-shadow: 0px 3px 4px rgba(10, 10, 10, 0.15);
+            border-radius: 0 0 8px 8px;
+            border: 1px solid $gray-300;
+            border-top: 0;
+
+            position: absolute !important;
+            top: calc(100% - 10px);
+            left: -1px;
+            z-index: 1;
+
+            transition: all 0.3s;
+
+            opacity: 0;
+            visibility: hidden;
+
+            &:before {
+                width: calc(100% - 24px);
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+
+                width: calc(100% - 24px);
+
+                height: 1px;
+                margin: auto;
+
+                box-shadow: inset 0px 1px 0px $gray-200;
+            }
+        }
+
+        &.lc-expand {
+            .lc__dropdown-list {
+                top: calc(100% - 2px);
+
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &.lc__card {
+                border-radius: 8px 8px 0 0;
+            }
+        }
+    }
+    @include respond-to("md") {
+        &-info {
+            padding-right: 8px;
+        }
+
+        .lc__dropdown-list {
+            position: relative !important;
+            top: -2px;
+            padding: 0 !important;
+
+            &:before {
+                display: none;
+            }
+            &:after {
+                opacity: 1;
+                visibility: visible;
+            }
+            .lc__dropdown-item {
+                &:not(:last-child) {
+                    margin-bottom: 4px;
+                }
+
+                &:first-child {
+                    padding-top: 8px;
+                }
+                &:last-child {
+                    padding-bottom: 8px;
+                }
+            }
+        }
+
+        &.lc-expand {
+            .lc__card {
+                &-inner {
+                    border-radius: 8px 8px 0 0;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+.list-more-item {
+    transition: all 0.3s;
+}
+
+.icon-xl.icon-circle,
+.icon-xl.icon-square {
+  font-size: 13px;
+  width: 28px;
+  height: 28px;
+}
+
+.modal-xl .modal-wrapper {
+    max-width: 1176px;
+    // @include respond-to("md") {
+    //     max-width: 95%;
+    // }
+}
+
+#modalviewdetail {
+    .spacing-text {
+        display: inline-block;
+        vertical-align: text-bottom;
+    }
+    @include respond-to("md") {
+        .modal-header {
+            padding-left: 16px !important;
+            padding-right: 16px !important;
+            h2 {
+                line-height: 20px !important;
+            }
+        }
+    }
+}
+
+@import "_section-search";
+@import "_section-link";
+@import "_cate-thuoc-lv2";

@@ -1,0 +1,41 @@
+.cart-bottom-v3{
+    background: $white;
+    .cart-bottom__form{
+        background-color: transparent !important;
+    }
+    .table-user{
+        tr:first-child{
+            td{
+                &:last-child{
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    .form-receiving{
+        > .radio.checked{
+            pointer-events: none;
+        }
+    }
+    @include respond-to('md'){
+        background: transparent;
+        .cart-bottom__form{
+            background-color: $white !important;
+        }
+        .cart-cta-mb{
+            margin-bottom: 8px;
+        }
+        .dropdown-button{
+            span{
+                max-width: 160px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 100%;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+.reset-radius{
+    border-radius: 0 0 12px 12px;
+}

@@ -1,0 +1,19 @@
+.lc__box-filter {
+   > .u-flex {
+      justify-content: flex-end;
+   }
+   @include respond-to("md") {
+      > .u-flex {
+         justify-content: flex-start;
+         .tabs {
+            // display: flex;
+            // flex-wrap: nowrap;
+            // overflow-x: auto;
+            // white-space: nowrap;
+            span {
+               // max-width: 200px;
+            }
+         }
+      }
+   }
+}

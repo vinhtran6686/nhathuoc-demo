@@ -1,0 +1,250 @@
+%hide {
+  opacity: 0;
+  visibility: hidden;
+}
+%show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.radio.checked {
+  + .lc__box {
+    @extend .lc-show;
+  }
+}
+.lc__box {
+  @extend .lc-hide;
+  &-block {
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+    i {
+      @extend %hide;
+      z-index: 2;
+    }
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 6px;
+
+      @extend %hide;
+      pointer-events: none;
+      transition: all 0.3s;
+      z-index: 1;
+    }
+    &.active {
+      box-shadow: 0 0 0 1px $primary-500;
+      &:before {
+        @extend %show;
+      }
+      i {
+        @extend %show;
+      }
+    }
+  }
+}
+.cs-form-search {
+  width: 100%;
+  max-width: 304px;
+  border-radius: 12px;
+  .form-search_wrap {
+    width: inherit;
+    .col-auto {
+      display: none !important;
+    }
+  }
+  input {
+    width: 100%;
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+  .dropdown-menu {
+    max-width: unset;
+    width: 516px;
+    left: -4px;
+    box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+    &-wrapper {
+      max-height: 380px;
+    }
+    a {
+      justify-content: start;
+    }
+    span {
+      flex: 1;
+    }
+    .photo {
+      max-width: 90px;
+      width: 100%;
+      margin-right: 8px;
+    }
+    img {
+      border-radius: 4px;
+    }
+  }
+  @include respond-to("md") {
+    max-width: 100%;
+    &.form-fixed {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      max-width: 100% !important;
+      height: 100vh;
+
+      border-radius: 0;
+      background-color: $white;
+
+      z-index: 100000;
+      border: none;
+
+      padding: 0 !important;
+
+      input {
+        position: relative;
+        border-radius: 8px;
+        width: 100%;
+        color: $gray-500;
+        @include font-base(14px, 20px);
+        padding: 6px 28px 6px 32px;
+        border-radius: 100px;
+
+        border: 1px solid #d8e0e8;
+      }
+
+      .form-search_wrap {
+        position: fixed;
+        top:0;
+
+        width: 100%;
+        background: $white;
+
+        box-shadow: 0px 1px 4px rgba(10, 10, 10, 0.15);
+        padding: 8px 10px;
+        .col-auto {
+          display: block !important;
+        }
+      }
+
+      .form-search-icon {
+        position: absolute;
+        justify-content: center;
+        i.ic-search {
+          position: absolute;
+          font-size: 16px;
+          left: 12px;
+          top: 10px;
+        }
+        i.ic-close {
+          font-size: 12px;
+        }
+      }
+      .form-search-close{
+        right: 2px;
+        width: 34px;
+        height: 100%;
+      }
+      .dropdown-menu {
+        width: 100%;
+        margin: auto;
+        min-width: 1px;
+
+        top: 58px;
+        right: 0;
+        left: 0;
+        border-radius: 8px;
+        z-index: 9;
+
+        box-shadow:none;
+        border: none;
+      }
+    }
+  }
+}
+.lc-banking {
+  padding-left: 28px;
+  padding-right: 196px;
+  &--list {
+    picture {
+      display: block;
+      max-width: 76px;
+      height: 48px;
+      margin: auto;
+      text-align: center;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  $spacing-cs-grid: 4px;
+  .cs-row {
+    margin-right: -$spacing-cs-grid;
+    margin-left: -$spacing-cs-grid;
+    .cs-cols {
+      padding-right: $spacing-cs-grid;
+      padding-left: $spacing-cs-grid;
+      margin-top: $spacing-cs-grid;
+      margin-bottom: $spacing-cs-grid;
+    }
+  }
+
+  @include respond-to("lg") {
+    padding-right: 100px;
+  }
+  @include respond-to("md") {
+    padding-right: 0px;
+    padding-left: 0px;
+    .lc__box-content {
+      overflow: unset;
+    }
+    &--list {
+      picture {
+        width: 100%;
+        height: 100%;
+        max-width: 67px;
+        height: 42px;
+      }
+    }
+    .dropdown-menu-wrapper {
+      a {
+        &.active {
+          background-color: #edf2f8;
+        }
+      }
+    }
+  }
+}
+.lc__banking-alert{
+  padding-left: 28px;
+    .alert{
+      height: auto;
+      padding: 4px 8px;
+      align-items: flex-start;
+      .alert-ic{
+        margin-top: 2px;
+      }
+    }
+    @include respond-to('md'){
+      padding-left: 0;
+      .alert{
+
+        padding-top: 4px;
+        padding-bottom: 4px;
+
+        align-items: flex-start;
+        i.alert-ic{
+          margin-top: 0;
+          margin-right: 4px !important;
+        }
+        span{
+          font-size: 14px !important;
+        }
+      }
+    }
+}

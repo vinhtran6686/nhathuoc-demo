@@ -1,0 +1,347 @@
+.detail_product {
+  &--description {
+    .badge {
+      cursor: pointer;
+    }
+  }
+  .pcd-title {
+    h1 {
+      font-weight: 500 !important;
+    }
+    .lc-tooltip-box {
+      min-width: 132px;
+      &.active {
+        &,
+        &:after,
+        &:before {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  .pcd-rating {
+    ul {
+      display: inline-flex;
+      align-items: center;
+      li {
+        &:not(:last-child) {
+          margin-right: 6px;
+        }
+        i {
+          color: #f59e0b;
+        }
+      }
+    }
+  }
+  .pcd-meta {
+    max-height: 254px;
+    table > tbody {
+      tr {
+        display: block;
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+      }
+      td {
+        display: inline-table;
+        border: none !important;
+        &:last-child {
+          display: inline;
+        }
+      }
+    }
+  }
+  .pdc-cta {
+    &.stick-bottom {
+      position: fixed;
+      z-index: 9999;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $white-100;
+      padding: 12px 10px;
+      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .alert-covid {
+    .alert {
+      span {
+        line-height: 24px;
+      }
+    }
+  }
+  @include respond-to("md") {
+    .breadcrumb {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+    }
+  }
+}
+.detail {
+  &_main {
+    @import "../components/detail/tab-content";
+    @include respond-to("md") {
+      padding-bottom: 0 !important;
+      .fixed-top {
+        padding: 0 !important;
+        &.expand-overlay {
+          background: rgba(0, 0, 0, 0.7);
+          height: 100vh;
+        }
+      }
+    }
+  }
+}
+.pdc-title_serial {
+  cursor: pointer;
+}
+
+.detail-line {
+  height: 1px;
+  background-color: #d8e0e8;
+  @include respond-to("md") {
+    margin: 0 -10px;
+  }
+}
+
+//
+.lc-box {
+  .cs-dropdown {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    .dropdown {
+      height: 28px;
+      &-menu {
+        right: 0;
+        left: unset;
+      }
+      &-button {
+        padding: 4px 30px 4px 8px;
+
+        &:before {
+          border-radius: 8px;
+        }
+        span {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+      }
+      @include respond-to("md") {
+        &-menu {
+          min-width: 1px;
+          max-width: 376px;
+          width: max-content;
+        }
+      }
+    }
+  }
+  .lc__reviews-rating {
+    box-shadow: none;
+  }
+}
+.lc__btn-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 324px 0 20px;
+  background: $mask-white-full;
+  @include respond-to("md") {
+    padding: 200px 0px 24px;
+  }
+}
+
+.lc__btn-overlay-Top {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 53px 0 24px;
+  background: linear-gradient(360deg, #ffffff 0.84%, rgba(255, 255, 255, 0) 147.16%);
+}
+
+.pdc-cta-mb {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $white-100;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1031;
+  .alert {
+    padding: 0 11px;
+  }
+}
+
+.lc-detail {
+  &.bg-gray-100 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+  }
+  .cart-buy.cart-buy--related {
+    padding-top: 0 !important;
+    padding-bottom: 32px !important;
+  }
+  .cart-buy.cart-buy--together {
+    padding-bottom: 0 !important;
+  }
+}
+@include respond-to("md") {
+  .modal-detail {
+    .modal-wrapper {
+      margin: auto auto 0;
+      .modal-box {
+        border-radius: 12px 12px 0 0 !important;
+      }
+      .modal-header {
+        position: relative;
+        .modal-close {
+          position: absolute;
+
+          right: 16px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+  .lc-detail {
+    overflow: hidden;
+    .container {
+      overflow: hidden;
+      padding: 0 !important;
+    }
+    &.bg-gray-100 {
+      padding-top: 16px !important;
+      padding-bottom: 16px !important;
+    }
+    .cart-buy.cart-buy--related {
+      padding-bottom: 16px !important;
+    }
+  }
+  .detail_product--description,
+  .detail_main,
+  .lc-detail .lc-body {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+  .lc-box {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+.typho-luuy,
+.typho-TacDungPhu {
+  p {
+    strong {
+      display: inline !important;
+    }
+  }
+}
+
+.lc-reply {
+  textarea {
+    &::-webkit-input-placeholder {
+      font-size: 16px;
+    }
+
+    &:-moz-placeholder {
+      /* Firefox 18- */
+      font-size: 16px;
+    }
+
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      font-size: 16px;
+    }
+
+    &:-ms-input-placeholder {
+      font-size: 16px;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
+}
+
+//update detail 23/2/2022
+.lc-detail {
+  .detail_product-related {
+    .cart-buy--related {
+      padding-top: 32px !important;
+      padding-bottom: 0 !important;
+      @include respond-to("md") {
+        padding-top: 16px !important;
+      }
+    }
+  }
+}
+
+@import "../components/detail/_custom-gallery";
+@import "../components/cart/_custom-ratio";
+@import "../components/detail/_ppc-typhography";
+@import "../components/detail/_comment";
+@import "../components/detail/_accordion";
+
+// update Hiển thị mặc định tối đa 3 badge cho 1 sản phẩm
+.badge {
+  $size-desktop: 150px;
+  $size-mobile: 96px;
+  $spacing-bagde: 20px;
+
+  &-product {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    pointer-events: none;
+    top: $spacing-bagde;
+    left: $spacing-bagde;
+  }
+  &-item {
+    max-width: $size-desktop;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  @include respond-to("md") {
+    &-product {
+      top: 0;
+      left: 10px;
+    }
+    &-item {
+      max-width: $size-mobile;
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.modal-confirm-customer {
+  .modal-wrapper {
+    margin: auto 10px;
+    .checkbox {
+      input[type="checkbox"] {
+        &:checked {
+          & + label {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  @include respond-to("md") {
+    .checkbox {
+      label {
+        font-size: 14px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@mixin auto($isShow: true, $top: auto, $bottom: auto){
+    @if $isShow {
+        margin: auto;
+    } @else{
+        margin: $top auto $bottom auto;
+    }
+}
+
+.margin-x-auto{ @include auto();}

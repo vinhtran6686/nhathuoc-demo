@@ -1,0 +1,104 @@
+.main-header{
+.lch-logo{
+
+}
+@include respond-to('md'){
+    .lc-header{
+        z-index: 1;
+    }
+    .lch-logo{
+        max-width: 220px;
+    }
+}
+}
+.drug-covid{
+    .lc__btn{
+        padding-top: 24px !important;
+    }
+    .alert{
+        display: none;
+        height: auto;
+    }
+    @include respond-to('md'){
+        .lc__body{
+            padding-right: 10px !important;
+            padding-left: 10px !important;
+
+        }
+        .lc__final{
+            .lc__body{
+                overflow: hidden;
+            }
+        }
+
+        .lc__btn{
+            padding-top: 16px !important;
+        }
+        .dropdown-city .dropdown-menu-wrapper{
+            max-height: 100%;
+        }
+    }
+}
+
+.block-drug{
+    margin-top: 12px;
+    .form-product{
+        display: flex;
+        &.is-invalid{
+            + .alert{
+                display: inline-flex;
+            }
+        }
+        .radio{
+            display: block;
+        }
+        &-item{
+            height: 100%;
+            max-width: 276px;
+            width: 100%;
+            &:first-child{
+                margin-right: 24px;
+            }
+        }
+        &-name{
+            font-size: 14px;
+            line-height: 20px;
+            @extend .w-break-word;
+        }
+        &-img{
+            height: 211px;
+            width: 100%;
+            margin: auto auto 8px;
+
+            padding: 8px;
+            border: 1px solid #d8e0e8 !important;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+        @include respond-to('md'){
+            &-img{
+                height: auto;
+                picture{
+                    @include aspect-ratio(252,157,0);
+                }
+            }
+            &-item{
+                &:first-child{
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
+.form-product-item:last-child{
+    .form-product-img{
+        picture{
+            max-width: 205px;
+            margin: auto;
+        }
+    }
+}

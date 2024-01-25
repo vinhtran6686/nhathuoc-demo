@@ -1,0 +1,82 @@
+.skeleton {
+  &-products {
+    padding-top: 24px;
+  }
+  &-product {
+    padding: 12px;
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    &__img {
+      padding-top: 100%;
+      margin-bottom: 8px;
+    }
+    @include respond-to("md") {
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+    @include respond-to("xs") {
+      &__img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 164px;
+        height: 164px;
+        padding: 0;
+      }
+    }
+  }
+  &-loading {
+    border-radius: 4px;
+    position: relative;
+    background-color: #e8e8e8;
+  }
+  &__line {
+    height: 18px;
+    margin-bottom: 8px;
+    &--large {
+      height: 24px;
+    }
+  }
+  &-50 {
+    width: 50%;
+  }
+  &-60 {
+    width: 60%;
+  }
+  &-70 {
+    width: 70%;
+  }
+  &__radio {
+    &-group {
+      flex: 0;
+    }
+  }
+  &-articles {
+    max-width: 800px;
+  }
+  &-article {
+    display: flex;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    @include respond-to("md") {
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      box-shadow: inset 0px -1px 0px #e4eaf1;
+    }
+    &__img {
+      flex-basis: 276px;
+      height: 156px;
+      margin-right: 24px;
+      border-radius: 16px;
+      @include respond-to("sm") {
+        flex-basis: 108px;
+        height: 69px;
+        margin-right: 8px;
+        border-radius: 8px;
+      }
+    }
+    &__info {
+      flex: 1;
+    }
+  }
+}

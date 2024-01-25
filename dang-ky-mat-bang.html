@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- CSS file import -->
+
+    <link rel="stylesheet" href="css/system.css" />
+    <link rel="stylesheet" href="css/libs/lightgallery.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+
+    <!-- Js file import -->
+    <script src="js/libs/jquery-3.1.0.min.js"></script>
+    <script src="js/libs/lightgallery-all.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+            <div class="lc-header m-x-md-10 p-y-md-12">
+                <div class="container">
+                    <div class="lc-header-inner">
+                        <div class="lch-logo">
+                            <a href="https://nhathuoclongchau.com" onclick="ga('send', 'event', 'Header ', 'Click Header', 'Header - Logo');">
+                                <picture>
+                                    <img src="images/longchau-logo.svg" alt="logo" />
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="lc__main lc__register relative p-y-40 p-y-md-24 bg-white overflow-hidden">
+        <div class="lc__section section-bg position-absolute top-0">
+            <picture>
+                <source media="(max-width: 776px)" srcset="images/bg-donthuoc-mb.png">
+                <img src="images/bg-donthuoc.png" alt="">
+            </picture>
+        </div>
+        <div class="lc__section section-heading relative">
+            <div class="container">
+                <div class="lc__head txt-center m-b-32 txt-white m-b-md-24">
+                    <h1 class="lc__title m-b-8 txt-white fs-p-32 fs-p-md-24 f-w-500 txt-capitalize">Nhà Thuốc Long Châu  <br class="none-block">
+                        Cần Thuê Mặt Bằng</h1>
+                    <div class="lc__desc fs-p-16 fs-p-md-14">
+                        Quý Khách có Mặt bằng cần cho thuê,  <br class="none-block"> xin hãy gửi cho chúng tôi.<br>
+                        Chúng tôi sẽ phản hồi sớm nhất nếu Mặt bằng  <br class="none-block"> của Quý Khách gửi phù hợp với nhu cầu. <br>
+                        Xin cảm ơn Quý Khách!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hoàn thành  -->
+        <div class="lc__section section-box">
+            <div class="lc__body radius-12 box-full bg-white p-x-40 p-y-24 p-x-md-16 p-y-md-16 m-x-md-10">
+                <div class="lc__body-content">
+                    <div class="lc__card-bot">
+                        <div class="lc__table border-full radius-12 m-b-16 m-b-md-16 radius-none js--add-drug" style="display: none">
+                            <div class="lc__table-head bg-gray-100 p-x-16 p-y-8">
+                                <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16">
+                                    Tên thuốc đã nhập
+                                </div>
+                            </div>
+                            <div class="lc__table-body p-x-16 p-y-8">
+                                <table class="table table-lg table-border txt-left">
+                                    <tbody class="">
+                                        <tr>
+                                            <td class="txt-gray p-y-8 p-r-8 p-l-0">1.</td>
+                                            <td class="relative">
+                                                Panadol
+                                                <span class="btn btn-xs btn-outline-gray position-absolute right-0">Xoá</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-gray p-y-8 p-r-8 p-l-0">2.</td>
+                                            <td class="relative">
+                                                Azicine 250Mg Stada
+                                                <span class="btn btn-xs btn-outline-gray position-absolute right-0">Xoá</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt-gray p-y-8 p-r-8 p-l-0">3.</td>
+                                            <td class="relative">
+                                                Exforge 10/160
+                                                <span class="btn btn-xs btn-outline-gray position-absolute right-0">Xoá</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="form">
+                            <!-- Thông tin khách hàng -->
+                            <div class="form-groups m-b-12 p-t-md-8">
+                                <div class="lc__card-block lc__card-form m-b-16">
+                                    <div class="lc__tit-name txt-gray-700 fs-p-18 f-w-500 m-b-12">
+                                        Thông tin liên hệ
+                                    </div>
+                                    <div class="u-flex flex-wrap no-gutters check-form">
+                                        <div class="radio radio-sm m-r-16">
+                                            <label class="u-flex align-items-center label-text" for="ex0">
+                                                <input type="radio" value="radio3" name="grp1" id="ex0" class="p-b-2">
+                                                Anh
+                                            </label>
+                                        </div>
+                                        <div class="radio radio-sm">
+                                            <label class="u-flex align-items-center abel-text" for="ex1">
+                                                <input type="radio" value="radio3" name="grp1" id="ex1" class="p-b-2">
+                                                Chị
+                                            </label>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                                                <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                                <span class="">Thông tin bắt buộc</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row cs-row">
+                                        <div class="col-6 col-md-12 p-x-8">
+                                            <div class="form-group js-info m-t-12">
+                                                <input type="text" class="form-input form-input-lg js--info-input" placeholder="Nhập họ và tên*" maxlength="60" name="ho_ten">
+                                                <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                                                    <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                                    <span class="">Thông tin bắt buộc</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-12 p-x-8">
+                                            <div class="form-group js-info m-t-12">
+                                                <input type="text" class="form-input form-input-lg js--info-input" placeholder="Nhập số điện thoại*" phone="">
+                                                <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                                                    <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                                    <span class="">Thông tin bắt buộc</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lc__card-block lc__card-dropdown">
+                                    <div class="lc__tit-name txt-gray-700 fs-p-18 f-w-500">
+                                        Thông tin mặt bằng
+                                    </div>
+                                    <div class="row sectionTPQuan triggersectionTPQuan cs-row">
+                                        <div class="col p-x-8 col-md-12 m-t-12">
+                                            <div class="dropdown dropdown-extra dropdown-search dropdown-city select__region_city">
+                                                <div class="dropdown-button p-r-md-20 radius-8-mb" data-city="">
+                                                    <span class="fs-p-xxs-14">
+                                                        <i class="inline-none f-style-normal">Chọn</i> Tỉnh/thành
+                                                    </span>
+                                                    <i class="ic-arrow-select icon-md"></i>
+                                                </div>
+
+                                                <div class="dropdown-menu">
+                                                    <div class="dropdown-menu-top">
+                                                        <div class="dropdown-menu-search">
+                                                            <div class="form-search form-search-sm">
+                                                                <span class="form-search-icon m-r-4">
+                                                                    <i class="ic-search icon-sm"></i>
+                                                                </span>
+                                                                <input type="text" class="form-search-input m-r-4 js-search" placeholder="Nhập tìm tỉnh/thành">
+                                                                <span class="form-search-icon form-search-close" style="display: none;">
+                                                                    <i class="ic-cancel icon-sm"></i>
+                                                                </span>
+                                                            </div>
+                                                            <span class="link none-block close js-close">Huỷ
+                                                                bỏ</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu-wrapper scrollbar js--city-list">
+                                                        <a class="" token-filter="ha-noi">Hà Nội</a>
+                                                        <a class="active" token-filter="thanh-pho-ho-chi-minh-thanh-pho-ho-chi-minh">Thành
+                                                            phố Hồ Chí Minh thanh pho ho chi minh</a>
+                                                        <a class="" token-filter="da-nang">Đà Nẵng</a>
+                                                        <a class="" token-filter="hai-phong">Hải Phòng</a>
+                                                        <a class="" token-filter="an-giang">An Giang</a>
+                                                        <a class="" token-filter="ba-ria-vung-tau">Bà Rịa - Vũng
+                                                            Tàu</a>
+                                                        <a class="" token-filter="bac-giang">Bắc Giang</a>
+                                                        <a class="" token-filter="bac-kan">Bắc Kạn</a>
+                                                        <a class="" token-filter="bac-lieu">Bạc Liêu</a>
+                                                        <a class="" token-filter="bac-ninh">Bắc Ninh</a>
+                                                        <a class="" token-filter="ben-tre">Bến Tre</a>
+                                                        <a class="" token-filter="binh-dinh">Bình Định</a>
+                                                        <a class="" token-filter="binh-duong">Bình Dương</a>
+                                                        <a class="" token-filter="binh-phuoc">Bình Phước</a>
+                                                        <a class="" token-filter="binh-thuan">Bình Thuận</a>
+                                                        <a class="" token-filter="ca-mau">Cà Mau</a>
+                                                        <a class="" token-filter="can-tho">Cần Thơ</a>
+                                                        <a class="" token-filter="cao-bang">Cao Bằng</a>
+                                                        <a class="" token-filter="dak-lak">Đắk Lắk</a>
+                                                        <a class="" token-filter="daknong">ĐakNông</a>
+                                                        <a class="" token-filter="dien-bien">Điện Biên</a>
+                                                        <a class="" token-filter="dong-nai">Đồng Nai</a>
+                                                        <a class="" token-filter="dong-thap">Đồng Tháp</a>
+                                                        <a class="" token-filter="gia-lai">Gia Lai</a>
+                                                        <a class="" token-filter="ha-giang">Hà Giang</a>
+                                                        <a class="" token-filter="ha-nam">Hà Nam</a>
+                                                        <a class="" token-filter="ha-tinh">Hà Tĩnh</a>
+                                                        <a class="" token-filter="hai-duong">Hải Dương</a>
+                                                        <a class="" token-filter="hau-giang">Hậu Giang</a>
+                                                        <a class="" token-filter="hoabinh">HòaBình</a>
+                                                        <a class="" token-filter="hung-yen">Hưng Yên</a>
+                                                        <a class="" token-filter="khanh-hoa">Khánh Hòa</a>
+                                                        <a class="" token-filter="kien-giang">Kiên Giang</a>
+                                                        <a class="" token-filter="kon-tum">Kon Tum</a>
+                                                        <a class="" token-filter="lai-chau">Lai châu</a>
+                                                        <a class="" token-filter="lam-dong">Lâm Đồng</a>
+                                                        <a class="" token-filter="lang-son">Lạng Sơn</a>
+                                                        <a class="" token-filter="lao-cai">Lào Cai</a>
+                                                        <a class="" token-filter="long-an">Long An</a>
+                                                        <a class="" token-filter="nam-dinh">Nam Định</a>
+                                                        <a class="" token-filter="nghe-an">Nghệ An</a>
+                                                        <a class="" token-filter="ninh-binh">Ninh Bình</a>
+                                                        <a class="" token-filter="ninh-thuan">Ninh Thuận</a>
+                                                        <a class="" token-filter="phu-tho">Phú Thọ</a>
+                                                        <a class="" token-filter="phu-yen">Phú Yên</a>
+                                                        <a class="" token-filter="quang-binh">Quảng Bình</a>
+                                                        <a class="" token-filter="quang-nam">Quảng Nam</a>
+                                                        <a class="" token-filter="quang-ngai">Quảng Ngãi</a>
+                                                        <a class="" token-filter="quang-ninh">Quảng Ninh</a>
+                                                        <a class="" token-filter="quang-tri">Quảng Trị</a>
+                                                        <a class="" token-filter="soc-trang">Sóc Trăng</a>
+                                                        <a class="" token-filter="son-la">Sơn La</a>
+                                                        <a class="" token-filter="tay-ninh">Tây Ninh</a>
+                                                        <a class="" token-filter="thai-binh">Thái Bình</a>
+                                                        <a class="" token-filter="thai-nguyen">Thái Nguyên</a>
+                                                        <a class="" token-filter="thanh-hoa">Thanh Hóa</a>
+                                                        <a class="" token-filter="thua-thien-hue">Thừa Thiên Huế</a>
+                                                        <a class="" token-filter="tien-giang">Tiền Giang</a>
+                                                        <a class="" token-filter="tra-vinh">Trà Vinh</a>
+                                                        <a class="" token-filter="tuyen-quang">Tuyên Quang</a>
+                                                        <a class="" token-filter="vinh-long">Vĩnh Long</a>
+                                                        <a class="" token-filter="vinh-phuc">Vĩnh Phúc</a>
+                                                        <a class="" token-filter="yen-bai">Yên Bái</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                                                    <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                                    <span class="">Vui lòng chọn Tỉnh/Thành</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col p-x-8 col-md-12 m-t-12">
+                                            <div class="dropdown dropdown-extra dropdown-search dropdown-city select__region_district">
+                                                <div class="dropdown-button p-r-md-20 radius-8-mb" data-city="">
+                                                    <span class="fs-p-xxs-14">
+                                                        <i class="inline-none f-style-normal">Chọn</i> Quận/Huyện
+                                                    </span>
+                                                    <i class="ic-arrow-select icon-md"></i>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <div class="dropdown-menu-top">
+                                                        <div class="dropdown-menu-search">
+                                                            <div class="form-search form-search-sm">
+                                                                <span class="form-search-icon m-r-4">
+                                                                    <i class="ic-search icon-sm"></i>
+                                                                </span>
+                                                                <input type="text" class="form-search-input m-r-4 js-search" placeholder="Nhập tìm quận/huyện">
+                                                                <span class="form-search-icon form-search-close" style="display: none;">
+                                                                    <i class="ic-cancel icon-sm"></i>
+                                                                </span>
+                                                            </div>
+                                                            <span class="link none-block close js-close">Huỷ
+                                                                bỏ</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu-wrapper scrollbar js--city-list">
+                                                        <a href="#" class="active" token-filter="
+                          -an-giang
+                          ">
+                                                            <span>An Giang</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ha-noi
+                          ">
+                                                            <span>Hà Nội</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -hai-phong
+                          ">
+                                                            <span>Hải Phòng</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ho-chi-minh
+                          ">
+                                                            <span>Hồ Chí Minh</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ha-noi
+                          ">
+                                                            <span>Hà Nội</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -hai-phong
+                          ">
+                                                            <span>Hải Phòng</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ho-chi-minh
+                          ">
+                                                            <span>Hồ Chí Minh</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ha-noi
+                          ">
+                                                            <span>Hà Nội</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -hai-phong
+                          ">
+                                                            <span>Hải Phòng</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ho-chi-minh
+                          ">
+                                                            <span>Hồ Chí Minh</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ha-noi
+                          ">
+                                                            <span>Hà Nội</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -hai-phong
+                          ">
+                                                            <span>Hải Phòng</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ho-chi-minh
+                          ">
+                                                            <span>Hồ Chí Minh</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ha-noi
+                          ">
+                                                            <span>Hà Nội</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -hai-phong
+                          ">
+                                                            <span>Hải Phòng</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ho-chi-minh
+                          ">
+                                                            <span>Hồ Chí Minh</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ha-noi
+                          ">
+                                                            <span>Hà Nội</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ha-noi
+                          ">
+                                                            <span>Hà Nội</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -hai-phong
+                          ">
+                                                            <span>Hải Phòng</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ho-chi-minh
+                          ">
+                                                            <span>Hồ Chí Minh</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ha-noi
+                          ">
+                                                            <span>Hà Nội</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -hai-phong
+                          ">
+                                                            <span>Hải Phòng</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ho-chi-minh
+                          ">
+                                                            <span>Hồ Chí Minh</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ha-noi
+                          ">
+                                                            <span>Hà Nội</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ha-noi
+                          ">
+                                                            <span>Hà Nội</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -hai-phong
+                          ">
+                                                            <span>Hải Phòng</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ho-chi-minh
+                          ">
+                                                            <span>Hồ Chí Minh</span>
+                                                        </a>
+                                                        <a href="#" class="" token-filter="
+                          -ha-noi
+                          ">
+                                                            <span>Hà Nội</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                                                    <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                                    <span class="">Vui lòng chọn Quận/Huyện</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown dropdown-extra dropdown-search dropdown-city m-t-12 cs-dropdown dropdown-ward select__region_ward">
+                                        <div class="dropdown-button" data-city="">
+                                            <span><i class="block-none inline-block f-style-normal">Chọn</i>
+                                                Phường/Xã</span>
+                                            <i class="ic-arrow-select icon-md"></i>
+                                        </div>
+                                        <div class="dropdown-menu">
+                                            <div class="dropdown-menu-top p-b-md-0">
+                                                <div class="dropdown-menu-search">
+                                                    <div class="form-search form-search-sm">
+                                                        <span class="form-search-icon m-r-4">
+                                                            <i class="ic-search icon-sm"></i>
+                                                        </span>
+                                                        <input type="text" class="form-search-input m-r-4 js-search" placeholder="Enter keyword...">
+                                                        <span class="form-search-icon form-search-close" style="display: none;">
+                                                            <i class="ic-cancel icon-sm"></i>
+                                                        </span>
+                                                    </div>
+                                                    <span class="link none-block close js-close">Huỷ bỏ</span>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-menu-wrapper scrollbar js--city-list">
+                                                <a href="#" class="active" token-filter="
+                        -apple- iphone
+                        ">
+                                                    <span>Apple (iPhone)</span>
+                                                </a>
+                                                <a href="#" class="" token-filter="
+                        -apple- iphone
+                        ">
+                                                    <span>Apple (iPhone)</span>
+                                                </a>
+                                                <a href="#" class="" token-filter="
+                        -apple- iphone
+                        ">
+                                                    <span>Apple (iPhone)</span>
+                                                </a>
+                                                <a href="#" class="" token-filter="
+                        -apple- iphone
+                        ">
+                                                    <span>Apple (iPhone)</span>
+                                                </a>
+                                                <a href="#" class="" token-filter="
+                        -apple- iphone
+                        ">
+                                                    <span>Apple (iPhone)</span>
+                                                </a>
+                                                <a href="#" class="" token-filter="
+                        -apple- iphone
+                        ">
+                                                    <span>Apple (iPhone)</span>
+                                                </a>
+                                                <a href="#" class="" token-filter="
+                        -apple- iphone
+                        ">
+                                                    <span>Apple (iPhone)</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                                            <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                            <span class="">Vui lòng chọn Phường/Xã</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-12">
+                                        <input type="text" class="form-input form-input-lg" placeholder="Nhập địa chỉ*">
+                                        <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                                            <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                            <span class="">Vui lòng nhập địa chỉ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lc__card-block lc__distance
+                                m-t-12">
+                                    <div class="lc__tit-name txt-gray-700 fs-p-18 f-w-500">
+                                        Chi tiết mặt bằng
+                                    </div>
+                                    <div class="row cs-row">
+                                        <div class="col p-x-8 col-md-12 m-t-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-input form-input-lg" placeholder="Chiều ngang mặt tiền (m)" maxlength="60">
+                                                <!-- <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                                                    <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                                    <span class="">Thông tin bắt buộc</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col p-x-8 col-md-12 m-t-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-input form-input-lg" placeholder="Chiều dài (m)" maxlength="60">
+                                                <!-- <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                                                    <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                                    <span class="">Thông tin bắt buộc</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col p-x-8 col-md-12 m-t-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-input form-input-lg" placeholder="Tổng diện tích (m)" maxlength="60">
+                                                <!-- <div class="alert alert-md alert-danger alert-des m-t-8 alert-sm-md is-alert">
+                                                    <i class="ic-minus alert-ic-md bg-danger alert-ic-sm-md"></i>
+                                                    <span class="">Thông tin bắt buộc</span>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lc__uploader-wrap">
+                            <div class="lc__tit-name txt-gray-700 fs-p-18 f-w-500 m-b-12">
+                                Hình chụp mặt tiền
+                            </div>
+                            <div class="lc__uploader radius-12 m-b-16 p-x-24 p-y-24 txt-center p-x-md-0 p-y-md-0">
+                                <div class="lc__uploader-right flex-column align-items-center p-x-md-12 p-y-md-14 m-x-md-0">
+                                    <div class="lc__uploader-icon">
+                                        <i class="ic-line-photo"></i>
+                                    </div>
+                                    <div class="lc__uploader-content">
+                                        <p class="fs-p-16 f-w-500 txt-gray-700 m-b-4">Hình chụp mặt tiền</p>
+                                        <a class="btn btn-primary btn-sm circle m-b-4 btn-xs-md relative btn-uploader">
+                                            <input type="file" id="upload_file" multiple accept="image/*">
+                                            Chọn ảnh tải lên
+                                        </a>
+                                        <div class="lc__mess txt-gray fs-p-14">
+                                            Định dạng <strong class="f-w-500">jpg, jpeg, png</strong>.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lc__gallery upload-gallery m-b-16 js-gallery" id="list-gallery" style="display: none">
+                        </div>
+
+                        <div class="lc__btn lc__btn--cta txt-center p-t-8 p-t-md-0 js-submit">
+                            <a href="" class="btn btn-primary btn-xl circle btn-lg-md txt-uppercase">
+                               gửi thông tin
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lc__final lc__final-img">
+                <div class="lc__body radius-12 box-full bg-white p-x-40 p-y-24 p-x-md-16 p-t-md-24 p-b-md-16 m-x-md-10">
+                    <div class="lc__body-head m-b-24 m-b-md-16">
+                        <div class="lc__body-head--img m-b-24 m-b-md-16">
+                            <picture class="txt-center">
+                                <img src="images/nhapdonthuoc-final.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="lc__body-head--heading txt-center">
+                            <div class="tit txt-gray-800 fs-p-20 f-w-500 fs-p-18">Gửi thông tin thành công</div>
+                            <div class="mess fs-p-16 txt-gray-700">
+                                Cảm ơn anh/chị đã gửi thông tin cho thuê!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lc__body-content">
+                        <div class="lc__card-bot">
+                            <div class="lc__table border-full radius-12 m-b-16 m-b-md-16 radius-none">
+                                <div class="table-drug">
+                                    <div class="lc__table-head bg-gray-100 p-x-16 p-y-8 p-y-md-10">
+                                        <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16">
+                                            Hình chụp mặt tiền
+                                        </div>
+                                    </div>
+                                    <div class="lc__table-body p-x-16 p-y-8">
+                                        <div class="row row-cols-5 row-cols-sm-3 lc__gallery u-flex flex-wrap js-gallery">
+                                            <div class="col" data-src="">
+                                                <div class="lc__gallery-item js-gallery-item txt-center m-b-8">
+                                                    <div class="lc__grallery-picture m-b-4 cursor-pointer mask-img">
+                                                        <picture>
+                                                            <img src="https://via.placeholder.com/120x120" alt="" class="radius-12">
+                                                        </picture>
+                                                    </div>
+                                                    <span class="lc__mess link txt-primary fs-ui-14 cursor-pointer">
+                                                        Xem ảnh
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col" data-src="">
+                                                <div class="lc__gallery-item js-gallery-item txt-center m-b-8">
+                                                    <div class="lc__grallery-picture m-b-4 cursor-pointer mask-img">
+                                                        <picture>
+                                                            <img src="https://via.placeholder.com/120x120" alt="" class="radius-12">
+                                                        </picture>
+                                                    </div>
+                                                    <span class="lc__mess link txt-primary fs-ui-14 cursor-pointer">
+                                                        Xem ảnh
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col" data-src="">
+                                                <div class="lc__gallery-item js-gallery-item txt-center m-b-8">
+                                                    <div class="lc__grallery-picture m-b-4 cursor-pointer mask-img">
+                                                        <picture>
+                                                            <img src="https://via.placeholder.com/120x120" alt="" class="radius-12">
+                                                        </picture>
+                                                    </div>
+                                                    <span class="lc__mess link txt-primary fs-ui-14 cursor-pointer">
+                                                        Xem ảnh
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-user">
+                                    <div class="lc__table-head bg-gray-100 p-x-16 p-y-8 p-y-md-10">
+                                        <div class="fs-p-18 f-w-500 txt-gray-800 fs-p-md-16">
+                                            Thông tin khách hàng
+                                        </div>
+                                    </div>
+                                    <div class="lc__table-body p-x-16 p-y-8 p-y-md-0">
+                                        <table class="table table-lg table-border txt-left">
+                                            <tbody class="">
+                                                <tr>
+                                                    <td class="txt-gray p-y-8 p-r-8 p-l-0">Họ và tên</td>
+                                                    <td class="relative p-r-0">
+                                                        Panadol
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="txt-gray p-y-8 p-r-8 p-l-0">Số điện thoại</td>
+                                                    <td class="relative p-r-0">
+                                                        0937108022
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="txt-gray p-y-8 p-r-8 p-l-0">Địa chỉ nhận hàng</td>
+                                                    <td class="relative p-r-0">
+                                                        261-263 Khánh Hội, Phường 2, Quận 4, TP. Hồ Chí Minh
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lc__btn lc__btn--cta txt-center p-t-8 p-t-md-0">
+                                <a href="" class="btn btn-primary btn-xl circle btn-lg-md">
+                                    VỀ TRANG CHỦ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/fn_ regis.js"></script>
+</body>
+
+</html>

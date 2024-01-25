@@ -1,0 +1,30 @@
+.lc__dsnt-highlight {
+  li {
+    margin-bottom: 16px;
+  }
+  .item-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+  }
+  @include respond-to("md") {
+    li {
+      display: flex;
+
+      text-align: left !important;
+      margin-bottom: 12px;
+    }
+    .item-icon {
+      width: 24px;
+      height: 24px;
+
+      margin-right: 12px;
+    }
+    .content-wrap {
+      flex: 1;
+    }
+  }
+}
