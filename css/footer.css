@@ -70,7 +70,7 @@ a {
   .footer-content .title-colapse::after {
     content: "";
     float: right;
-    font-family: icon;
+    font-family: 'icon-system';
     margin-left: 5px;
   }
   .footer-content .title-colapse.active::after {

@@ -1,0 +1,3230 @@
+<!DOCTYPE html>
+<html lang="en" class="cart-html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <!-- CSS file import -->
+    <!-- <link rel="stylesheet" href="css/all.css" /> -->
+    <link rel="stylesheet" href="css/system.css" />
+    <link rel="stylesheet" href="css/libs/swiper.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/header.css" /> -->
+
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- Js file import -->
+    <script src="js/libs/jquery-3.1.0.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+  </head>
+
+  <body>
+    <header class="lc__header">
+      <div class="lc__header-searchbar p-y-16 p-y-md-8">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-3 col-md-12">
+              <div class="lc__openMenu js-open-side none-block">
+                <i class="ic-menu fs-ui-24 txt-white"></i>
+              </div>
+              <div class="lc__logo">
+                <a href="#">
+                  <picture>
+                    <source
+                      srcset="
+                        https://i.gyazo.com/8e1320cfa8d1ab6ed3e4467b25f587c5.png
+                      "
+                      media="(max-width: 992px)"
+                    />
+                    <img
+                      src="https://i.gyazo.com/8e1320cfa8d1ab6ed3e4467b25f587c5.png"
+                      alt=""
+                      srcset=""
+                    />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-12">
+              <div class="lc__searchbar">
+                <div class="lc__searchbar--wrap">
+                  <form action="">
+                    <div class="form-group u-flex">
+                      <span class="back-btn">
+                        <i class="ic-arrow-left txt-gray fs-ui-16"></i>
+                      </span>
+                      <div class="form-search form-search-lg">
+                        <i
+                          class="ic-search fs-ui-14 txt-gray none-block-sm m-r-4"
+                        ></i>
+                        <input
+                          type="text"
+                          class="form-search-input m-r-8"
+                          placeholder="Nhập tìm thuốc, TPCN, bệnh lý..."
+                        />
+                        <span class="form-search-icon form-search-close hidden">
+                          <i class="ic-cancel icon-lg fs-ui-12"></i>
+                        </span>
+                      </div>
+                      <div class="lc__btn-search relative">
+                        <button type="submit" class="btn btn-warning btn-lg">
+                          <i
+                            class="ic-search fs-ui-18 fs-ui-md-16 txt-white"
+                          ></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                  <div id="result" class="result" style="display: none">
+                    <div class="lc__suggestion">
+                      <div class="lc__suggestion-inner">
+                        <div class="lc__suggestion-block lc__keyword box-b-1">
+                          <ul>
+                            <li class="u-flex align-items-center">
+                              <i
+                                class="ic-line-time-history fs-ui-14 txt-gray m-r-10 none-inline"
+                              ></i>
+                              <a> <span class="highlight">thực </span> phẩm</a>
+                            </li>
+                            <li class="u-flex align-items-center">
+                              <i
+                                class="ic-line-time-history fs-ui-14 txt-gray m-r-10 none-inline"
+                              ></i>
+                              <a> <span class="highlight">thực </span> phẩm</a>
+                            </li>
+                            <li class="u-flex align-items-center">
+                              <i
+                                class="ic-search fs-ui-14 txt-gray m-r-10 none-inline"
+                              ></i>
+                              <a> <span class="highlight">thực </span> phẩm</a>
+                            </li>
+                            <li class="u-flex align-items-center">
+                              <i
+                                class="ic-search fs-ui-14 txt-gray m-r-10 none-inline"
+                              ></i>
+                              <a> <span class="highlight">thực </span> phẩm</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="lc__suggestion-block lc__cateSuggest">
+                          <ul>
+                            <li>
+                              <a
+                                ><span class="highlightLink"
+                                  ><strong>Thực</strong> Phẩm Chức Năng</span
+                                >
+                                trong Thực Phẩm Chức Năng</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                ><span class="highlightLink"
+                                  ><strong>Thực</strong> Phẩm Chức Năng</span
+                                >
+                                trong Thực Phẩm Chức Năng</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                ><span class="highlightLink"
+                                  ><strong>Thực</strong> Phẩm Chức Năng</span
+                                >
+                                trong Thực Phẩm Chức Năng</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="lc__suggestion-block lc__productSuggest">
+                          <div
+                            class="lc__productSuggest-head p-x-16 p-x-md-10 m-b-6"
+                          >
+                            <div
+                              class="u-flex align-items-center fs-p-14 fs-p-md-16 txt-gray-700 f-w-500"
+                            >
+                              <i
+                                class="ic-drug-2 icon-circle-primary m-r-4"
+                              ></i>
+                              Sản Phẩm Được Tìm Nhiều
+                            </div>
+                            <p class="line"></p>
+                          </div>
+                          <div class="lc__productSuggest-body">
+                            <div class="lc__productSuggest-item">
+                              <div class="product-pic">
+                                <picture
+                                  ><img src="images/img-qltk.png" alt=""
+                                /></picture>
+                              </div>
+                              <div class="product-info">
+                                <p class="fs-p-14 txt-gray-700">
+                                  <span class="highlight">Thực</span> Phẩm Chức
+                                  Năng Giảm Cân New Lishou Viên Nang Phục Linh
+                                  24 Viên
+                                </p>
+                                <div class="product__label-cate m-t-4">
+                                  <a
+                                    href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang/xuong-khop"
+                                    class="badge badge-xs badge-sub-gray cs-badge"
+                                    >Thực Phẩm Chức Năng</a
+                                  >
+                                </div>
+                                <div
+                                  class="product-info__price u-flex align-items-center m-t-4"
+                                >
+                                  <strike
+                                    class="fs-p-14 fs-p-md-13 txt-gray block fs-p-md-13 m-r-4"
+                                    >429.000đ</strike
+                                  >
+                                  <div class="product-price">
+                                    <span
+                                      class="fs-p-16 fs-p-md-14 txt-primary-700 f-w-500 fs-p-md-14"
+                                      >356.000đ</span
+                                    >
+                                    / Hộp
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="lc__productSuggest-item">
+                              <div class="product-pic">
+                                <img src="images/img-qltk.png" alt="" />
+                              </div>
+                              <div class="product-info">
+                                <p class="fs-p-14 txt-gray-700">
+                                  <span class="highlight">Thực</span> Phẩm Chức
+                                  Năng Giảm Cân New Lishou Viên Nang Phục Linh
+                                  24 Viên
+                                </p>
+                                <div class="product__label-cate m-t-4">
+                                  <a
+                                    href="https://test.nhathuoclongchau.com/thuc-pham-chuc-nang/xuong-khop"
+                                    class="badge badge-xs badge-sub-gray cs-badge"
+                                    >Thực Phẩm Chức Năng</a
+                                  >
+                                </div>
+                                <div
+                                  class="product-info__price u-flex align-items-center m-t-4"
+                                >
+                                  <strike
+                                    class="fs-p-14 txt-gray block fs-p-md-13 m-r-4"
+                                    >429.000đ</strike
+                                  >
+                                  <div class="product-price">
+                                    <span
+                                      class="fs-p-16 txt-primary-700 f-w-500 fs-p-md-14"
+                                      >356.000đ</span
+                                    >
+                                    / Hộp
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="see-all txt-center p-t-8">
+                              <a class="link link-icon link-xs"
+                                >Xem tất cả <i class="ic-angle-right m-l-4"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lc__history" style="display: none">
+                      <div class="lc__suggestion-block lc__historySuggest">
+                        <div
+                          class="lc__historySuggest-head p-x-16 p-x-md-10 m-b-6 u-flex align-items-center justify-between inline-flex-none-sm"
+                        >
+                          <div
+                            class="u-flex align-items-center fs-p-14 fs-p-md-16 txt-gray-700 f-w-500"
+                          >
+                            <i
+                              class="ic-line-time-history icon-circle-gray m-r-4"
+                            ></i>
+                            Lịch Sử Tìm Kiếm
+                          </div>
+                          <p class="line"></p>
+                          <span class="link m-l-8 clear-history"
+                            >Xoá tất cả</span
+                          >
+                        </div>
+                        <ul>
+                          <li class="u-flex align-items-center">
+                            <i
+                              class="ic-line-time-history fs-ui-16 txt-gray m-r-10 none-inline"
+                              ><a></a></i
+                            ><a> sâm nhung</a>
+                          </li>
+                          <li class="u-flex align-items-center">
+                            <i
+                              class="ic-line-time-history fs-ui-16 txt-gray m-r-10 none-inline"
+                              ><a></a></i
+                            ><a> sâm nhung</a>
+                          </li>
+                          <li class="u-flex align-items-center">
+                            <i
+                              class="ic-line-time-history fs-ui-16 txt-gray m-r-10 none-inline"
+                              ><a></a></i
+                            ><a> sâm nhung</a>
+                          </li>
+                          <li class="u-flex align-items-center">
+                            <i
+                              class="ic-line-time-history fs-ui-16 txt-gray m-r-10 none-inline"
+                              ><a></a></i
+                            ><a> sâm nhung</a>
+                          </li>
+                          <li class="u-flex align-items-center">
+                            <i
+                              class="ic-line-time-history fs-ui-16 txt-gray m-r-10 none-inline"
+                              ><a></a></i
+                            ><a> sâm nhung</a>
+                          </li>
+                        </ul>
+                        <div
+                          class="lc__historySuggest-clearbtn none-block txt-center shadow-t-1"
+                        >
+                          <a class="link p-y-8 inline-block"
+                            >Xóa lịch sử tìm kiếm</a
+                          >
+                        </div>
+                      </div>
+                      <div class="lc__suggestion-block lc__topkeywordSuggest">
+                        <div
+                          class="lc__topkeywordSuggest-head p-x-16 p-x-md-10 m-b-6 u-flex align-items-center"
+                        >
+                          <div
+                            class="u-flex align-items-center fs-p-14 fs-p-md-16 txt-gray-700 f-w-500"
+                          >
+                            <i
+                              class="ic-trending icon-circle-gray bg-danger m-r-4"
+                            ></i>
+                            Tìm kiếm hàng đầu
+                          </div>
+                          <p class="line"></p>
+                        </div>
+                        <div
+                          class="lc__topkeywordSuggest-badge p-x-16 p-x-md-10"
+                        >
+                          <span
+                            class="badge badge-sub-gray badge-circle badge-xs"
+                            >giải độc gan</span
+                          >
+                          <span
+                            class="badge badge-sub-gray badge-circle badge-xs"
+                            >bệnh thần kinh não</span
+                          >
+                          <span
+                            class="badge badge-sub-gray badge-circle badge-xs"
+                            >viêm gan</span
+                          >
+                          <span
+                            class="badge badge-sub-gray badge-circle badge-xs"
+                            >viêm khớp</span
+                          >
+                          <span
+                            class="badge badge-sub-gray badge-circle badge-xs"
+                            >bổ thận tráng dương</span
+                          >
+                          <span
+                            class="badge badge-sub-gray badge-circle badge-xs"
+                            >đau nửa đầu</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 col-md-12 custom-cart-mb">
+              <div class="lc__feature-group">
+                <div class="u-flex align-items-center">
+                  <div
+                    class="lch-loginsearch block-none js-open-otp"
+                    aria-controls="dangnhapsodienthoai"
+                  >
+                    <div class="u-flex align-items-center">
+                      <i
+                        class="ic-doc txt-white fs-ui-32 fs-ui-lg-28 m-r-8 m-r-md-4"
+                      ></i>
+                      <div class="txt-white">
+                        <p class="fs-ui-14 fs-ui-lg-10 m-b-4">Tra cứu</p>
+                        <p class="fs-ui-16 fs-ui-lg-12 f-w-400">
+                          Lịch sử đơn hàng
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="lch__cart lc-tooltip lc-tooltip-grayscale lc-tooltip-bottom lc-tooltip-hover"
+                  >
+                    <a href="#">
+                      <div class="u-flex align-items-baseline">
+                        <i
+                          class="ic-cart fs-ui-32 txt-white fs-ui-lg-28 fs-ui-sm-24"
+                        ></i>
+                        <span
+                          class="lc__cart-count badge badge-warning badge-circle badge-xxs circle fs-ui-15 txt-gray-900 f-w-500"
+                          >200</span
+                        >
+                        <p
+                          class="fs-ui-16 txt-white m-l-8 m-l-md-4 fs-ui-lg-12 block-none"
+                        >
+                          Giỏ hàng
+                        </p>
+                      </div>
+                    </a>
+                    <div class="lc-tooltip-box notitfy-box drop-s-300 active">
+                      <div
+                        class="notitfy-box_top box-b-1 p-y-12"
+                        style="display: none"
+                      >
+                        <div class="alert alert-md alert-success alert-des">
+                          <i class="ic-check alert-ic bg-success"></i>
+                          <span class=""
+                            >Thêm thành công sản phẩm vào giỏ hàng</span
+                          >
+                        </div>
+                      </div>
+                      <div class="notitfy-box_bottom scrollbar">
+                        <div class="notify-item p-y-12 box-b-1">
+                          <div class="u-flex">
+                            <div class="item-img m-r-4">
+                              <a>
+                                <img
+                                  src="https://via.placeholder.com/72x72"
+                                  alt=""
+                                />
+                              </a>
+                            </div>
+                            <div class="item-info">
+                              <a class="fs-p-14 f-w-400 txt-gray-700 truncate2"
+                                >Viên Uống Bổ Sung Vitamin Và Khoáng Chất
+                                Calcium Plus Puri</a
+                              >
+                              <div
+                                class="u-flex justify-between align-items-center m-t-4"
+                              >
+                                <div class="product-count u-flex">
+                                  <button class="button-count disabled">
+                                    <i class="ic-minus"></i>
+                                  </button>
+                                  <input
+                                    type="text"
+                                    readonly=""
+                                    class="form-input form-input-sm number-product txt-center"
+                                    value="1"
+                                  />
+                                  <button class="button-count">
+                                    <i class="ic-plus"></i>
+                                  </button>
+                                </div>
+                                <div class="product-price fs-p-14">
+                                  <strike class="txt-gray m-r-8"
+                                    >260.000đ</strike
+                                  >
+                                  <strong class="txt-gray-700">200.000đ</strong>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notify-item p-y-12 box-b-1">
+                          <div class="u-flex">
+                            <div class="item-img m-r-4">
+                              <a>
+                                <img
+                                  src="https://via.placeholder.com/72x72"
+                                  alt=""
+                                />
+                              </a>
+                            </div>
+                            <div class="item-info">
+                              <a class="fs-p-14 f-w-400 txt-gray-700 truncate2"
+                                >Viên Uống Bổ Sung Vitamin Và Khoáng Chất
+                                Calcium Plus Puri</a
+                              >
+                              <div
+                                class="u-flex justify-between align-items-center m-t-4"
+                              >
+                                <div class="product-count u-flex">
+                                  <button class="button-count disabled">
+                                    <i class="ic-minus"></i>
+                                  </button>
+                                  <input
+                                    type="text"
+                                    readonly=""
+                                    class="form-input form-input-sm number-product txt-center"
+                                    value="1"
+                                  />
+                                  <button class="button-count">
+                                    <i class="ic-plus"></i>
+                                  </button>
+                                </div>
+                                <div class="product-price fs-p-14">
+                                  <strike class="txt-gray m-r-8"
+                                    >260.000đ</strike
+                                  >
+                                  <strong class="txt-gray-700">200.000đ</strong>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notify-item p-y-12 box-b-1">
+                          <div class="u-flex">
+                            <div class="item-img m-r-4">
+                              <a>
+                                <img
+                                  src="https://via.placeholder.com/72x72"
+                                  alt=""
+                                />
+                              </a>
+                            </div>
+                            <div class="item-info">
+                              <a class="fs-p-14 f-w-400 txt-gray-700 truncate2"
+                                >Viên Uống Bổ Sung Vitamin Và Khoáng Chất
+                                Calcium Plus Puri</a
+                              >
+                              <div
+                                class="u-flex justify-between align-items-center m-t-4"
+                              >
+                                <div class="product-count u-flex">
+                                  <button class="button-count disabled">
+                                    <i class="ic-minus"></i>
+                                  </button>
+                                  <input
+                                    type="text"
+                                    readonly=""
+                                    class="form-input form-input-sm number-product txt-center"
+                                    value="1"
+                                  />
+                                  <button class="button-count">
+                                    <i class="ic-plus"></i>
+                                  </button>
+                                </div>
+                                <div class="product-price fs-p-14">
+                                  <strike class="txt-gray m-r-8"
+                                    >260.000đ</strike
+                                  >
+                                  <strong class="txt-gray-700">200.000đ</strong>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notify-item p-y-12 box-b-1">
+                          <div class="u-flex">
+                            <div class="item-img m-r-4">
+                              <a>
+                                <img
+                                  src="https://via.placeholder.com/72x72"
+                                  alt=""
+                                />
+                              </a>
+                            </div>
+                            <div class="item-info">
+                              <a class="fs-p-14 f-w-400 txt-gray-700 truncate2"
+                                >Viên Uống Bổ Sung Vitamin Và Khoáng Chất
+                                Calcium Plus Puri</a
+                              >
+                              <div
+                                class="u-flex justify-between align-items-center m-t-4"
+                              >
+                                <div class="product-count u-flex">
+                                  <button class="button-count disabled">
+                                    <i class="ic-minus"></i>
+                                  </button>
+                                  <input
+                                    type="text"
+                                    readonly=""
+                                    class="form-input form-input-sm number-product txt-center"
+                                    value="1"
+                                  />
+                                  <button class="button-count">
+                                    <i class="ic-plus"></i>
+                                  </button>
+                                </div>
+                                <div class="product-price fs-p-14">
+                                  <strike class="txt-gray m-r-8"
+                                    >260.000đ</strike
+                                  >
+                                  <strong class="txt-gray-700">200.000đ</strong>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notify-item p-y-12 box-b-1">
+                          <div class="u-flex">
+                            <div class="item-img m-r-4">
+                              <a>
+                                <img
+                                  src="https://via.placeholder.com/72x72"
+                                  alt=""
+                                />
+                              </a>
+                            </div>
+                            <div class="item-info">
+                              <a class="fs-p-14 f-w-400 txt-gray-700 truncate2"
+                                >Viên Uống Bổ Sung Vitamin Và Khoáng Chất
+                                Calcium Plus Puri</a
+                              >
+                              <div
+                                class="u-flex justify-between align-items-center m-t-4"
+                              >
+                                <div class="product-count u-flex">
+                                  <button class="button-count disabled">
+                                    <i class="ic-minus"></i>
+                                  </button>
+                                  <input
+                                    type="text"
+                                    readonly=""
+                                    class="form-input form-input-sm number-product txt-center"
+                                    value="1"
+                                  />
+                                  <button class="button-count">
+                                    <i class="ic-plus"></i>
+                                  </button>
+                                </div>
+                                <div class="product-price fs-p-14">
+                                  <strike class="txt-gray m-r-8"
+                                    >260.000đ</strike
+                                  >
+                                  <strong class="txt-gray-700">200.000đ</strong>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notify-item p-y-12 box-b-1">
+                          <div class="u-flex">
+                            <div class="item-img m-r-4">
+                              <a>
+                                <img
+                                  src="https://via.placeholder.com/72x72"
+                                  alt=""
+                                />
+                              </a>
+                            </div>
+                            <div class="item-info">
+                              <a class="fs-p-14 f-w-400 txt-gray-700 truncate2"
+                                >Viên Uống Bổ Sung Vitamin Và Khoáng Chất
+                                Calcium Plus Puri</a
+                              >
+                              <div
+                                class="u-flex justify-between align-items-center m-t-4"
+                              >
+                                <div class="product-count u-flex">
+                                  <button class="button-count disabled">
+                                    <i class="ic-minus"></i>
+                                  </button>
+                                  <input
+                                    type="text"
+                                    readonly=""
+                                    class="form-input form-input-sm number-product txt-center"
+                                    value="1"
+                                  />
+                                  <button class="button-count">
+                                    <i class="ic-plus"></i>
+                                  </button>
+                                </div>
+                                <div class="product-price fs-p-14">
+                                  <strike class="txt-gray m-r-8"
+                                    >260.000đ</strike
+                                  >
+                                  <strong class="txt-gray-700">200.000đ</strong>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="notitfy-checkout p-t-12">
+                        <div
+                          class="price-result u-flex justify-between fs-p-18"
+                        >
+                          <p class="price-result_text txt-gray-700 f-w-500">
+                            Tạm tính
+                          </p>
+                          <p class="price-result_numb txt-primary-700 f-w-500">
+                            2.400.000đ
+                          </p>
+                        </div>
+                        <a
+                          href="#"
+                          class="btn btn-rounded btn-primary btn-lg col m-t-12"
+                        >
+                          <span class="f-w-500">HOÀN TẤT ĐẶT HÀNG</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lc__header-nav bg-white">
+        <div class="container relative">
+          <ul class="u-flex justify-between">
+            <li class="lc__header-nav--item nav-hover">
+              <a
+                href="#"
+                class="p-y-10 link-icon fs-p-14 fs-p-lg-12 f-w-500 txt-gray-800"
+              >
+                THỰC PHẨM CHỨC NĂNG
+                <i class="ic-angle-down m-l-8 fs-ui-10"></i>
+              </a>
+              <div class="lc__dropdown-menu">
+                <div class="row no-gutters">
+                  <div class="col-3">
+                    <div class="sub-nav-left p-b-16">
+                      <div
+                        class="sub-nav-item p-y-8 p-l-16 js-hover-tab active"
+                        id="sinhlynoitietto"
+                      >
+                        <a href="" class="u-flex align-items-center">
+                          <div class="sub-nav-picture m-r-8">
+                            <picture>
+                              <img
+                                src="https://via.placeholder.com/40x40"
+                                alt=""
+                                srcset=""
+                                class="circle"
+                              />
+                            </picture>
+                          </div>
+                          <div class="sub-nav-name fs-p-14">
+                            Sinh lý - Nội tiết tố
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="sub-nav-item p-y-8 p-l-16 js-hover-tab"
+                        id="suckhoetimach"
+                      >
+                        <a href="" class="u-flex align-items-center">
+                          <div class="sub-nav-picture m-r-8">
+                            <picture>
+                              <img
+                                src="https://via.placeholder.com/40x40"
+                                alt=""
+                                srcset=""
+                                class="circle"
+                              />
+                            </picture>
+                          </div>
+                          <div class="sub-nav-name fs-p-14">
+                            Sức khoẻ tim mạch
+                          </div>
+                        </a>
+                      </div>
+                      <div class="sub-nav-item p-y-8 p-l-16">
+                        <a href="" class="u-flex align-items-center">
+                          <div class="sub-nav-picture m-r-8">
+                            <picture>
+                              <img
+                                src="https://via.placeholder.com/40x40"
+                                alt=""
+                                srcset=""
+                                class="circle"
+                              />
+                            </picture>
+                          </div>
+                          <div class="sub-nav-name fs-p-14">
+                            Cải Thiện Tăng Cường Chức Năng
+                          </div>
+                        </a>
+                      </div>
+                      <div class="sub-nav-item p-y-8 p-l-16">
+                        <a href="" class="u-flex align-items-center">
+                          <div class="sub-nav-picture m-r-8">
+                            <picture>
+                              <img
+                                src="https://via.placeholder.com/40x40"
+                                alt=""
+                                srcset=""
+                                class="circle"
+                              />
+                            </picture>
+                          </div>
+                          <div class="sub-nav-name fs-p-14">
+                            Cải Thiện Tăng Cường Chức Năng
+                          </div>
+                        </a>
+                      </div>
+                      <div class="sub-nav-item p-y-8 p-l-16">
+                        <a href="" class="u-flex align-items-center">
+                          <div class="sub-nav-picture m-r-8">
+                            <picture>
+                              <img
+                                src="https://via.placeholder.com/40x40"
+                                alt=""
+                                srcset=""
+                                class="circle"
+                              />
+                            </picture>
+                          </div>
+                          <div class="sub-nav-name fs-p-14">
+                            Cải Thiện Tăng Cường Chức Năng
+                          </div>
+                        </a>
+                      </div>
+                      <div class="sub-nav-item p-y-8 p-l-16">
+                        <a href="" class="u-flex align-items-center">
+                          <div class="sub-nav-picture m-r-8">
+                            <picture>
+                              <img
+                                src="https://via.placeholder.com/40x40"
+                                alt=""
+                                srcset=""
+                                class="circle"
+                              />
+                            </picture>
+                          </div>
+                          <div class="sub-nav-name fs-p-14">
+                            Cải Thiện Tăng Cường Chức Năng
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-9">
+                    <div class="sub-nav-right" tab-index="sinhlynoitietto">
+                      <div class="sub-nav-cate p-t-16 p-x-16">
+                        <div
+                          class="row row-cols-4 flex-wrap sub-nav-cate--wrap"
+                        >
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16 box-full"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16 box-full"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16 box-full"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16 box-full"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16 box-full"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16 box-full"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16 box-full"
+                            >
+                              <div class="sub-nav-cate--icon m-r-8">
+                                <i class="ic-dot circle icon-lg"></i>
+                              </div>
+                              <div class="sub-nav-cate--name">Xem tất cả</div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sub-nav-product box-t-2 p-x-16 p-t-8 p-b-16">
+                        <div class="sub-nav-title m-b-12">
+                          <div
+                            class="u-flex justify-between align-items-center"
+                          >
+                            <h2
+                              class="u-flex align-items-center fs-p-16 txt-gray-800 f-w-500"
+                            >
+                              <i
+                                class="ic-hotsale icon-circle-primary bg-danger m-r-8"
+                              ></i>
+                              Bán chạy nhất
+                            </h2>
+                            <a href="http://" class="link p-t-2">Xem tất cả</a>
+                          </div>
+                        </div>
+                        <div class="sub-nav-product--list">
+                          <div class="row row-cols-5">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-product--item">
+                                <a href="">
+                                  <div class="sub-nav-product--picture m-b-12">
+                                    <picture>
+                                      <img
+                                        src="https://via.placeholder.com/156x156"
+                                        alt=""
+                                      />
+                                    </picture>
+                                  </div>
+                                  <div class="sub-nav-product--info">
+                                    <div
+                                      class="sub-nav-product--name fs-p-16 truncate2 txt-gray-700"
+                                    >
+                                      Siro Tăng Đề Kháng Special Kid
+                                      Appetitădawda
+                                    </div>
+                                    <div
+                                      class="product-info-price txt-gray-700 m-t-4 fs-p-16"
+                                    >
+                                      <span
+                                        class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14"
+                                        >417.000đ</span
+                                      >
+                                      / Chai
+                                      <strike
+                                        class="fs-p-16 txt-gray block fs-p-md-13"
+                                        >490.000đ</strike
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-product--item">
+                                <a href="">
+                                  <div class="sub-nav-product--picture m-b-12">
+                                    <picture>
+                                      <img
+                                        src="https://via.placeholder.com/156x156"
+                                        alt=""
+                                      />
+                                    </picture>
+                                  </div>
+                                  <div class="sub-nav-product--info">
+                                    <div
+                                      class="sub-nav-product--name fs-p-16 truncate2 txt-gray-700"
+                                    >
+                                      Siro Tăng Đề Kháng Special Kid
+                                      Appetitădawda
+                                    </div>
+                                    <div
+                                      class="product-info-price txt-gray-700 m-t-4 fs-p-16"
+                                    >
+                                      <span
+                                        class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14"
+                                        >417.000đ</span
+                                      >
+                                      / Chai
+                                      <strike
+                                        class="fs-p-16 txt-gray block fs-p-md-13"
+                                        >490.000đ</strike
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-product--item">
+                                <a href="">
+                                  <div class="sub-nav-product--picture m-b-12">
+                                    <picture>
+                                      <img
+                                        src="https://via.placeholder.com/156x156"
+                                        alt=""
+                                      />
+                                    </picture>
+                                  </div>
+                                  <div class="sub-nav-product--info">
+                                    <div
+                                      class="sub-nav-product--name fs-p-16 truncate2 txt-gray-700"
+                                    >
+                                      Siro Tăng Đề Kháng Special Kid
+                                      Appetitădawda
+                                    </div>
+                                    <div
+                                      class="product-info-price txt-gray-700 m-t-4 fs-p-16"
+                                    >
+                                      <span
+                                        class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14"
+                                        >417.000đ</span
+                                      >
+                                      / Chai
+                                      <strike
+                                        class="fs-p-16 txt-gray block fs-p-md-13"
+                                        >490.000đ</strike
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-product--item">
+                                <a href="">
+                                  <div class="sub-nav-product--picture m-b-12">
+                                    <picture>
+                                      <img
+                                        src="https://via.placeholder.com/156x156"
+                                        alt=""
+                                      />
+                                    </picture>
+                                  </div>
+                                  <div class="sub-nav-product--info">
+                                    <div
+                                      class="sub-nav-product--name fs-p-16 truncate2 txt-gray-700"
+                                    >
+                                      Siro Tăng Đề Kháng Special Kid
+                                      Appetitădawda
+                                    </div>
+                                    <div
+                                      class="product-info-price txt-gray-700 m-t-4 fs-p-16"
+                                    >
+                                      <span
+                                        class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14"
+                                        >417.000đ</span
+                                      >
+                                      / Chai
+                                      <strike
+                                        class="fs-p-16 txt-gray block fs-p-md-13"
+                                        >490.000đ</strike
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-product--item">
+                                <a href="">
+                                  <div class="sub-nav-product--picture m-b-12">
+                                    <picture>
+                                      <img
+                                        src="https://via.placeholder.com/156x156"
+                                        alt=""
+                                      />
+                                    </picture>
+                                  </div>
+                                  <div class="sub-nav-product--info">
+                                    <div
+                                      class="sub-nav-product--name fs-p-16 truncate2 txt-gray-700"
+                                    >
+                                      Siro Tăng Đề Kháng Special Kid
+                                      Appetitădawda
+                                    </div>
+                                    <div
+                                      class="product-info-price txt-gray-700 m-t-4 fs-p-16"
+                                    >
+                                      <span
+                                        class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14"
+                                        >417.000đ</span
+                                      >
+                                      / Chai
+                                      <strike
+                                        class="fs-p-16 txt-gray block fs-p-md-13"
+                                        >490.000đ</strike
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sub-nav-right" tab-index="suckhoetimach">
+                      <div class="sub-nav-product box-t-2 p-x-16 p-t-8 p-b-16">
+                        <div class="sub-nav-title m-b-12">
+                          <div
+                            class="u-flex justify-between align-items-center"
+                          >
+                            <h2
+                              class="u-flex align-items-center fs-p-16 txt-gray-800 f-w-500"
+                            >
+                              <i
+                                class="ic-hotsale icon-circle-primary bg-danger m-r-8"
+                              ></i>
+                              Bán chạy nhất
+                            </h2>
+                            <a href="http://" class="link p-t-2">Xem tất cả</a>
+                          </div>
+                        </div>
+                        <div class="sub-nav-product--list">
+                          <div class="row row-cols-5">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-product--item">
+                                <a href="">
+                                  <div class="sub-nav-product--picture m-b-12">
+                                    <picture>
+                                      <img
+                                        src="https://via.placeholder.com/156x156"
+                                        alt=""
+                                      />
+                                    </picture>
+                                  </div>
+                                  <div class="sub-nav-product--info">
+                                    <div
+                                      class="sub-nav-product--name fs-p-16 truncate2 txt-gray-700"
+                                    >
+                                      Siro Tăng Đề Kháng Special Kid
+                                      Appetitădawda
+                                    </div>
+                                    <div
+                                      class="product-info-price txt-gray-700 m-t-4 fs-p-16"
+                                    >
+                                      <span
+                                        class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14"
+                                        >417.000đ</span
+                                      >
+                                      / Chai
+                                      <strike
+                                        class="fs-p-16 txt-gray block fs-p-md-13"
+                                        >490.000đ</strike
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-product--item">
+                                <a href="">
+                                  <div class="sub-nav-product--picture m-b-12">
+                                    <picture>
+                                      <img
+                                        src="https://via.placeholder.com/156x156"
+                                        alt=""
+                                      />
+                                    </picture>
+                                  </div>
+                                  <div class="sub-nav-product--info">
+                                    <div
+                                      class="sub-nav-product--name fs-p-16 truncate2 txt-gray-700"
+                                    >
+                                      Siro Tăng Đề Kháng Special Kid
+                                      Appetitădawda
+                                    </div>
+                                    <div
+                                      class="product-info-price txt-gray-700 m-t-4 fs-p-16"
+                                    >
+                                      <span
+                                        class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14"
+                                        >417.000đ</span
+                                      >
+                                      / Chai
+                                      <strike
+                                        class="fs-p-16 txt-gray block fs-p-md-13"
+                                        >490.000đ</strike
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-product--item">
+                                <a href="">
+                                  <div class="sub-nav-product--picture m-b-12">
+                                    <picture>
+                                      <img
+                                        src="https://via.placeholder.com/156x156"
+                                        alt=""
+                                      />
+                                    </picture>
+                                  </div>
+                                  <div class="sub-nav-product--info">
+                                    <div
+                                      class="sub-nav-product--name fs-p-16 truncate2 txt-gray-700"
+                                    >
+                                      Siro Tăng Đề Kháng Special Kid
+                                      Appetitădawda
+                                    </div>
+                                    <div
+                                      class="product-info-price txt-gray-700 m-t-4 fs-p-16"
+                                    >
+                                      <span
+                                        class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14"
+                                        >417.000đ</span
+                                      >
+                                      / Chai
+                                      <strike
+                                        class="fs-p-16 txt-gray block fs-p-md-13"
+                                        >490.000đ</strike
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-product--item">
+                                <a href="">
+                                  <div class="sub-nav-product--picture m-b-12">
+                                    <picture>
+                                      <img
+                                        src="https://via.placeholder.com/156x156"
+                                        alt=""
+                                      />
+                                    </picture>
+                                  </div>
+                                  <div class="sub-nav-product--info">
+                                    <div
+                                      class="sub-nav-product--name fs-p-16 truncate2 txt-gray-700"
+                                    >
+                                      Siro Tăng Đề Kháng Special Kid
+                                      Appetitădawda
+                                    </div>
+                                    <div
+                                      class="product-info-price txt-gray-700 m-t-4 fs-p-16"
+                                    >
+                                      <span
+                                        class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14"
+                                        >417.000đ</span
+                                      >
+                                      / Chai
+                                      <strike
+                                        class="fs-p-16 txt-gray block fs-p-md-13"
+                                        >490.000đ</strike
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-product--item">
+                                <a href="">
+                                  <div class="sub-nav-product--picture m-b-12">
+                                    <picture>
+                                      <img
+                                        src="https://via.placeholder.com/156x156"
+                                        alt=""
+                                      />
+                                    </picture>
+                                  </div>
+                                  <div class="sub-nav-product--info">
+                                    <div
+                                      class="sub-nav-product--name fs-p-16 truncate2 txt-gray-700"
+                                    >
+                                      Siro Tăng Đề Kháng Special Kid
+                                      Appetitădawda
+                                    </div>
+                                    <div
+                                      class="product-info-price txt-gray-700 m-t-4 fs-p-16"
+                                    >
+                                      <span
+                                        class="fs-p-18 txt-primary-700 f-w-500 fs-p-md-14"
+                                        >417.000đ</span
+                                      >
+                                      / Chai
+                                      <strike
+                                        class="fs-p-16 txt-gray block fs-p-md-13"
+                                        >490.000đ</strike
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="lc__header-nav--item nav-hover">
+              <a
+                href="#"
+                class="p-y-10 link-icon fs-p-14 fs-p-lg-12 f-w-500 txt-gray-800"
+              >
+                DƯỢC MỸ PHẨM
+                <i class="ic-angle-down m-l-8 fs-ui-10"></i>
+              </a>
+            </li>
+            <li class="lc__header-nav--item nav-hover">
+              <a
+                href="#"
+                class="p-y-10 link-icon fs-p-14 fs-p-lg-12 f-w-500 txt-gray-800"
+              >
+                CHĂM SÓC CÁ NHÂN
+                <i class="ic-angle-down m-l-8 fs-ui-10"></i>
+              </a>
+            </li>
+            <li class="lc__header-nav--item nav-hover">
+              <a
+                href="#"
+                class="p-y-10 link-icon fs-p-14 fs-p-lg-12 f-w-500 txt-gray-800"
+              >
+                THUỐC
+                <i class="ic-angle-down m-l-8 fs-ui-10"></i>
+              </a>
+              <div class="lc__dropdown-menu">
+                <div class="row no-gutters">
+                  <div class="col-3">
+                    <div class="sub-nav-left">
+                      <div
+                        class="sub-nav-item p-y-8 p-l-16 js-hover-tab active"
+                        id="tracuuthuoc"
+                      >
+                        <a href="" class="u-flex align-items-center">
+                          <div class="sub-nav-icon m-r-8">
+                            <i class="ic-drug fs-ui-16"></i>
+                          </div>
+                          <div class="sub-nav-name fs-p-14">Tra cứu thuốc</div>
+                        </a>
+                      </div>
+                      <div
+                        class="sub-nav-item p-y-8 p-l-16 js-hover-tab"
+                        id="tracuuhoatchat"
+                      >
+                        <a href="" class="u-flex align-items-center">
+                          <div class="sub-nav-icon m-r-8">
+                            <i class="ic-lab-test fs-ui-18"></i>
+                          </div>
+                          <div class="sub-nav-name fs-p-14">
+                            Tra cứu hoạt chất
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="sub-nav-item p-y-8 p-l-16 js-hover-tab"
+                        id="tracuuduoclieu"
+                      >
+                        <a href="" class="u-flex align-items-center">
+                          <div class="sub-nav-icon m-r-8">
+                            <i class="ic-leaf fs-ui-20"></i>
+                          </div>
+                          <div class="sub-nav-name fs-p-14">
+                            Thuốc không đê đơn (OTC)
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="sub-nav-item p-y-8 p-l-16 js-hover-tab"
+                        id="thuockhongkedon"
+                      >
+                        <a href="" class="u-flex align-items-center">
+                          <div class="sub-nav-icon m-r-8">
+                            <i class="ic-drug-2 fs-ui-16"></i>
+                          </div>
+                          <div class="sub-nav-name fs-p-14">Tra cứu thuốc</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-9">
+                    <div class="sub-nav-right" tab-index="tracuuthuoc">
+                      <div class="sub-nav-cate p-t-16 p-x-16">
+                        <div
+                          class="row row-cols-4 flex-wrap sub-nav-cate--wrap"
+                        >
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sub-nav-drug box-t-2 p-x-16 p-t-8">
+                        <div class="sub-nav-title">
+                          <div
+                            class="u-flex justify-between align-items-center"
+                          >
+                            <h2
+                              class="u-flex align-items-center fs-p-16 txt-gray-800 f-w-500"
+                            >
+                              <i class="ic-drug icon-circle-primary m-r-8"></i>
+                              Thuốc Thông Dụng
+                            </h2>
+                            <a href="http://" class="link p-t-2">Xem tất cả</a>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sub-nav-alphabet p-x-16 p-t-8 p-b-16">
+                        <h2 class="fs-p-16 f-w-500 txt-gray-800 m-b-8">
+                          Xem theo chữ cái
+                        </h2>
+                        <div class="sub-nav-alphabet--wrapper">
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">A</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">B</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">C</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">D</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">E</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">F</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">G</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">H</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">I</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">J</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">K</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">L</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">M</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">N</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">O</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">P</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">Q</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">R</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">S</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">T</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">U</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">V</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">W</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">X</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">Y</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">Z</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sub-nav-right" tab-index="tracuuhoatchat">
+                      <div class="sub-nav-drug box-t-2 p-x-16 p-t-8">
+                        <div class="sub-nav-title">
+                          <div
+                            class="u-flex justify-between align-items-center"
+                          >
+                            <h2
+                              class="u-flex align-items-center fs-p-16 txt-gray-800 f-w-500"
+                            >
+                              <i
+                                class="ic-lab-test icon-circle-primary m-r-8"
+                              ></i>
+                              Hoạt Chất Thông Dụng
+                            </h2>
+                            <a href="http://" class="link p-t-2">Xem tất cả</a>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sub-nav-alphabet p-x-16 p-t-8 p-b-16">
+                        <h2 class="fs-p-16 f-w-500 txt-gray-800 m-b-8">
+                          Xem theo chữ cái
+                        </h2>
+                        <div class="sub-nav-alphabet--wrapper">
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">A</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">B</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">C</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">D</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">E</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">F</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">G</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">H</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">I</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">J</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">K</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">L</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">M</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">N</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">O</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">P</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">Q</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">R</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">S</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">T</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">U</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">V</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">W</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">X</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">Y</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">Z</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sub-nav-right" tab-index="tracuuduoclieu">
+                      <div class="sub-nav-drug box-t-2 p-x-16 p-t-8">
+                        <div class="sub-nav-title">
+                          <div
+                            class="u-flex justify-between align-items-center"
+                          >
+                            <h2
+                              class="u-flex align-items-center fs-p-16 txt-gray-800 f-w-500"
+                            >
+                              <i class="ic-leaf icon-circle-primary m-r-8"></i>
+                              Dược Liệu Thông Dụng
+                            </h2>
+                            <a href="http://" class="link p-t-2">Xem tất cả</a>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sub-nav-alphabet p-x-16 p-t-8 p-b-16">
+                        <h2 class="fs-p-16 f-w-500 txt-gray-800 m-b-8">
+                          Xem theo chữ cái
+                        </h2>
+                        <div class="sub-nav-alphabet--wrapper">
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">A</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">B</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">C</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">D</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">E</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">F</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">G</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">H</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">I</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">J</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">K</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">L</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">M</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">N</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">O</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">P</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">Q</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">R</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">S</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">T</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">U</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">V</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">W</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">X</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">Y</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">Z</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sub-nav-right" tab-index="thuockhongkedon">
+                      <div class="sub-nav-cate p-t-16 p-x-16">
+                        <div
+                          class="row row-cols-4 flex-wrap sub-nav-cate--wrap"
+                        >
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col sub-nav-cate--item p-x-8">
+                            <a
+                              href=""
+                              class="u-flex align-items-center bg-white txt-gray-800 circle p-y-4 p-l-4 p-r-16"
+                            >
+                              <div class="sub-nav-cate--picture m-r-8">
+                                <picture>
+                                  <img
+                                    src="https://via.placeholder.com/40x40"
+                                    alt=""
+                                    srcset=""
+                                    class="circle"
+                                  />
+                                </picture>
+                              </div>
+                              <div class="sub-nav-cate--name">
+                                Sinh Lý - Nội Tiết Tố
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sub-nav-drug box-t-2 p-x-16 p-t-8">
+                        <div class="sub-nav-title">
+                          <div
+                            class="u-flex justify-between align-items-center"
+                          >
+                            <h2
+                              class="u-flex align-items-center fs-p-16 txt-gray-800 f-w-500"
+                            >
+                              <i
+                                class="ic-drug-2 icon-circle-primary m-r-8"
+                              ></i>
+                              Thuốc Không Kê Đơn Thông Dụng
+                            </h2>
+                            <a href="http://" class="link p-t-2">Xem tất cả</a>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sub-nav-drug--list box-b-2">
+                          <div class="row no-gutters row-cols-3">
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Apidra Solostar 300Iu/3Ml
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Betamethason 0.5Mg Enlie 500V
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col p-x-8">
+                              <div class="sub-nav-drug--item">
+                                <a href="" class="fs-p-16 txt-primary">
+                                  Boganic Forte - Bổ Gan, Giải Độc
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sub-nav-alphabet p-x-16 p-t-8 p-b-16">
+                        <h2 class="fs-p-16 f-w-500 txt-gray-800 m-b-8">
+                          Xem theo chữ cái
+                        </h2>
+                        <div class="sub-nav-alphabet--wrapper">
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">A</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">B</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">C</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">D</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">E</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">F</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">G</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">H</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">I</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">J</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">K</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">L</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">M</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">N</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">O</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">P</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">Q</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">R</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">S</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">T</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">U</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">V</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">W</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">X</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">Y</span>
+                          </div>
+                          <div
+                            class="filter-alphabet-item cursor-pointer txt-gray-600"
+                          >
+                            <span class="f-w-500 txt-uppercase">Z</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="lc__header-nav--item nav-hover">
+              <a
+                href="#"
+                class="p-y-10 link-icon fs-p-14 fs-p-lg-12 f-w-500 txt-gray-800"
+              >
+                THIẾT BỊ Y TẾ
+                <i class="ic-angle-down m-l-8 fs-ui-10"></i>
+              </a>
+            </li>
+            <li class="lc__header-nav--item nav-hover">
+              <a
+                href="#"
+                class="p-y-10 link-icon fs-p-14 fs-p-lg-12 f-w-500 txt-gray-800"
+              >
+                BỆNH
+              </a>
+            </li>
+            <li class="lc__header-nav--item nav-hover">
+              <a
+                href="#"
+                class="p-y-10 link-icon fs-p-14 fs-p-lg-12 f-w-500 txt-gray-800"
+              >
+                GÓC SỨC KHOẺ
+              </a>
+            </li>
+            <li class="lc__header-nav--item nav-hover">
+              <a
+                href="#"
+                class="p-y-10 link-icon fs-p-14 fs-p-lg-12 f-w-500 txt-gray-800"
+              >
+                HỆ THỐNG NHÀ THUỐC
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="lc__side-menu">
+        <div class="lc__side-menu-inner bg-white">
+          <div class="lc__side-menu--head bg-primary-700">
+            <div class="lc__logoSide">
+              <a href="#">
+                <img
+                  src="https://i.gyazo.com/8e1320cfa8d1ab6ed3e4467b25f587c5.png"
+                  alt=""
+                  width="100"
+                />
+              </a>
+            </div>
+            <div class="lc__close js-close-side">
+              <i class="ic-close fs-ui-12 txt-white"></i>
+            </div>
+          </div>
+          <div
+            class="lc__clientlogin-mb txt-center relative"
+            onclick="ga('send', 'event', 'Header', 'Click Header', 'Header - Tra cứu lịch sử đơn hàng');location.href='/profile';"
+          >
+            <div class="inner">
+              <div class="avatar-login avatar-login-mobile txt-white m-r-8">
+                <i class="ic-user"></i>
+              </div>
+              <div class="lc__clientlogin-group">
+                <p
+                  class="lc__clientlogin-phone fs-p-md-14 txt-gray-700 m-t-4 m-t-md-0"
+                >
+                  03352xxxxx
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lc__side-menu--body bg-white">
+            <div class="lc__nav-list u-flex flex-column p-x-12">
+              <div class="lc__nav-list--item p-y-14 p-l-12 active">
+                <a href="" class="">Trang chủ</a>
+              </div>
+              <div class="lc__nav-list--item js-down p-l-12 p-r-12">
+                <div class="u-flex justify-between align-items-center">
+                  <a href="" class="lc__nav-list-name p-y-12 active">
+                    Thực phẩm chức năng
+                  </a>
+                  <div class="lc__nav-ic">
+                    <i class="ic-angle-down fs-ui-12 txt-gray ac-down"></i>
+                  </div>
+                </div>
+                <div class="lc__dropdown-list bg-gray-100 m-t-12">
+                  <div class="u-flex flex-column">
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Sinh lý - Nội tiết tố
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12 active">
+                      Cải thiện tăng cường chức năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thể hình - Kiểm soát cân năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Làm đẹp
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thảo dược - Thực phẩm tự nhiên
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vitamin
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Canxi và khoáng chất
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Dầu cá - Omega
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vi sinh (Probiotic)
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="lc__nav-list--item js-down p-l-12 p-r-12">
+                <div class="u-flex justify-between align-items-center">
+                  <a href="" class="lc__nav-list-name p-y-12 active">
+                    Thực phẩm chức năng
+                  </a>
+                  <div class="lc__nav-ic">
+                    <i class="ic-angle-down fs-ui-12 txt-gray ac-down"></i>
+                  </div>
+                </div>
+                <div class="lc__dropdown-list bg-gray-100 m-t-12">
+                  <div class="u-flex flex-column">
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Sinh lý - Nội tiết tố
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12 active">
+                      Cải thiện tăng cường chức năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thể hình - Kiểm soát cân năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Làm đẹp
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thảo dược - Thực phẩm tự nhiên
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vitamin
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Canxi và khoáng chất
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Dầu cá - Omega
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vi sinh (Probiotic)
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="lc__nav-list--item js-down p-l-12 p-r-12">
+                <div class="u-flex justify-between align-items-center">
+                  <a href="" class="lc__nav-list-name p-y-12 active">
+                    Thực phẩm chức năng
+                  </a>
+                  <div class="lc__nav-ic">
+                    <i class="ic-angle-down fs-ui-12 txt-gray ac-down"></i>
+                  </div>
+                </div>
+                <div class="lc__dropdown-list bg-gray-100 m-t-12">
+                  <div class="u-flex flex-column">
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Sinh lý - Nội tiết tố
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12 active">
+                      Cải thiện tăng cường chức năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thể hình - Kiểm soát cân năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Làm đẹp
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thảo dược - Thực phẩm tự nhiên
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vitamin
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Canxi và khoáng chất
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Dầu cá - Omega
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vi sinh (Probiotic)
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="lc__nav-list--item js-down p-l-12 p-r-12">
+                <div class="u-flex justify-between align-items-center">
+                  <a href="" class="lc__nav-list-name p-y-12 active">
+                    Thực phẩm chức năng
+                  </a>
+                  <div class="lc__nav-ic">
+                    <i class="ic-angle-down fs-ui-12 txt-gray ac-down"></i>
+                  </div>
+                </div>
+                <div class="lc__dropdown-list bg-gray-100 m-t-12">
+                  <div class="u-flex flex-column">
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Sinh lý - Nội tiết tố
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12 active">
+                      Cải thiện tăng cường chức năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thể hình - Kiểm soát cân năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Làm đẹp
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thảo dược - Thực phẩm tự nhiên
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vitamin
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Canxi và khoáng chất
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Dầu cá - Omega
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vi sinh (Probiotic)
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="lc__nav-list--item js-down p-l-12 p-r-12">
+                <div class="u-flex justify-between align-items-center">
+                  <a href="" class="lc__nav-list-name p-y-12 active">
+                    Thực phẩm chức năng
+                  </a>
+                  <div class="lc__nav-ic">
+                    <i class="ic-angle-down fs-ui-12 txt-gray ac-down"></i>
+                  </div>
+                </div>
+                <div class="lc__dropdown-list bg-gray-100 m-t-12">
+                  <div class="u-flex flex-column">
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Sinh lý - Nội tiết tố
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12 active">
+                      Cải thiện tăng cường chức năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thể hình - Kiểm soát cân năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Làm đẹp
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thảo dược - Thực phẩm tự nhiên
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vitamin
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Canxi và khoáng chất
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Dầu cá - Omega
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vi sinh (Probiotic)
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="lc__nav-list--item js-down p-l-12 p-r-12">
+                <div class="u-flex justify-between align-items-center">
+                  <a href="" class="lc__nav-list-name p-y-12 active">
+                    Thực phẩm chức năng
+                  </a>
+                  <div class="lc__nav-ic">
+                    <i class="ic-angle-down fs-ui-12 txt-gray ac-down"></i>
+                  </div>
+                </div>
+                <div class="lc__dropdown-list bg-gray-100 m-t-12">
+                  <div class="u-flex flex-column">
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Sinh lý - Nội tiết tố
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12 active">
+                      Cải thiện tăng cường chức năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thể hình - Kiểm soát cân năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Làm đẹp
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thảo dược - Thực phẩm tự nhiên
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vitamin
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Canxi và khoáng chất
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Dầu cá - Omega
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vi sinh (Probiotic)
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="lc__nav-list--item js-down p-l-12 p-r-12">
+                <div class="u-flex justify-between align-items-center">
+                  <a href="" class="lc__nav-list-name p-y-12 active">
+                    Thực phẩm chức năng
+                  </a>
+                  <div class="lc__nav-ic">
+                    <i class="ic-angle-down fs-ui-12 txt-gray ac-down"></i>
+                  </div>
+                </div>
+                <div class="lc__dropdown-list bg-gray-100 m-t-12">
+                  <div class="u-flex flex-column">
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Sinh lý - Nội tiết tố
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12 active">
+                      Cải thiện tăng cường chức năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thể hình - Kiểm soát cân năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Làm đẹp
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thảo dược - Thực phẩm tự nhiên
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vitamin
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Canxi và khoáng chất
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Dầu cá - Omega
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vi sinh (Probiotic)
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="lc__nav-list--item js-down p-l-12 p-r-12">
+                <div class="u-flex justify-between align-items-center">
+                  <a href="" class="lc__nav-list-name p-y-12 active">
+                    Thực phẩm chức năng
+                  </a>
+                  <div class="lc__nav-ic">
+                    <i class="ic-angle-down fs-ui-12 txt-gray ac-down"></i>
+                  </div>
+                </div>
+                <div class="lc__dropdown-list bg-gray-100 m-t-12">
+                  <div class="u-flex flex-column">
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Sinh lý - Nội tiết tố
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12 active">
+                      Cải thiện tăng cường chức năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thể hình - Kiểm soát cân năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Làm đẹp
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thảo dược - Thực phẩm tự nhiên
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vitamin
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Canxi và khoáng chất
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Dầu cá - Omega
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vi sinh (Probiotic)
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="lc__nav-list--item js-down p-l-12 p-r-12">
+                <div class="u-flex justify-between align-items-center">
+                  <a href="" class="lc__nav-list-name p-y-12 active">
+                    Thực phẩm chức năng
+                  </a>
+                  <div class="lc__nav-ic">
+                    <i class="ic-angle-down fs-ui-12 txt-gray ac-down"></i>
+                  </div>
+                </div>
+                <div class="lc__dropdown-list bg-gray-100 m-t-12">
+                  <div class="u-flex flex-column">
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Sinh lý - Nội tiết tố
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12 active">
+                      Cải thiện tăng cường chức năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thể hình - Kiểm soát cân năng
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Làm đẹp
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Thảo dược - Thực phẩm tự nhiên
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vitamin
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Canxi và khoáng chất
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Dầu cá - Omega
+                    </a>
+                    <a href="" class="lc__dropdown-item p-x-12 p-y-12">
+                      Vi sinh (Probiotic)
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lc__side-menu--bottom bg-gray-100 p-t-16 p-b-24">
+            <a class="lc__hotline p-l-24" href="tel:18006928">
+              <div class="u-flex align-items-center txt-primary-700">
+                <i class="ic-call-center fs-ui-36 m-r-8"></i>
+                <div class="label-text txt-primary-700">
+                  <p class="fs-ui-20 f-w-500">1800 6928</p>
+                  <p class="fs-ui-14 f-w-500">Tư vấn miễn phí</p>
+                </div>
+              </div>
+            </a>
+            <div class="btn-logout-mb m-t-24 p-x-16">
+              <a
+                class="btn btn-lg btn-primary btn-rounded col"
+                onclick="document.getElementById('formLogOut').submit();"
+                ><span>ĐĂNG XUẤT</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script>
+      $(".nav-hover").each(function () {
+        $(this)
+          .mouseenter(function () {
+            $(this).find(".lc__dropdown-menu").addClass("lc__block");
+
+            $(".lc__dropdown-menu").is(".lc__block") &&
+              $(".lc__mask").addClass("lc__block").css("z-index", "1060");
+
+            $(
+              ".lc__header-searchbar .lc__suggestion,.lc__header-searchbar .lc__history"
+            ).hide();
+          })
+          .mouseleave(function () {
+            $(".lc__mask, .lc__dropdown-menu")
+              .removeClass("lc__block")
+              .css("z-index", "1059");
+          });
+      });
+
+      $(".lc__dropdown-menu").each(function () {
+        var item = $(this).find(".js-hover-tab"),
+          content_tab = $(this).find(".sub-nav-right"),
+          item_tab = $(this).find(".sub-nav-item ");
+        content_tab.hide();
+        content_tab.first().show();
+        item
+          .mouseenter(function () {
+            var that = $(this),
+              index = that.attr("id");
+
+            that.addClass("active");
+            that.siblings().removeClass("active");
+
+            content_tab.hide();
+            $(`[tab-index="${index}"]`).show();
+          })
+          .mouseleave(function () {});
+      });
+
+      $(".js-open-side").click(function () {
+        $(".lc__side-menu").addClass("show");
+        $("html").addClass("disable-scroll-safari");
+      });
+      $(".js-close-side").click(function () {
+        $(".lc__side-menu").removeClass("show");
+        $("html").removeClass("disable-scroll-safari");
+      });
+
+      $(".lc__side-menu").click(function (e) {
+        if ($(this).is(e.target) && $(this).has(e.target).length === 0) {
+          $(this).removeClass("show");
+          $("html").removeClass("disable-scroll-safari");
+        }
+      });
+
+      $(".js-down").each(function () {
+        var ac_item = $(this).find(".lc__nav-ic"),
+          content = $(this).find(".lc__dropdown-list");
+        content.hide();
+        ac_item.click(function () {
+          var that = $(this),
+            is_open = that.is(".ac-down");
+          if (is_open) {
+            that.removeClass("ac-down");
+            content.removeClass("show").slideUp();
+          } else {
+            that.addClass("ac-down");
+            content.slideDown();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

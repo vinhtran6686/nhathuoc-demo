@@ -5355,7 +5355,8 @@ picture {
   justify-content: center;
   flex-direction: column;
   user-select: none;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+ box-shadow 0.3s ease-in-out;
   border: 1px solid transparent;
   cursor: pointer;
   background-color: #718198;
@@ -8621,7 +8622,8 @@ main .ss-group-benh .ss-benh2 .tab2 .tab-sub-item.current-h3 {
   user-select: none;
   font-family: inherit;
   border-radius: 6px;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+ box-shadow 0.3s ease-in-out;
   padding: 0 32px;
   border: 1px solid transparent;
   cursor: pointer;
@@ -8932,7 +8934,8 @@ figure {
       user-select: none;
       font-family: inherit;
       border-radius: 6px;
-      transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+ box-shadow 0.3s ease-in-out;
       padding: 8px 20px;
       border: 1px solid transparent;
       cursor: pointer; }
@@ -8955,7 +8958,8 @@ figure {
   user-select: none;
   font-family: inherit;
   border-radius: 6px;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+ box-shadow 0.3s ease-in-out;
   padding: 8px 20px;
   border: 1px solid transparent;
   cursor: pointer;
@@ -10323,7 +10327,7 @@ footer.footer .row {
   padding: 24px 80px;
   border-radius: 16px;
   background-color: #fff;
-  margin-top: -88px;
+  /* margin-top: -88px; */
   position: relative;
   z-index: 1059; }
   @media (max-width: 1200px) {
